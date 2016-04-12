@@ -1,0 +1,11 @@
+<ion-navbar *navbar>
+  <ion-title>Messages</ion-title>
+</ion-navbar>
+
+<ion-content padding class="messages">
+  <ion-list>
+    <div ion-item *ngFor="#message of messages">
+      {{ message.content }}
+    </div>
+  </ion-list>
+</ion-content>

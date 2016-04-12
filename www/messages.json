@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "from": "José Melo",
+      "to": "João",
+      "content": "cenas 1"
+    },
+    {
+      "id": 2,
+      "from": "João",
+      "to": "José Melo",
+      "content": "cenas 2"
+    }
+  ]
+
+}
