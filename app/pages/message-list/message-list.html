@@ -1,0 +1,42 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>client messages</ion-title>
+</ion-navbar>
+
+<ion-toolbar [attr.primary]="isAndroid ? '' : null" >
+  <ion-segment [(ngModel)]="messagesTrigger" value="unread" [attr.light]="isAndroid ? '' : null">
+    <ion-segment-button value="unread">
+      Unread
+    </ion-segment-button>
+    <ion-segment-button value="perClient">
+      Per Client
+    </ion-segment-button>
+    <ion-segment-button value="all">
+      All
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+
+  <div [ngSwitch]="messagesTrigger">
+    <ion-list *ngSwitchDefault *ngSwitchWhen="'unread'">
+      <div ion-item *ngFor="#message of messages" (click)="itemTapped(message)">
+        {{ message.content }}
+      </div>
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'perClient'">
+
+    </ion-list>
+
+    <ion-list *ngSwitchWhen="'all'">
+
+    </ion-list>
+  </div>
+
+
+</ion-content>

@@ -13,18 +13,7 @@ export class MessagesPage {
 
   constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService) {
     // Get the other person's id
-    // this.selectedItem = navParams.get('item');
-    this.user_id = navParams.get('user_id');
-    //getMessages(this.userId);
-    messagesService.getMessages(this.user_id).subscribe(
-        data => {
-          this.messages = data;
-          console.log(this.messages);
-        },
-        err => {console.log(err);},
-        () => {console.log("Finished fetching messages from user conversation")}
-    );
+    console.log(navParams);
   }
 
 }
-

@@ -4,8 +4,8 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-import {MessagesPage} from './pages/messages/messages'
 import {HTTP_PROVIDERS} from 'angular2/http'
+import {MessageListPage} from "./pages/message-list/message-list";
 
 @App({
   templateUrl: 'build/app.html',
@@ -29,7 +29,7 @@ class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage },
       { title: 'Custom Page', component: CustomPage },
-      { title: 'Messages', component: MessagesPage }
+      { title: 'Messages', component: MessageListPage }
     ];
   }
 
