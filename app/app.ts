@@ -2,6 +2,7 @@ import 'es6-shim';
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
+import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
 
@@ -11,8 +12,8 @@ import {CustomPage} from './pages/custom-page/custom-page'
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
-  // make HelloIonicPage the root (or first) page
-  rootPage: any = HelloIonicPage;
+  // make AccountRecoveryPage the root (or first) page
+  rootPage: any = AccountRecoveryPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
