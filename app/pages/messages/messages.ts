@@ -8,10 +8,11 @@ import {Message} from '../../models/message'
 })
 export class MessagesPage {
   messages: Message[];
+  clientName: string;
 
   constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService) {
-    // Get the other person's id
     this.messages = navParams.get('messages');
+    this.clientName = navParams.get('clientName');
   }
 
 }

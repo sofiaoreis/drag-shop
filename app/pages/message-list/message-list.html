@@ -5,48 +5,60 @@
     <ion-title>client messages</ion-title>
 </ion-navbar>
 
-<ion-toolbar [attr.primary]="isAndroid ? '' : null" >
-  <ion-segment [(ngModel)]="messagesTrigger" value="unread" [attr.light]="isAndroid ? '' : null">
-    <ion-segment-button value="unread">
-      Unread
-    </ion-segment-button>
-    <ion-segment-button value="perClient">
-      Per Client
-    </ion-segment-button>
-    <ion-segment-button value="all">
-      All
-    </ion-segment-button>
-  </ion-segment>
-</ion-toolbar>
-
 
 <ion-content>
 
-  <div [ngSwitch]="messagesTrigger">
-    <div *ngSwitchWhen="'unread'">
-      <div padding *ngFor="#message of messages | receivedMessages | unreadMessages">
-        <h3> {{ message | clientName:clients }} </h3>
-        {{ message.content }}
+  <div class="message-list">
+
+    <ion-segment [(ngModel)]="messagesTrigger" value="unread" [attr.light]="isAndroid ? '' : null">
+      <ion-segment-button value="unread">
+        Unread
+      </ion-segment-button>
+      <ion-segment-button value="perClient">
+        Per Client
+      </ion-segment-button>
+      <ion-segment-button value="all">
+        All messages
+      </ion-segment-button>
+    </ion-segment>
+
+    <br>
+    <br>
+
+    <div [ngSwitch]="messagesTrigger">
+      <div *ngSwitchWhen="'unread'">
+        <ion-row padding *ngFor="#message of messages | receivedMessages | unreadMessages">
+          <ion-col width-10>
+            {{message.date}}
+          </ion-col>
+          <ion-col>
+            <h3> {{ message | clientName:clients }} </h3>
+            {{ message.content }}
+            <br>
+            <a (click)="itemTapped(message)">see all conversation</a>
+          </ion-col>
+
+        </ion-row>
+
         <br>
-        <a (click)="itemTapped(message)">see all conversation</a>
         <br>
+      </div>
+
+      <div *ngSwitchWhen="'perClient'">
+
+      </div>
+
+      <div *ngSwitchWhen="'all'">
+        <div padding *ngFor="#message of messages | receivedMessages">
+          <h3> {{ message | clientName:clients }} </h3>
+          {{ message.content }}
+          <br>
+          <a (click)="itemTapped(message)">see all conversation</a>
+          <br>
+        </div>
       </div>
     </div>
 
-    <div *ngSwitchWhen="'perClient'">
-
-    </div>
-
-    <div *ngSwitchWhen="'all'">
-      <div padding *ngFor="#message of messages | receivedMessages">
-        <h3> {{ message | clientName:clients }} </h3>
-        {{ message.content }}
-        <br>
-        <a (click)="itemTapped(message)">see all conversation</a>
-        <br>
-      </div>
-    </div>
   </div>
-
 
 </ion-content>

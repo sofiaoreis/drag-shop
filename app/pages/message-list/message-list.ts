@@ -24,10 +24,13 @@ export class MessageListPage {
     messagesService.getMessageList().subscribe(
         data => {
           this.messages = data[0];
+          this.messages.sort((a,b) => {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+          });
           this.clients = data[1];
         },
         err => {console.log(err);},
-        () => {console.log("Finished fetching client messages")}
+        () => {console.log("Finished fetching client messages");}
     );
 
   }
@@ -36,12 +39,12 @@ export class MessageListPage {
   //navigate to the conversation page from the selected message
   itemTapped(item) {
     let conversation = this.messages.filter(x => (x.from_id == item.from_id && x.to_id == 1) || (x.from_id == 1 && x.to_id == item.from_id));
-    conversation.sort((a,b) => {
-      return new Date(b.date).getTime() - new Date(a.date).getTime();
-    });
+
+    let clientName = new ClientNamePipe().transform(item, new Array(this.clients));
 
     this.nav.push(MessagesPage, {
-      messages: conversation
+      messages: conversation,
+      clientName: clientName
     });
   }
 
