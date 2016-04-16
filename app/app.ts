@@ -25,8 +25,13 @@ class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
-      { title: 'Statistics', component: ListPage, icon: 'bar-chart' },
-      { title: 'Custom Page', component: CustomPage, icon: 'home' }
+      { title: 'Employers Management', component: ListPage, icon: 'cog' },
+      { title: 'Statistics', component: ListPage, icon: 'stats' },
+      { title: 'Client Messages', component: CustomPage, icon: 'chatbubbles' },
+      { title: 'Order Tracking', component: ListPage, icon: 'basket' },
+      { title: 'Products', component: ListPage, icon: 'barcode' },
+      { title: 'App Settings', component: ListPage, icon: 'settings' },
+      { title: 'Logout', component: ListPage, icon: 'power' }
     ];
   }
 
