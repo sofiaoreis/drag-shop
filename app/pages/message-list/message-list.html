@@ -23,21 +23,29 @@
 <ion-content>
 
   <div [ngSwitch]="messagesTrigger">
-    <ion-list *ngSwitchWhen="'unread'">
-      <div ion-item *ngFor="#message of messages | unreadMessages" (click)="itemTapped(message)">
+    <div *ngSwitchWhen="'unread'">
+      <div padding *ngFor="#message of messages | receivedMessages | unreadMessages">
+        <h3> {{ message | clientName:clients }} </h3>
         {{ message.content }}
+        <br>
+        <a (click)="itemTapped(message)">see all conversation</a>
+        <br>
       </div>
-    </ion-list>
+    </div>
 
-    <ion-list *ngSwitchWhen="'perClient'">
+    <div *ngSwitchWhen="'perClient'">
 
-    </ion-list>
+    </div>
 
-    <ion-list *ngSwitchWhen="'all'">
-      <div ion-item *ngFor="#message of messages" (click)="itemTapped(message)">
+    <div *ngSwitchWhen="'all'">
+      <div padding *ngFor="#message of messages | receivedMessages">
+        <h3> {{ message | clientName:clients }} </h3>
         {{ message.content }}
+        <br>
+        <a (click)="itemTapped(message)">see all conversation</a>
+        <br>
       </div>
-    </ion-list>
+    </div>
   </div>
 
 
