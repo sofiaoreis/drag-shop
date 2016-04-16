@@ -1,13 +1,15 @@
 <ion-menu [content]="content">
 
   <ion-toolbar>
-    <ion-title>Pages</ion-title>
+    <ion-title> Pages</ion-title>
   </ion-toolbar>
 
   <ion-content>
     <ion-list>
       <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
-        {{p.title}}
+
+      <ion-icon name="{{p.icon}}"></ion-icon>  {{p.title}}
+
       </button>
     </ion-list>
   </ion-content>

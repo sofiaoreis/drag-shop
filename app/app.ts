@@ -13,7 +13,7 @@ import {CustomPage} from './pages/custom-page/custom-page'
 class MyApp {
   // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(
     private app: IonicApp,
@@ -24,9 +24,9 @@ class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
-      { title: 'Custom Page', component: CustomPage }
+      { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
+      { title: 'Statistics', component: ListPage, icon: 'bar-chart' },
+      { title: 'Custom Page', component: CustomPage, icon: 'home' }
     ];
   }
 
