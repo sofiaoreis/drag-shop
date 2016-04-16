@@ -23,8 +23,8 @@
 <ion-content>
 
   <div [ngSwitch]="messagesTrigger">
-    <ion-list *ngSwitchDefault *ngSwitchWhen="'unread'">
-      <div ion-item *ngFor="#message of messages" (click)="itemTapped(message)">
+    <ion-list *ngSwitchWhen="'unread'">
+      <div ion-item *ngFor="#message of messages | unreadMessages" (click)="itemTapped(message)">
         {{ message.content }}
       </div>
     </ion-list>
@@ -34,7 +34,9 @@
     </ion-list>
 
     <ion-list *ngSwitchWhen="'all'">
-
+      <div ion-item *ngFor="#message of messages" (click)="itemTapped(message)">
+        {{ message.content }}
+      </div>
     </ion-list>
   </div>
 
