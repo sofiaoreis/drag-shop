@@ -7,13 +7,11 @@ import {Message} from '../../models/message'
   providers: [MessagesService]
 })
 export class MessagesPage {
-  user_id: number;
   messages: Message[];
-  message: string;
 
   constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService) {
     // Get the other person's id
-    console.log(navParams);
+    this.messages = navParams.get('messages');
   }
 
 }

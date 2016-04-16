@@ -32,10 +32,16 @@ export class MessageListPage {
 
   }
 
+  //TODO: change the hard-coded value
   //navigate to the conversation page from the selected message
   itemTapped(item) {
+    let conversation = this.messages.filter(x => (x.from_id == item.from_id && x.to_id == 1) || (x.from_id == 1 && x.to_id == item.from_id));
+    conversation.sort((a,b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+
     this.nav.push(MessagesPage, {
-      item: item
+      messages: conversation
     });
   }
 

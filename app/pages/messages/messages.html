@@ -3,5 +3,7 @@
 </ion-navbar>
 
 <ion-content padding class="messages">
-  <h2>todo</h2>
+  <div *ngFor="#message of messages">
+    <h2>{{message.content}}</h2>
+  </div>
 </ion-content>

@@ -4,6 +4,7 @@ export class Message {
   to_id: number;
   content: string;
   status: string;
+  date: string;
 
   constructor() {
       //this.content = obj.content;
