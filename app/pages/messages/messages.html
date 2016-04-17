@@ -18,17 +18,19 @@
       <div *ngIf="message.from_id != 1" class="message-received">
         {{message.content}}
         <br>
+        <br>
         <small>{{message.date}}</small>
       </div>
 
       <div *ngIf="message.from_id === 1" class="message-sent">
         {{message.content}}
         <br>
+        <br>
         <small>{{message.date}}</small>
       </div>
     </div>
-  </div>
 
+  </div>
 
   <!---
   <ion-row padding *ngFor="#message of messages">
