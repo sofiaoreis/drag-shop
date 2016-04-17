@@ -1,3 +1,28 @@
 .messages {
+  padding: 5%;
+
+  .title {
+    ion-icon {
+      float: left;
+    }
+    h5 {
+      margin-left: 25px;
+    }
+  }
+
+  .message-received {
+    padding: 2%;
+    border-radius: 0px 20px 20px 20px;
+    background-color: #C8CBCC;
+    width: 40%;
+  }
+
+  .message-sent {
+    padding: 2%;
+    border-radius: 20px 0px 20px 20px;
+    background-color: #91E0FA;
+    width: 40%;
+    margin-left: 60%
+  }
 
 }

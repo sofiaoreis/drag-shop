@@ -27,6 +27,7 @@ export class MessageListPage {
           this.messages = data[0];
           this.clients = data[1];
           this.organizeMessages();
+          console.log(this.messages);
         },
         err => {console.log(err);},
         () => {console.log("Finished fetching client messages");}
