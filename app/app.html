@@ -1,20 +1,19 @@
-<ion-menu [content]="content">
+<ion-menu  [content]="content" >
 
   <ion-toolbar>
-    <br>
-    <ion-item>
+
+    <ion-item >
    <ion-avatar item-left>
      <img src="img/appicon.png">
    </ion-avatar>
    <h2>Sofia Reis</h2>
    <p>Store Owner</p>
  </ion-item>
-   <br>
-  </ion-toolbar>
 
-  <ion-content>
+  </ion-toolbar>
+  <ion-content class="custom" >
     <ion-list>
-      <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
+      <button class="custom" ion-item *ngFor="#p of pages" (click)="openPage(p)" blur>
 
 <ion-icon name="{{p.icon}}"></ion-icon>  {{p.title}}
 
