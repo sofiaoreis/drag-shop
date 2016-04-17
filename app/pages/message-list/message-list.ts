@@ -13,6 +13,7 @@ import {ReceivedMessagesPipe} from '../../pipes/messages/received-messages'
 })
 export class MessageListPage {
   messages: Message[];
+  conversations: Array<{id: number, messages: Message[]}> = [];
   clients: any;
   messagesTrigger: string;
 
@@ -24,10 +25,8 @@ export class MessageListPage {
     messagesService.getMessageList().subscribe(
         data => {
           this.messages = data[0];
-          this.messages.sort((a,b) => {
-            return new Date(b.date).getTime() - new Date(a.date).getTime();
-          });
           this.clients = data[1];
+          this.organizeMessages();
         },
         err => {console.log(err);},
         () => {console.log("Finished fetching client messages");}
@@ -35,11 +34,39 @@ export class MessageListPage {
 
   }
 
+  organizeMessages() {
+    //sort all messages by date
+    this.messages.sort((a,b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
+
+    //group messages in conversations
+    //TODO: change hard-coded value
+    this.messages.forEach(x => {
+      let otherPersonId = (x.from_id === 1) ? x.to_id : x.from_id;
+      let found: boolean = false;
+
+      this.conversations.forEach(y =>{
+        if(y.id === otherPersonId) {
+          y.messages.push(x);
+          found = true;
+        }
+      });
+
+      if(!found) {
+        this.conversations.push({id: otherPersonId, messages: [x]});
+      }
+
+    });
+
+  }
+
   //TODO: change the hard-coded value
   //navigate to the conversation page from the selected message
   itemTapped(item) {
-    let conversation = this.messages.filter(x => (x.from_id == item.from_id && x.to_id == 1) || (x.from_id == 1 && x.to_id == item.from_id));
 
+    let otherPersonId = (item.from_id === 1) ? item.to_id : item.from_id;
+    let conversation = this.conversations.filter(x => x.id === otherPersonId)[0].messages;
     let clientName = new ClientNamePipe().transform(item, new Array(this.clients));
 
     this.nav.push(MessagesPage, {

@@ -45,17 +45,36 @@
       </div>
 
       <div *ngSwitchWhen="'perClient'">
+        <ion-row padding *ngFor="#conversation of conversations">
+          <ion-col>
+            <h3> {{ (conversation.messages | receivedMessages)[0] | clientName:clients }} </h3>
+            {{ conversation.messages[0].content }}
+            <br>
+            <a (click)="itemTapped(conversation.messages[0])">see all conversation</a>
+          </ion-col>
 
+        </ion-row>
+
+        <br>
+        <br>
       </div>
 
       <div *ngSwitchWhen="'all'">
-        <div padding *ngFor="#message of messages | receivedMessages">
-          <h3> {{ message | clientName:clients }} </h3>
-          {{ message.content }}
-          <br>
-          <a (click)="itemTapped(message)">see all conversation</a>
-          <br>
-        </div>
+        <ion-row padding *ngFor="#message of messages | receivedMessages">
+          <ion-col width-10>
+            {{message.date}}
+          </ion-col>
+          <ion-col>
+            <h3> {{ message | clientName:clients }} </h3>
+            {{ message.content }}
+            <br>
+            <a (click)="itemTapped(message)">see all conversation</a>
+          </ion-col>
+
+        </ion-row>
+
+        <br>
+        <br>
       </div>
     </div>
 
