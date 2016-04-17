@@ -2,14 +2,17 @@
 
   <h3>Account Recovery</h3>
 
-  <ion-item>
-    <ion-input type="text" placeholder="E-mail address"></ion-input>
-  </ion-item>
+  <form [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
+        <ion-item [class.error]="!username.valid && username.touched">
+            <ion-label floating>E-mail address</ion-label>
+            <ion-input type="email" value="" [ngFormControl]="username"></ion-input>
+        </ion-item>
+        <div *ngIf="username.hasError('required') && username.touched"
+            class="error-box">Email is required!</div>
 
-  <div padding>
-    <button block (click)="donePressed()">Done</button>
-  </div>
+        <br/><br/>
+        <button type="submit" class="custom-button" [disabled]="!recoverForm.valid" block>Done</button>
+    </form>
 
-  <a (click)="goBack()">Back</a>
-
+    <a (click)="goBack()">Back</a>
 </ion-content>
