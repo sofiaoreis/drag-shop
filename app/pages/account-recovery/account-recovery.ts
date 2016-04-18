@@ -25,9 +25,9 @@ constructor(private nav: NavController, navParams: NavParams, fb: FormBuilder) {
  }
 
  onSubmit(value: string): void {
-         if(this.recoverForm.valid) {
-             console.log('Submitted value: ', value);
-         }
-         this.nav.push(AccountRecoverNumPage, {});
+   if(this.recoverForm.valid) {
+     console.log('Submitted value: ', value);
+   }
+   this.nav.push(AccountRecoverNumPage, {});
  }
 }

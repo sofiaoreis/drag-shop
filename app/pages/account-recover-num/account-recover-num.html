@@ -5,13 +5,17 @@
   <p>Check your email or phone, we sent you a confirmation code.</p>
   <p>Enter it bellow to reset your password</p>
 
-  <ion-item>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  <form [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
+        <ion-item [class.error]="!code.valid && code.touched">
+            <ion-label floating>Code</ion-label>
+            <ion-input type="text" value="" [ngFormControl]="code"></ion-input>
+        </ion-item>
+        <div *ngIf="code.hasError('required') && code.touched"
+            class="error-box">Code is required!</div>
 
-  <div padding>
-    <button block (click)="doAlert()">Done</button>
-  </div>
+        <br/><br/>
+        <button type="submit" class="custom-button" [disabled]="!recoverForm.valid" block>Done</button>
+    </form>
 
   <a (click)="goBack()">Back</a>
 
