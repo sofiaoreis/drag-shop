@@ -10,29 +10,33 @@
 
   <div class="message-list">
 
-    <ion-segment [(ngModel)]="messagesTrigger" [attr.light]="isAndroid ? '' : null">
-      <ion-segment-button value="unread">
-        Unread
-      </ion-segment-button>
-      <ion-segment-button value="perClient">
-        Per Client
-      </ion-segment-button>
-      <ion-segment-button value="all">
-        All messages
-      </ion-segment-button>
-    </ion-segment>
+    <div class="tab-selector">
+      <ion-segment [(ngModel)]="messagesTrigger" [attr.light]="isAndroid ? '' : null">
+        <ion-segment-button value="unread">
+          Unread
+        </ion-segment-button>
+        <ion-segment-button value="perClient">
+          Per Client
+        </ion-segment-button>
+        <ion-segment-button value="all">
+          All messages
+        </ion-segment-button>
+      </ion-segment>
 
-    <br>
-    <br>
+      <div class="spacer"></div>
+    </div>
+
+
+
 
     <div [ngSwitch]="messagesTrigger">
       <div *ngSwitchWhen="'unread'">
-        <ion-row class="message-item" padding *ngFor="#message of messages | receivedMessages | unreadMessages">
+        <ion-row class="message-item" *ngFor="#message of messages | receivedMessages | unreadMessages">
           <ion-col width-10 class="date">
             {{message | dateCalendar}}
           </ion-col>
-          <ion-col>
-            <h3> {{ message | clientName:clients }} </h3>
+          <ion-col class="message">
+            <h4 class="client-name"> {{ message | clientName:clients }} </h4>
             {{ message.content }}
             <br>
             <a (click)="itemTapped(message)">see all conversation</a>
@@ -60,12 +64,12 @@
       </div>
 
       <div *ngSwitchWhen="'all'">
-        <ion-row padding *ngFor="#message of messages | receivedMessages">
-          <ion-col width-10>
-            {{message.date}}
+        <ion-row class="message-item" *ngFor="#message of messages | receivedMessages">
+          <ion-col width-10 class="date">
+            {{message | dateCalendar}}
           </ion-col>
-          <ion-col>
-            <h3> {{ message | clientName:clients }} </h3>
+          <ion-col class="message">
+            <h4 class="client-name"> {{ message | clientName:clients }} </h4>
             {{ message.content }}
             <br>
             <a (click)="itemTapped(message)">see all conversation</a>

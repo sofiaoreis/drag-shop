@@ -1,26 +1,13 @@
 .message-list {
   padding-top: 2%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 17%;
+  padding-right: 17%;
+  height: 100%;
 }
 
-.message-item {
-  position:relative;
-
-  ion-col {
-    margin-left : 1%;
-    .date {
-
-      &:before {
-        content: '';
-        position: absolute;
-        height: 150%;
-        width: 2px;
-        background: #DDDDDD;
-      }
-
-    }
-
+.tab-selector {
+  .spacer {
+    height: 40px;
   }
 }
 
@@ -39,4 +26,33 @@ ion-segment-button {
 .segment-button.segment-activated {
   background-color: white !important;
   border-bottom : 2px solid $app-blue !important;
+}
+
+ion-col {
+  padding: 5px 0 0 0 !important;
+  margin-bottom: 60px;
+}
+
+ion-col.date {
+  margin-right: 30px;
+  color: $app-grey-text;
+  text-align: center;
+}
+
+ion-col.message {
+  //margin-left: 3%;
+}
+
+.client-name {
+  margin-top: 0 !important;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .message-list {
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+  }
 }

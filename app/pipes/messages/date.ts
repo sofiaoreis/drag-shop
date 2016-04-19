@@ -10,12 +10,12 @@ export class DateCalendarPipe implements PipeTransform {
     if (!message) { return; }
 
     return moment(new Date(message.date)).calendar(null, {
-      sameDay: '[Today]',
-      nextDay: '[Tomorrow]',
+      sameDay: '[TODAY]',
+      nextDay: '[TOMORROW]',
       nextWeek: 'dddd',
-      lastDay: '[Yesterday]',
-      lastWeek: '[Last] dddd',
-      sameElse: 'DD/MM/YYYY'
+      lastDay: '[YESTERDAY]',
+      lastWeek: '[LAST] dddd',
+      sameElse: '[MORE THAN 1 WEEK]'
     });
   }
 }
