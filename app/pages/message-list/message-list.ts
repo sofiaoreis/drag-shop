@@ -5,11 +5,12 @@ import {MessagesPage} from '../messages/messages'
 import {UnreadMessagesPipe} from '../../pipes/messages/unread-messages-pipe'
 import {ClientNamePipe} from '../../pipes/messages/client-name'
 import {ReceivedMessagesPipe} from '../../pipes/messages/received-messages'
+import {DateCalendarPipe} from '../../pipes/messages/date'
 
 @Page({
   templateUrl: 'build/pages/message-list/message-list.html',
   providers: [MessagesService],
-  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe]
+  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe, DateCalendarPipe]
 })
 export class MessageListPage {
   messages: Message[];
@@ -27,7 +28,6 @@ export class MessageListPage {
           this.messages = data[0];
           this.clients = data[1];
           this.organizeMessages();
-          console.log(this.messages);
         },
         err => {console.log(err);},
         () => {console.log("Finished fetching client messages");}

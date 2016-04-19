@@ -14,12 +14,34 @@
   .message-received {
     padding: 25px;
     border-radius: 0px 20px 20px 20px;
-    background-color: #E9EAEB;
+    background-color: $app-grey;
     width: 40%;
+    height: 100%;
+    position:relative;
 
     small {
-      color: #939598;
+      color: $app-grey-text;
     }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 150%;
+      width: 2px;
+      background: #DDDDDD;
+      left: 125%;
+      transform: translateY(-25px);
+    }
+  }
+
+  .message-sent {
+    padding: 25px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: $app-chat-blue;
+    color: white;
+    width: 40%;
+    margin-left: 60%;
+    position:relative;
 
     &:before {
       content: '';
@@ -27,18 +49,9 @@
       height: 100%;
       width: 2px;
       background: #DDDDDD;
-      left: 50%;
-      transform: translateY(-10%);
+      left: -25%;
+      transform: translateY(-25px);
     }
-  }
-
-  .message-sent {
-    padding: 25px;
-    border-radius: 20px 0px 20px 20px;
-    background-color: #8CD3D7;
-    color: white;
-    width: 40%;
-    margin-left: 60%
 
   }
 

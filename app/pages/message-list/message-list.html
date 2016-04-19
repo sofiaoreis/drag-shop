@@ -10,7 +10,7 @@
 
   <div class="message-list">
 
-    <ion-segment [(ngModel)]="messagesTrigger" value="unread" [attr.light]="isAndroid ? '' : null">
+    <ion-segment [(ngModel)]="messagesTrigger" [attr.light]="isAndroid ? '' : null">
       <ion-segment-button value="unread">
         Unread
       </ion-segment-button>
@@ -27,9 +27,9 @@
 
     <div [ngSwitch]="messagesTrigger">
       <div *ngSwitchWhen="'unread'">
-        <ion-row padding *ngFor="#message of messages | receivedMessages | unreadMessages">
-          <ion-col width-10>
-            {{message.date}}
+        <ion-row class="message-item" padding *ngFor="#message of messages | receivedMessages | unreadMessages">
+          <ion-col width-10 class="date">
+            {{message | dateCalendar}}
           </ion-col>
           <ion-col>
             <h3> {{ message | clientName:clients }} </h3>

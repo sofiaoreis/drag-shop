@@ -3,3 +3,40 @@
   padding-left: 15%;
   padding-right: 15%;
 }
+
+.message-item {
+  position:relative;
+
+  ion-col {
+    margin-left : 1%;
+    .date {
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 150%;
+        width: 2px;
+        background: #DDDDDD;
+      }
+
+    }
+
+  }
+}
+
+ion-segment-button {
+  border:none !important;
+  color: black !important;
+}
+
+.segment-button {
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  border-bottom : 1px solid $app-grey-text !important;
+
+}
+
+.segment-button.segment-activated {
+  background-color: white !important;
+  border-bottom : 2px solid $app-blue !important;
+}

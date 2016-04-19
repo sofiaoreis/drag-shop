@@ -7,6 +7,11 @@
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
 
+$app-blue: #5BBBBF;
+$app-grey: #E9EAEB;
+$app-chat-blue: #8CD3D7;
+$app-grey-text: #939598;
+
 @import "../pages/hello-ionic/hello-ionic";
 
 @import "../pages/item-details/item-details";
