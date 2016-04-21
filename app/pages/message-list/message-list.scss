@@ -20,7 +20,6 @@ ion-segment-button.message-tabs {
   background-color: none !important;
   border-radius: 0 0 0 0 !important;
   border-bottom : 1px solid $app-grey-text !important;
-
 }
 
 .segment-button.segment-activated {
@@ -36,15 +35,28 @@ ion-segment-button.message-tabs {
 
 .date {
   padding: 5px 0 0 0 !important;
-  margin-bottom: 60px;
-  margin-right: 30px;
+  margin-right: 40px;
   color: $app-grey-text;
   text-align: center;
+  position: relative;
+/*
+  @media only screen and (min-width: 650px) {
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 150%;
+      width: 2px;
+      background: #DDDDDD;
+      left: 112%;
+    }
+  }
+  */
+
 }
 
 ion-col.message {
   padding: 5px 0 0 0 !important;
-  margin-bottom: 60px;
 }
 
 .client-name {
@@ -56,10 +68,10 @@ ion-col.message {
     background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-image: url("http://a1.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxOTg1MDQ1MDA1.jpg");
-    background-size: 50px 50px;
+    width: 75px;
+    height: 75px;
+    background-image: url("/img/placeholder-user.png");
+    background-size: 75px 75px;
 
     padding: 5px 0 0 0 !important;
     margin-right: 30px;
@@ -70,7 +82,7 @@ ion-col.message {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .message-list {
     padding-top: 2%;
     padding-left: 5%;

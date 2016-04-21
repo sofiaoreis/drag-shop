@@ -6,11 +6,12 @@ import {UnreadMessagesPipe} from '../../pipes/messages/unread-messages-pipe'
 import {ClientNamePipe} from '../../pipes/messages/client-name'
 import {ReceivedMessagesPipe} from '../../pipes/messages/received-messages'
 import {DateCalendarPipe} from '../../pipes/messages/date'
+import {MaxLengthPipe} from '../../pipes/messages/limit-messages'
 
 @Page({
   templateUrl: 'build/pages/message-list/message-list.html',
   providers: [MessagesService],
-  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe, DateCalendarPipe]
+  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe, DateCalendarPipe, MaxLengthPipe]
 })
 export class MessageListPage {
   messages: Message[];
