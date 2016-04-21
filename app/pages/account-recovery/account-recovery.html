@@ -1,18 +1,25 @@
-<ion-content padding>
+<ion-content>
 
-  <h3>Account Recovery</h3>
-
-  <form [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
-        <ion-item [class.error]="!username.valid && username.touched">
-            <ion-label floating>E-mail address</ion-label>
-            <ion-input type="email" value="" [ngFormControl]="username"></ion-input>
+<div class="menu container">
+  <div class="center">
+    <h1>Account Recovery</h1>
+  </div>
+  <br/>
+  <form class="enlarge" [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
+        <ion-item class="input" [class.error]="!username.valid && username.touched">
+            <ion-icon [ngClass]="{'hide': true }" name="email"></ion-icon>
+            <ion-input type="email" value="" [ngFormControl]="username" placeholder="E-mail address"></ion-input>
         </ion-item>
         <div *ngIf="username.hasError('required') && username.touched"
-            class="error-box">Email is required!</div>
-
+        class="error-box">Email is required!</div>
         <br/><br/>
-        <button type="submit" class="custom-button" [disabled]="!recoverForm.valid" block>Done</button>
+        <button type="submit" class="submit-button" [disabled]="!recoverForm.valid" block>Done</button>
     </form>
-
-    <a (click)="goBack()">Back</a>
+    <br/>
+    <div class="center">
+      <a (click)="goBack()">Back</a>
+    </div>
+  </div>
 </ion-content>
+
+ <style>.hide { display:none; } </style>

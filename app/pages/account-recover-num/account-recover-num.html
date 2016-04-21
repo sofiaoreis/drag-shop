@@ -1,22 +1,27 @@
-<ion-content padding>
+<ion-content>
 
-  <h3>Account Recover</h3>
-
-  <p>Check your email or phone, we sent you a confirmation code.</p>
-  <p>Enter it bellow to reset your password</p>
-
-  <form [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
-        <ion-item [class.error]="!code.valid && code.touched">
-            <ion-label floating>Code</ion-label>
-            <ion-input type="text" value="" [ngFormControl]="code"></ion-input>
+<div class="menu container">
+  <div class="center">
+    <h2>Account Recovery</h2>
+    <br/><br/><br/>
+    <h3>Check your email or phone, we sent you a confirmation code.</h3>
+    <h3>Enter it bellow to reset your password</h3>
+  </div>
+  <br/>
+  <form class="enlarge" [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
+        <ion-item class="input" [class.error]="!code.valid && code.touched">
+            <ion-input type="text" value="" [ngFormControl]="code" placeholder=""></ion-input>
         </ion-item>
         <div *ngIf="code.hasError('required') && code.touched"
-            class="error-box">Code is required!</div>
+          class="error-box">Code is required!
+        </div>
 
         <br/><br/>
-        <button type="submit" class="custom-button" [disabled]="!recoverForm.valid" block>Done</button>
-    </form>
-
-  <a (click)="goBack()">Back</a>
-
+        <button type="submit" class="submit-button" [disabled]="!recoverForm.valid" block>Done</button>
+  </form>
+  <br/>
+  <div class="center">
+    <a (click)="goBack()">Back</a>
+  </div>
+</div>
 </ion-content>

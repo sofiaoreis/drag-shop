@@ -1,0 +1,55 @@
+.container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu{
+  color: white;
+  height: 100%;
+  background-image: url("/img/background.png");
+  background-position: center;
+  font-weight: bold;
+}
+
+.center{
+  text-align: center;
+}
+
+.enlarge{
+  width: 50%;
+}
+
+.input {
+  opacity: 0.4;
+  input{
+    color: black;
+  }
+}
+
+.submit-button{
+  background-color: $app-blue;
+  border-radius: 0 0 0 0 !important;
+  font-weight: bold;
+}
+
+.submit-button.activated{
+  background-color: $app-blue;
+}
+
+.error-box {
+  border: 1px solid #dc3847;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .35);
+  color: #dc3847;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: white;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.error {
+    border-bottom: 3px solid red !important;
+}
