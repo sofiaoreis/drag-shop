@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
+import {OrderDetails} from './pages/order-details/order-details'
 
 
 @App({
@@ -25,6 +26,7 @@ class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
+        { title: 'Order Details', component: OrderDetails },
       { title: 'My First List', component: ListPage },
       { title: 'Custom Page', component: CustomPage }
     ];
