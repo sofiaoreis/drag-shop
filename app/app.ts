@@ -14,6 +14,7 @@ class MyApp {
   // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
   pages: Array<{title: string, component: any, icon: string}>;
+  user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
   constructor(
     private app: IonicApp,
@@ -22,6 +23,10 @@ class MyApp {
   ) {
     this.initializeApp();
 
+    this.user =
+    [
+      {path: 'img/logo.png', firstname: 'Sofia', lastname: 'Reis', role: 'Storeowner'}
+    ]
     // set our app's pages
     this.pages = [
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
