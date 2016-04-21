@@ -1,5 +1,46 @@
 .custom {
   background-color: #3f4041 !important; /* This sets the background color*/
-  color: #FFFFFF;
-  padding-top: 10px;
+
  }
+
+ .toolbar-background
+ {
+   background-color: #3f4041;
+ }
+
+div.item-inner
+{
+  border-bottom: none;
+}
+
+.toolbar-content
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+*{
+    -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+     box-sizing: content-box !important;
+}
+
+.item{
+  color: #FFFFFF;
+  background-color: #3f4041;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.show-menu
+{
+    background-color: #3f4041;
+}
+
+ .list
+{
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+}

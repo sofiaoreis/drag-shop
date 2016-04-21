@@ -8,7 +8,7 @@ import {CustomPage} from './pages/custom-page/custom-page'
 
 @App({
   templateUrl: 'build/app.html',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {}
 })
 class MyApp {
   // make HelloIonicPage the root (or first) page
@@ -37,8 +37,6 @@ class MyApp {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
     });
   }

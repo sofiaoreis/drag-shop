@@ -1,7 +1,6 @@
 <ion-menu  [content]="content" >
 
-  <ion-toolbar>
-
+  <ion-content class="custom">
     <ion-item >
    <ion-avatar item-left>
      <img src="img/appicon.png">
@@ -10,10 +9,8 @@
    <p>Store Owner</p>
  </ion-item>
 
-  </ion-toolbar>
-  <ion-content class="custom" >
-    <ion-list>
-      <button class="custom" ion-item *ngFor="#p of pages" (click)="openPage(p)" blur>
+    <ion-list class="list">
+      <button class="list" ion-item *ngFor="#p of pages" (click)="openPage(p)">
 
 <ion-icon name="{{p.icon}}"></ion-icon>  {{p.title}}
 
