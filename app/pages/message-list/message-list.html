@@ -47,16 +47,20 @@
       </div>
 
       <div *ngSwitchWhen="'perClient'">
-        <ion-row padding class="message-item per-client" *ngFor="#conversation of conversations">
-          <div width-10 class="client-pic">
-          </div>
-          <ion-col>
-            <h6 class="client-name" (click)="itemTapped(conversation.messages[0])"> {{ (conversation.messages | receivedMessages)[0] | clientName:clients }} </h6>
-            <ion-icon name="mail"></ion-icon>     send a message
-          </ion-col>
-        </ion-row>
-        <br>
-        <br>
+        <div *ngFor="#conversation of conversations">
+
+          <ion-row padding class="message-item per-client">
+            <div width-10 class="client-pic">
+            </div>
+            <ion-col>
+              <h6 class="client-name" (click)="itemTapped(conversation.messages[0])"> {{ (conversation.messages | receivedMessages)[0] | clientName:clients }} </h6>
+              <ion-icon name="mail"></ion-icon>     send a message
+            </ion-col>
+          </ion-row>
+          <br>
+          <div class="seperator"></div>
+
+        </div>
       </div>
 
       <div *ngSwitchWhen="'all'">

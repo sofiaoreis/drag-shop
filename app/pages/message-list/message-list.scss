@@ -14,13 +14,11 @@
 ion-segment-button.message-tabs {
   border:none !important;
   color: black !important;
-}
-
-.segment-button {
   background-color: none !important;
   border-radius: 0 0 0 0 !important;
   border-bottom : 1px solid $app-grey-text !important;
 }
+
 
 .segment-button.segment-activated {
   background-color: white !important;
@@ -31,6 +29,7 @@ ion-segment-button.message-tabs {
   padding: 0;
   height: 100px;
   margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .date {
@@ -79,8 +78,12 @@ ion-col.message {
 
 .per-client {
   align-items: center;
+  margin-bottom: 25px !important;
 }
 
+.seperator {
+  border-bottom : 1px solid $app-grey !important;
+}
 
 @media only screen and (max-width: 650px) {
   .message-list {
