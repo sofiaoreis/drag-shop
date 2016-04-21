@@ -11,7 +11,7 @@
   }
 }
 
-ion-segment-button {
+ion-segment-button.message-tabs {
   border:none !important;
   color: black !important;
 }
@@ -28,23 +28,45 @@ ion-segment-button {
   border-bottom : 2px solid $app-blue !important;
 }
 
-ion-col {
-  padding: 5px 0 0 0 !important;
-  margin-bottom: 60px;
+.message-item {
+  padding: 0;
+  height: 100px;
+  margin-bottom: 50px;
 }
 
-ion-col.date {
+.date {
+  padding: 5px 0 0 0 !important;
+  margin-bottom: 60px;
   margin-right: 30px;
   color: $app-grey-text;
   text-align: center;
 }
 
 ion-col.message {
-  //margin-left: 3%;
+  padding: 5px 0 0 0 !important;
+  margin-bottom: 60px;
 }
 
 .client-name {
   margin-top: 0 !important;
+  font-weight: bold;
+}
+
+.client-pic {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("http://a1.files.biography.com/image/upload/c_fit,cs_srgb,dpr_1.0,h_1200,q_80,w_1200/MTE1ODA0OTcxOTg1MDQ1MDA1.jpg");
+    background-size: 50px 50px;
+
+    padding: 5px 0 0 0 !important;
+    margin-right: 30px;
+}
+
+.per-client {
+  align-items: center;
 }
 
 
@@ -54,5 +76,8 @@ ion-col.message {
     padding-left: 5%;
     padding-right: 5%;
     height: 100%;
+  }
+  ion-col.date {
+    display: none;
   }
 }
