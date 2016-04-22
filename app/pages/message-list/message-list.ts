@@ -15,7 +15,7 @@ import {MaxLengthPipe} from '../../pipes/messages/limit-messages'
 })
 export class MessageListPage {
   messages: Message[];
-  conversations: Array<{id: number, messages: Message[]}> = [];
+  conversations: Array<{id: number, name: string, messages: Message[]}> = [];
   clients: any;
   messagesTrigger: string;
 
@@ -56,7 +56,8 @@ export class MessageListPage {
       });
 
       if(!found) {
-        this.conversations.push({id: otherPersonId, messages: [x]});
+        let clientName = new ClientNamePipe().transform(otherPersonId, new Array(this.clients));
+        this.conversations.push({id: otherPersonId, name: clientName, messages: [x]});
       }
 
     });
@@ -67,13 +68,15 @@ export class MessageListPage {
   //navigate to the conversation page from the selected message
   itemTapped(item) {
 
-    let otherPersonId = (item.from_id === 1) ? item.to_id : item.from_id;
-    let conversation = this.conversations.filter(x => x.id === otherPersonId)[0].messages;
-    let clientName = new ClientNamePipe().transform(item, new Array(this.clients));
+    let otherPersonId = item;
+    let conversation = this.conversations.filter(x => x.id === otherPersonId)[0];
+
+    console.log(otherPersonId);
+    console.log(conversation.name);
 
     this.nav.push(MessagesPage, {
-      messages: conversation,
-      clientName: clientName
+      messages: conversation.messages,
+      clientName: conversation.name
     });
   }
 
