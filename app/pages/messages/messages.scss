@@ -1,0 +1,73 @@
+.messages {
+  position: relative;
+  padding: 5%;
+
+  .title {
+    ion-icon {
+      float: left;
+    }
+    h5 {
+      margin-left: 25px;
+    }
+  }
+
+  .message-received {
+    padding: 25px;
+    border-radius: 0px 20px 20px 20px;
+    background-color: $app-grey;
+    width: 40%;
+    height: 100%;
+    position:relative;
+    margin-bottom: 25px;
+
+    small {
+      color: $app-grey-text;
+    }
+    @media only screen and (min-width: 650px) {
+      &:before {
+        content: '';
+        position: absolute;
+        height: 150%;
+        width: 2px;
+        background: #DDDDDD;
+        left: 125%;
+        transform: translateY(-25px);
+      }
+    }
+    @media only screen and (max-width: 650px) {
+      width: 70%;
+    }
+
+  }
+
+  .message-sent {
+    padding: 25px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: $app-chat-blue;
+    color: white;
+    width: 40%;
+    margin-left: 60%;
+    position:relative;
+
+    margin-bottom: 25px;
+
+    @media only screen and (min-width: 650px) {
+      &:before {
+        content: '';
+        position: absolute;
+        height: 150%;
+        width: 2px;
+        background: #DDDDDD;
+        left: -25%;
+        transform: translateY(-25px);
+      }
+    }
+    @media only screen and (max-width: 650px) {
+      width: 70%;
+      margin-left: 30%;
+    }
+
+
+  }
+
+}
