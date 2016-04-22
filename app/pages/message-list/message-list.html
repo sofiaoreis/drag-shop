@@ -33,10 +33,10 @@
             {{message | dateCalendar}}
           </ion-col>
           <ion-col class="message">
-            <h6 class="client-name"> {{ message | clientName:clients }} </h6>
+            <h6 class="client-name"> {{ message.from_id | clientName:clients }} </h6>
             {{ message.content | maxLength:100 }}
             <br>
-            <a (click)="itemTapped(message)">see all conversation</a>
+            <a (click)="itemTapped(message.from_id)">see all conversation</a>
           </ion-col>
 
         </ion-row>
@@ -52,7 +52,7 @@
             <div width-10 class="client-pic">
             </div>
             <ion-col>
-              <h6 class="client-name" (click)="itemTapped(conversation.messages[0])"> {{ (conversation.messages | receivedMessages)[0] | clientName:clients }} </h6>
+              <h6 class="client-name" (click)="itemTapped(conversation.id)"> {{ conversation.name }} </h6>
               <ion-icon name="mail"></ion-icon>     send a message
             </ion-col>
           </ion-row>
@@ -68,10 +68,10 @@
             {{message | dateCalendar}}
           </ion-col>
           <ion-col class="message">
-            <h6 class="client-name"> {{ message | clientName:clients }} </h6>
+            <h6 class="client-name"> {{ message.from_id | clientName:clients }} </h6>
             {{ message.content | maxLength:100 }}
             <br>
-            <a (click)="itemTapped(message)">see all conversation</a>
+            <a (click)="itemTapped(message.from_id)">see all conversation</a>
           </ion-col>
 
         </ion-row>

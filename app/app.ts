@@ -9,7 +9,10 @@ import {MessageListPage} from "./pages/message-list/message-list";
 
 @App({
   templateUrl: 'build/app.html',
-  config: {}, // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {
+    backButtonText: '',
+    backButtonIcon: 'md-arrow-round-back'
+  }, // http://ionicframework.com/docs/v2/api/config/Config/
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
