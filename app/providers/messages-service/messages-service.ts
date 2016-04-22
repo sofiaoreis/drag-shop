@@ -10,7 +10,7 @@ export class MessagesService {
     messagesUrl: string;
     clientsUrl: string;
     constructor(private http: Http, platform: Platform) {
-      if(platform.is('android')){
+      if(platform.is('android') && platform.is('cordova')){
         this.messagesUrl = '/android_asset/www/messages.json';
         this.clientsUrl = '/android_asset/www/clients.json'
       }
