@@ -1,3 +1,4 @@
+
 .custom {
   background-color:  rgba(63, 64, 65, 0.1) !important; /* This sets the background color*/
   position: absolute;
@@ -93,4 +94,24 @@ ion-avatar img {
    width: auto;
    max-width: 170px;
    max-height: 170px;
+
+ion-title {
+  padding: 0 !important;
+}
+
+
+ion-navbar {
+  button {
+    color: $app-blue !important;
+  }
+  .toolbar-title {
+    float: left;
+    padding: 0 !important;
+    color: $app-blue !important;
+    text-align: left;
+  }
+}
+
+.ios ion-navbar ion-title {
+  padding-left: 55px !important;
 }

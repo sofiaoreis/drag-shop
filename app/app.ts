@@ -4,16 +4,18 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-
+import {HTTP_PROVIDERS} from 'angular2/http'
+import {MessageListPage} from "./pages/message-list/message-list";
 
 @App({
   templateUrl: 'build/app.html',
   config: {
     backButtonText: '',
     menuType: 'overlay',
-    backButtonIcon: 'ion-md-arrow-back'
+    backButtonIcon: 'md-arrow-round-back'
+  }, // http://ionicframework.com/docs/v2/api/config/Config/
+  providers: [HTTP_PROVIDERS]
 
-  }
 })
 class MyApp {
   // make HelloIonicPage the root (or first) page
@@ -37,7 +39,7 @@ class MyApp {
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: ListPage, icon: 'stats' },
-      { title: 'Client Messages', component: CustomPage, icon: 'chatbubbles' },
+      { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
