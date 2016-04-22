@@ -1,17 +1,25 @@
 .custom {
-  background-color:  rgba(63, 64, 65, 0.5) !important; /* This sets the background color*/
+  background-color:  rgba(63, 64, 65, 0.1) !important; /* This sets the background color*/
+  position: absolute;
+  z-index: 1;
+}
+.background {
 
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
 }
 
 
  .toolbar-background
  {
-   background-color:  rgba(63, 64, 65, 1);
+   background-color:  rgba(63, 64, 65, 0.1);
 }
 
 .menuback
 {
-
 
 }
 
@@ -53,17 +61,17 @@ div.item-inner
 
 .item{
   color: #FFFFFF;
-  background-color: #3f4041;
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 5px;
 
-
+  background-color: rgba(0,0,0,0.1);
 }
 
 .show-menu
 {
-    background-color: #3f4041;
+    //background-color: #3f4041;
+    background-color: rgba(0,0,0,0.1);
 }
 
 #userinfo
@@ -71,7 +79,9 @@ div.item-inner
   padding-top: 50px;
   padding-bottom: 20px;
   width: 100%;
-  background-color:  rgba(63, 64, 65, 1);
+  //background-color:  rgba(63, 64, 65, 1);
+  background-color: rgba(0,0,0,0.1);
+
 }
 
 ion-avatar img {
