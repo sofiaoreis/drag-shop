@@ -15,7 +15,6 @@ import {MessageListPage} from "./pages/message-list/message-list";
     backButtonIcon: 'md-arrow-round-back'
   }, // http://ionicframework.com/docs/v2/api/config/Config/
   providers: [HTTP_PROVIDERS]
-
 })
 class MyApp {
   // make HelloIonicPage the root (or first) page
