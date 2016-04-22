@@ -1,11 +1,19 @@
 .custom {
   background-color:  rgba(63, 64, 65, 0.5) !important; /* This sets the background color*/
- }
+
+}
+
 
  .toolbar-background
  {
    background-color:  rgba(63, 64, 65, 1);
- }
+}
+
+.menuback
+{
+
+
+}
 
 button.item:not([detail-none]) .item-inner, a.item:not([detail-none]) .item-inner, .item[detail-push] .item-inner
 {
@@ -35,6 +43,7 @@ div.item-inner
 {
   padding-top: 30px;
   padding-bottom: 20px;
+
 }
 
 *{
@@ -47,6 +56,9 @@ div.item-inner
   background-color: #3f4041;
   padding-top: 10px;
   padding-left: 30px;
+  padding-bottom: 5px;
+
+
 }
 
 .show-menu
@@ -59,10 +71,11 @@ div.item-inner
   padding-top: 50px;
   padding-bottom: 20px;
   width: 100%;
+  background-color:  rgba(63, 64, 65, 1);
 }
 
 ion-avatar img {
-  
+
     max-width: 70px;
     max-height: 70px;
     border-radius: 5.8rem;

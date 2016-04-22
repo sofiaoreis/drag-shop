@@ -8,7 +8,12 @@ import {CustomPage} from './pages/custom-page/custom-page'
 
 @App({
   templateUrl: 'build/app.html',
-  config: {}
+  config: {
+    backButtonText: '',
+    menuType: 'overlay',
+    backButtonIcon: 'ion-md-arrow-back'
+
+  }
 })
 class MyApp {
   // make HelloIonicPage the root (or first) page
