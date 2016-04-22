@@ -4,23 +4,21 @@
   z-index: 1;
 }
 .background {
-
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
-  filter: blur(5px);
+  background-color:  rgba(63, 64, 65, 1);
+   -webkit-filter: blur(100px);
+-moz-filter: blur(100px);
+-o-filter: blur(100px);
+-ms-filter: blur(100px);
+filter: blur(100px);
+
 }
 
-
- .toolbar-background
- {
-   background-color:  rgba(63, 64, 65, 0.1);
-}
-
-.menuback
-{
-
+.show-backdrop {
+    opacity: 0 !important;
 }
 
 button.item:not([detail-none]) .item-inner, a.item:not([detail-none]) .item-inner, .item[detail-push] .item-inner
@@ -38,7 +36,7 @@ ion-list > .item:last-child, ion-list > ion-item-sliding:last-child .item
 }
 
 hr{
-  background-color: rgba(255, 255,255, 0.5);
+  background-color: rgba(255, 255,255, 1);
   width: 80%;
 }
 
@@ -51,7 +49,6 @@ div.item-inner
 {
   padding-top: 30px;
   padding-bottom: 20px;
-
 }
 
 *{
@@ -64,24 +61,19 @@ div.item-inner
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 5px;
-
-  background-color: rgba(0,0,0,0.1);
+  background-color:  rgba(63, 64, 65, 0);
 }
 
 .show-menu
 {
-    //background-color: #3f4041;
-    background-color: rgba(0,0,0,0.1);
+      background-color:  rgba(63, 64, 65, 0.8);
 }
 
 #userinfo
 {
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 20px;
   width: 100%;
-  //background-color:  rgba(63, 64, 65, 1);
-  background-color: rgba(0,0,0,0.1);
-
 }
 
 ion-avatar img {
@@ -94,4 +86,11 @@ ion-avatar img {
 .item p
 {
   color: white;
+}
+
+#shoplogo ion-avatar img{
+  height: auto;
+   width: auto;
+   max-width: 150px;
+   max-height: 150px;
 }
