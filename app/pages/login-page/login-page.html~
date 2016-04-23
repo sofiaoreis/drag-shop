@@ -17,7 +17,7 @@
 
 <ion-col> </ion-col>
 
-<ion-col width-66>
+<ion-col width-50>
 <ion-list>
 
   <ion-item>
@@ -33,14 +33,12 @@
 </ion-list>
 
 <button class="button1" full>
-<ion-icon name:"home"> </ion-icon>
-Left Icon
 SIGN IN 
 </button>
 
 <button class="button2" full outline >CONNECT WITH FACEBOOK</button>
 
-<button class="button3" full clear >forgot your password?</button>
+<button class="button3 button-block" full clear >forgot your password?</button>
 
 <button class="button4" full clear >Terms and conditions</button>
 

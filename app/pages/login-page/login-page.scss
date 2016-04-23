@@ -3,17 +3,39 @@ $appgrey: #939598;
 $applightgrey: #E9EAEB;
 
 
-.login {
+.login{
+background-image: url(../../img/imagem2.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
 
 }
 
 .logo{
-height: 50%;	
+height: 50%;
+text-align: center;
+position: relative;
+}
+
+img{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+max-width: 20%;
+border-radius: 80%;
+
 }
 
 .form{
 height: 50%;
-text-color: white;
+margin-right: 10px;
+
+}
+
+.button-full.button-outline{
+border-left-width: 1px;
+border-right-width: 1px;
 }
 
 .button1{
@@ -22,9 +44,7 @@ text-color: white;
 
 .button2{
 color: white;
-background-color: $appgrey;
 border-color: white;
-
 }
 
 .button3{
