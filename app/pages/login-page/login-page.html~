@@ -5,7 +5,7 @@
 
 <ion-col> </ion-col>
 <ion-col width-33> 
-<img src="../img/logo.svq"/>
+<img src="img/logo.svg"/>
 </ion-col> 
 <ion-col> </ion-col>	
 
