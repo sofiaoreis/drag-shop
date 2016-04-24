@@ -39,19 +39,20 @@
 }
 
 .button[disabled] {
-    opacity: 0.6;
+    opacity: 1;
     cursor: default !important;
     pointer-events: none;
 }
 
+.button:hover:not(.disable-hover) {
+    opacity: 1;
+    text-decoration: none;
+}
+
 .error-box {
-  border: 1px solid #dc3847;
-  border-radius: 3px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, .35);
   color: #dc3847;
   display: inline-block;
   vertical-align: middle;
-  background-color: white;
   margin-top: 5px;
   padding: 2px;
 }
