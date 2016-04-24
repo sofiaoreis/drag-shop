@@ -5,7 +5,7 @@
 
 <ion-col> </ion-col>
 <ion-col width-33> 
-<img src="img/logo.png"/>
+<img src="../img/logo.svq"/>
 </ion-col> 
 <ion-col> </ion-col>	
 
@@ -38,7 +38,7 @@ SIGN IN
 
 <button class="button2" full outline >CONNECT WITH FACEBOOK</button>
 
-<button class="button3 button-block" full clear >forgot your password?</button>
+<button class="button3" full clear >forgot your password?</button>
 
 <button class="button4" full clear >Terms and conditions</button>
 

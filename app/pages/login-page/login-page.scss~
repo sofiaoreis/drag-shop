@@ -6,8 +6,10 @@ $applightgrey: #E9EAEB;
 .login{
 background-image: url(../../img/imagem2.png);
 background-repeat: no-repeat;
-background-size: contain;
 background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
 
 }
 
@@ -21,7 +23,6 @@ img{
 position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-50%,-50%);
 max-width: 20%;
 border-radius: 80%;
 
@@ -29,11 +30,11 @@ border-radius: 80%;
 
 .form{
 height: 50%;
-margin-right: 10px;
+background-color: transparent;
 
 }
 
-.button-{
+.button-full.button-outline{
 border-left-width: 1px;
 border-right-width: 1px;
 }
