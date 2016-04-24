@@ -1,0 +1,29 @@
+.order-list {
+  padding-top: 2%;
+  padding-left: 17%;
+  padding-right: 17%;
+  height: 100%;
+}
+
+.tab-selector {
+  .spacer {
+    height: 40px;
+  }
+}
+
+ion-segment-button.order-tabs {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  border-bottom : 1px solid $app-grey-text !important;
+}
+
+.segment-button.segment-activated {
+  background-color: white !important;
+  border-bottom : 2px solid $app-blue !important;
+}
+
+hr{
+  color: black !important;
+}
