@@ -6,6 +6,7 @@ import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {OrdersTrackingPage} from "./pages/orders-tracking/orders-tracking";
 
 @App({
   templateUrl: 'build/app.html',
@@ -39,7 +40,7 @@ class MyApp {
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: ListPage, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
-      { title: 'Order Tracking', component: ListPage, icon: 'basket' },
+      { title: 'Order Tracking', component: OrdersTrackingPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
       { title: 'Logout', component: ListPage, icon: 'power' }
