@@ -4,16 +4,34 @@
     margin: 20px 0;
     line-height: 22px;
     font-size: 16px;
+
   }
 }
 
-#row {
-  padding-top: 10%
-  
+.content{
+  width: 70%;
+  margin: 0 auto;
 }
 
+#row1 {
+  padding-top: 7%;
+  padding-left: 30%;
+
+}
+
+#row3 {
+  //width: 30%;
+  //margin: 0 auto;
+}
+
+
+
 #col {
-  padding-top: 9.5%;
+  padding-top: 7.5%;
+}
+
+#col1 {
+  padding-top: 22%;
 }
 
 #title {
@@ -28,7 +46,7 @@
 
 .status {
   // text-align: center;
-  color: #939598;
+  color: #000000;
   //font-weight: bold;
   font-size: 110%;
   height: 30px;
@@ -48,9 +66,10 @@
 
 #status {
   color: #5BBBBF;
+  font-weight: bold;
   font-size: 80%;
-  padding-bottom: 7%;
-  padding-left: 9%;
+  //padding-bottom: 7%;
+  padding-left: 6.5%;
 }
 
 .icon-links {
@@ -58,7 +77,7 @@
 }
 
 #text {
-  color: #939598;
+  color: #000000;
 }
 
 .icons {
@@ -69,13 +88,25 @@
 }
 
 .user-bold {
-  color: #939598;
+  color: #000000;
   font-weight: bold;
   font-size: 110%;
 }
 
 .order {
-  color: #939598;
-//  font-weight: bold;
-  padding-bottom: 8%
+  color: #000000;
+  //background: green;
+}
+
+#cenas ion-row:nth-child(odd){
+  background: #E9EAEB;
+}
+
+.payment {
+  padding-top: 4%;
+}
+
+.label {
+  color: #5BBBBF;
+  font-weight: bold;
 }
