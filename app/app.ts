@@ -2,8 +2,10 @@ import 'es6-shim';
 import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
+import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
+import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
 
@@ -17,7 +19,6 @@ import {MessageListPage} from "./pages/message-list/message-list";
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
@@ -35,6 +36,7 @@ class MyApp {
     ]
     // set our app's pages
     this.pages = [
+      { title: 'Order Details', component: OrderDetails, icon: 'home'},
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: ListPage, icon: 'stats' },
