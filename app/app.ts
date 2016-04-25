@@ -4,13 +4,9 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-<<<<<<< HEAD
 import {OrderDetails} from './pages/order-details/order-details'
-
-=======
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
->>>>>>> master
 
 @App({
   templateUrl: 'build/app.html',
@@ -40,12 +36,7 @@ class MyApp {
     ]
     // set our app's pages
     this.pages = [
-<<<<<<< HEAD
-      { title: 'Hello Ionic', component: HelloIonicPage },
-        { title: 'Order Details', component: OrderDetails },
-      { title: 'My First List', component: ListPage },
-      { title: 'Custom Page', component: CustomPage }
-=======
+      { title: 'Order Details', component: OrderDetails, icon: 'home'},
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: ListPage, icon: 'stats' },
@@ -54,7 +45,6 @@ class MyApp {
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
       { title: 'Logout', component: ListPage, icon: 'power' }
->>>>>>> master
     ];
   }
 
