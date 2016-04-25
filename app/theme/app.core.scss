@@ -1,5 +1,8 @@
 // http://ionicframework.com/docs/v2/theming/
-
+$app-blue: #5BBBBF;
+$app-grey: #E9EAEB;
+$app-chat-blue: #8CD3D7;
+$app-grey-text: #939598;
 
 // App Shared Imports
 // --------------------------------------------------
@@ -18,6 +21,7 @@ $app-grey-text: #939598;
 
 @import "../pages/custom-page/custom-page";
 
+@import "../pages/account-recovery/account-recovery";
 
 @import "../pages/order-details/order-details";
 
