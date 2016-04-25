@@ -19,16 +19,9 @@ import {MessageListPage} from "./pages/message-list/message-list";
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-<<<<<<< HEAD
-  // make AccountRecoveryPage the root (or first) page
-  rootPage: any = AccountRecoveryPage;
-  pages: Array<{title: string, component: any}>;
-=======
-  // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
->>>>>>> master
 
   constructor(
     private app: IonicApp,
