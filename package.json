@@ -1,4 +1,4 @@
-{
+  {
   "dependencies": {
     "angular2": "2.0.0-beta.6",
     "es6-promise": "3.0.2",
@@ -12,13 +12,15 @@
   },
   "devDependencies": {
     "del": "2.2.0",
+    "font-awesome": "^4.6.1",
     "gulp": "3.9.1",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-typescript": "^1.0.0",
     "ionic-gulp-fonts-copy": "^1.0.0",
     "ionic-gulp-html-copy": "^1.0.0",
     "ionic-gulp-sass-build": "^1.0.0",
-    "ionic-gulp-scripts-copy": "^1.0.0"
+    "ionic-gulp-scripts-copy": "^1.0.0",
+    "moment": "^1.0.0"
   },
   "name": "drag_shop",
   "description": "drag_shop: An Ionic project",
