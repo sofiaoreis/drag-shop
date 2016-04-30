@@ -24,14 +24,22 @@ position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%,-50%);
-max-width: 15%;
+max-width: 20%;
 border-radius: 80%;
 
 }
 
+.form1{
+border-top: 0;
+background-color: transparent;
+}
+
+.form2{
+background-color: transparent;
+}
+
 .form{
 height: 50%;
-background-color: transparent;
 
 }
 
