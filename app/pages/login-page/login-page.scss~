@@ -30,7 +30,8 @@ border-radius: 80%;
 }
 
 .form1{
-border-top: none;
+padding-left: 0;
+border-top: 0;
 background-color: transparent;
 }
 

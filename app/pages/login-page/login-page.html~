@@ -18,18 +18,14 @@
 <ion-col> </ion-col>
 
 <ion-col width-50>
-<ion-list>
 
-  <ion-item class="form1">
+  <ion-item full class="form1">
     <ion-input type="text" placeholder="E-mail address"></ion-input>
   </ion-item>
 
-  <ion-item class="form2">
+  <ion-item full class="form2">
     <ion-input type="password" placeholder="Password"></ion-input>
   </ion-item>
-
-</ion-list>
-
 
 <button class="button1" full>
 SIGN IN 
