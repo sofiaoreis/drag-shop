@@ -3,7 +3,7 @@
   <button menuToggle>
     <ion-icon id="back-button" name="arrow-round-back"></ion-icon>
   </button>
-  <h3 id="title">Ana Margarida Pereira</h3>
+  <h3 id="title">{{order.client}}</h3>
 </ion-navbar>
 
 
@@ -11,7 +11,7 @@
 <div class="content">
   <ion-row id="row1" responsive-sm>
     <ion-col>
-      <ion-col class="status" ><ion-icon id="status-icon" name="md-radio-button-on"></ion-icon><b>Status:</b> in traffic</ion-col>
+      <ion-col class="status" ><ion-icon id="status-icon" name="md-radio-button-on"></ion-icon><b>Status:</b> {{order.status}}</ion-col>
       <ion-col id="status">change status</ion-col>
     </ion-col>
   </ion-row>
@@ -25,12 +25,12 @@
 
    <ion-col >
      <ion-col id="col1">
-       <ion-col class="user-bold">Ana Margarida Pereira</ion-col>
-       <ion-col class="icon-links" id="text">Vila Nova de Gaia</ion-col>
+       <ion-col class="user-bold">{{order.client}}</ion-col>
+       <ion-col class="icon-links" id="text">{{order.city}}</ion-col>
      </ion-col>
      <ion-col>
        <ion-col class="user-bold">Address</ion-col>
-       <ion-col class="icon-links" id="text">Vaz Caminha street, 98 Vila Nova de Gaia</ion-col>
+       <ion-col class="icon-links" id="text">{{order.address}}</ion-col>
      </ion-col>
      <ion-col>
        <ion-col class="user-bold">Scheduled delivery in</ion-col>
@@ -40,7 +40,7 @@
 
    <ion-col id="col">
      <ion-col class="payment"><b>Total: </b>€16.90</ion-col>
-     <ion-col class="payment"><b>Payment: </b> PayPal</ion-col>
+     <ion-col class="payment"><b>Payment: </b> {{order.payment}}</ion-col>
    </ion-col>
  </ion-row>
 

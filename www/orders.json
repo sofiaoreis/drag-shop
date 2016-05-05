@@ -1,0 +1,6 @@
+[
+  {"id":1, "client": "Ana Margarida Pereira", "city": "Vila Nova de Gaia", "payment": "PayPal", "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia", "status":"In traffic", "products":[1,2,3,4,5]
+  },
+  {"id":2, "client": "Zé", "city": "Porto", "payment": "Money", "address": "Vaz de Caminha Street, 15 Vila Nova de Gaia", "status":"Delivered", "products":[4,5]
+  }
+]

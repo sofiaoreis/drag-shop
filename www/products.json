@@ -1,0 +1,7 @@
+[
+  {"id":1,"name":"Apples", "weight":"2Kg","price":3.38,"processed":false},
+  {"id":2,"name":"Lettuce", "weight":"250gr","price":3.38,"processed":false},
+  {"id":3,"name":"Tomato", "weight":"1.5Kg","price":3.38,"processed":false},
+  {"id":4,"name":"Rice", "weight":"4Kg","price":3.38,"processed":false},
+  {"id":5,"name":"Chicken Steak", "weight":"2Kg","price":3.38,"processed":false}
+]
