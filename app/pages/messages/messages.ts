@@ -18,6 +18,7 @@ import {Keyboard} from 'ionic-native';
 })
 export class MessagesPage {
   messages: Message[];
+  groupedMessages: Array<{day: string, messages:Array<Message>}>;
   clientName: string;
   @ViewChild(Content) content: Content;
 
@@ -25,6 +26,8 @@ export class MessagesPage {
     this.messages = navParams.get('messages');
     this.messages = this.messages.reverse();
     this.clientName = navParams.get('clientName');
+
+    this.groupByDay(this.messages);
 
     //scroll page to bottom on keyboard show
     Keyboard.onKeyboardShow().subscribe(
@@ -44,6 +47,26 @@ export class MessagesPage {
     this.content.scrollTo(0, dimensions.scrollBottom, 0);
   }
 
+  groupByDay(messages) {
+    let newArr = [],
+        days = {},
+        newItem, i, j, cur;
+
+    for (i = 0, j = messages.length; i < j; i++) {
+        cur = messages[i];
+
+        let day = moment(new Date(cur.date)).format("MMM Do YYYY");
+
+        if (!(day in days)) {
+            days[day] = {"day": day, "messages": []};
+            newArr.push(days[day]);
+        }
+        days[day].messages.push(cur);
+    }
+
+    this.groupedMessages = newArr;
+}
+
   sendMessage(value: string) {
     let newMessage = new Message();
     newMessage.content = value;
@@ -51,6 +74,8 @@ export class MessagesPage {
     newMessage.to_id = 5;
     newMessage.date = moment().toISOString();
     this.messages.push(newMessage);
+
+    this.groupByDay(this.messages);
 
     this.scrollBottom();
 

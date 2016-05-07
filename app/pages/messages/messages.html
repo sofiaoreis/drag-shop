@@ -16,31 +16,37 @@
     </div>
 
     <div class="chat">
-      <div *ngFor="#message of messages">
+
+      <div *ngFor="#day of groupedMessages">
 
         <div class="timeline-seperator">
           <ion-icon name="radio-button-on"></ion-icon>
           <!-- <img src="/img/tutorial2.svg" alt=""> -->
         </div>
 
+        <div *ngFor="#message of day.messages">
 
-        <div class="message-baloon-containter">
-          <div *ngIf="message.from_id != 1" class="message-received">
-            {{message.content}}
-            <br>
-            <br>
-            <small>{{message | dateChat}}</small>
+          <div class="message-baloon-containter">
+            <div *ngIf="message.from_id != 1" class="message-received">
+              {{message.content}}
+              <br>
+              <br>
+              <small>{{message | dateChat}}</small>
+            </div>
+
+            <div *ngIf="message.from_id === 1" class="message-sent">
+              {{message.content}}
+              <br>
+              <br>
+              <small>{{message | dateChat}}</small>
+            </div>
           </div>
 
-          <div *ngIf="message.from_id === 1" class="message-sent">
-            {{message.content}}
-            <br>
-            <br>
-            <small>{{message | dateChat}}</small>
-          </div>
         </div>
 
       </div>
+
+
 
       <div class="timeline-seperator">
         <ion-icon name="radio-button-on"></ion-icon>
