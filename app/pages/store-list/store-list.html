@@ -1,28 +1,103 @@
 <ion-navbar *navbar align-title="left">
     <button menuToggle>
-        <ion-icon id="back-button" name="arrow-round-back"></ion-icon>
+        <ion-icon name="arrow-round-back"></ion-icon>
     </button>
-    <h3 id="title">My Stores</h3>
+    <ion-title>My Stores</ion-title>
 </ion-navbar>
 
 <ion-content padding class="getting-started">
     <div class="content">
 
-        
-<ion-col >
-    <ion-col id="col1">
-        <ion-col class="user-bold">Shopping Alpha </ion-col>
-        <ion-col class="icon-links" id="text">Vila Nova de Gaia, Portugal</ion-col>
-    </ion-col>
-    <ion-col>
-        <ion-col class="user-bold">Shopping Beta</ion-col>
-        <ion-col class="icon-links" id="text">Porto, Portugal</ion-col>
-    </ion-col>
-    <ion-col>
-        <ion-col class="user-bold">Shopping Ceta</ion-col>
-        <ion-col class="icon-links" id="text">Madrid, Espanha</ion-col>
-    </ion-col>
-</ion-col>
+        <ion-row class="user-bolder">Choose your store</ion-row>
+        <p></p>
+
+        <ion-list>
+
+            <ion-item>
+
+                <ion-row class="stores">
+
+                    <ion-col width-10>
+
+                        <ion-thumbnail item-left>
+                             <img src="img/appicon.png">
+                         </ion-thumbnail>
+
+                    </ion-col >
+
+                    <ion-col width-80>
+                        <ion-row class="user-bolds">Shop1</ion-row>
+                        <ion-row id="text">Here and there</ion-row>
+
+                    </ion-col>
+
+                    <ion-col width-10>
+                         <button secondary large outline  fab>
+                            <ion-icon clear large item-right name="checkmark"></ion-icon>
+                          </button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-row class="stores">
+
+                    <ion-col width-10>
+
+                        <ion-thumbnail item-left>
+                            <img src="img/appicon.png">
+                        </ion-thumbnail>
+
+                    </ion-col >
+
+                    <ion-col width-80>
+                        <ion-row class="user-bolds">Shop2</ion-row>
+                        <ion-row id="text">Portugal</ion-row>
+
+                    </ion-col>
+
+                    <ion-col width-10>
+                        <button secondary large outline  fab>
+                            <ion-icon clear item-right name="checkmark" ></ion-icon>
+                        </button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-item>
+
+            <ion-item>
+
+                <ion-row class="stores">
+
+                    <ion-col width-10>
+
+                        <ion-thumbnail item-left>
+                            <img src="img/appicon.png">
+                        </ion-thumbnail>
+
+                    </ion-col >
+
+                    <ion-col width-80>
+                        <ion-row class="user-bolds">Shop3</ion-row>
+                        <ion-row id="text">Spain</ion-row>
+
+                    </ion-col>
+
+                    <ion-col width-10>
+                        <button secondary large outline  fab>
+                            <ion-icon clear large item-right name="checkmark"></ion-icon>
+                        </button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-item>
+
+        </ion-list>
 
     </div>
 </ion-content>
