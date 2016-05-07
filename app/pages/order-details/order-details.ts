@@ -13,6 +13,9 @@ export class OrderDetails {
   }
 
   processProduct(product: Product){
-    this.order.products[product.id].processed = true;
+    if(this.order.products[product.id].processed == false)
+      this.order.products[product.id].processed = true;
+    else
+      this.order.products[product.id].processed = false;
   }
 }
