@@ -4,9 +4,11 @@ import {Message} from '../../models/message'
 import {DateChatPipe} from '../../pipes/messages/date'
 import * as moment from 'moment'
 import {Autosize} from '../../directives/autosize';
+
+//Imports for better user experience on mobile
 import {ViewChild} from 'angular2/core';
 import {Content} from 'ionic-angular';
-import {Events} from 'ionic-angular';
+import {Keyboard} from 'ionic-native';
 
 @Page({
   templateUrl: 'build/pages/messages/messages.html',
@@ -19,15 +21,21 @@ export class MessagesPage {
   clientName: string;
   @ViewChild(Content) content: Content;
 
-  constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService, public events: Events) {
+  constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService) {
     this.messages = navParams.get('messages');
     this.messages = this.messages.reverse();
     this.clientName = navParams.get('clientName');
 
-    events.subscribe('native.keyboardshow', () => {
-      this.scrollBottom();
-    });
+    //scroll page to bottom on keyboard show
+    Keyboard.onKeyboardShow().subscribe(
+      data => {this.scrollBottom();}
+    );
 
+  }
+
+  //scrollBottom when the user enters the page.
+  onPageDidEnter() {
+    this.scrollBottom();
   }
 
   scrollBottom() {
@@ -43,6 +51,9 @@ export class MessagesPage {
     newMessage.to_id = 5;
     newMessage.date = moment().toISOString();
     this.messages.push(newMessage);
+
+    this.scrollBottom();
+
     //TODO: change this to post to API and to the above code on the sucess function.
     /*
     this.messagesService.sendMessage(value).subscribe(

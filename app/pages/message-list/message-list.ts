@@ -67,12 +67,8 @@ export class MessageListPage {
   //TODO: change the hard-coded value
   //navigate to the conversation page from the selected message
   itemTapped(item) {
-
     let otherPersonId = item;
     let conversation = this.conversations.filter(x => x.id === otherPersonId)[0];
-
-    console.log(otherPersonId);
-    console.log(conversation.name);
 
     this.nav.push(MessagesPage, {
       messages: conversation.messages,
