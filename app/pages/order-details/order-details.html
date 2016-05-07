@@ -53,36 +53,21 @@
      <ion-col>Weight</ion-col>
      <ion-col>Product</ion-col>
      <ion-col>Price</ion-col>
+     <ion-col></ion-col>
    </ion-row>
-   <ion-row responsive sm id="row3">
-     <ion-col>2kg</ion-col>
-     <ion-col>Apples</ion-col>
-     <ion-col>3.38€</ion-col>
+
+   <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
+     <ion-col>{{product.weight}}{{product.units}}</ion-col>
+     <ion-col>{{product.name}}</ion-col>
+     <ion-col>{{product.price}}€</ion-col>
+     <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
    </ion-row>
-   <ion-row responsive sm id="row3">
-     <ion-col>250g</ion-col>
-     <ion-col>Lettuce</ion-col>
-     <ion-col>3.38€</ion-col>
-   </ion-row>
-   <ion-row responsive sm id="row3">
-     <ion-col>1.5kg</ion-col>
-     <ion-col>Tomato</ion-col>
-     <ion-col>3.38€</ion-col>
-   </ion-row>
-   <ion-row responsive sm id="row3">
-     <ion-col>4kg</ion-col>
-     <ion-col>Rice</ion-col>
-     <ion-col>3.38€</ion-col>
-   </ion-row>
-     <ion-row responsive sm id="row3">
-       <ion-col>2kg</ion-col>
-       <ion-col>Chicken Steak</ion-col>
-       <ion-col>3.38€</ion-col>
-   </ion-row>
+
    <ion-row responsive-sm>
      <ion-col class="label">Total: </ion-col>
      <ion-col></ion-col>
-     <ion-col>16.90€</ion-col>
+     <ion-col>€</ion-col>
+     <ion-col></ion-col>
    </ion-row>
  </ion-col>
 
