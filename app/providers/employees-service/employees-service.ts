@@ -6,18 +6,18 @@ import 'rxjs/Rx';
 import {Observable} from 'rxjs/Rx'
 
 @Injectable()
-export class EmployeeService {
+export class EmployeesService {
     employeeUrl: string;
     constructor(private http: Http, platform: Platform) {
       if(platform.is('android') && platform.is('cordova')){
-        this.employeeUrl = '/android_asset/www/employee.json';
+        this.employeeUrl = '/android_asset/www/employees.json';
       }
       else{
-        this.employeeUrl = '/employee.json';
+        this.employeeUrl = '/employees.json';
       }
     }
 
-    getOrders() {
+    getEmployees() {
       return this.http.get(this.employeeUrl).map(res => <Employee[]> res.json());
     }
 }

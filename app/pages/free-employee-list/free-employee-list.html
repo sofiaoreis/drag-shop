@@ -2,9 +2,13 @@
   <button menuToggle>
     <ion-icon id="back-button" name="arrow-round-back"></ion-icon>
   </button>
-  <h3>Ola</h3>
+  <ion-title>Available Employees</ion-title>
 </ion-navbar>
 
 <ion-content>
-  <h2>Employee</h2>
+  <ion-list>
+    <div *ngFor="#employee of employees">
+      <div *ngIf="!employee.busy"> {{employee.first_name}}</div>
+    </div>
+  </ion-list>
 </ion-content>
