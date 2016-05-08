@@ -8,6 +8,7 @@ import {CustomPage} from './pages/custom-page/custom-page'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {ClientListPage} from "./pages/client-list/client-list";
 
 @App({
   templateUrl: 'build/app.html',
@@ -41,6 +42,7 @@ class MyApp {
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: ListPage, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
+      { title: 'Clients', component: ClientListPage, icon: 'contacts' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
