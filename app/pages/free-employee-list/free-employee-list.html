@@ -6,9 +6,9 @@
 </ion-navbar>
 
 <ion-content>
-  <ion-list>
+  <div class="employees-list">
     <div *ngFor="#employee of employees">
-      <div *ngIf="!employee.busy"> {{employee.first_name}}</div>
+      <button class="submit-button" *ngIf="!employee.busy" (click)=addEmployee(employee) block> {{employee.first_name}} {{employee.last_name}}</button>
     </div>
-  </ion-list>
+  </div>
 </ion-content>
