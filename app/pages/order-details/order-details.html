@@ -20,7 +20,8 @@
    <ion-col id="col">
      <ion-col class="icon-links" id="text"><ion-icon name="eye" class="icons"></ion-icon>client profile</ion-col>
      <ion-col class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons"></ion-icon>send a message</ion-col>
-     <ion-col class="icon-links" id="text"> <ion-icon name="heart-outline" class="icons"></ion-icon>client wishlist</ion-col>
+     <ion-col class="icon-links" id="text"><ion-icon name="heart-outline" class="icons"></ion-icon>client wishlist</ion-col>
+
    </ion-col>
 
    <ion-col >
@@ -69,16 +70,12 @@
      <ion-col>€</ion-col>
      <ion-col></ion-col>
    </ion-row>
+   <br>
+   <button *ngIf="!order.employee" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
+   <div *ngIf="order.employee" class="user-bold">Allocated to {{order.employee}}</div>
  </ion-col>
 
  </ion-row>
-
  </div>
-
-
-
-
-
 </div>
-
 </ion-content>

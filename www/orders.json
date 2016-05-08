@@ -40,7 +40,8 @@
     "units": "Kg",
     "price": 3.38,
     "processed": false
-  }]
+  }],
+  "employee": "José Manuel"
 }, {
   "id": 2,
   "client": "Zé",
@@ -62,5 +63,6 @@
     "units": "Kg",
     "price": 3.38,
     "processed": false
-  }]
+  }],
+  "employee": ""
 }]

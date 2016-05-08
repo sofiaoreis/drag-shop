@@ -7,7 +7,8 @@ export class Order {
   payment: string;
   address: string;
   status: string;
-  products: number[];
+  products: Product[];
+  employee: string;
 
   constructor() {
       //this.content = obj.content;
