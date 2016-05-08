@@ -1,6 +1,8 @@
-import {Page, NavController, NavParams, ViewController} from 'ionic-angular';
+import {Page, NavController, NavParams} from 'ionic-angular'
 import {Client} from '../../models/client'
 import {ClientsService} from '../../providers/clients-service/clients-service'
+import {ClientProfilePage} from "../client-profile/client-profile"
+
 
 @Page({
   templateUrl: 'build/pages/client-list/client-list.html',
@@ -24,15 +26,11 @@ export class ClientListPage {
     );
   }
 
-  //TODO: change the hard-coded value
-  //navigate to the conversation page from the selected message
+  //navigate to the client profile page from the selected client
   itemTapped(item) {
-    /*
-    this.nav.push(ClientPage, {
-      client: {}
+    this.nav.push(ClientProfilePage, {
+      client: item
     });
-    */
-
   }
 
 }

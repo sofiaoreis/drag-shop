@@ -1,0 +1,19 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+  </button>
+<ion-title>{{client.first_name}} {{client.last_name}}</ion-title>
+</ion-navbar>
+
+<ion-content padding>
+
+  <ion-row>
+    <ion-col width-33>
+        <div id="profile-pic"></div>
+        <h3>{{client.first_name}} {{client.last_name}}</h3>
+        <h3>{{client.gender}}</h3>
+        <h3>{{client.email}}</h3>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

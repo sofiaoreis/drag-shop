@@ -10,6 +10,7 @@ import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
 import {ClientListPage} from "./pages/client-list/client-list";
 
+
 @App({
   templateUrl: 'build/app.html',
   config: {
