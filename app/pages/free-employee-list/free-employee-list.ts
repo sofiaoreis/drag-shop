@@ -11,6 +11,7 @@ import {OrderDetails} from '../order-details/order-details'
 export class FreeEmployeeList {
   order: Order;
   employees: Employee[];
+  employeeId: number;
 
   constructor(private nav: NavController, navParams: NavParams, private employeesService: EmployeesService) {
     this.order = navParams.get('order');
@@ -23,7 +24,17 @@ export class FreeEmployeeList {
   }
 
   addEmployee(employee: Employee){
-    employee.busy = true;
+    if (!this.order.employee){
+      employee.busy = true;
+      this.employeeId = employee.id;
+    }
+    else{
+      console.log(this.employeeId);
+      employee.busy = true;
+      this.employees[this.employeeId-1].busy = false;
+      this.employeeId = employee.id;
+    }
+
     let alocatedEmployee = employee.first_name + " " + employee.last_name;
     this.order.employee = alocatedEmployee;
     this.nav.push(OrderDetails,{order: this.order});
