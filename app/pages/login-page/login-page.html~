@@ -19,11 +19,12 @@
 
 <ion-col width-50>
 
-  <ion-item full class="form1">
+  <ion-item class="form1">
+    <ion-icon name="heart" icon-left> </ion-icon>
     <ion-input type="text" placeholder="E-mail address"></ion-input>
   </ion-item>
 
-  <ion-item full class="form2">
+  <ion-item class="form2">
     <ion-input type="password" placeholder="Password"></ion-input>
   </ion-item>
 
