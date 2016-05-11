@@ -22,7 +22,7 @@ position: relative;
 img{
 position: absolute;
 left: 50%;
-top: 50%;
+top: 65%;
 transform: translate(-50%,-50%);
 max-width: 20%;
 border-radius: 80%;
@@ -65,4 +65,12 @@ border-color: white;
 
 .button4{
  color: $appgrey;
+}
+
+.botoes1{
+	margin-top:20px;
+}
+
+.botoes2{
+	top:10px;
 }
