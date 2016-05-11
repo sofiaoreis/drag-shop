@@ -4,7 +4,7 @@
   "city": "Vila Nova de Gaia",
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
-  "status": "In traffic",
+  "status": "Pending",
   "products": [{
     "id": 0,
     "name": "Apples",
@@ -41,7 +41,7 @@
     "price": 3.38,
     "processed": false
   }],
-  "employee": "José Manuel"
+  "employee": ""
 }, {
   "id": 2,
   "client": "Zé",

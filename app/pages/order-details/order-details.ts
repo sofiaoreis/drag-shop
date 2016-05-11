@@ -24,4 +24,8 @@ export class OrderDetails {
     console.log(this.order);
     this.nav.push(FreeEmployeeList,{order: this.order});
   }
+
+  editAllocateEmploye(employee){
+    console.log(employee);
+  }
 }

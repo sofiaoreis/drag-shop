@@ -12,9 +12,15 @@ export class FreeEmployeeList {
   order: Order;
   employees: Employee[];
   employeeId: number;
+  //employeeName: string;
 
   constructor(private nav: NavController, navParams: NavParams, private employeesService: EmployeesService) {
     this.order = navParams.get('order');
+
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    /*if(!navParams.get('employee'))
+      this.employeeName = navParams.get('employee'); */
+    //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
     employeesService.getEmployees().subscribe(
       employees => {this.employees = employees;},

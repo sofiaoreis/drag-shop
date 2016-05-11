@@ -71,8 +71,8 @@
      <ion-col></ion-col>
    </ion-row>
    <br>
-   <button *ngIf="!order.employee" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
-   <div *ngIf="order.employee" class="user-bold">Allocated to {{order.employee}}</div>
+   <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
+   <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
  </ion-col>
 
  </ion-row>
