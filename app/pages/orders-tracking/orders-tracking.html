@@ -9,7 +9,7 @@
 
     <div class="order-list">
       <div class="tab-selector">
-        <ion-segment>
+        <ion-segment  [(ngModel)]="ordersTrigger" [attr.light]="isAndroid ? '' : null">
           <ion-segment-button class="order-tabs" value="all">
             All
           </ion-segment-button>
@@ -27,19 +27,24 @@
           </ion-segment-button>
         </ion-segment>
 
-        <div class="tab-selector">
+        <div class="spacer"></div>
+      </div>
+
+      <div class="tab-selector">
           <ion-segment>
               <ion-col>Status</ion-col>
               <ion-col>Client</ion-col>
               <ion-col>Order</ion-col>
 
             </ion-segment>
-            <hr>
         </div>
 
-        <div class="spacer"></div>
+          <div [ngSwitch]="ordersTrigger">
+              <div *ngSwitchWhen="'all'">
+              </div>
+          </div>
       </div>
-    </div>
+
 
 
 
