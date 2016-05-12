@@ -8,6 +8,7 @@ import {CustomPage} from './pages/custom-page/custom-page'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {Statistics} from "./pages/statistics/statistics";
 
 @App({
   templateUrl: 'build/app.html',
@@ -39,7 +40,7 @@ class MyApp {
       { title: 'Order Details', component: OrderDetails, icon: 'home'},
       { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
-      { title: 'Statistics', component: ListPage, icon: 'stats' },
+      { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
