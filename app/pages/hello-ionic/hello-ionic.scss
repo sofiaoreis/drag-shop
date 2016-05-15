@@ -7,3 +7,151 @@
   }
 
 }
+
+.content{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tab-selector {
+  .spacer {
+    height: 40px;
+  }
+}
+
+
+.spacerow {
+  height: 80px;
+}
+
+ion-segment-button.stat-tabs {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  border-bottom : 1px solid $app-grey-text !important;
+}
+
+
+.segment-button.segment-activated {
+  background-color: white !important;
+  border-bottom : 2px solid $app-blue !important;
+}
+
+.progressbar {
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+.progressbar > div {
+  background-color: $app-blue;
+  width: 40%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.user-bolder {
+  color: #000000;
+  font-weight: bold;
+  font-size: 200%;
+  padding-top: 30px;
+  margin-left: 0px;
+}
+
+.user-bolds {
+  color: #000000;
+  font-weight: bold;
+  font-size: 110%;
+  padding-top: 10px;
+}
+
+
+
+#text {
+  color: #000000;
+}
+
+.circle-red {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: red;
+}
+
+.custom-icon {
+  font-size: 64px;
+  color : white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textboldred {
+  color: red;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-orange {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: orange;
+}
+
+
+#textboldorange {
+  color: orange;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-blue {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: midnightblue;
+}
+
+
+
+#textboldblue {
+  color: midnightblue;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-purple {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: purple;
+}
+
+
+#textboldpurple {
+  color: purple;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+
+
+.customcol {
+  background-color: #e6e6e6;
+}
