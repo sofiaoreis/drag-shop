@@ -1,0 +1,73 @@
+.settings{
+	width: 100%;
+	height:100%;
+}
+
+
+.top{
+	height: 15%;	
+
+}
+
+.middle{
+	
+	height: 50%;
+
+}
+
+.col-left{
+	max-width: 27% !important;
+
+}
+
+.col-mid1{
+	max-width: 27% !important;
+	background-color: #343434;
+}
+
+.col-mid2{
+	max-width: 18% !important;
+	background-color: white;
+	border: solid 1px;
+	height: 100% !important;
+	padding: 0;
+}
+
+.col-right{
+	
+	max-width: 28% !important;
+}
+
+.colors{
+	width: 100%;
+	height: 35%;
+	text-align: center;
+	margin: auto;
+}
+
+.square{
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	margin-top: 10%;
+	display: inline-block;
+	background-color: red;
+}
+
+.customs{
+	padding: 0;
+	height: 33.3%;
+	border-bottom: solid 1px;
+	margin-top: 0 !important;
+}
+
+.customs2{
+	padding: 0;
+	height: 33.3%;
+	border-bottom: 0;
+	margin-top: 0 !important;
+}
+
+
+
+

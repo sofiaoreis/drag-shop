@@ -5,6 +5,7 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page';
 import{LoginPage} from './pages/login-page/login-page';
+import{AppSettings} from './pages/app-settings/app-settings';
 
 
 @App({
@@ -27,6 +28,7 @@ class MyApp {
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'Login', component: LoginPage },
+      { title: 'App Settings', component: AppSettings },
       { title: 'My First List', component: ListPage },
       { title: 'Custom Page', component: CustomPage }
     ];
