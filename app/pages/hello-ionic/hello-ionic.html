@@ -10,6 +10,8 @@
 <ion-content padding class="getting-started">
     <div class="content">
 
+        <ion-row class="spacerow"></ion-row>
+
         <div>
             <ion-row>
                 <ion-col class="customcol">
@@ -25,7 +27,7 @@
                     </ion-col>
                     </ion-row>
                 </ion-col>
-                <ion-col width-10></ion-col>
+                <div class="customcol2"></div>
                 <ion-col class="customcol">
                     <ion-row>
                         <ion-col width-33>
@@ -57,7 +59,7 @@
                         </ion-col>
                     </ion-row>
                 </ion-col>
-                <ion-col width-10></ion-col>
+                <div class="customcol2"></div>
                 <ion-col class="customcol">
                     <ion-row>
                         <ion-col width-33>
@@ -85,10 +87,10 @@
       <ion-col>
         <ion-segment [(ngModel)]="mostTrigger" [attr.light]="isAndroid ? '' : null">
           <ion-segment-button class="stat-tabs" value="visited">
-            Most visited
+            <h1 class="textsegbar">Most visited</h1>
           </ion-segment-button>
           <ion-segment-button class="stat-tabs" value="purchased">
-            Most purchased
+            <h1 class="textsegbar">Most purchased</h1>
           </ion-segment-button>
         </ion-segment>
 
@@ -100,24 +102,26 @@
   <div [ngSwitch]="mostTrigger">
     <div *ngSwitchWhen="'visited'">
       <ion-list>
+          <div *ngFor="#mostp of mostpurchased; #i = index">
         <ion-item>
-          <ion-row>
+          <ion-row >
             <ion-col width-10 id="text">
-              1.
+              {{i+1}}
             </ion-col>
             <ion-col width-20 id="text">
-              Prod 1
+              {{mostp.name}}
             </ion-col>
-            <ion-col width-50>
-              <div class="progressbar">
-                <div></div>
+            <ion-col>
+              <div class="progressbar2"  >
+                <div [ngStyle]="{'width':mostp.percentage}" ></div>
               </div>
             </ion-col>
-            <ion-col id="text2">
-              454
+            <ion-col width-10 id="textblue">
+              {{mostp.numberofpurchases}}
             </ion-col>
           </ion-row>
         </ion-item>
+              </div>
       </ion-list>
 
       <br>
@@ -126,24 +130,26 @@
 
     <div *ngSwitchWhen="'purchased'">
       <ion-list>
-        <ion-item>
-          <ion-row>
-            <ion-col width-10 id="text" >
-              1.
-            </ion-col>
-            <ion-col width-20 id="text">
-              Nome diferente.
-            </ion-col>
-            <ion-col width-50 >
-              <div class="progressbar">
-                <div></div>
-              </div>
-            </ion-col>
-            <ion-col id="text2">
-              454
-            </ion-col>
-          </ion-row>
-        </ion-item>
+          <div *ngFor="#mostp of mostpurchased; #i = index">
+              <ion-item>
+                  <ion-row>
+                      <ion-col width-10 id="text">
+                          {{i+1}}
+                      </ion-col>
+                      <ion-col width-20 id="text">
+                          {{mostp.name}}
+                      </ion-col>
+                      <ion-col >
+                          <div class="progressbar2"  >
+                              <div [ngStyle]="{'width':mostp.percentage}" ></div>
+                          </div>
+                      </ion-col>
+                      <ion-col width-10 id="textblue">
+                          {{mostp.numberofpurchases}}
+                      </ion-col>
+                  </ion-row>
+              </ion-item>
+          </div>
       </ion-list>
 
       <br>

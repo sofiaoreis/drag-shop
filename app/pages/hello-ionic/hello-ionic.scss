@@ -15,13 +15,18 @@
 
 .tab-selector {
   .spacer {
-    height: 40px;
+    height: 60px;
   }
 }
 
+ion-item.item {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
 
+}
 .spacerow {
-  height: 80px;
+  height: 60px;
 }
 
 ion-segment-button.stat-tabs {
@@ -38,16 +43,16 @@ ion-segment-button.stat-tabs {
   border-bottom : 2px solid $app-blue !important;
 }
 
-.progressbar {
+.progressbar2 {
   background-color: white;
   border-radius: 13px;
   border: 1px solid grey;
   padding: 0px;
 }
 
-.progressbar > div {
+.progressbar2 > div {
   background-color: $app-blue;
-  width: 40%;
+  //width: 40%;
   height: 20px;
   border-radius: 10px;
 }
@@ -67,6 +72,17 @@ ion-segment-button.stat-tabs {
   padding-top: 10px;
 }
 
+
+.textsegbar {
+  padding-top: 10px;
+  color: #000000;
+  font-size: medium;
+}
+
+#textblue {
+  color: $app-blue;
+  text-align: right;
+}
 
 
 #text {
@@ -150,7 +166,9 @@ ion-segment-button.stat-tabs {
   padding-top: 5px;
 }
 
-
+.customcol2 {
+  width: 5%;
+}
 
 .customcol {
   background-color: #e6e6e6;
