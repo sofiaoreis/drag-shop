@@ -3,7 +3,7 @@ export class Store {
     name: string;
     country: string;
     city: string;
-    image: string;
+
 
     constructor() {
         //this.content = obj.content;

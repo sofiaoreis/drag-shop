@@ -23,6 +23,9 @@ var MessagesService = (function () {
         //return this.http.get(this.url).map(res => <Message[]> res.json());
         return Rx_1.Observable.forkJoin(this.http.get(this.messagesUrl).map(function (res) { return res.json(); }), this.http.get(this.clientsUrl).map(function (res) { return res.json(); }));
     };
+    MessagesService.prototype.sendMessage = function (message) {
+        return this.http.post(this.messagesUrl, JSON.stringify(message));
+    };
     MessagesService = __decorate([
         core_1.Injectable()
     ], MessagesService);

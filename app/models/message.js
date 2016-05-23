@@ -1,6 +1,5 @@
 var Message = (function () {
     function Message() {
-        //this.content = obj.content;
     }
     return Message;
 })();

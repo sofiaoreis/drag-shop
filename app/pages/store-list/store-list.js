@@ -5,12 +5,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var ionic_angular_1 = require('ionic-angular');
+var store_service_1 = require('../../providers/store-service/store-service');
 var StoreList = (function () {
-    function StoreList() {
+    function StoreList(nav, navParams, StoreService) {
+        this.nav = nav;
+        this.StoreService = StoreService;
     }
+    StoreList.prototype.onPageDidEnter = function () {
+        var _this = this;
+        //get all stores
+        this.StoreService.getStoreList().subscribe(function (data) {
+            _this.stores = data;
+            console.log(_this.stores);
+        }, function (err) { console.log(err); }, function () { console.log("Finished fetching random crap"); });
+    };
     StoreList = __decorate([
         ionic_angular_1.Page({
-            templateUrl: 'build/pages/store-list/store-list.html'
+            templateUrl: 'build/pages/store-list/store-list.html',
+            providers: [store_service_1.StoreService]
         })
     ], StoreList);
     return StoreList;

@@ -13,9 +13,13 @@
   margin: 0 auto;
 }
 
-.user-bolder {
+.spacerow {
+  height: 60px;
+}
+
+.user-title {
   color: #000000;
-  font-weight: bold;
+  //font-weight: bold;
   font-size: 150%;
   padding-top: 5px;
   margin-left: 30px;
@@ -39,6 +43,8 @@ ion-item:hover {
   border-color: lightgray;
 }
 
+
+
 .ion-row.stores {
   padding-top: 0px;
   padding-left: 0px;
@@ -46,16 +52,7 @@ ion-item:hover {
 
 }
 
-
-.item img {
-  height: 80px;
-  width: 80px;
-  float: left;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-}
-
 .button {
-  font-size: 200%;
+  //text-decoration: underline;  <-- fica mal
+  font-size: 150%;
 }
