@@ -27,6 +27,6 @@ export class DateChatPipe implements PipeTransform {
   transform(message: Message) : string {
     if (!message) { return; }
 
-    return moment(new Date(message.date)).format("hh:mm a");
+    return moment(new Date(message.date)).format("MMM Do YYYY, hh:mm a");
   }
 }

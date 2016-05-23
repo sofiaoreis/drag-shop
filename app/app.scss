@@ -99,6 +99,7 @@ ion-navbar {
   button {
     color: $app-blue !important;
   }
+
   .toolbar-title {
     float: left;
     padding: 0 !important;
@@ -109,4 +110,8 @@ ion-navbar {
 
 .ios ion-navbar ion-title {
   padding-left: 55px !important;
+}
+
+.md .toolbar-content {
+  padding-top: 20px !important;
 }
