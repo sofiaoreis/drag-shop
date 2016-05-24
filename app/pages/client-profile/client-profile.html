@@ -55,7 +55,7 @@
               PROFILE
             </div>
 
-            <div class="segment-content">
+            <div class="segment-content" id="profile-general">
               <div>
                 Username: {{client.email}}
                 <br>
@@ -91,10 +91,168 @@
       </div>
 
       <div *ngSwitchWhen="'profile'">
-          <div id="profile-pic"></div>
-          <h3>{{client.first_name}} {{client.last_name}}</h3>
-          <h3>{{client.gender}}</h3>
-          <h3>{{client.email}}</h3>
+
+        <div class="profile-segment">
+          <div class="segment-title">
+            PROFILE
+          </div>
+
+          <div class="segment-content">
+            <div>
+              <b>LAST LOGIN</b>: May 8, 2016
+
+              <br>
+              <br>
+              <br>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    USERNAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    FIRST NAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.first_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    LAST NAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.last_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    EMAIL
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    GENDER
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.gender}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    DATE OF BIRTH
+                  </div>
+                  <div class="segment-table-row-value">
+                    cenas
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="table-seperator">
+                HOME ADDRESS
+              </div>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ADDRESS LINE 1
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    CITY
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.first_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    STATE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.last_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ZIP CODE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="table-seperator">
+                ALTERNATE SHIPPING ADDRESS
+              </div>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ADDRESS LINE 1
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    CITY
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.first_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    STATE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.last_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ZIP CODE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <div *ngSwitchWhen="'pendingOrders'">
@@ -126,8 +284,6 @@
       </div>
     </ion-col>
 
-
   </ion-row>
-
 
 </ion-content>
