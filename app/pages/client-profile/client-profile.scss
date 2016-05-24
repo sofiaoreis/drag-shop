@@ -51,12 +51,21 @@ ion-scroll {
     flex-wrap: wrap;
     align-items: flex-start;
     width: 70%;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     * {
       flex-grow: 1;
     }
+  }
+
+  .segment-border {
+    border-left: 1px solid $app-grey;
+    border-right: 1px solid $app-grey;
+    border-bottom: 1px solid $app-grey;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px;
   }
 
   #profile-general {

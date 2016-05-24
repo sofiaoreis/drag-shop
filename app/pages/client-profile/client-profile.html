@@ -256,31 +256,51 @@
       </div>
 
       <div *ngSwitchWhen="'pendingOrders'">
-          <div id="profile-pic"></div>
-          <h3>{{client.first_name}} {{client.last_name}}</h3>
-          <h3>{{client.gender}}</h3>
-          <h3>{{client.email}}</h3>
+        <div class="profile-segment">
+          <div class="segment-title">
+            PENDING ORDERS
+          </div>
+
+          <div class="segment-content segment-border">
+            No pending orders.
+          </div>
+        </div>
       </div>
 
       <div *ngSwitchWhen="'orderStatus'">
-          <div id="profile-pic"></div>
-          <h3>{{client.first_name}} {{client.last_name}}</h3>
-          <h3>{{client.gender}}</h3>
-          <h3>{{client.email}}</h3>
+        <div class="profile-segment">
+          <div class="segment-title">
+            ORDER STATUS AND HISTORY
+          </div>
+
+          <div class="segment-content segment-border">
+            No history yet.
+          </div>
+        </div>
       </div>
 
       <div *ngSwitchWhen="'paymentInfo'">
-          <div id="profile-pic"></div>
-          <h3>{{client.first_name}} {{client.last_name}}</h3>
-          <h3>{{client.gender}}</h3>
-          <h3>{{client.email}}</h3>
+        <div class="profile-segment">
+          <div class="segment-title">
+            PAYMENT INFORMATION
+          </div>
+
+          <div class="segment-content segment-border">
+            Cenas aqui.
+          </div>
+        </div>
       </div>
 
       <div *ngSwitchWhen="'wishlist'">
-          <div id="profile-pic"></div>
-          <h3>{{client.first_name}} {{client.last_name}}</h3>
-          <h3>{{client.gender}}</h3>
-          <h3>{{client.email}}</h3>
+        <div class="profile-segment">
+          <div class="segment-title">
+            WISHLIST
+          </div>
+
+          <div class="segment-content segment-border">
+            No wishlist yet.
+          </div>
+        </div>
       </div>
     </ion-col>
 
