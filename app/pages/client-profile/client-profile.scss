@@ -14,3 +14,45 @@
   margin-right: 30px;
 
 }
+
+.profile-menu {
+  flex-wrap: wrap !important;
+}
+
+.profile-segment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .segment-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+    background-color: $app-chat-blue;
+    //font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .segment-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 70%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    * {
+      flex-grow: 1;
+    }
+  }
+}

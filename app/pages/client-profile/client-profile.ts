@@ -6,10 +6,15 @@ import {Client} from '../../models/client'
 })
 export class ClientProfilePage {
   client: Client;
+  profileTrigger: string;
 
   constructor(private nav: NavController, navParams: NavParams) {
     this.client = navParams.get('client');
+    this.profileTrigger = "general";
   }
 
+  goToProfile() {
+    this.profileTrigger = "profile";
+  }
 
 }

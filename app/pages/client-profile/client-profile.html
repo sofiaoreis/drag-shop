@@ -8,11 +8,125 @@
 
   <ion-row>
     <ion-col width-33>
-        <div id="profile-pic"></div>
-        <h3>{{client.first_name}} {{client.last_name}}</h3>
-        <h3>{{client.gender}}</h3>
-        <h3>{{client.email}}</h3>
+      <ion-segment [(ngModel)]="profileTrigger" [attr.light]="isAndroid ? '' : null" class="profile-menu">
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="general">
+            General
+          </ion-segment-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="profile">
+            Profile
+          </ion-segment-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="pendingOrders">
+            Pending orders
+          </ion-segment-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="orderStatus">
+            Order status and History
+          </ion-segment-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="paymentInfo">
+            Payment Information
+          </ion-segment-button>
+        </ion-row>
+
+        <ion-row>
+          <ion-segment-button class="message-tabs" value="wishlist">
+            Wishlist
+          </ion-segment-button>
+        </ion-row>
+
+      </ion-segment>
     </ion-col>
+
+    <ion-col [ngSwitch]="profileTrigger">
+      <div *ngSwitchWhen="'general'">
+          <div class="profile-segment">
+            <div class="segment-title">
+              PROFILE
+            </div>
+
+            <div class="segment-content">
+              <div>
+                Username: {{client.email}}
+                <br>
+                Name: {{client.first_name}} {{client.last_name}}
+                <br>
+                <br>
+                <a (click)="goToProfile()">VIEW ALL PROFILE</a>
+              </div>
+            </div>
+
+            <div class="segment-title">
+              ORDER STATUS
+            </div>
+
+            <div class="segment-content">
+              <div>
+                Pending orders
+                <br>
+                <small>No pending orders.</small>
+              </div>
+              <div>
+                Order and history
+                <br>
+                <small>No order history yet.</small>
+              </div>
+            </div>
+
+            <div class="segment-title">
+              PAYMENT HISTORY
+            </div>
+
+          </div>
+      </div>
+
+      <div *ngSwitchWhen="'profile'">
+          <div id="profile-pic"></div>
+          <h3>{{client.first_name}} {{client.last_name}}</h3>
+          <h3>{{client.gender}}</h3>
+          <h3>{{client.email}}</h3>
+      </div>
+
+      <div *ngSwitchWhen="'pendingOrders'">
+          <div id="profile-pic"></div>
+          <h3>{{client.first_name}} {{client.last_name}}</h3>
+          <h3>{{client.gender}}</h3>
+          <h3>{{client.email}}</h3>
+      </div>
+
+      <div *ngSwitchWhen="'orderStatus'">
+          <div id="profile-pic"></div>
+          <h3>{{client.first_name}} {{client.last_name}}</h3>
+          <h3>{{client.gender}}</h3>
+          <h3>{{client.email}}</h3>
+      </div>
+
+      <div *ngSwitchWhen="'paymentInfo'">
+          <div id="profile-pic"></div>
+          <h3>{{client.first_name}} {{client.last_name}}</h3>
+          <h3>{{client.gender}}</h3>
+          <h3>{{client.email}}</h3>
+      </div>
+
+      <div *ngSwitchWhen="'wishlist'">
+          <div id="profile-pic"></div>
+          <h3>{{client.first_name}} {{client.last_name}}</h3>
+          <h3>{{client.gender}}</h3>
+          <h3>{{client.email}}</h3>
+      </div>
+    </ion-col>
+
+
   </ion-row>
 
 
