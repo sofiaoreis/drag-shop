@@ -6,44 +6,33 @@
 
 <ion-content padding>
 
-  <ion-row>
-    <ion-col width-33>
+  <ion-row class="profile-containter">
+    <ion-col width-33 class="profile-sidebar">
       <ion-segment [(ngModel)]="profileTrigger" [attr.light]="isAndroid ? '' : null" class="profile-menu">
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="general">
-            General
-          </ion-segment-button>
-        </ion-row>
 
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="profile">
-            Profile
-          </ion-segment-button>
-        </ion-row>
+        <ion-segment-button class="profile-menu-button" value="general">
+          General
+        </ion-segment-button>
 
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="pendingOrders">
-            Pending orders
-          </ion-segment-button>
-        </ion-row>
+        <ion-segment-button class="profile-menu-button" value="profile">
+          Profile
+        </ion-segment-button>
 
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="orderStatus">
-            Order status and History
-          </ion-segment-button>
-        </ion-row>
+        <ion-segment-button class="profile-menu-button" value="pendingOrders">
+          Pending orders
+        </ion-segment-button>
 
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="paymentInfo">
-            Payment Information
-          </ion-segment-button>
-        </ion-row>
+        <ion-segment-button class="profile-menu-button" value="orderStatus">
+          Order status and History
+        </ion-segment-button>
 
-        <ion-row>
-          <ion-segment-button class="message-tabs" value="wishlist">
-            Wishlist
-          </ion-segment-button>
-        </ion-row>
+        <ion-segment-button class="profile-menu-button" value="paymentInfo">
+          Payment Information
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="wishlist">
+          Wishlist
+        </ion-segment-button>
 
       </ion-segment>
     </ion-col>

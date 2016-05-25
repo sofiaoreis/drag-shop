@@ -15,12 +15,40 @@
 
 }
 
-ion-scroll {
-  height: 500px;
+@media only screen and (min-width: 650px) {
+  .profile-menu {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    ion-segment-button {
+      width: 100% !important;
+    }
+
+  }
 }
 
-.profile-menu {
-  flex-wrap: wrap !important;
+@media only screen and (max-width: 650px) {
+  .profile-containter {
+    display: block;
+  }
+
+  .profile-sidebar {
+    flex: none !important;
+    max-width: none !important;
+  }
+
+  .segment-title {
+    width: 90% !important;
+  }
+
+  .segment-content {
+    width: 90% !important;
+  }
+
+  ion-segment-button.profile-menu-button {
+    text-align: center !important;
+    word-wrap: break-word !important;
+  }
 }
 
 .profile-segment {
@@ -109,4 +137,21 @@ ion-scroll {
   padding-bottom: 10px;
   padding-left: 15px;
   font-weight: bold;
+}
+
+ion-segment-button.profile-menu-button {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  text-align: left;
+}
+
+.profile-menu-button.segment-button.segment-activated {
+  background-color: $app-grey !important;
+}
+
+.profile-sidebar {
+  padding-left: 10px;
+  padding-right: 3%;
 }
