@@ -145,7 +145,7 @@
                     DATE OF BIRTH
                   </div>
                   <div class="segment-table-row-value">
-                    cenas
+                    {{client.birthday}}
                   </div>
                 </div>
 
@@ -158,10 +158,10 @@
               <div class="segment-table">
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ADDRESS LINE 1
+                    ADDRESS LINE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.email}}
+                    {{client.address.address_line}}
                   </div>
                 </div>
 
@@ -170,7 +170,7 @@
                     CITY
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.first_name}}
+                    {{client.address.city}}
                   </div>
                 </div>
 
@@ -179,7 +179,7 @@
                     STATE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.last_name}}
+                    {{client.address.state}}
                   </div>
                 </div>
 
@@ -188,7 +188,7 @@
                     ZIP CODE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.email}}
+                    {{client.address.zip_code}}
                   </div>
                 </div>
 
@@ -201,10 +201,10 @@
               <div class="segment-table">
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ADDRESS LINE 1
+                    ADDRESS LINE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.email}}
+                    {{client.alternate_address.address_line}}
                   </div>
                 </div>
 
@@ -213,7 +213,7 @@
                     CITY
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.first_name}}
+                    {{client.alternate_address.city}}
                   </div>
                 </div>
 
@@ -222,7 +222,7 @@
                     STATE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.last_name}}
+                    {{client.alternate_address.state}}
                   </div>
                 </div>
 
@@ -231,7 +231,7 @@
                     ZIP CODE
                   </div>
                   <div class="segment-table-row-value">
-                    {{client.email}}
+                    {{client.alternate_address.zip_code}}
                   </div>
                 </div>
 
