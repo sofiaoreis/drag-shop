@@ -8,6 +8,7 @@ import {CustomPage} from './pages/custom-page/custom-page'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {ManagmentList} from './pages/managment-list/managment-list';
 
 @App({
   templateUrl: 'build/app.html',
@@ -44,7 +45,8 @@ class MyApp {
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
-      { title: 'Logout', component: ListPage, icon: 'power' }
+      { title: 'Logout', component: ListPage, icon: 'power' },
+      { title: 'Managment List', component: ManagmentList, icon: 'home'}
     ];
   }
 
