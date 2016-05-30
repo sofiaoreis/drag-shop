@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-<ion-menu [content]="content">
-
-  <ion-toolbar>
-    <ion-title>Pages</ion-title>
-  </ion-toolbar>
-
-  <ion-content>
-    <ion-list>
-      <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
-</ion-menu>
-
-<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
-=======
-
 <ion-menu  [content]="content">
   <ion-content class="custom">
       <ion-item id="userinfo">
@@ -49,4 +29,3 @@
 </ion-menu>
 
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
->>>>>>> master
