@@ -1,0 +1,14 @@
+<ion-navbar *navbar align-title="left">
+  <button menuToggle>
+    <ion-icon id="back-button" name="arrow-round-back"></ion-icon>
+  </button>
+  <ion-title>Available Employees</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <div class="employees-list">
+    <div *ngFor="#employee of employees">
+      <button class="submit-button" *ngIf="!employee.busy" (click)=addEmployee(employee) block> {{employee.first_name}} {{employee.last_name}}</button>
+    </div>
+  </div>
+</ion-content>
