@@ -9,15 +9,10 @@ import {OrderList} from './pages/order-list/order-list'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
-<<<<<<< HEAD
-<<<<<<< HEAD
 import {Statistics} from "./pages/statistics/statistics";
-=======
-=======
 import{LoginPage} from './pages/login-page/login-page';
->>>>>>> master
 import {StoreList} from "./pages/store-list/store-list";
->>>>>>> master
+
 
 @App({
   templateUrl: 'build/app.html',
