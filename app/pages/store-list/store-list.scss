@@ -1,0 +1,58 @@
+.getting-started {
+
+  p {
+    margin: 0px;
+    line-height: 22px;
+    font-size: 16px;
+
+  }
+}
+
+.content{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.spacerow {
+  height: 60px;
+}
+
+.user-title {
+  color: #000000;
+  //font-weight: bold;
+  font-size: 150%;
+  padding-top: 5px;
+  margin-left: 30px;
+}
+
+.user-bolds {
+  color: #000000;
+  font-weight: bold;
+  font-size: 110%;
+  padding-top: 10px;
+}
+
+#text {
+  color: #000000;
+  padding-top: 10px;
+}
+
+ion-item:hover {
+
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+
+
+.ion-row.stores {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+
+}
+
+.button {
+  //text-decoration: underline;  <-- fica mal
+  font-size: 150%;
+}

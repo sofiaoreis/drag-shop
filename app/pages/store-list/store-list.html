@@ -1,0 +1,46 @@
+<ion-navbar *navbar align-title="left">
+    <button menuToggle>
+        <ion-icon name="arrow-round-back"></ion-icon>
+    </button>
+    <ion-title>My Stores</ion-title>
+</ion-navbar>
+
+<ion-content padding class="getting-started">
+    <div class="content">
+
+        <div class="spacerow"></div>
+
+        <ion-row class="user-title">Choose your store</ion-row>
+        <p></p>
+
+        <ion-list>
+
+            <div *ngFor="#stor of stores">
+
+            <ion-item>
+
+                <ion-row class="stores">
+
+
+                    <ion-col width-90>
+                        <ion-row class="user-bolds">{{stor.name}}</ion-row>
+                        <ion-row id="text">{{stor.country}}{{stor.city}}</ion-row>
+
+                    </ion-col>
+
+                    <ion-col width-10>
+                         <button secondary large outline  fab>
+                            <ion-icon clear item-right name="checkmark"></ion-icon>
+                          </button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-item>
+
+            </div>
+
+        </ion-list>
+
+    </div>
+</ion-content>
