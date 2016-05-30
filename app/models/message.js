@@ -1,6 +1,9 @@
 var Message = (function () {
     function Message() {
+<<<<<<< HEAD
         //this.content = obj.content;
+=======
+>>>>>>> master
     }
     return Message;
 })();
