@@ -1,3 +1,180 @@
+
+.getting-started {
+
+  p {
+    margin: 20px 0;
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+}
+
+.content{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tab-selector {
+  .spacer {
+    height: 60px;
+  }
+}
+
+ion-item.item {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+
+}
+.spacerow {
+  height: 60px;
+}
+
+ion-segment-button.stat-tabs {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  border-bottom : 1px solid $app-grey-text !important;
+}
+
+
+.segment-button.segment-activated {
+  background-color: white !important;
+  border-bottom : 2px solid $app-blue !important;
+}
+
+.progressbar2 {
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+.progressbar2 > div {
+  background-color: $app-blue;
+  //width: 40%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.user-bolder {
+  color: #000000;
+  font-weight: bold;
+  font-size: 200%;
+  padding-top: 30px;
+  margin-left: 0px;
+}
+
+.user-bolds {
+  color: #000000;
+  font-weight: bold;
+  font-size: 110%;
+  padding-top: 10px;
+}
+
+
+.textsegbar {
+  padding-top: 10px;
+  color: #000000;
+  font-size: medium;
+}
+
+#textblue {
+  color: $app-blue;
+  text-align: right;
+}
+
+
+#text {
+  color: #000000;
+}
+
+.circle-red {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: red;
+}
+
+.custom-icon {
+  font-size: 64px;
+  color : white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textboldred {
+  color: red;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-orange {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: orange;
+}
+
+
+#textboldorange {
+  color: orange;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-blue {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: midnightblue;
+}
+
+
+
+#textboldblue {
+  color: midnightblue;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.circle-purple {
+  position: relative;
+  margin: 1em auto;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: purple;
+}
+
+
+#textboldpurple {
+  color: purple;
+  font-weight: bold;
+  font-size: 300%;
+  padding-top: 5px;
+}
+
+.customcol2 {
+  width: 5%;
+}
+
+.customcol {
+  background-color: #e6e6e6;
+}
+
 .getting-started {
 
   p {

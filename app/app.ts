@@ -5,10 +5,18 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
+import {OrderList} from './pages/order-list/order-list'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+<<<<<<< HEAD
 import {ClientListPage} from "./pages/client-list/client-list";
+=======
+import {Statistics} from "./pages/statistics/statistics";
+import{LoginPage} from './pages/login-page/login-page';
+import {StoreList} from "./pages/store-list/store-list";
+import{AppSettings} from './pages/app-settings/app-settings';
+>>>>>>> master
 
 
 @App({
@@ -38,15 +46,19 @@ class MyApp {
     ]
     // set our app's pages
     this.pages = [
+
       { title: 'Order Details', component: OrderDetails, icon: 'home'},
-      { title: 'My Stores', component: HelloIonicPage, icon: 'home'},
+      { title: 'My Stores', component: StoreList, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
-      { title: 'Statistics', component: ListPage, icon: 'stats' },
+      { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
-      { title: 'App Settings', component: ListPage, icon: 'settings' },
+      { title: 'App Settings', component: AppSettings, ListPage, icon: 'cog'},
+      { title: 'Setting', component: ListPage, icon: 'settings' },
+      { title: 'Login', component: LoginPage, icon: 'power' },
+
       { title: 'Logout', component: AccountRecoveryPage, icon: 'power' }
     ];
   }

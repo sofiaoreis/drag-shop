@@ -17,9 +17,17 @@ $app-grey-text: #939598;
 
 @import "../pages/hello-ionic/hello-ionic";
 
+@import "../pages/store-list/store-list";
+
 @import "../pages/item-details/item-details";
 
 @import "../pages/custom-page/custom-page";
+
+@import "../pages/login-page/login-page";
+
+@import "../pages/app-settings/app-settings";
+
+@import '../icons/ionicons';
 
 @import "../pages/account-recovery/account-recovery";
 
@@ -29,8 +37,15 @@ $app-grey-text: #939598;
 
 @import "../pages/message-list/message-list";
 
+<<<<<<< HEAD
 @import "../pages/client-list/client-list";
 
 @import "../pages/client-profile/client-profile";
+=======
+@import "../pages/statistics/statistics";
+
+@import "../pages/free-employee-list/free-employee-list";
+
+>>>>>>> master
 
 @import "../app.scss";

@@ -1,0 +1,187 @@
+<ion-navbar *navbar align-title="left">
+<button menuToggle>
+    <ion-icon id="back-button" name="arrow-round-back"></ion-icon>
+</button>
+<h3 id="title">Statistics</h3>
+</ion-navbar>
+
+
+<ion-content padding class="getting-started">
+    <div class="content">
+
+        <div class="tab-selector">
+            <ion-segment [(ngModel)]="statTrigger" [attr.light]="isAndroid ? '' : null">
+                <ion-segment-button class="stat-tabs" value="daily">
+                    Daily
+                </ion-segment-button>
+                <ion-segment-button class="stat-tabs" value="weekly">
+                    Weekly
+                </ion-segment-button>
+                <ion-segment-button class="stat-tabs" value="monthly">
+                    Monthly
+                </ion-segment-button>
+                <ion-segment-button class="stat-tabs" value="all">
+                    All Time
+                </ion-segment-button>
+            </ion-segment>
+
+            <div class="spacer"></div>
+        </div>
+
+        <div [ngSwitch]="statTrigger">
+            <div *ngSwitchWhen="'daily'">
+                <ion-row >
+                    Insert chart1 here!
+
+                </ion-row>
+
+                <br>
+                <br>
+            </div>
+
+            <div *ngSwitchWhen="'weekly'">
+                <ion-row >
+                    Insert chart2 here!
+
+                </ion-row>
+
+                <br>
+                <br>
+            </div>
+
+            <div *ngSwitchWhen="'monthly'">
+                <ion-row >
+                    Insert chart3 here!
+
+                </ion-row>
+
+                <br>
+                <br>
+            </div>
+
+            <div *ngSwitchWhen="'all'">
+                <ion-row >
+                    Insert chart4 here!
+
+                </ion-row>
+
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div>
+            <ion-row >
+                <ion-col>
+                    <div class="circledown">
+                        <div class="circletext">Text in the circle</div>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="circletop">
+                        <div class="circletext">Text in the circle</div>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="circleleft">
+                        <div class="circletext">Text in the circle</div>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div class="circleright">
+                        <div class="circletext">Text in the circle</div>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+        </div>
+
+        <div>
+            <ion-row>
+                <ion-col>
+                    <h1>Big text here</h1>
+                </ion-col>
+                <ion-col>
+                    <h1>Big text here</h1>
+                </ion-col>
+                <ion-col>
+                    <h1>Big text here</h1>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="tab-selector">
+            <ion-row>
+                <ion-col width-67>
+
+                </ion-col>
+                <ion-col>
+            <ion-segment [(ngModel)]="mostTrigger" [attr.light]="isAndroid ? '' : null">
+                <ion-segment-button class="stat-tabs" value="visited">
+                    Most visited
+                </ion-segment-button>
+                <ion-segment-button class="stat-tabs" value="purchased">
+                    Most purchased
+                </ion-segment-button>
+            </ion-segment>
+
+            <div class="spacer"></div>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div [ngSwitch]="mostTrigger">
+            <div *ngSwitchWhen="'visited'">
+                <ion-list>
+                    <ion-item>
+                        <ion-row>
+                            <ion-col width-10 id="text">
+                                1.
+                            </ion-col>
+                            <ion-col width-20 id="text">
+                                Prod 1
+                            </ion-col>
+                            <ion-col width-50>
+                                <div class="progressbar">
+                                    <div></div>
+                                </div>
+                            </ion-col>
+                            <ion-col id="text2">
+                                454
+                            </ion-col>
+                        </ion-row>
+                    </ion-item>
+                </ion-list>
+
+                <br>
+                <br>
+            </div>
+
+            <div *ngSwitchWhen="'purchased'">
+                <ion-list>
+                    <ion-item>
+                        <ion-row>
+                            <ion-col width-10 id="text" >
+                                1.
+                            </ion-col>
+                            <ion-col width-20 id="text">
+                                Nome diferente.
+                            </ion-col>
+                            <ion-col width-50 >
+                                <div class="progressbar">
+                                    <div></div>
+                                </div>
+                            </ion-col>
+                            <ion-col id="text2">
+                                454
+                            </ion-col>
+                        </ion-row>
+                    </ion-item>
+                </ion-list>
+
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</ion-content>
