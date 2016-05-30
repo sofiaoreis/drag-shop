@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Page , NavController, NavParams} from 'ionic-angular';
 import {MostPurchasedService} from '../../providers/mostpurchased-service/mostpurchased-service'
 import {MostPurchased} from '../../models/mostpurchased'
@@ -29,3 +30,16 @@ export class HelloIonicPage {
     );
   }
 }
+=======
+import {Page} from 'ionic-angular';
+
+
+@Page({
+  templateUrl: 'build/pages/hello-ionic/hello-ionic.html'
+})
+export class HelloIonicPage {
+  constructor() {
+
+  }
+}
+>>>>>>> master

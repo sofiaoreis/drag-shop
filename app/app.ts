@@ -10,8 +10,12 @@ import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {Statistics} from "./pages/statistics/statistics";
 =======
+=======
+import{LoginPage} from './pages/login-page/login-page';
+>>>>>>> master
 import {StoreList} from "./pages/store-list/store-list";
 >>>>>>> master
 
@@ -51,6 +55,7 @@ class MyApp {
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
+      { title: 'Login', component: LoginPage, icon: 'power' },
       { title: 'Logout', component: AccountRecoveryPage, icon: 'power' }
     ];
   }
