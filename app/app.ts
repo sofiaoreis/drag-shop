@@ -44,7 +44,7 @@ class MyApp {
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'App Settings', component: ListPage, icon: 'settings' },
-      { title: 'Logout', component: ListPage, icon: 'power' }
+      { title: 'Logout', component: AccountRecoveryPage, icon: 'power' }
     ];
   }
 

@@ -28,4 +28,8 @@ export class MessagesService {
         );
     }
 
+    sendMessage(message) {
+      return this.http.post(this.messagesUrl, JSON.stringify(message));
+    }
+
 }

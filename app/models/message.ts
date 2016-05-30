@@ -7,6 +7,6 @@ export class Message {
   date: string;
 
   constructor() {
-      //this.content = obj.content;
+      
   }
 }
