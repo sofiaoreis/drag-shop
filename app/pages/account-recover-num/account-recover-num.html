@@ -1,0 +1,27 @@
+<ion-content>
+
+<div class="menu container">
+  <div class="center">
+    <h2>Account Recovery</h2>
+  </div>
+  <br/><br/><br/>
+  <h3>Check your email or phone, we sent you a confirmation code.</h3>
+  <h3>Enter it bellow to reset your password</h3>
+  <br/>
+  <form class="enlarge" [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
+        <ion-item class="input" [class.error]="!code.valid && code.touched">
+            <ion-input type="text" value="" [ngFormControl]="code" placeholder=""></ion-input>
+        </ion-item>
+        <div *ngIf="code.hasError('required') && code.touched"
+          class="error-box">Code is required!
+        </div>
+
+        <br/><br/>
+        <button type="submit" class="submit-button" [disabled]="!recoverForm.valid" block>DONE</button>
+  </form>
+  <br/>
+  <div class="center">
+    <a (click)="goBack()">back</a>
+  </div>
+</div>
+</ion-content>

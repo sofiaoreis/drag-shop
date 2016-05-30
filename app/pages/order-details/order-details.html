@@ -1,0 +1,85 @@
+
+<ion-navbar *navbar align-title="left">
+  <button menuToggle>
+    <ion-icon name="arrow-round-back"></ion-icon>
+  </button>
+<<<<<<< HEAD
+  <ion-title>{{order.client}}</ion-title>
+=======
+  <ion-title>Ana Margarida Pereira</ion-title>
+>>>>>>> master
+</ion-navbar>
+
+
+<ion-content padding class="getting-started">
+<div class="content">
+  <ion-row id="row1" responsive-sm>
+    <ion-col>
+      <ion-col class="status" ><ion-icon id="status-icon" name="md-radio-button-on"></ion-icon><b>Status:</b> {{order.status}}</ion-col>
+      <ion-col id="status">change status</ion-col>
+    </ion-col>
+  </ion-row>
+
+  <ion-row responsive-sm id="row2">
+   <ion-col id="col">
+     <ion-col class="icon-links" id="text"><ion-icon name="eye" class="icons"></ion-icon>client profile</ion-col>
+     <ion-col class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons"></ion-icon>send a message</ion-col>
+     <ion-col class="icon-links" id="text"><ion-icon name="heart-outline" class="icons"></ion-icon>client wishlist</ion-col>
+
+   </ion-col>
+
+   <ion-col >
+     <ion-col id="col1">
+       <ion-col class="user-bold">{{order.client}}</ion-col>
+       <ion-col class="icon-links" id="text">{{order.city}}</ion-col>
+     </ion-col>
+     <ion-col>
+       <ion-col class="user-bold">Address</ion-col>
+       <ion-col class="icon-links" id="text">{{order.address}}</ion-col>
+     </ion-col>
+     <ion-col>
+       <ion-col class="user-bold">Scheduled delivery in</ion-col>
+       <ion-col class="icon-links" id="text">1 day</ion-col>
+    </ion-col>
+   </ion-col>
+
+   <ion-col id="col">
+     <ion-col class="payment"><b>Total: </b>€16.90</ion-col>
+     <ion-col class="payment"><b>Payment: </b> {{order.payment}}</ion-col>
+   </ion-col>
+ </ion-row>
+
+ <div>
+   <ion-row>
+     <ion-col width-33></ion-col>
+     <ion-col width-67 id="cenas">
+   <ion-col class="order"><b>Order: </b></ion-col>
+   <ion-row responsive sm class="label">
+     <ion-col>Weight</ion-col>
+     <ion-col>Product</ion-col>
+     <ion-col>Price</ion-col>
+     <ion-col></ion-col>
+   </ion-row>
+
+   <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
+     <ion-col>{{product.weight}}{{product.units}}</ion-col>
+     <ion-col>{{product.name}}</ion-col>
+     <ion-col>{{product.price}}€</ion-col>
+     <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
+   </ion-row>
+
+   <ion-row responsive-sm>
+     <ion-col class="label">Total: </ion-col>
+     <ion-col></ion-col>
+     <ion-col>€</ion-col>
+     <ion-col></ion-col>
+   </ion-row>
+   <br>
+   <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
+   <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+ </ion-col>
+
+ </ion-row>
+ </div>
+</div>
+</ion-content>

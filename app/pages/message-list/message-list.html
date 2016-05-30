@@ -1,0 +1,86 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>client messages</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+  <div class="message-list">
+
+    <div class="tab-selector">
+      <ion-segment [(ngModel)]="messagesTrigger" [attr.light]="isAndroid ? '' : null">
+        <ion-segment-button class="message-tabs" value="unread">
+          Unread
+        </ion-segment-button>
+        <ion-segment-button class="message-tabs" value="perClient">
+          Per Client
+        </ion-segment-button>
+        <ion-segment-button class="message-tabs" value="all">
+          All messages
+        </ion-segment-button>
+      </ion-segment>
+
+      <div class="spacer"></div>
+    </div>
+
+
+    <div [ngSwitch]="messagesTrigger">
+      <div *ngSwitchWhen="'unread'">
+        <ion-row class="message-item" *ngFor="#message of messages | receivedMessages | unreadMessages">
+          <ion-col width-10 class="date">
+            {{message | dateCalendar}}
+          </ion-col>
+          <ion-col class="message">
+            <h6 class="client-name"> {{ message.from_id | clientName:clients }} </h6>
+            {{ message.content | maxLength:100 }}
+            <br>
+            <a (click)="itemTapped(message.from_id)">see all conversation</a>
+          </ion-col>
+
+        </ion-row>
+
+        <br>
+        <br>
+      </div>
+
+      <div *ngSwitchWhen="'perClient'">
+        <div *ngFor="#conversation of conversations">
+
+          <ion-row padding class="message-item per-client">
+            <div width-10 class="client-pic">
+            </div>
+            <ion-col>
+              <h6 class="client-name" (click)="itemTapped(conversation.id)"> {{ conversation.name }} </h6>
+              <ion-icon name="mail"></ion-icon>     send a message
+            </ion-col>
+          </ion-row>
+          <br>
+          <div class="seperator"></div>
+
+        </div>
+      </div>
+
+      <div *ngSwitchWhen="'all'">
+        <ion-row class="message-item" *ngFor="#message of messages | receivedMessages">
+          <ion-col width-10 class="date">
+            {{message | dateCalendar}}
+          </ion-col>
+          <ion-col class="message">
+            <h6 class="client-name"> {{ message.from_id | clientName:clients }} </h6>
+            {{ message.content | maxLength:100 }}
+            <br>
+            <a (click)="itemTapped(message.from_id)">see all conversation</a>
+          </ion-col>
+
+        </ion-row>
+
+        <br>
+        <br>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
