@@ -1,0 +1,121 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>employee managment</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+  <div class="message-list">
+
+    <div class="tab-selector">
+      <ion-segment [(ngModel)]="employeesTrigger" [attr.light]="isAndroid ? '' : null">
+        <ion-segment-button class="message-tabs" value="appointment">
+          Appointment
+        </ion-segment-button>
+        <ion-segment-button class="message-tabs" value="toAppoint">
+          To appoint
+        </ion-segment-button>
+        <ion-segment-button class="message-tabs" value="seeAllEmployeesPipe">
+          See all employees
+        </ion-segment-button>
+      </ion-segment>
+
+      <div class="spacer"></div>
+    <ion-row id="titles">
+      <ion-col>Status</ion-col>
+      <ion-col>Employee</ion-col>
+      <ion-col>Function</ion-col>
+    </ion-row>
+
+      <div class="seperator"></div>
+    </div>
+
+
+    <div [ngSwitch]="employeesTrigger">
+      <div *ngSwitchWhen="'appointment'">
+        <ion-row class="message-item cena" *ngFor="#employee of employees | appointmentPipe">
+          <ion-col>
+              <ion-icon name="md-radio-button-on" class="status-employee-{{employee.status_employee}}"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-col id="employeeName">
+              {{employee.full_name}}
+            </ion-col>
+            <ion-col>
+              {{employee.address}}
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            {{employee.function | maxLength:100}}
+
+          </ion-col>
+            <div class="seperator"></div>
+
+        </ion-row>
+
+
+
+      </div>
+
+
+      <div *ngSwitchWhen="'toAppoint'">
+        <ion-row class="message-item cena" *ngFor="#employee of employees | toAppointPipe">
+          <ion-col>
+            <ion-icon name="md-radio-button-on" class="status-employee-{{employee.status_employee}}"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-col id="employeeName">
+              {{employee.full_name}}
+            </ion-col>
+            <ion-col>
+              {{employee.address}}
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            {{employee.function | maxLength:100}}
+
+          </ion-col>
+            <div class="seperator"></div>
+
+
+        </ion-row>
+
+        <br>
+        <br>
+
+
+        </div>
+
+
+      <div *ngSwitchWhen="'seeAllEmployeesPipe'">
+        <ion-row class="message-item cena" *ngFor="#employee of employees | seeAllEmployeesPipe">
+          <ion-col>
+            <ion-icon name="md-radio-button-on" class="status-employee-{{employee.status_employee}}"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-col id="employeeName">
+              {{employee.full_name}}
+            </ion-col>
+            <ion-col>
+              {{employee.address}}
+            </ion-col>
+          </ion-col>
+          <ion-col>
+            {{employee.function | maxLength:100}}
+          </ion-col>
+
+
+
+        </ion-row>
+
+        <br>
+
+        <br>
+      </div>
+    </div>
+    </div>
+
+
+</ion-content>
