@@ -1,0 +1,298 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+  </button>
+<ion-title>{{client.first_name}} {{client.last_name}}</ion-title>
+</ion-navbar>
+
+<ion-content padding>
+
+  <ion-row class="profile-containter">
+    <ion-col width-33 class="profile-sidebar">
+      <ion-segment [(ngModel)]="profileTrigger" [attr.light]="isAndroid ? '' : null" class="profile-menu">
+
+        <ion-segment-button class="profile-menu-button" value="general">
+          General
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="profile">
+          Profile
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="pendingOrders">
+          Pending orders
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="orderStatus">
+          Order status and History
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="paymentInfo">
+          Payment Information
+        </ion-segment-button>
+
+        <ion-segment-button class="profile-menu-button" value="wishlist">
+          Wishlist
+        </ion-segment-button>
+
+      </ion-segment>
+    </ion-col>
+
+    <ion-col [ngSwitch]="profileTrigger">
+      <div *ngSwitchWhen="'general'">
+          <div class="profile-segment">
+            <div class="segment-title">
+              PROFILE
+            </div>
+
+            <div class="segment-content" id="profile-general">
+              <div>
+                Username: {{client.email}}
+                <br>
+                Name: {{client.first_name}} {{client.last_name}}
+                <br>
+                <br>
+                <a (click)="goToProfile()">VIEW ALL PROFILE</a>
+              </div>
+            </div>
+
+            <div class="segment-title">
+              ORDER STATUS
+            </div>
+
+            <div class="segment-content">
+              <div>
+                Pending orders
+                <br>
+                <small>No pending orders.</small>
+              </div>
+              <div>
+                Order and history
+                <br>
+                <small>No order history yet.</small>
+              </div>
+            </div>
+
+            <div class="segment-title">
+              PAYMENT HISTORY
+            </div>
+
+          </div>
+      </div>
+
+      <div *ngSwitchWhen="'profile'">
+
+        <div class="profile-segment">
+          <div class="segment-title">
+            PROFILE
+          </div>
+
+          <div class="segment-content">
+            <div>
+              <b>LAST LOGIN</b>: May 8, 2016
+
+              <br>
+              <br>
+              <br>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    USERNAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    FIRST NAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.first_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    LAST NAME
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.last_name}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    EMAIL
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    GENDER
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.gender}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    DATE OF BIRTH
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.birthday}}
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="table-seperator">
+                HOME ADDRESS
+              </div>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ADDRESS LINE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.address.address_line}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    CITY
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.address.city}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    STATE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.address.state}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ZIP CODE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.address.zip_code}}
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="table-seperator">
+                ALTERNATE SHIPPING ADDRESS
+              </div>
+
+              <div class="segment-table">
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ADDRESS LINE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.alternate_address.address_line}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    CITY
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.alternate_address.city}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    STATE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.alternate_address.state}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    ZIP CODE
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.alternate_address.zip_code}}
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div *ngSwitchWhen="'pendingOrders'">
+        <div class="profile-segment">
+          <div class="segment-title">
+            PENDING ORDERS
+          </div>
+
+          <div class="segment-content segment-border">
+            No pending orders.
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchWhen="'orderStatus'">
+        <div class="profile-segment">
+          <div class="segment-title">
+            ORDER STATUS AND HISTORY
+          </div>
+
+          <div class="segment-content segment-border">
+            No history yet.
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchWhen="'paymentInfo'">
+        <div class="profile-segment">
+          <div class="segment-title">
+            PAYMENT INFORMATION
+          </div>
+
+          <div class="segment-content segment-border">
+            Cenas aqui.
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchWhen="'wishlist'">
+        <div class="profile-segment">
+          <div class="segment-title">
+            WISHLIST
+          </div>
+
+          <div class="segment-content segment-border">
+            No wishlist yet.
+          </div>
+        </div>
+      </div>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

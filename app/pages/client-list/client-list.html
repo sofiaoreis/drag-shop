@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>clients</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+  <div class="message-list">
+
+    <div *ngFor="#client of clients">
+      <ion-row padding class="message-item per-client">
+        <div width-10 class="client-pic" style="background-image: url('img/placeholder-user.png')">
+        </div>
+        <ion-col>
+          <h6 class="client-name" (click)="itemTapped(client)"> {{ client.first_name }} {{ client.last_name }} </h6>
+        </ion-col>
+      </ion-row>
+      <br>
+      <div class="seperator"></div>
+
+    </div>
+
+  </div>
+
+</ion-content>
