@@ -39,6 +39,8 @@ gulp.task('watch', ['sass', 'html', 'fonts', 'scripts'], function(){
   return buildBrowserify({ watch: true });
 });
 
+
+
 gulp.task('build', ['sass', 'html', 'fonts', 'scripts'], buildBrowserify);
 gulp.task('sass', buildSass);
 gulp.task('html', copyHTML);

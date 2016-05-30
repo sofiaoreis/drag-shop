@@ -1,0 +1,98 @@
+.messages-container {
+  position: relative;
+  padding: 5%;
+
+  .title {
+    ion-icon {
+      float: left;
+    }
+    h5 {
+      margin-left: 25px;
+    }
+  }
+
+  .message-received {
+    padding: 25px;
+    border-radius: 0px 20px 20px 20px;
+    background-color: $app-grey;
+    width: 40%;
+    height: 100%;
+    position:relative;
+    margin-bottom: 25px;
+
+    small {
+      color: $app-grey-text;
+    }
+
+    @media only screen and (max-width: 650px) {
+      width: 70%;
+    }
+
+  }
+
+  .message-sent {
+    padding: 25px;
+    border-radius: 20px 0px 20px 20px;
+    background-color: $app-chat-blue;
+    color: white;
+    width: 40%;
+    margin-left: 60%;
+    position:relative;
+
+    margin-bottom: 25px;
+
+    @media only screen and (max-width: 650px) {
+      width: 70%;
+      margin-left: 30%;
+    }
+
+  }
+}
+
+.chat {
+  position: relative;
+
+  @media only screen and (min-width: 650px) {
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      background: #DDDDDD;
+      left: 50%;
+    }
+  }
+
+  .timeline-seperator {
+    margin-left: auto;
+    margin-right: auto;
+    width: 26px;
+    transform: translateY(-20px);
+
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+
+    ion-icon {
+      font-size: 35px;
+      color: $app-blue;
+      cursor:pointer;
+    }
+
+  }
+}
+
+.send-input {
+  width: 40%;
+  min-height: 50px;
+  margin-left: 60%;
+  position:relative;
+  resize: none;
+  background-color: $app-grey;
+
+  @media only screen and (max-width: 650px) {
+    width: 100%;
+    margin: 0%;
+  }
+
+}

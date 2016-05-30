@@ -1,0 +1,80 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+  </button>
+<ion-title>{{clientName}}</ion-title>
+</ion-navbar>
+
+<ion-content padding id="messagesContent">
+
+  <div class="messages-container">
+
+    <div class="title">
+      <ion-icon name="chatbubbles"></ion-icon>
+      <h5>ALL MESSAGES</h5>
+      <br>
+      <br>
+    </div>
+
+    <div class="chat">
+
+      <div *ngFor="#day of groupedMessages">
+
+        <div class="timeline-seperator">
+          <ion-icon name="radio-button-on"></ion-icon>
+          <!-- <img src="/img/tutorial2.svg" alt=""> -->
+        </div>
+
+        <div *ngFor="#message of day.messages">
+
+          <div class="message-baloon-containter">
+            <div *ngIf="message.from_id != 1" class="message-received">
+              {{message.content}}
+              <br>
+              <br>
+              <small>{{message | dateChat}}</small>
+            </div>
+
+            <div *ngIf="message.from_id === 1" class="message-sent">
+              {{message.content}}
+              <br>
+              <br>
+              <small>{{message | dateChat}}</small>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="timeline-seperator">
+        <ion-icon name="radio-button-on"></ion-icon>
+        <!-- <img src="/img/tutorial2.svg" alt=""> -->
+      </div>
+
+      <div>
+        <textarea autosize class="send-input" #newMessage (keyup.enter)="sendMessage(newMessage.value); newMessage.value=''"></textarea>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <!---
+  <ion-row padding *ngFor="#message of messages">
+    <ion-col *ngIf="message.from_id === 1" width-50 offset-50 class="message-sent">
+      {{message.content}}
+      <br>
+      <small>{{message.date}}</small>
+    </ion-col>
+
+    <ion-col *ngIf="message.from_id != 1" width-50 class="message-received">
+      {{message.content}}
+      <br>
+      <small>{{message.date}}</small>
+    </ion-col>
+  </ion-row>
+-->
+</ion-content>
