@@ -110,3 +110,17 @@
   color: #5BBBBF;
   font-weight: bold;
 }
+
+.edit-button {
+    padding: 0 1%;
+    height: 1.5em;
+    font-size: 1.6rem;
+    color: white;
+    background-color: $app-blue;
+    border-radius: 0 0 0 0 !important;
+    font-weight: bold;
+}
+
+.edit-button.activated{
+  background-color: $app-blue;
+}

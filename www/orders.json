@@ -1,0 +1,68 @@
+[{
+  "id": 1,
+  "client": "Ana Margarida Pereira",
+  "city": "Vila Nova de Gaia",
+  "payment": "PayPal",
+  "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
+  "status": "Pending",
+  "products": [{
+    "id": 0,
+    "name": "Apples",
+    "weight": "2",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": false
+  }, {
+    "id": 1,
+    "name": "Lettuce",
+    "weight": "250",
+    "units": "gr",
+    "price": 3.38,
+    "processed": false
+  }, {
+    "id": 2,
+    "name": "Tomato",
+    "weight": "1.5",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": true
+  }, {
+    "id": 3,
+    "name": "Rice",
+    "weight": "4",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": false
+  }, {
+    "id": 4,
+    "name": "Chicken Steak",
+    "weight": "2",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": false
+  }],
+  "employee": ""
+}, {
+  "id": 2,
+  "client": "Zé",
+  "city": "Porto",
+  "payment": "Money",
+  "address": "Vaz de Caminha Street, 15 Vila Nova de Gaia",
+  "status": "Delivered",
+  "products": [{
+    "id": 0,
+    "name": "Rice",
+    "weight": "4",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": false
+  }, {
+    "id": 1,
+    "name": "Chicken Steak",
+    "weight": "2",
+    "units": "Kg",
+    "price": 3.38,
+    "processed": false
+  }],
+  "employee": ""
+}]

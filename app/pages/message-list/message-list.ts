@@ -22,10 +22,13 @@ export class MessageListPage {
   constructor(private nav: NavController, navParams: NavParams, private messagesService: MessagesService) {
     //Set the default value of the messages trigger so that the correct segment is open on page load
     this.messagesTrigger = "unread";
+  }
 
-    //get all from or to the current user
-    messagesService.getMessageList().subscribe(
+  onPageDidEnter() {
+    //get all messages from or to the current user
+    this.messagesService.getMessageList().subscribe(
         data => {
+          this.conversations = [];
           this.messages = data[0];
           this.clients = data[1];
           this.organizeMessages();
@@ -33,7 +36,6 @@ export class MessageListPage {
         err => {console.log(err);},
         () => {console.log("Finished fetching client messages");}
     );
-
   }
 
   organizeMessages() {
@@ -67,12 +69,8 @@ export class MessageListPage {
   //TODO: change the hard-coded value
   //navigate to the conversation page from the selected message
   itemTapped(item) {
-
     let otherPersonId = item;
     let conversation = this.conversations.filter(x => x.id === otherPersonId)[0];
-
-    console.log(otherPersonId);
-    console.log(conversation.name);
 
     this.nav.push(MessagesPage, {
       messages: conversation.messages,

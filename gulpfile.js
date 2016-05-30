@@ -1,3 +1,4 @@
+require('es6-promise').polyfill();
 var gulp = require('gulp'),
     gulpWatch = require('gulp-watch'),
     del = require('del'),
