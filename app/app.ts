@@ -44,7 +44,7 @@ class MyApp {
     // set our app's pages
     this.pages = [
 
-      { title: 'Order Details', component: OrderDetails, icon: 'home'},
+      { title: 'Order Details', component: OrderList, icon: 'home'},
       { title: 'My Stores', component: StoreList, icon: 'home'},
       { title: 'Employers Management', component: ListPage, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
