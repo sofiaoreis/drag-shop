@@ -12,18 +12,21 @@
 }
 
 .foto-col{
-	height: 50%;
-	position: relative;
+	height: 50% !important;
 	display: inline-block;
+	position: relative;
+	text-align: center;
+	top: 10%;
 	
 }
 
-.foto{
+.foto-container{
+	height: 100%;
+	width: 100%;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%,-50%);
+}
+
+.foto{
 	max-width: 40%;
 	border-radius: 80%;
 }
@@ -33,6 +36,10 @@
 	height: 100%;
 	position: relative;
 	display: inline-block;
+}
+
+.foto-p1{
+	font-weight: bold;
 }
 
 
