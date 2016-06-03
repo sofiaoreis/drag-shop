@@ -67,28 +67,18 @@ export class MessagesPage {
     this.groupedMessages = newArr;
 }
 
-  sendMessage(value: string) {
-    let newMessage = new Message();
-    newMessage.content = value;
-    newMessage.from_id = 1; //TODO: change this
-    newMessage.to_id = 5;
-    newMessage.date = moment().toISOString();
-    this.messages.push(newMessage);
-
-    this.groupByDay(this.messages);
-
-    this.scrollBottom();
-
-    //TODO: change this to post to API and to the above code on the sucess function.
-    /*
-    this.messagesService.sendMessage(value).subscribe(
-      //data => {console.log("Received data: " + data)},
-      err => {
-        console.log(err);
-      },
-      () => {console.log("Finished sending message");}
-    );
-    */
+  sendMessage(input) {
+    if(input.value.length > 1) {
+      let newMessage = new Message();
+      newMessage.content = input.value;
+      newMessage.from_id = 1; //TODO: change this
+      newMessage.to_id = 5;
+      newMessage.date = moment().toISOString();
+      this.messages.push(newMessage);
+      this.groupByDay(this.messages);
+      input.value = '';
+      this.scrollBottom();
+    }
   }
 
 }
