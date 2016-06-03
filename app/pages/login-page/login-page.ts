@@ -1,12 +1,16 @@
-import {Page, IONIC_DIRECTIVES} from 'ionic-angular';
+import {Page, NavController, NavParams} from 'ionic-angular';
+import {HelloIonicPage} from '../hello-ionic/hello-ionic';
 
 
 @Page({
-  templateUrl: 'build/pages/login-page/login-page.html',
-  directives: [IONIC_DIRECTIVES]
+  templateUrl: 'build/pages/login-page/login-page.html'
 })
 export class LoginPage {
-  constructor() {
+  constructor(private nav: NavController, navParams: NavParams) {
 
+  }
+
+  itemTapped() {
+    this.nav.setRoot(HelloIonicPage);
   }
 }

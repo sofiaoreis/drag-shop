@@ -44,15 +44,14 @@ class MyApp {
     // set our app's pages
     this.pages = [
 
-      { title: 'Order Details', component: OrderDetails, icon: 'home'},
+      { title: 'Order Details', component: OrderList, icon: 'home'},
       { title: 'My Stores', component: StoreList, icon: 'home'},
-      { title: 'Employers Management', component: ListPage, icon: 'cog' },
+      { title: 'Employers Management', component: ManagmentList, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
-      { title: 'Managment List', component: ManagmentList, icon: 'home'},
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},
       { title: 'Settings', component: ListPage, icon: 'settings' },
