@@ -12,9 +12,9 @@ import {MessageListPage} from "./pages/message-list/message-list";
 import {ManagmentList} from './pages/managment-list/managment-list';
 import {ClientListPage} from "./pages/client-list/client-list";
 import {Statistics} from "./pages/statistics/statistics";
-import{LoginPage} from './pages/login-page/login-page';
+import {LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
-import{AppSettings} from './pages/app-settings/app-settings';
+import {AppSettings} from './pages/app-settings/app-settings';
 
 @App({
   templateUrl: 'build/app.html',
@@ -22,11 +22,11 @@ import{AppSettings} from './pages/app-settings/app-settings';
     backButtonText: '',
     menuType: 'overlay',
     backButtonIcon: 'md-arrow-round-back'
-  }, // http://ionicframework.com/docs/v2/api/config/Config/
+  },
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = HelloIonicPage;
+  rootPage: any = LoginPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
