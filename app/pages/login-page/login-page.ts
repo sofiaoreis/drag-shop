@@ -11,11 +11,7 @@ export class LoginPage {
 
   }
 
-  itemTapped(type) {
-
-    if(type == "button1")
+  itemTapped() {
     this.nav.setRoot(HelloIonicPage);
-    if(type == "button2")
-    this.nav.setRoot(AccountRecoveryPage);
   }
 }
