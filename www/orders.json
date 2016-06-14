@@ -1,6 +1,6 @@
 [{
   "id": 1,
-  "client": "Ana Margarida Pereira",
+  "client_id": 3,
   "city": "Vila Nova de Gaia",
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
@@ -44,7 +44,7 @@
   "employee": ""
 }, {
   "id": 2,
-  "client": "Zé",
+  "client_id": 5,
   "city": "Porto",
   "payment": "Money",
   "address": "Vaz de Caminha Street, 15 Vila Nova de Gaia",

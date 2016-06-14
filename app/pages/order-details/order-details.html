@@ -10,22 +10,25 @@
 <div class="content">
   <ion-row id="row1" responsive-sm>
     <ion-col>
-      <ion-col class="status" ><ion-icon id="status-icon" name="md-radio-button-on"></ion-icon><b>Status:</b> {{order.status}}</ion-col>
-      <ion-col id="status">change status</ion-col>
+      <ion-col class="status-title" >
+        <ion-icon id="status-icon" name="md-radio-button-on"></ion-icon>
+        <b>Status:</b> {{order.status}}
+      </ion-col>
+      <ion-col id="change-status">change status</ion-col>
     </ion-col>
   </ion-row>
 
   <ion-row responsive-sm id="row2">
    <ion-col id="col">
-     <ion-col class="icon-links" id="text"><ion-icon name="eye" class="icons"></ion-icon>client profile</ion-col>
-     <ion-col class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons"></ion-icon>send a message</ion-col>
-     <ion-col class="icon-links" id="text"><ion-icon name="heart-outline" class="icons"></ion-icon>client wishlist</ion-col>
+     <ion-col (click)="itemTapped(client)" class="icon-links" id="text"><ion-icon name="eye" class="icons-order"></ion-icon>client profile </ion-col>
+     <ion-col class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons-order"></ion-icon>send a message</ion-col>
+     <ion-col class="icon-links" id="text"><ion-icon name="heart-outline" class="icons-order"></ion-icon>client wishlist</ion-col>
 
    </ion-col>
 
    <ion-col >
      <ion-col id="col1">
-       <ion-col class="user-bold">{{order.client}}</ion-col>
+       <ion-col class="user-bold">{{client.first_name}} {{client.last_name}}</ion-col>
        <ion-col class="icon-links" id="text">{{order.city}}</ion-col>
      </ion-col>
      <ion-col>

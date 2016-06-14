@@ -2,7 +2,7 @@ import {Product} from './product'
 
 export class Order {
   id: number;
-  client: string;
+  client_id: number;
   city: string;
   payment: string;
   address: string;
