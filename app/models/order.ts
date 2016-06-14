@@ -1,4 +1,4 @@
-import {Product} from './product'
+import {OrderProduct} from './orderProduct'
 
 export class Order {
   id: number;
@@ -7,7 +7,7 @@ export class Order {
   payment: string;
   address: string;
   status: string;
-  products: Product[];
+  products: OrderProduct[];
   employee: string;
 
   constructor() {

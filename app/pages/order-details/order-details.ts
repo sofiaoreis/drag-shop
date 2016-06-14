@@ -1,6 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {Order} from '../../models/order'
-import {Product} from '../../models/product'
+import {OrderProduct} from '../../models/orderProduct'
 import {FreeEmployeeList} from '../free-employee-list/free-employee-list'
 
 @Page({
@@ -13,7 +13,7 @@ export class OrderDetails {
     this.order = navParams.get('order');
   }
 
-  processProduct(product: Product){
+  processProduct(product: OrderProduct){
     if(this.order.products[product.id].processed == false)
       this.order.products[product.id].processed = true;
     else

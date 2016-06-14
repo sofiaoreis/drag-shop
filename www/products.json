@@ -1,0 +1,211 @@
+[{
+  "id": 1,
+  "category": "Meat",
+  "product_name": "Pork",
+  "price": "3,62",
+  "discount": "0,34",
+  "image": "https://robohash.org/corruptifugiatrerum.png?size=50x50\u0026set=set1"
+}, {
+  "id": 2,
+  "category": "Vegetables",
+  "product_name": "Lettuces",
+  "price": "9,30",
+  "discount": "0,27",
+  "image": "https://robohash.org/dolorumquisquamrem.png?size=50x50\u0026set=set1"
+}, {
+  "id": 3,
+  "category": "Vegetables",
+  "product_name": "Carrots",
+  "price": "2,00",
+  "discount": "0,17",
+  "image": "https://robohash.org/quoenimipsum.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 4,
+  "category": "Vegetables",
+  "product_name": "Pepper",
+  "price": "7,53",
+  "discount": "0,0",
+  "image": "https://robohash.org/rationeblanditiisatque.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 5,
+  "category": "Drinks",
+  "product_name": "Mineral Water",
+  "price": "9,00",
+  "discount": "0,12",
+  "image": "https://robohash.org/errorhicrerum.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 6,
+  "category": "Meat",
+  "product_name": "Cow",
+  "price": "4,11",
+  "discount": "0,46",
+  "image": "https://robohash.org/doloretquibusdam.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 7,
+  "category": "Meat",
+  "product_name": "Sausage",
+  "price": "6,88",
+  "discount": "0,09",
+  "image": "https://robohash.org/corporisautsimilique.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 8,
+  "category": "Drinks",
+  "product_name": "Soda pop",
+  "price": "0,02",
+  "discount": "0,33",
+  "image": "https://robohash.org/doloresvoluptatemaut.png?size=50x50\u0026set=set1"
+}, {
+  "id": 9,
+  "category": "Vegetables",
+  "product_name": "Cabbage",
+  "price": "7,10",
+  "discount": "0,33",
+  "image": "https://robohash.org/inciduntdoloremreprehenderit.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 10,
+  "category": "Vegetables",
+  "product_name": "Parsley",
+  "price": "4,95",
+  "discount": "0,09",
+  "image": "https://robohash.org/nonofficiisdolores.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 11,
+  "category": "Drinks",
+  "product_name": "Wormwood",
+  "price": "7,49",
+  "discount": "0,31",
+  "image": "https://robohash.org/debitisquoaccusantium.png?size=50x50\u0026set=set1"
+}, {
+  "id": 12,
+  "category": "Meat",
+  "product_name": "Chicken",
+  "price": "6,29",
+  "discount": "0,36",
+  "image": "https://robohash.org/adipisciinciduntnisi.png?size=50x50\u0026set=set1"
+}, {
+  "id": 13,
+  "category": "Vegetables",
+  "product_name": "Mushrooms",
+  "price": "8,91",
+  "discount": "0,29",
+  "image": "https://robohash.org/ipsavoluptatemdelectus.png?size=50x50\u0026set=set1"
+}, {
+  "id": 14,
+  "category": "Vegetables",
+  "product_name": "Onion",
+  "price": "3,02",
+  "discount": "0,39",
+  "image": "https://robohash.org/doloribusaccusantiumsed.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 15,
+  "category": "Meat",
+  "product_name": "Turkey",
+  "price": "0,47",
+  "discount": "0,11",
+  "image": "https://robohash.org/rerumcommodiquia.png?size=50x50\u0026set=set1"
+}, {
+  "id": 16,
+  "category": "Drinks",
+  "product_name": "Coca-Cola",
+  "price": "5,15",
+  "discount": "0,28",
+  "image": "https://robohash.org/voluptatemmolestiasenim.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 17,
+  "category": "Vegetables",
+  "product_name": "Bean",
+  "price": "8,97",
+  "discount": "0,21",
+  "image": "https://robohash.org/teneturfugitlaboriosam.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 18,
+  "category": "Meat",
+  "product_name": "Mince",
+  "price": "1,73",
+  "discount": "0,42",
+  "image": "https://robohash.org/omnisdolorimpedit.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 19,
+  "category": "Vegetables",
+  "product_name": "Brussels sprout",
+  "price": "1,22",
+  "discount": "0,23",
+  "image": "https://robohash.org/estnullavitae.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 20,
+  "category": "Vegetables",
+  "product_name": "Corn salad",
+  "price": "6,77",
+  "discount": "0,02",
+  "image": "https://robohash.org/temporarepellatinventore.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 21,
+  "category": "Drinks",
+  "product_name": "Pepsi-Cola",
+  "price": "9,09",
+  "discount": "0,09",
+  "image": "https://robohash.org/istequibusdammolestiae.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 22,
+  "category": "Drinks",
+  "product_name": "Wine",
+  "price": "7,18",
+  "discount": "0,11",
+  "image": "https://robohash.org/autdeseruntnatus.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 23,
+  "category": "Vegetables",
+  "product_name": "Cauliflower",
+  "price": "7,50",
+  "discount": "0,07",
+  "image": "https://robohash.org/numquammolestiaevel.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 24,
+  "category": "Drinks",
+  "product_name": "Iced Tea",
+  "price": "6,58",
+  "discount": "0,35",
+  "image": "https://robohash.org/dolorererumasperiores.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 25,
+  "category": "Drinks",
+  "product_name": "7UP",
+  "price": "4,48",
+  "discount": "0,07",
+  "image": "https://robohash.org/omnisoptioarchitecto.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 26,
+  "category": "Drinks",
+  "product_name": "Compal",
+  "price": "0,26",
+  "discount": "0,42",
+  "image": "https://robohash.org/animirematque.jpg?size=50x50\u0026set=set1"
+}, {
+  "id": 27,
+  "category": "Vegetables",
+  "product_name": "Caper",
+  "price": "1,11",
+  "discount": "0,49",
+  "image": "https://robohash.org/iurequiaodio.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 28,
+  "category": "Drinks",
+  "product_name": "Vodka",
+  "price": "1,73",
+  "discount": "0,29",
+  "image": "https://robohash.org/quaeratsuntharum.bmp?size=50x50\u0026set=set1"
+}, {
+  "id": 29,
+  "category": "Vegetables",
+  "product_name": "Quinoa",
+  "price": "1,27",
+  "discount": "0,37",
+  "image": "https://robohash.org/quameadoloribus.png?size=50x50\u0026set=set1"
+}, {
+  "id": 30,
+  "category": "Vegetables",
+  "product_name": "Vegetable fern",
+  "price": "5,50",
+  "discount": "0,29",
+  "image": "https://robohash.org/pariaturnobisut.png?size=50x50\u0026set=set1"
+}]

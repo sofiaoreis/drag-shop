@@ -1,0 +1,19 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>products</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+    <div class="products-container">
+      <div class="category" *ngFor="#category of categories">
+        {{category.name}}
+        <div class="product" *ngFor="#product of products">
+          <h2 *ngIf="product.category==category.name">{{product.product_name}}</h2>
+        </div>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>
