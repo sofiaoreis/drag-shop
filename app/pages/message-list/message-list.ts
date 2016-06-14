@@ -4,6 +4,7 @@ import {Message} from '../../models/message'
 import {MessagesPage} from '../messages/messages'
 import {UnreadMessagesPipe} from '../../pipes/messages/unread-messages-pipe'
 import {ClientNamePipe} from '../../pipes/messages/client-name'
+import {ClientPicturePipe} from '../../pipes/messages/client-name'
 import {ReceivedMessagesPipe} from '../../pipes/messages/received-messages'
 import {DateCalendarPipe} from '../../pipes/messages/date'
 import {MaxLengthPipe} from '../../pipes/messages/limit-messages'
@@ -11,11 +12,11 @@ import {MaxLengthPipe} from '../../pipes/messages/limit-messages'
 @Page({
   templateUrl: 'build/pages/message-list/message-list.html',
   providers: [MessagesService],
-  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe, DateCalendarPipe, MaxLengthPipe]
+  pipes: [UnreadMessagesPipe, ClientNamePipe, ReceivedMessagesPipe, DateCalendarPipe, MaxLengthPipe, ClientPicturePipe]
 })
 export class MessageListPage {
   messages: Message[];
-  conversations: Array<{id: number, name: string, messages: Message[]}> = [];
+  conversations: Array<{id: number, name: string, profile_pic: string, messages: Message[]}> = [];
   clients: any;
   messagesTrigger: string;
 
@@ -59,7 +60,8 @@ export class MessageListPage {
 
       if(!found) {
         let clientName = new ClientNamePipe().transform(otherPersonId, new Array(this.clients));
-        this.conversations.push({id: otherPersonId, name: clientName, messages: [x]});
+        let picture = new ClientPicturePipe().transform(otherPersonId, new Array(this.clients));
+        this.conversations.push({id: otherPersonId, name: clientName, profile_pic: picture, messages: [x]});
       }
 
     });

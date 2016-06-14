@@ -7,6 +7,7 @@ export class Client {
   birthday: string;
   address: Array<{address_line: string, city: string, state: string, zip_code: string}>;
   alternate_address: Array<{address_line: string, city: string, state: string, zip_code: string}>;
+  profile_pic: string;
 
   constructor() {
 
