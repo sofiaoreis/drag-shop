@@ -28,11 +28,13 @@
 .user-bolds {
   color: #000000;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 1em;
   padding-top: 10px;
 }
 
 #text {
+  overflow: hidden;
+  font-size: 1em;
   color: #000000;
   padding-top: 10px;
 }
@@ -44,6 +46,10 @@ ion-item:hover {
 }
 
 
+ion-icon[item-left], ion-icon[item-right] {
+  margin-top: 8vw;
+  //padding-top: 0.1vw;
+}
 
 .ion-row.stores {
   padding-top: 0px;
@@ -53,6 +59,10 @@ ion-item:hover {
 }
 
 .button {
-  //text-decoration: underline;  <-- fica mal
-  font-size: 150%;
+  max-width: 15%;
+  width: 10%;
+  height: 0;
+  padding-bottom: 10%;
+  font-size: 4vw;
+
 }
