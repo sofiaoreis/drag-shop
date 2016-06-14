@@ -101,12 +101,12 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid $app-grey-text;
+    //border: 1px solid $app-grey-text;
 
     .segment-table-row-key {
       flex-grow: 1;
       width: 50%;
-      padding-left: 15px;
+      //padding-left: 15px;
     }
     .segment-table-row-value {
       width: 50%;
@@ -116,10 +116,12 @@
 }
 
 .table-seperator {
-  padding-top: 10px;
+  padding-top: 25px;
   padding-bottom: 10px;
-  padding-left: 15px;
+  margin-top: 20px;
+  //padding-left: 15px;
   font-weight: bold;
+  border-top: 1px solid $app-grey-text;
 }
 
 ion-segment-button.profile-menu-button {
