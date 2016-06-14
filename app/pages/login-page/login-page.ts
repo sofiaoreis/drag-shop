@@ -11,7 +11,11 @@ export class LoginPage {
 
   }
 
-  itemTapped() {
+  toDashboard() {
     this.nav.setRoot(HelloIonicPage);
+  }
+
+  toRecovery() {
+    this.nav.setRoot(AccountRecoveryPage);
   }
 }

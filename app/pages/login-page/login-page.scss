@@ -1,4 +1,4 @@
-$appblue: #8CD3D7;
+$appblue: #5EBABE;
 $appgrey: #939598;
 $applightgrey: #E9EAEB;
 
@@ -17,6 +17,10 @@ text-align: center;
 position: relative;
 }
 
+#ion-input{
+  border-bottom: thick dotted #ff0000;
+}
+
 img{
 position: absolute;
 left: 50%;
@@ -27,11 +31,21 @@ border-radius: 80%;
 
 }
 
+.icon
+{
+  width: 1em;
+    height: 1em;
+    left: 0%;
+    top: 0%;
+    position: relative;
+}
+
+
+
 .form1{
 padding-left: 0;
 border: 1px;
 border-color: white;
-//-color: transparent;
 }
 
 .form2{
@@ -63,13 +77,10 @@ font-size: 110%;
 .button3{
  color: $appgrey;
  font-size: 110%;
+ text-align: center;
 }
 
 .button4{
  color: $appgrey;
  font-size: 110%;
-}
-
-.botoes1{
-	margin-top:1em;
 }
