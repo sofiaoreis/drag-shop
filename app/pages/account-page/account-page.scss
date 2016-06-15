@@ -27,7 +27,7 @@
 }
 
 .foto{
-	max-width: 40%;
+	max-width: 30%;
 	border-radius: 80%;
 }
 
@@ -42,6 +42,42 @@
 	font-weight: bold;
 }
 
+.panel.panel-default {
+	
+	border-bottom: 1px solid rgba(140,211,215,0.5);
+	padding: 5px;
+
+}
+
+.panel-title a{
+	
+	text-decoration: none;
+}
+
+.panel-title span{
+	
+	color: #8CD3D7;
+	text-decoration: none;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.p-conteudo {
+	
+	border-bottom: 1px solid rgba(140,211,215,0.2);
+	padding: 10px;
+	padding-left: 0;
+	margin: 0;
+}
+
+.p-conteudo-last {
+	
+	padding: 10px;
+	margin: 0;
+	padding-left: 0;
+	padding-bottom: 5%;
+}
 
 
 

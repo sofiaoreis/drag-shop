@@ -9,7 +9,7 @@
 
 
 <ion-row class="foto-row">
-	<ion-col width-33 class="foto-col">
+	<ion-col width-50 class="foto-col">
 	<div class="foto-container">
 	<img src="img/placeholder-user.png" class="foto"/>
 	<p class="foto-p1"> Maria Portela </p>
@@ -17,13 +17,13 @@
 	</div>
 	</ion-col>
 
-	<ion-col width-50 class="select-col">
+	<ion-col width-33 class="select-col">
                 <accordion>
                   <accordion-group [heading]="group.heading" *ngFor="#group of groups">
-                    <p> {{group.content.Name}} </p>
-                    <p> {{group.content.Email}} </p>
-                    <p> {{group.content.Phone}} </p>
-                    <p> {{group.content.Role}} </p>
+                    <p class="p-conteudo"> {{group.content.Name}} </p>
+                    <p class="p-conteudo"> {{group.content.Email}} </p>
+                    <p class="p-conteudo"> {{group.content.Phone}} </p>
+                    <p class="p-conteudo-last"> {{group.content.Role}} </p>
                   </accordion-group>
                 </accordion>
 	</ion-col>
