@@ -287,7 +287,18 @@
           </div>
 
           <div class="segment-content segment-border">
-            No wishlist yet.
+            <ion-col responsive sm class="background-table" id="background-table">
+              <ion-row responsive sm class="label">
+                <ion-col>Product</ion-col>
+                <ion-col id="table-col1">Amount</ion-col>
+                <ion-col id="table-col2">Price</ion-col>
+              </ion-row>
+              <ion-row *ngFor="#product of products">
+                <ion-col>{{product.name}}</ion-col>
+                <ion-col id="table-col1">{{product.amount}}{{product.units}}</ion-col>
+                <ion-col id="table-col2">{{product.price}}€</ion-col>
+              </ion-row>
+          </ion-col>
           </div>
         </div>
       </div>

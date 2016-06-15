@@ -93,8 +93,13 @@
   //background: green;
 }
 
-#cenas ion-row:nth-child(odd){
+.background-table ion-row:nth-child(even){
   background: #E9EAEB;
+}
+
+#background-table ion-row:nth-child(odd){
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .payment {
