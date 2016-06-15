@@ -51,7 +51,7 @@ class MyApp {
       { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
-      { title: 'Order Tracking', component: ListPage, icon: 'basket' },
+      { title: 'Order Tracking', component: OrdersTrackingPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},
