@@ -9,16 +9,13 @@ import {OrderList} from './pages/order-list/order-list'
 import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
-<<<<<<< HEAD
 import {OrdersTrackingPage} from "./pages/orders-tracking/orders-tracking";
-=======
 import {ManagmentList} from './pages/managment-list/managment-list';
 import {ClientListPage} from "./pages/client-list/client-list";
 import {Statistics} from "./pages/statistics/statistics";
 import{LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
 import{AppSettings} from './pages/app-settings/app-settings';
->>>>>>> master
 
 @App({
   templateUrl: 'build/app.html',
@@ -53,12 +50,8 @@ class MyApp {
       { title: 'Employers Management', component: ManagmentList, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
-<<<<<<< HEAD
-      { title: 'Order Tracking', component: OrdersTrackingPage, icon: 'basket' },
-=======
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
->>>>>>> master
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},
