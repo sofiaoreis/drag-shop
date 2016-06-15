@@ -10,8 +10,8 @@
 
         <div class="spacerow"></div>
 
-        <ion-row class="user-title">Choose your store</ion-row>
-        <p></p>
+        <ion-row class="user-title" responsive-sm>Choose your store</ion-row>
+
 
         <ion-list>
 
@@ -22,14 +22,15 @@
                 <ion-row class="stores">
 
 
-                    <ion-col width-90>
+                    <ion-col width-80>
                         <ion-row class="user-bolds">{{stor.name}}</ion-row>
                         <ion-row id="text">{{stor.country}}{{stor.city}}</ion-row>
 
                     </ion-col>
 
-                    <ion-col width-10>
-                         <button secondary large outline  fab>
+                    <ion-col width-20 full>
+                         <button secondary outline large fab>
+
                             <ion-icon clear item-right name="checkmark"></ion-icon>
                           </button>
                     </ion-col>
