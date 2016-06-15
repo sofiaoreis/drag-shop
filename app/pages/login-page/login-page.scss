@@ -17,9 +17,12 @@ text-align: center;
 position: relative;
 }
 
-#ion-input{
-  border-bottom: thick dotted #ff0000;
+.logo img{
+  max-height: 500px;
+  max-width: 500px;
 }
+
+
 
 img{
 position: absolute;
@@ -31,6 +34,13 @@ border-radius: 80%;
 
 }
 
+.form1 .text-input
+{
+  margin: 0px;
+  padding: none;
+  
+}
+
 .icon
 {
   width: 1em;
@@ -39,8 +49,6 @@ border-radius: 80%;
     top: 0%;
     position: relative;
 }
-
-
 
 .form1{
 padding-left: 0;
@@ -77,7 +85,6 @@ font-size: 110%;
 .button3{
  color: $appgrey;
  font-size: 110%;
- text-align: center;
 }
 
 .button4{
