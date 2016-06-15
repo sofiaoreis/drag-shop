@@ -1,3 +1,4 @@
+
 .getting-started {
 
   p {
@@ -6,4 +7,228 @@
     font-size: 16px;
   }
 
+}
+
+.content{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tab-selector {
+  .spacer {
+    height: 60px;
+  }
+}
+
+ion-item.item {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+
+}
+.spacerowdash {
+  height: 4vw;
+}
+
+ion-segment-button.stat-tabs {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  border-bottom : 1px solid $app-grey-text !important;
+  height: auto;
+}
+
+ion-col.center {
+   padding: 3px;
+ }
+
+stat-tabs.segment-button.segment-activated {
+  background-color: white !important;
+  border-bottom : 2px solid $app-blue !important;
+}
+
+.progressbar2 {
+  background-color: white;
+  border-radius: 13px;
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+.progressbar2 > div {
+  background-color: $app-blue;
+  //width: 40%;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.user-bolder {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.8vw;
+  padding-top: 5%;
+  margin-left: 0px;
+  text-align: left;
+
+  //e necessário verificar noutros dispositivos como fica afectado pelas mudanças colocadas abaixo
+  /*overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+*/
+}
+
+.user-bolds {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.1vw;
+  padding-top: 10px;
+
+}
+
+
+.textsegbar {
+  padding-top: 10px;
+  color: #000000;
+  font-size: 1.1vw;
+}
+
+#textblue {
+  color: $app-blue;
+  text-align: right;
+}
+
+
+#text {
+  color: #000000;
+}
+
+.center{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.circle-red {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
+  border-radius: 50%;
+  background: red;
+}
+
+.custom-icon {
+  font-size: 4vw;
+  max-font-size: 10%;
+  color : white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textboldred {
+  color: red;
+  font-weight: bold;
+  font-size: 3vw;
+  padding-top: 5px;
+}
+
+.circle-orange {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
+  border-radius: 50%;
+  background: orange;
+}
+
+
+#textboldorange {
+  color: orange;
+  font-weight: bold;
+  font-size:  3vw;
+  padding-top: 5px;
+}
+
+.circle-blue {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
+  border-radius: 50%;
+  background: midnightblue;
+}
+
+
+
+#textboldblue {
+  color: midnightblue;
+  font-weight: bold;
+  font-size:  3vw;
+  padding-top: 5px;
+}
+
+.circle-purple {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
+  border-radius: 50%;
+  background: purple;
+}
+
+
+#textboldpurple {
+  color: purple;
+  font-weight: bold;
+  font-size:  3vw;
+  padding-top: 5px;
+}
+
+.customcol2 {
+  min-width: 5%;
+}
+
+.customcol {
+  background-color: #e6e6e6;
 }

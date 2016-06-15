@@ -1,0 +1,76 @@
+$appblue: #8CD3D7;
+$appgrey: #939598;
+$applightgrey: #E9EAEB;
+
+
+.login{
+background-image: url(../../img/imagem2.png);
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+
+}
+
+.logo{
+height: 50%;
+text-align: center;
+position: relative;
+}
+
+img{
+position: absolute;
+left: 50%;
+top: 65%;
+transform: translate(-50%,-50%);
+max-width: 20%;
+border-radius: 80%;
+
+}
+
+.form1{
+padding-left: 0;
+border-top: 0;
+background-color: transparent;
+}
+
+.form2{
+background-color: transparent;
+padding-left: 0;
+}
+
+.form{
+height: 50%;
+
+}
+
+.button-full.button-outline{
+border-left-width: 1px;
+border-right-width: 1px;
+}
+
+.button1{
+ background-color: $appblue;
+}
+
+.button2{
+color: white;
+border-color: white;
+}
+
+.button3{
+ color: $appgrey;
+}
+
+.button4{
+ color: $appgrey;
+}
+
+.botoes1{
+	margin-top:20px;
+}
+
+.botoes2{
+	top:10px;
+}

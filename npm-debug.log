@@ -1,0 +1,170 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/package.json
+5 warn package.json drag_shop@ No repository field.
+6 warn package.json drag_shop@ No license field.
+7 verbose install where, deps [ '/Users/Fifaz/lgpr-drag-shop',
+7 verbose install   [ 'angular2',
+7 verbose install     'es6-promise',
+7 verbose install     'es6-shim',
+7 verbose install     'ionic-angular',
+7 verbose install     'ionic-native',
+7 verbose install     'ng2-charts',
+7 verbose install     'ionicons',
+7 verbose install     'moment',
+7 verbose install     'reflect-metadata',
+7 verbose install     'rxjs',
+7 verbose install     'zone.js',
+7 verbose install     'del',
+7 verbose install     'font-awesome',
+7 verbose install     'gulp',
+7 verbose install     'gulp-watch',
+7 verbose install     'ionic-gulp-browserify-typescript',
+7 verbose install     'ionic-gulp-fonts-copy',
+7 verbose install     'ionic-gulp-html-copy',
+7 verbose install     'ionic-gulp-sass-build',
+7 verbose install     'ionic-gulp-scripts-copy',
+7 verbose install     'gulp-sass',
+7 verbose install     'node-sass' ] ]
+8 verbose install where, peers [ '/Users/Fifaz/lgpr-drag-shop', [] ]
+9 verbose installManyTop reading for lifecycle /Users/Fifaz/lgpr-drag-shop/package.json
+10 info preinstall drag_shop@
+11 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/angular2/package.json
+12 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/del/package.json
+13 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-promise/package.json
+14 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-shim/package.json
+15 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/font-awesome/package.json
+16 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp/package.json
+17 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-sass/package.json
+18 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-watch/package.json
+19 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-angular/package.json
+20 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-browserify-typescript/package.json
+21 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-fonts-copy/package.json
+22 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-html-copy/package.json
+23 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-sass-build/package.json
+24 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-scripts-copy/package.json
+25 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-native/package.json
+26 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionicons/package.json
+27 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/moment/package.json
+28 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ng2-charts/package.json
+29 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/node-sass/package.json
+30 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/reflect-metadata/package.json
+31 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/rxjs/package.json
+32 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/zone.js/package.json
+33 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/common/package.json
+34 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/core/package.json
+35 info package.json ionic-gulp-fonts-copy@1.0.0 No repository field.
+36 info package.json ionic-gulp-fonts-copy@1.0.0 No license field.
+37 info package.json @angular/core@2.0.0-rc.1 No description
+38 info package.json @angular/core@2.0.0-rc.1 No repository field.
+39 info package.json @angular/core@2.0.0-rc.1 No README data
+40 info package.json @angular/common@2.0.0-rc.1 No description
+41 info package.json @angular/common@2.0.0-rc.1 No repository field.
+42 info package.json @angular/common@2.0.0-rc.1 No README data
+43 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/package.json
+44 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/angular2/package.json
+45 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/del/package.json
+46 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-promise/package.json
+47 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-shim/package.json
+48 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/font-awesome/package.json
+49 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp/package.json
+50 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-sass/package.json
+51 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-watch/package.json
+52 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-angular/package.json
+53 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-browserify-typescript/package.json
+54 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-fonts-copy/package.json
+55 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-html-copy/package.json
+56 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-sass-build/package.json
+57 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-scripts-copy/package.json
+58 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-native/package.json
+59 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionicons/package.json
+60 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/moment/package.json
+61 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ng2-charts/package.json
+62 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/node-sass/package.json
+63 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/reflect-metadata/package.json
+64 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/rxjs/package.json
+65 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/zone.js/package.json
+66 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/common/package.json
+67 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/core/package.json
+68 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/.bin/gulp/package.json
+69 verbose targetResolver reading package data from /Users/Fifaz/lgpr-drag-shop/node_modules/.bin/node-sass/package.json
+70 verbose already installed skipping ionic-native@^1.1.0 /Users/Fifaz/lgpr-drag-shop
+71 verbose already installed skipping ng2-charts@^1.0.0-beta.0 /Users/Fifaz/lgpr-drag-shop
+72 verbose already installed skipping ionicons@3.0.0 /Users/Fifaz/lgpr-drag-shop
+73 verbose already installed skipping moment@^2.13.0 /Users/Fifaz/lgpr-drag-shop
+74 verbose already installed skipping reflect-metadata@0.1.2 /Users/Fifaz/lgpr-drag-shop
+75 verbose already installed skipping rxjs@5.0.0-beta.2 /Users/Fifaz/lgpr-drag-shop
+76 verbose already installed skipping zone.js@0.6.12 /Users/Fifaz/lgpr-drag-shop
+77 verbose already installed skipping del@2.2.0 /Users/Fifaz/lgpr-drag-shop
+78 verbose already installed skipping font-awesome@^4.6.1 /Users/Fifaz/lgpr-drag-shop
+79 verbose already installed skipping gulp@3.9.1 /Users/Fifaz/lgpr-drag-shop
+80 verbose already installed skipping gulp-watch@4.3.5 /Users/Fifaz/lgpr-drag-shop
+81 verbose already installed skipping ionic-gulp-browserify-typescript@^1.0.0 /Users/Fifaz/lgpr-drag-shop
+82 verbose already installed skipping ionic-gulp-fonts-copy@^1.0.0 /Users/Fifaz/lgpr-drag-shop
+83 verbose already installed skipping ionic-gulp-html-copy@^1.0.0 /Users/Fifaz/lgpr-drag-shop
+84 verbose already installed skipping ionic-gulp-sass-build@^1.0.0 /Users/Fifaz/lgpr-drag-shop
+85 verbose already installed skipping ionic-gulp-scripts-copy@^1.0.0 /Users/Fifaz/lgpr-drag-shop
+86 verbose already installed skipping gulp-sass@2.2.0 /Users/Fifaz/lgpr-drag-shop
+87 verbose already installed skipping node-sass@3.4.2 /Users/Fifaz/lgpr-drag-shop
+88 verbose already installed skipping angular2@2.0.0-beta.15 /Users/Fifaz/lgpr-drag-shop
+89 verbose already installed skipping es6-promise@3.1.2 /Users/Fifaz/lgpr-drag-shop
+90 verbose already installed skipping es6-shim@0.35.0 /Users/Fifaz/lgpr-drag-shop
+91 verbose already installed skipping ionic-angular@2.0.0-beta.6 /Users/Fifaz/lgpr-drag-shop
+92 silly install resolved []
+93 info build /Users/Fifaz/lgpr-drag-shop
+94 info linkStuff drag_shop@
+95 silly linkStuff drag_shop@ has /Users/Fifaz as its parent node_modules
+96 verbose linkBins drag_shop@
+97 verbose linkMans drag_shop@
+98 verbose rebuildBundles drag_shop@
+99 verbose rebuildBundles [ '.bin',
+99 verbose rebuildBundles   '@angular',
+99 verbose rebuildBundles   'angular2',
+99 verbose rebuildBundles   'del',
+99 verbose rebuildBundles   'es6-promise',
+99 verbose rebuildBundles   'es6-shim',
+99 verbose rebuildBundles   'font-awesome',
+99 verbose rebuildBundles   'gulp',
+99 verbose rebuildBundles   'gulp-sass',
+99 verbose rebuildBundles   'gulp-watch',
+99 verbose rebuildBundles   'ionic-angular',
+99 verbose rebuildBundles   'ionic-gulp-browserify-typescript',
+99 verbose rebuildBundles   'ionic-gulp-fonts-copy',
+99 verbose rebuildBundles   'ionic-gulp-html-copy',
+99 verbose rebuildBundles   'ionic-gulp-sass-build',
+99 verbose rebuildBundles   'ionic-gulp-scripts-copy',
+99 verbose rebuildBundles   'ionic-native',
+99 verbose rebuildBundles   'ionicons',
+99 verbose rebuildBundles   'moment',
+99 verbose rebuildBundles   'ng2-charts',
+99 verbose rebuildBundles   'node-sass',
+99 verbose rebuildBundles   'reflect-metadata',
+99 verbose rebuildBundles   'rxjs',
+99 verbose rebuildBundles   'zone.js' ]
+100 info install drag_shop@
+101 info postinstall drag_shop@
+102 info prepublish drag_shop@
+103 verbose validateInstall loading /Users/Fifaz/lgpr-drag-shop/package.json for validation
+104 verbose stack Error: The package rxjs@5.0.0-beta.2 does not satisfy its siblings' peerDependencies requirements!
+104 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+104 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+104 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+104 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+104 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+104 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+104 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+104 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+104 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+104 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+105 verbose cwd /Users/Fifaz/lgpr-drag-shop
+106 error Darwin 15.4.0
+107 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+108 error node v4.4.3
+109 error npm  v2.15.1
+110 error code EPEERINVALID
+111 error peerinvalid The package rxjs@5.0.0-beta.2 does not satisfy its siblings' peerDependencies requirements!
+111 error peerinvalid Peer angular2@2.0.0-beta.15 wants rxjs@5.0.0-beta.2
+111 error peerinvalid Peer @angular/core@2.0.0-rc.1 wants rxjs@5.0.0-beta.6
+112 verbose exit [ 1, true ]
