@@ -65,7 +65,7 @@ stat-tabs.segment-button.segment-activated {
 .user-bolder {
   color: #000000;
   font-weight: bold;
-  font-size: 1.8vw;
+  font-size: 3vw;
   padding-top: 5%;
   margin-left: 0px;
   text-align: left;
@@ -83,19 +83,11 @@ stat-tabs.segment-button.segment-activated {
 */
 }
 
-.user-bolds {
-  color: #000000;
-  font-weight: bold;
-  font-size: 1.1vw;
-  padding-top: 10px;
-
-}
-
 
 .textsegbar {
   padding-top: 10px;
   color: #000000;
-  font-size: 1.1vw;
+  font-size: 2.5vw;
 }
 
 #textblue {
@@ -163,7 +155,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldred {
   color: red;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 4vw;
   padding-top: 5px;
 }
 
@@ -182,7 +174,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldorange {
   color: orange;
   font-weight: bold;
-  font-size:  3vw;
+  font-size:  4vw;
   padding-top: 5px;
 }
 
@@ -202,7 +194,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldblue {
   color: midnightblue;
   font-weight: bold;
-  font-size:  3vw;
+  font-size:  4vw;
   padding-top: 5px;
 }
 
@@ -221,7 +213,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldpurple {
   color: purple;
   font-weight: bold;
-  font-size:  3vw;
+  font-size:  4vw;
   padding-top: 5px;
 }
 
@@ -231,4 +223,13 @@ stat-tabs.segment-button.segment-activated {
 
 .customcol {
   background-color: #e6e6e6;
+}
+
+.simplebox {
+  border-color: $app-blue;
+  border-style: solid;
+  font-size: 2vw;
+  text-align: center;
+  padding: 5px;
+  margin-top: 7px;
 }
