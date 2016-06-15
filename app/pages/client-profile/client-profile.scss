@@ -1,0 +1,140 @@
+@media only screen and (min-width: 650px) {
+  .profile-menu {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    ion-segment-button {
+      width: 100% !important;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .profile-containter {
+    display: block;
+  }
+
+  .profile-sidebar {
+    flex: none !important;
+    max-width: none !important;
+  }
+
+  .segment-title {
+    width: 90% !important;
+  }
+
+  .segment-content {
+    width: 90% !important;
+  }
+
+  ion-segment-button.profile-menu-button {
+    text-align: center !important;
+    word-wrap: break-word !important;
+  }
+}
+
+.profile-segment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .segment-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 70%;
+    height: 30px;
+    background-color: $app-chat-blue;
+    //font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .segment-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 70%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    * {
+      flex-grow: 1;
+    }
+  }
+
+  .segment-border {
+    border-left: 1px solid $app-grey;
+    border-right: 1px solid $app-grey;
+    border-bottom: 1px solid $app-grey;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px;
+  }
+
+  #profile-general {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+.segment-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+
+  .segment-table-row {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid $app-grey-text;
+
+    .segment-table-row-key {
+      flex-grow: 1;
+      width: 50%;
+      padding-left: 15px;
+    }
+    .segment-table-row-value {
+      width: 50%;
+      flex-grow: 1;
+    }
+  }
+}
+
+.table-seperator {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+ion-segment-button.profile-menu-button {
+  border:none !important;
+  color: black !important;
+  background-color: none !important;
+  border-radius: 0 0 0 0 !important;
+  text-align: left;
+}
+
+.profile-menu-button.segment-button.segment-activated {
+  background-color: $app-grey !important;
+}
+
+.profile-sidebar {
+  padding-left: 10px;
+  padding-right: 3%;
+}

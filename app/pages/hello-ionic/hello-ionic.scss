@@ -26,8 +26,8 @@ ion-item.item {
   padding-bottom: 0px;
 
 }
-.spacerow {
-  height: 60px;
+.spacerowdash {
+  height: 4vw;
 }
 
 ion-segment-button.stat-tabs {
@@ -36,10 +36,14 @@ ion-segment-button.stat-tabs {
   background-color: none !important;
   border-radius: 0 0 0 0 !important;
   border-bottom : 1px solid $app-grey-text !important;
+  height: auto;
 }
 
+ion-col.center {
+   padding: 3px;
+ }
 
-.segment-button.segment-activated {
+stat-tabs.segment-button.segment-activated {
   background-color: white !important;
   border-bottom : 2px solid $app-blue !important;
 }
@@ -61,23 +65,37 @@ ion-segment-button.stat-tabs {
 .user-bolder {
   color: #000000;
   font-weight: bold;
-  font-size: 200%;
-  padding-top: 30px;
+  font-size: 1.8vw;
+  padding-top: 5%;
   margin-left: 0px;
+  text-align: left;
+
+  //e necessário verificar noutros dispositivos como fica afectado pelas mudanças colocadas abaixo
+  /*overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+*/
 }
 
 .user-bolds {
   color: #000000;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 1.1vw;
   padding-top: 10px;
+
 }
 
 
 .textsegbar {
   padding-top: 10px;
   color: #000000;
-  font-size: medium;
+  font-size: 1.1vw;
 }
 
 #textblue {
@@ -90,17 +108,51 @@ ion-segment-button.stat-tabs {
   color: #000000;
 }
 
+.center{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .circle-red {
   position: relative;
-  margin: 1em auto;
-  width: 10em;
-  height: 10em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
   border-radius: 50%;
   background: red;
 }
 
 .custom-icon {
-  font-size: 64px;
+  font-size: 4vw;
+  max-font-size: 10%;
   color : white;
   position: absolute;
   top: 50%;
@@ -111,15 +163,17 @@ ion-segment-button.stat-tabs {
 #textboldred {
   color: red;
   font-weight: bold;
-  font-size: 300%;
+  font-size: 3vw;
   padding-top: 5px;
 }
 
 .circle-orange {
   position: relative;
-  margin: 1em auto;
-  width: 10em;
-  height: 10em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
   border-radius: 50%;
   background: orange;
 }
@@ -128,15 +182,17 @@ ion-segment-button.stat-tabs {
 #textboldorange {
   color: orange;
   font-weight: bold;
-  font-size: 300%;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
 .circle-blue {
   position: relative;
-  margin: 1em auto;
-  width: 10em;
-  height: 10em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
   border-radius: 50%;
   background: midnightblue;
 }
@@ -146,15 +202,17 @@ ion-segment-button.stat-tabs {
 #textboldblue {
   color: midnightblue;
   font-weight: bold;
-  font-size: 300%;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
 .circle-purple {
   position: relative;
-  margin: 1em auto;
-  width: 10em;
-  height: 10em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+  padding-top: 80%;
   border-radius: 50%;
   background: purple;
 }
@@ -163,12 +221,12 @@ ion-segment-button.stat-tabs {
 #textboldpurple {
   color: purple;
   font-weight: bold;
-  font-size: 300%;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
 .customcol2 {
-  width: 5%;
+  min-width: 5%;
 }
 
 .customcol {
