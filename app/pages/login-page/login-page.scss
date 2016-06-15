@@ -84,6 +84,16 @@ border: 1px;
 border-color: white;
 }
 
+.form1.input-has-focus, .form2.input-has-focus
+{
+  background-color: transparent;
+}
+
+.form1.activated, .form2.activated
+{
+  background-color: transparent;
+}
+
 .form2{
 background-color: transparent;
 padding-left: 0;
