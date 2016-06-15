@@ -12,9 +12,10 @@ import {MessageListPage} from "./pages/message-list/message-list";
 import {ManagmentList} from './pages/managment-list/managment-list';
 import {ClientListPage} from "./pages/client-list/client-list";
 import {Statistics} from "./pages/statistics/statistics";
-import{LoginPage} from './pages/login-page/login-page';
+import {LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
-import{AppSettings} from './pages/app-settings/app-settings';
+import {AppSettings} from './pages/app-settings/app-settings';
+import {TutorialPage} from './pages/tutorial/tutorial'
 
 @App({
   templateUrl: 'build/app.html',
@@ -26,7 +27,7 @@ import{AppSettings} from './pages/app-settings/app-settings';
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = HelloIonicPage;
+  rootPage: any = TutorialPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
@@ -74,4 +75,14 @@ class MyApp {
     let nav = this.app.getComponent('nav');
     nav.setRoot(page.component);
   }
+/*
+  isInitialRun () {
+    let value = this.localStorage.get("initialRun") || "true";
+    return value == "true";
+  }
+
+  setInitialRun(state) {
+    this.localStorage.set("initialRun", (state ? "true" : "false"));
+  }
+  */
 }
