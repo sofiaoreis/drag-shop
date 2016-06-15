@@ -12,7 +12,7 @@ background-size: cover;
 }
 
 .logo{
-height: 50%;
+height: 40%;
 text-align: center;
 position: relative;
 }
@@ -20,6 +20,34 @@ position: relative;
 .logo img{
   max-height: 500px;
   max-width: 500px;
+}
+
+.thumbnail-icon
+{
+  min-width: 0em;
+  min-height: 0em;
+}
+
+.form1 .text-input::-webkit-input-placeholder
+{
+  color: white;
+}
+
+.item-content.activated{
+
+  color:white;
+}
+
+.login-hr
+{
+  width: 100%;
+  background-color:white;
+  margin-top: -10px;
+}
+
+.credentials
+{
+  padding-bottom: 20px;
 }
 
 
@@ -36,9 +64,9 @@ border-radius: 80%;
 
 .form1 .text-input
 {
-  margin: 0px;
+  //margin: 0px;
   padding: none;
-  
+
 }
 
 .icon
@@ -59,6 +87,11 @@ border-color: white;
 .form2{
 background-color: transparent;
 padding-left: 0;
+}
+
+.form1, .form2::input-has-focus
+{
+  background-color: white;
 }
 
 .form{
@@ -83,11 +116,20 @@ font-size: 110%;
 }
 
 .button3{
- color: $appgrey;
+ color: white;
  font-size: 110%;
 }
 
 .button4{
- color: $appgrey;
+ color: white;
  font-size: 110%;
 }
+
+.button4.activated, .button3.activated, .button2.activated,{
+  background-color: transparent;;
+}
+
+ .button1.activated
+ {
+   background-color: rgba(94,186,190,0.7);
+ }

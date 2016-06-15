@@ -21,47 +21,30 @@
 
   <div class="form1">
 
-<!--<ion-row>
-    <div class="login-input">
-
-         <img class="icon" src="img/facebook-logo.svg"/>
-         <ion-input type="text" placeholder="E-mail address"> </ion-input>
-
-  </div>
-
-<!--  <div class="send-input">
-     <textarea autosize  #newMessage ></textarea>
-
-     <div class="send-button" (click)="sendMessage(newMessage)" style="background-image: url('img/icon_mensagens_cinzento.svg')">
-     </div>
-   </div>
-</ion-row>
-
-<ion-item>
-
- <ion-icon range-left small name="sunny"></ion-icon>
- <ion-icon range-right name="sunny"></ion-icon>
-</ion-range>
-</ion-tem>-->
-
+<div class="credentials">
 <ion-item class="form1 item-input">
-  <ion-thumbnail item-left>
-      <ion-icon class="icon-login" name="sunny"></ion-icon>
+  <ion-thumbnail item-left class="thumbnail-icon">
+      <ion-icon name="ios-mail-outline"></ion-icon>
   </ion-thumbnail>
-  <ion-thumbnail item-left>
-    <ion-input type="password" placeholder="Password"> </ion-input>
+  <ion-thumbnail item-left class="thumbnail-icon">
+    <ion-input type="text" placeholder="E-mail address"> </ion-input>
   </ion-thumbnail>
-
-
-
-  <!--<ion-input type="password" placeholder="Password"> </ion-input>-->
 </ion-item>
+  <hr class="login-hr">
 
   <ion-item class="form2 item-input">
-    <ion-input type="password" placeholder="Password"> </ion-input>
+    <ion-thumbnail item-left class="thumbnail-icon">
+        <ion-icon name="ios-lock-outline"></ion-icon>
+    </ion-thumbnail>
+    <ion-thumbnail item-left class="thumbnail-icon">
+      <ion-input type="password" placeholder="Password"> </ion-input>
+    </ion-thumbnail>
   </ion-item>
+  <hr class="login-hr">
 
-<button class="button1" full (click)="itemTapped()">
+</div>
+
+<button class="button1" full (click)="toDashboard()">
 <strong>SIGN IN</strong>
 </button>
 
