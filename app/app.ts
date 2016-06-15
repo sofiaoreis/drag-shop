@@ -4,9 +4,12 @@ import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page';
-import{LoginPage} from './pages/login-page/login-page';
-import{AppSettings} from './pages/app-settings/app-settings';
-import{AccountPage} from './pages/account-page/account-page';
+import {LoginPage} from './pages/login-page/login-page';
+import {AppSettings} from './pages/app-settings/app-settings';
+import {AccountPage} from './pages/account-page/account-page';
+import {bootstrap}  from 'angular2/platform/browser';
+
+bootstrap(AccountPage);
 
 
 @App({

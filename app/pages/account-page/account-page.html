@@ -18,8 +18,14 @@
 	</ion-col>
 
 	<ion-col width-50 class="select-col">
-
-	
+                <accordion>
+                  <accordion-group [heading]="group.heading" *ngFor="#group of groups">
+                    <p> {{group.content.Name}} </p>
+                    <p> {{group.content.Email}} </p>
+                    <p> {{group.content.Phone}} </p>
+                    <p> {{group.content.Role}} </p>
+                  </accordion-group>
+                </accordion>
 	</ion-col>
 
 	<ion-col>

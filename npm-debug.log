@@ -1,0 +1,295 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ng2-accordion',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json drag_shop@ No repository field.
+5 warn package.json ionic-gulp-fonts-copy@1.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'ng2-accordion', null ]
+8 verbose cache add name=undefined spec="ng2-accordion" args=["ng2-accordion",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'ng2-accordion',
+9 verbose parsed url   path: 'ng2-accordion',
+9 verbose parsed url   href: 'ng2-accordion' }
+10 silly lockFile f37d43d4-ng2-accordion ng2-accordion
+11 verbose lock ng2-accordion /home/joao/.npm/f37d43d4-ng2-accordion.lock
+12 silly lockFile f37d43d4-ng2-accordion ng2-accordion
+13 silly lockFile f37d43d4-ng2-accordion ng2-accordion
+14 verbose addNamed [ 'ng2-accordion', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 93a4f92e-ng2-accordion ng2-accordion@
+17 verbose lock ng2-accordion@ /home/joao/.npm/93a4f92e-ng2-accordion.lock
+18 silly addNameRange { name: 'ng2-accordion', range: '*', hasData: false }
+19 verbose url raw ng2-accordion
+20 verbose url resolving [ 'https://registry.npmjs.org/', './ng2-accordion' ]
+21 verbose url resolved https://registry.npmjs.org/ng2-accordion
+22 info trying registry request attempt 1 at 19:26:16
+23 http GET https://registry.npmjs.org/ng2-accordion
+24 http 200 https://registry.npmjs.org/ng2-accordion
+25 silly registry.get cb [ 200,
+25 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly registry.get     etag: '"81V5IBDX5G5G73JZFFB4ST7DO"',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'cache-control': 'max-age=300',
+25 silly registry.get     'content-length': '8423',
+25 silly registry.get     'accept-ranges': 'bytes',
+25 silly registry.get     date: 'Mon, 13 Jun 2016 18:26:17 GMT',
+25 silly registry.get     via: '1.1 varnish',
+25 silly registry.get     age: '0',
+25 silly registry.get     connection: 'keep-alive',
+25 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
+25 silly registry.get     'x-cache': 'MISS',
+25 silly registry.get     'x-cache-hits': '0',
+25 silly registry.get     'x-timer': 'S1465842377.286338,VS0,VE437',
+25 silly registry.get     vary: 'Accept-Encoding' } ]
+26 silly addNameRange number 2 { name: 'ng2-accordion', range: '*', hasData: true }
+27 silly addNameRange versions [ 'ng2-accordion', [ '0.0.1', '0.0.2' ] ]
+28 verbose addNamed [ 'ng2-accordion', '0.0.2' ]
+29 verbose addNamed [ '0.0.2', '0.0.2' ]
+30 silly lockFile 67dce80c-ng2-accordion-0-0-2 ng2-accordion@0.0.2
+31 verbose lock ng2-accordion@0.0.2 /home/joao/.npm/67dce80c-ng2-accordion-0-0-2.lock
+32 silly lockFile d5ccb948-ccordion-ng2-accordion-0-0-2-tgz https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz
+33 verbose lock https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz /home/joao/.npm/d5ccb948-ccordion-ng2-accordion-0-0-2-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz',
+34 verbose addRemoteTarball   '4ce5318a9ac0645915a327cee045cbc95cd53be3' ]
+35 info retry fetch attempt 1 at 19:26:17
+36 verbose fetch to= /home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz
+37 http GET https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz
+38 http 200 https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz
+39 verbose tar unpack /home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz
+40 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+41 verbose lock tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package /home/joao/.npm/dc5ec798-77757-0-6261877135839313-package.lock
+42 silly lockFile 135a1732-77757-0-6261877135839313-tmp-tgz tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz
+43 verbose lock tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz /home/joao/.npm/135a1732-77757-0-6261877135839313-tmp-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry AccordionGroup.js
+48 silly gunzTarPerm extractEntry Accordion.js
+49 silly gunzTarPerm extractEntry index.js
+50 silly gunzTarPerm extractEntry AccordionGroup.js.map
+51 silly gunzTarPerm extractEntry Accordion.js.map
+52 silly gunzTarPerm extractEntry index.d.ts
+53 silly gunzTarPerm extractEntry AccordionGroup.d.ts
+54 silly gunzTarPerm extractEntry index.js.map
+55 silly gunzTarPerm extractEntry Accordion.d.ts
+56 silly gunzTarPerm extractEntry typings.json
+57 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+58 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+59 silly lockFile 135a1732-77757-0-6261877135839313-tmp-tgz tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz
+60 silly lockFile 135a1732-77757-0-6261877135839313-tmp-tgz tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/tmp.tgz
+61 verbose tar pack [ '/home/joao/.npm/ng2-accordion/0.0.2/package.tgz',
+61 verbose tar pack   '/home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package' ]
+62 verbose tarball /home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+63 verbose folder /home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+64 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+65 verbose lock tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package /home/joao/.npm/dc5ec798-77757-0-6261877135839313-package.lock
+66 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+67 verbose lock tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz /home/joao/.npm/50185b88--ng2-accordion-0-0-2-package-tgz.lock
+68 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+69 silly lockFile dc5ec798-77757-0-6261877135839313-package tar:///home/joao/tmp/npm-3355-EEBKq4on/1465842377757-0.6261877135839313/package
+70 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+71 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+72 silly lockFile ae31ceb9--npm-ng2-accordion-0-0-2-package /home/joao/.npm/ng2-accordion/0.0.2/package
+73 verbose lock /home/joao/.npm/ng2-accordion/0.0.2/package /home/joao/.npm/ae31ceb9--npm-ng2-accordion-0-0-2-package.lock
+74 silly lockFile ae31ceb9--npm-ng2-accordion-0-0-2-package /home/joao/.npm/ng2-accordion/0.0.2/package
+75 silly lockFile ae31ceb9--npm-ng2-accordion-0-0-2-package /home/joao/.npm/ng2-accordion/0.0.2/package
+76 verbose tar unpack /home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+77 silly lockFile f195c2fb--npm-ng2-accordion-0-0-2-package tar:///home/joao/.npm/ng2-accordion/0.0.2/package
+78 verbose lock tar:///home/joao/.npm/ng2-accordion/0.0.2/package /home/joao/.npm/f195c2fb--npm-ng2-accordion-0-0-2-package.lock
+79 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+80 verbose lock tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz /home/joao/.npm/50185b88--ng2-accordion-0-0-2-package-tgz.lock
+81 silly gunzTarPerm modes [ '755', '644' ]
+82 silly gunzTarPerm extractEntry package.json
+83 silly gunzTarPerm extractEntry README.md
+84 silly gunzTarPerm extractEntry AccordionGroup.js
+85 silly gunzTarPerm extractEntry Accordion.js
+86 silly gunzTarPerm extractEntry index.js
+87 silly gunzTarPerm extractEntry AccordionGroup.js.map
+88 silly gunzTarPerm extractEntry Accordion.js.map
+89 silly gunzTarPerm extractEntry index.d.ts
+90 silly gunzTarPerm extractEntry AccordionGroup.d.ts
+91 silly gunzTarPerm extractEntry index.js.map
+92 silly gunzTarPerm extractEntry Accordion.d.ts
+93 silly gunzTarPerm extractEntry typings.json
+94 silly lockFile f195c2fb--npm-ng2-accordion-0-0-2-package tar:///home/joao/.npm/ng2-accordion/0.0.2/package
+95 silly lockFile f195c2fb--npm-ng2-accordion-0-0-2-package tar:///home/joao/.npm/ng2-accordion/0.0.2/package
+96 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+97 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+98 verbose chmod /home/joao/.npm/ng2-accordion/0.0.2/package.tgz 644
+99 verbose chown /home/joao/.npm/ng2-accordion/0.0.2/package.tgz [ 1000, 1000 ]
+100 silly lockFile d5ccb948-ccordion-ng2-accordion-0-0-2-tgz https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz
+101 silly lockFile d5ccb948-ccordion-ng2-accordion-0-0-2-tgz https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz
+102 silly lockFile 67dce80c-ng2-accordion-0-0-2 ng2-accordion@0.0.2
+103 silly lockFile 67dce80c-ng2-accordion-0-0-2 ng2-accordion@0.0.2
+104 silly lockFile 93a4f92e-ng2-accordion ng2-accordion@
+105 silly lockFile 93a4f92e-ng2-accordion ng2-accordion@
+106 silly resolved [ { name: 'ng2-accordion',
+106 silly resolved     version: '0.0.2',
+106 silly resolved     description: 'Simple accordion control for your angular2 applications using bootstrap3.',
+106 silly resolved     license: 'Apache-2.0',
+106 silly resolved     readmeFilename: 'README.md',
+106 silly resolved     private: false,
+106 silly resolved     author: { name: 'Umed Khudoiberdiev', email: 'pleerock.me@gmail.com' },
+106 silly resolved     repository:
+106 silly resolved      { type: 'git',
+106 silly resolved        url: 'https://github.com/pleerock/ng2-accordion.git' },
+106 silly resolved     bugs: { url: 'https://github.com/pleerock/ng2-accordion/issues' },
+106 silly resolved     tags: [ 'accordion', 'angular2', 'typescript', 'angular2-accordion' ],
+106 silly resolved     dependencies: { '@angular/core': '2.0.0-rc.1' },
+106 silly resolved     devDependencies:
+106 silly resolved      { '@angular/common': '^2.0.0-rc.1',
+106 silly resolved        '@angular/compiler': '^2.0.0-rc.1',
+106 silly resolved        '@angular/platform-browser': '^2.0.0-rc.1',
+106 silly resolved        '@angular/platform-browser-dynamic': '^2.0.0-rc.1',
+106 silly resolved        bootstrap: '^3.3.6',
+106 silly resolved        chai: '^3.4.1',
+106 silly resolved        del: '^2.2.0',
+106 silly resolved        'es6-promise': '^3.0.2',
+106 silly resolved        'es6-shim': '^0.33.3',
+106 silly resolved        gulp: '^3.9.0',
+106 silly resolved        'gulp-mocha': '^2.2.0',
+106 silly resolved        'gulp-replace': '^0.5.4',
+106 silly resolved        'gulp-shell': '^0.5.1',
+106 silly resolved        'gulp-tslint': '^4.3.1',
+106 silly resolved        gulpclass: '^0.1.0',
+106 silly resolved        mocha: '^2.3.2',
+106 silly resolved        'reflect-metadata': '0.1.2',
+106 silly resolved        rxjs: '5.0.0-beta.6',
+106 silly resolved        sinon: '^1.17.2',
+106 silly resolved        'sinon-chai': '^2.8.0',
+106 silly resolved        systemjs: '0.19.27',
+106 silly resolved        tslint: '^3.3.0',
+106 silly resolved        'tslint-stylish': '^2.1.0-beta',
+106 silly resolved        typescript: '^1.8.2',
+106 silly resolved        typings: '^0.6.6',
+106 silly resolved        'zone.js': '^0.6.12' },
+106 silly resolved     readme: '# ng2-accordion\n\nSimple accordion control for your angular2 applications using bootstrap3. Does not depend of jquery.\n\n## Installation\n\n1. Install npm module:\n\n`npm install ng2-accordion --save`\n\n2. If you are using system.js you may want to add this into `map` and `package` config:\n\n```json\n{\n    "map": {\n        "ng2-accordion": "node_modules/ng2-accordion"\n    },\n    "packages": {\n        "ng2-accordion": { "main": "index.js", "defaultExtension": "js" }\n    }\n}\n## Usage\n\n```javascript\n<accordion [showArrows]="true" [closeOthers]="false">\n    <accordion-group heading="Accordion heading">\n        <accordion-heading>\n            Or <b>custom</b> heading.  \n        </accordion-heading>\n        Accordion group contents.\n    </accordion>\n    ...\n</accordion>\n```\n\n* `<accordion>`:\n    * `[showArrows]="true|false"` Indicates if arrows should be shown or not. Default is **false**\n    * `[closeOthers]="true|false"` Indicates if other opened groups should be automatically closed when you open a new group. Default is **true**\n* `<accordion-group>`:\n    * `heading="Group heading"` Simple text group heading\n    * `<accordion-heading>` Content zone where you can put custom headings\n\n## Sample\n\n```javascript\nimport {Component} from "angular2/core";\nimport {ACCORDION_DIRECTIVES} from "ng2-accordion/ng2-accordion";\n\n@Component({\n    selector: "app",\n    template: `\n<div class="container">\n\n    <!-- regular accordion -->\n    <accordion>\n        <accordion-group heading="About me">\n            Its all about me.\n        </accordion-group>\n        <accordion-group heading="Contacts">\n            This is content of the contacts\n        </accordion-group>\n        <accordion-group heading="Map">\n            Content of the Map\n        </accordion-group>\n        <accordion-group>\n            <accordion-heading>\n                Custom heading.  \n            </accordion-heading>\n            Its all about me.\n        </accordion-group>\n    </accordion>\n\n    <!-- regular accordion with first opened group -->\n    <accordion>\n        <accordion-group heading="About me" [isOpened]="true">\n            Its all about me.\n        </accordion-group>\n        <accordion-group heading="Contacts">\n            This is content of the contacts\n        </accordion-group>\n        <accordion-group heading="Map">\n            Content of the Map\n        </accordion-group>\n        <accordion-group>\n            <accordion-heading>\n                Custom heading.  \n            </accordion-heading>\n            Its all about me.\n        </accordion-group>\n    </accordion>\n\n    <!-- accordion with arrows -->\n    <accordion [showArrows]="true">\n        <accordion-group heading="About me">\n            Its all about me.\n        </accordion-group>\n        <accordion-group heading="Contacts">\n            This is content of the contacts\n        </accordion-group>\n        <accordion-group heading="Map">\n            Content of the Map\n        </accordion-group>\n        <accordion-group>\n            <accordion-heading>\n                Custom heading.  \n            </accordion-heading>\n            Its all about me.\n        </accordion-group>\n    </accordion>\n    \n    <!-- accordion where you can close multiple groups -->\n    <accordion [closeOthers]="false">\n        <accordion-group heading="About me">\n            Its all about me.\n        </accordion-group>\n        <accordion-group heading="Contacts">\n            This is content of the contacts\n        </accordion-group>\n        <accordion-group heading="Map">\n            Content of the Map\n        </accordion-group>\n        <accordion-group>\n            <accordion-heading>\n                Custom heading.  \n            </accordion-heading>\n            Its all about me.\n        </accordion-group>\n    </accordion>\n    \n</div>\n`,\n    directives: [ACCORDION_DIRECTIVES]\n})\nexport class App {\n\n}\n```\n\nTake a look on samples in [./sample](https://github.com/pleerock/ng2-accordion/tree/master/sample) for more examples of\nusages.\n',
+106 silly resolved     _id: 'ng2-accordion@0.0.2',
+106 silly resolved     dist: { shasum: 'c38d2f29f7e2a4efec2875c44394cbee12391521' },
+106 silly resolved     _from: 'ng2-accordion@',
+106 silly resolved     _resolved: 'https://registry.npmjs.org/ng2-accordion/-/ng2-accordion-0.0.2.tgz' } ]
+107 info install ng2-accordion@0.0.2 into /home/joao/Documents/lgpr-drag-shop
+108 info installOne ng2-accordion@0.0.2
+109 info /home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion unbuild
+110 verbose tar unpack /home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+111 silly lockFile 19ea1a68--shop-node-modules-ng2-accordion tar:///home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion
+112 verbose lock tar:///home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion /home/joao/.npm/19ea1a68--shop-node-modules-ng2-accordion.lock
+113 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+114 verbose lock tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz /home/joao/.npm/50185b88--ng2-accordion-0-0-2-package-tgz.lock
+115 silly gunzTarPerm modes [ '755', '644' ]
+116 silly gunzTarPerm extractEntry package.json
+117 silly gunzTarPerm extractEntry README.md
+118 silly gunzTarPerm extractEntry AccordionGroup.js
+119 silly gunzTarPerm extractEntry Accordion.js
+120 silly gunzTarPerm extractEntry index.js
+121 silly gunzTarPerm extractEntry AccordionGroup.js.map
+122 silly gunzTarPerm extractEntry Accordion.js.map
+123 silly gunzTarPerm extractEntry index.d.ts
+124 silly gunzTarPerm extractEntry AccordionGroup.d.ts
+125 silly gunzTarPerm extractEntry index.js.map
+126 silly gunzTarPerm extractEntry Accordion.d.ts
+127 silly gunzTarPerm extractEntry typings.json
+128 silly lockFile 19ea1a68--shop-node-modules-ng2-accordion tar:///home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion
+129 silly lockFile 19ea1a68--shop-node-modules-ng2-accordion tar:///home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion
+130 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+131 silly lockFile 50185b88--ng2-accordion-0-0-2-package-tgz tar:///home/joao/.npm/ng2-accordion/0.0.2/package.tgz
+132 info preinstall ng2-accordion@0.0.2
+133 verbose readDependencies using package.json deps
+134 verbose readDependencies using package.json deps
+135 verbose cache add [ '@angular/core@2.0.0-rc.1', null ]
+136 verbose cache add name=undefined spec="@angular/core@2.0.0-rc.1" args=["@angular/core@2.0.0-rc.1",null]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: '@angular/core@2.0.0-rc.1',
+137 verbose parsed url   path: '@angular/core@2.0.0-rc.1',
+137 verbose parsed url   href: '@angular/core@2.0.0-rc.1' }
+138 verbose cache add name="" spec="angular/core@2.0.0-rc.1" args=["","angular/core@2.0.0-rc.1"]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: 'angular/core@2.0.0-rc.1',
+139 verbose parsed url   path: 'angular/core@2.0.0-rc.1',
+139 verbose parsed url   href: 'angular/core@2.0.0-rc.1' }
+140 verbose cache add name="angular/core" spec="2.0.0-rc.1" args=["angular/core","2.0.0-rc.1"]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: '2.0.0-rc.1',
+141 verbose parsed url   path: '2.0.0-rc.1',
+141 verbose parsed url   href: '2.0.0-rc.1' }
+142 verbose addNamed [ 'angular/core', '2.0.0-rc.1' ]
+143 verbose addNamed [ '2.0.0-rc.1', '2.0.0-rc.1' ]
+144 silly lockFile b50e344d-angular-core-2-0-0-rc-1 angular/core@2.0.0-rc.1
+145 verbose lock angular/core@2.0.0-rc.1 /home/joao/.npm/b50e344d-angular-core-2-0-0-rc-1.lock
+146 verbose url raw angular/core/2.0.0-rc.1
+147 verbose url resolving [ 'https://registry.npmjs.org/', './angular/core/2.0.0-rc.1' ]
+148 verbose url resolved https://registry.npmjs.org/angular/core/2.0.0-rc.1
+149 info trying registry request attempt 1 at 19:26:18
+150 http GET https://registry.npmjs.org/angular/core/2.0.0-rc.1
+151 http 404 https://registry.npmjs.org/angular/core/2.0.0-rc.1
+152 silly registry.get cb [ 404,
+152 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+152 silly registry.get     'content-type': 'application/json',
+152 silly registry.get     'cache-control': 'max-age=0',
+152 silly registry.get     'content-length': '40',
+152 silly registry.get     'accept-ranges': 'bytes',
+152 silly registry.get     date: 'Mon, 13 Jun 2016 18:26:18 GMT',
+152 silly registry.get     via: '1.1 varnish',
+152 silly registry.get     age: '0',
+152 silly registry.get     connection: 'keep-alive',
+152 silly registry.get     'x-served-by': 'cache-fra1239-FRA',
+152 silly registry.get     'x-cache': 'MISS',
+152 silly registry.get     'x-cache-hits': '0',
+152 silly registry.get     'x-timer': 'S1465842378.415342,VS0,VE417' } ]
+153 silly lockFile b50e344d-angular-core-2-0-0-rc-1 angular/core@2.0.0-rc.1
+154 silly lockFile b50e344d-angular-core-2-0-0-rc-1 angular/core@2.0.0-rc.1
+155 verbose about to build /home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion
+156 info /home/joao/Documents/lgpr-drag-shop/node_modules/ng2-accordion unbuild
+157 info preuninstall ng2-accordion@0.0.2
+158 info uninstall ng2-accordion@0.0.2
+159 verbose true,/home/joao/Documents/lgpr-drag-shop/node_modules,/home/joao/Documents/lgpr-drag-shop/node_modules unbuild ng2-accordion@0.0.2
+160 info postuninstall ng2-accordion@0.0.2
+161 error 404 'angular' is not in the npm registry.
+161 error 404 You should bug the author to publish it
+161 error 404
+161 error 404 Note that you can also install from a
+161 error 404 tarball, folder, or http url, or git url.
+162 error System Linux 4.2.0-35-generic
+163 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "ng2-accordion" "--save"
+164 error cwd /home/joao/Documents/lgpr-drag-shop
+165 error node -v v0.10.25
+166 error npm -v 1.3.10
+167 error code E404
+168 verbose exit [ 1, true ]
