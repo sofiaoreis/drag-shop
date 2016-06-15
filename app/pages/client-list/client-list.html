@@ -11,7 +11,7 @@
 
     <div *ngFor="#client of clients">
       <ion-row padding class="message-item per-client">
-        <div width-10 class="client-pic" [style.background]="client.profile_pic">
+        <div width-10 class="client-pic" [style]="client.style">
         </div>
         <ion-col>
           <h6 class="client-name" (click)="itemTapped(client)"> {{ client.first_name }} {{ client.last_name }} </h6>

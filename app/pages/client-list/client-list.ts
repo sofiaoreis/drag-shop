@@ -20,6 +20,7 @@ export class ClientListPage {
     this.clientsService.getAllClients().subscribe(
         data => {
           this.clients = data;
+          this.clients.forEach(x => (x["style"] = "background-image: url('"+ x.profile_pic +"')"));
         },
         err => {console.log(err);},
         () => {console.log("Finished fetching clients");}

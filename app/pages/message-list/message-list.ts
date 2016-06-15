@@ -61,7 +61,7 @@ export class MessageListPage {
       if(!found) {
         let clientName = new ClientNamePipe().transform(otherPersonId, new Array(this.clients));
         let picture = new ClientPicturePipe().transform(otherPersonId, new Array(this.clients));
-        this.conversations.push({id: otherPersonId, name: clientName, profile_pic: picture, messages: [x]});
+        this.conversations.push({id: otherPersonId, name: clientName, profile_pic: "background-image: url('"+ picture +"')", messages: [x]});
       }
 
     });
