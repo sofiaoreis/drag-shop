@@ -3,6 +3,20 @@
     <ion-icon name="menu"></ion-icon>
   </button>
   <ion-title>Drag&Shop</ion-title>
+
+  <ion-buttons clear end>
+  <button id="iconsmove" >
+      <ion-icon name="notifications"></ion-icon>
+  </button>
+
+  <button  id="iconsmove" >
+        <ion-icon name="basket"></ion-icon>
+  </button>
+
+  <button  id="lasticonmove">
+      <ion-icon name="chatbubbles"></ion-icon>
+  </button>
+  </ion-buttons>
 </ion-navbar>
 
 
@@ -53,7 +67,7 @@
                             </div>
                         </ion-col>
                         <ion-col width-67>
-                            <ion-row class="user-bolder">NEW REGISTRATIONS</ion-row>
+                            <ion-row class="user-bolder">NEW USERS</ion-row>
                             <ion-row id="textboldblue">341</ion-row>
                         </ion-col>
                     </ion-row>
@@ -80,8 +94,10 @@
 
   <div class="tab-selector">
     <ion-row>
-      <ion-col width-67>
-
+      <ion-col width-33>
+        <div class="simplebox">
+            Products (158)
+        </div>
       </ion-col>
       <ion-col>
         <ion-segment [(ngModel)]="mostTrigger" [attr.light]="isAndroid ? '' : null">
@@ -104,10 +120,10 @@
           <div *ngFor="#mostp of mostpurchased; #i = index">
         <ion-item>
           <ion-row >
-            <ion-col width-10 id="text">
+            <ion-col width-10 id="textdash">
               {{i+1}}
             </ion-col>
-            <ion-col width-20 id="text">
+            <ion-col width-33.3 id="textdash">
               {{mostp.name}}
             </ion-col>
             <ion-col>
@@ -132,10 +148,10 @@
           <div *ngFor="#mostp of mostpurchased; #i = index">
               <ion-item>
                   <ion-row>
-                      <ion-col width-10 id="text">
+                      <ion-col width-10 id="textdash">
                           {{i+1}}
                       </ion-col>
-                      <ion-col width-20 id="text">
+                      <ion-col width-33.3 id="textdash">
                           {{mostp.name}}
                       </ion-col>
                       <ion-col >
