@@ -1,7 +1,7 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {FORM_DIRECTIVES, FormBuilder,  ControlGroup, Validators, AbstractControl} from 'angular2/common';
 import {AccountRecoverNumPage} from '../account-recover-num/account-recover-num';
-import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import {LoginPage} from '../login-page/login-page';
 
 
 @Page({
@@ -22,7 +22,7 @@ constructor(private nav: NavController, navParams: NavParams, fb: FormBuilder) {
 }
 
   goBack() {
-   this.nav.setRoot(HelloIonicPage);
+   this.nav.setRoot(LoginPage);
  }
 
  onSubmit(value: string): void {
@@ -33,6 +33,6 @@ constructor(private nav: NavController, navParams: NavParams, fb: FormBuilder) {
  }
 
  itemTapped() {
-   this.nav.setRoot(HelloIonicPage);
+   this.nav.setRoot(LoginPage);
  }
 }
