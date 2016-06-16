@@ -2,6 +2,20 @@
 
   background-color: $app-blue;
 
+  .skip-button {
+    position: absolute;;
+    bottom: 17px;
+    left:27%;
+    color: white;
+  }
+
+  .complete-button {
+    position: absolute;
+    bottom: 17px;
+    right:27%;
+    color: white;
+  }
+
   .container-slide {
     display: flex;
     flex-direction: column;
@@ -17,11 +31,21 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      padding-bottom: 10%;
+    }
+
+    .row-slide-3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10%;
     }
 
     .text-slide {
       color: white;
       text-align: left;
+      margin-bottom: 10%;
     }
 
   }
@@ -35,14 +59,27 @@
   }
 
   .slide-image {
-    max-height: 80%;
-    max-width: 100%;
+    max-height: 60%;
+    max-width: 60%;
     margin: 18px 0;
 
     position: static;
     left: 0;
     top: 0;
     transform: none;
+    border-radius: 0;
+  }
+
+  .slide-image-3 {
+    max-height: 20%;
+    max-width: 20%;
+    margin: 18px 0;
+
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0;
   }
 
   b {
@@ -58,6 +95,16 @@
     b {
       color: #000000;
     }
+  }
+
+  .swiper-pagination-bullet {
+    background: $app-grey-text !important;
+    opacity: 0.5 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    opacity: 1 !important;
   }
 
 }
