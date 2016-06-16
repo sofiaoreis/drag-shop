@@ -1,25 +1,26 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {OrderTrackingService} from '../../providers/orders-tracking-service/orders-tracking-service'
-import {Order} from '../../models/orderTracker'
+import {OrdersService} from '../../providers/orders-service/orders-service';
+import {Order} from '../../models/order';
+import {OrderSeeAllPipe} from '../../pipes/orders/order-status';
 
 @Page({
   templateUrl: 'build/pages/orders-tracking/orders-tracking.html',
-  providers: [OrderTrackingService]
+  providers: [OrdersService],
+  pipes:[OrderSeeAllPipe]
 })
 export class OrdersTrackingPage {
 
-orders: Array<{orders: Order[]}> = [];
+orders: Order[];
 ordersTrigger: string;
 
-  constructor(private nav: NavController, navParams: NavParams, private orderTrackingService: OrderTrackingService) {
+  constructor(private nav: NavController, navParams: NavParams, private orderTrackingService: OrdersService) {
       this.ordersTrigger = "all";
   }
 
   onPageDidEnter() {
-    //get all messages from or to the current user
-    this.orderTrackingService.getOrdersList().subscribe(
+    this.orderTrackingService.getOrders().subscribe(
         data => {
-            
+            this.orders = data;
         },
         err => {console.log(err);},
         () => {console.log("Finished fetching orders list");}

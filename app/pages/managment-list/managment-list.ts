@@ -1,10 +1,10 @@
 import {Page, NavController, NavParams, ViewController} from 'ionic-angular';
-import {ManagmentService} from '../../providers/managmentList-service/managmentList-service'
-import {Employee} from '../../models/employee'
-import {EmployeeAppointmentPipe} from '../../pipes/employees/employee-status'
-import {EmployeeToAppointPipe} from '../../pipes/employees/employee-status'
-import {EmployeeSeeAllPipe} from '../../pipes/employees/employee-status'
-import {MaxLengthPipe} from '../../pipes/employees/employee-status'
+import {ManagmentService} from '../../providers/managmentList-service/managmentList-service';
+import {Employee} from '../../models/employee';
+import {EmployeeAppointmentPipe} from '../../pipes/employees/employee-status';
+import {EmployeeToAppointPipe} from '../../pipes/employees/employee-status';
+import {EmployeeSeeAllPipe} from '../../pipes/employees/employee-status';
+import {MaxLengthPipe} from '../../pipes/employees/employee-status';
 
 @Page({
   templateUrl: 'build/pages/managment-list/managment-list.html',
@@ -18,8 +18,6 @@ export class ManagmentList {
 
   constructor(private nav: NavController, navParams: NavParams, private managmentService: ManagmentService) {
     this.employeesTrigger = "appointment";
-
-
   }
 
   onPageDidEnter() {

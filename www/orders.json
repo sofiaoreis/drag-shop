@@ -4,7 +4,7 @@
   "city": "Vila Nova de Gaia",
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
-  "status": "Pending",
+  "status": 3,
   "products": [{
     "id": 0,
     "name": "Apples",
@@ -48,7 +48,7 @@
   "city": "Porto",
   "payment": "Money",
   "address": "Vaz de Caminha Street, 15 Vila Nova de Gaia",
-  "status": "Delivered",
+  "status": 1,
   "products": [{
     "id": 0,
     "name": "Rice",
