@@ -15,4 +15,6 @@ export class TutorialPage {
   skip() {
     this.nav.setRoot(HelloIonicPage);
   }
+
+
 }

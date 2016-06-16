@@ -14,6 +14,7 @@
     bottom: 17px;
     right:27%;
     color: white;
+    font-size: 1.5em;
   }
 
   .container-slide {
@@ -22,7 +23,7 @@
     align-items: center;
     justify-content: center;
     height: 100% !important;
-    width: 50%;
+    width: 55%;
     align-self: center;
     margin-left: 25%;
 
@@ -32,6 +33,7 @@
       align-items: center;
       justify-content: center;
       padding-bottom: 10%;
+      width: 100%;
     }
 
     .row-slide-3 {
@@ -46,6 +48,7 @@
       color: white;
       text-align: left;
       margin-bottom: 10%;
+      font-size: 1.2em;
     }
 
   }
@@ -59,8 +62,20 @@
   }
 
   .slide-image {
-    max-height: 60%;
-    max-width: 60%;
+    max-height: 40%;
+    max-width: 40%;
+    margin: 18px 0;
+
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+  }
+
+  .slide-image-logo {
+    width: 60%;
+    height: 60%;
     margin: 18px 0;
 
     position: static;
