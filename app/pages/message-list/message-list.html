@@ -49,7 +49,7 @@
         <div *ngFor="#conversation of conversations">
 
           <ion-row padding class="message-item per-client">
-            <div width-10 class="client-pic" style="background-image: url('img/placeholder-user.png')">
+            <div width-10 class="client-pic" [style]="conversation.profile_pic">
             </div>
             <ion-col>
               <h6 class="client-name" (click)="itemTapped(conversation.id)"> {{ conversation.name }} </h6>

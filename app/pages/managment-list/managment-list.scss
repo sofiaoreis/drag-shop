@@ -72,8 +72,7 @@ ion-col.message {
     border-radius: 50%;
     width: 75px;
     height: 75px;
-    background-image: url("/img/placeholder-user.png");
-    background-size: 75px 75px;
+    background-size: cover;
 
     padding: 5px 0 0 0 !important;
     margin-right: 30px;
