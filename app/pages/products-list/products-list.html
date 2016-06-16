@@ -10,9 +10,11 @@
     <div class="products-container">
       <div class="category" *ngFor="#category of categories">
         {{category.name}}
-        <div class="product" *ngFor="#product of products">
-          <h2 *ngIf="product.category==category.name">{{product.product_name}}</h2>
-        </div>
+        <ion-slides>
+          <ion-slide *ngFor="#product of products">
+            <h1 *ngIf="product.category==category.name">{{product.product_name}}</h1>
+          </ion-slide>
+        </ion-slides>
       </div>
     </div>
   </ion-list>
