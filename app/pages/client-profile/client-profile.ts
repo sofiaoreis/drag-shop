@@ -15,9 +15,16 @@ export class ClientProfilePage {
   products: Product[];
 
   constructor(private nav: NavController, navParams: NavParams, private wishListService: WishListService) {
+    if(navParams.get('trigger')) {
+      this.profileTrigger = navParams.get('trigger');
+    }
+    else{
+      this.profileTrigger = "general";
+    }
+
     this.client = navParams.get('client');
     this.wishList = navParams.get('wishList');
-    this.profileTrigger = "general";
+    
 
   }
 
@@ -26,7 +33,7 @@ export class ClientProfilePage {
       data => {
         this.wishList = data.filter(x=>(x.client_id== this.client.id))[0];
         this.products = this.wishList.products;
-        
+
       },
       err => {console.log(err);},
       () => {console.log("Finished fetching client WishList");}
