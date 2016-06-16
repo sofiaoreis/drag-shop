@@ -1,0 +1,125 @@
+.tutorial-page {
+
+  background-color: $app-blue;
+
+  .skip-button {
+    position: absolute;;
+    bottom: 17px;
+    left:27%;
+    color: white;
+  }
+
+  .complete-button {
+    position: absolute;
+    bottom: 17px;
+    right:27%;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .container-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: 55%;
+    align-self: center;
+    margin-left: 25%;
+
+    .row-slide {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10%;
+      width: 100%;
+    }
+
+    .row-slide-3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10%;
+    }
+
+    .text-slide {
+      color: white;
+      text-align: left;
+      margin-bottom: 10%;
+      font-size: 1.2em;
+    }
+
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    margin-top: 2.8rem;
+  }
+
+  .slide-image {
+    max-height: 40%;
+    max-width: 40%;
+    margin: 18px 0;
+
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+  }
+
+  .slide-image-logo {
+    width: 60%;
+    height: 60%;
+    margin: 18px 0;
+
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+  }
+
+  .slide-image-3 {
+    max-height: 20%;
+    max-width: 20%;
+    margin: 18px 0;
+
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background: $app-grey-text !important;
+    opacity: 0.5 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: white !important;
+    opacity: 1 !important;
+  }
+
+}

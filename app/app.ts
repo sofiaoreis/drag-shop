@@ -15,6 +15,7 @@ import {Statistics} from "./pages/statistics/statistics";
 import {LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
 import {AppSettings} from './pages/app-settings/app-settings';
+import {TutorialPage} from './pages/tutorial/tutorial'
 
 @App({
   templateUrl: 'build/app.html',
@@ -26,7 +27,7 @@ import {AppSettings} from './pages/app-settings/app-settings';
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = LoginPage;
+  rootPage: any = TutorialPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
@@ -74,4 +75,14 @@ class MyApp {
     let nav = this.app.getComponent('nav');
     nav.setRoot(page.component);
   }
+/*
+  isInitialRun () {
+    let value = this.localStorage.get("initialRun") || "true";
+    return value == "true";
+  }
+
+  setInitialRun(state) {
+    this.localStorage.set("initialRun", (state ? "true" : "false"));
+  }
+  */
 }
