@@ -1,5 +1,6 @@
 import {Page , NavController, NavParams} from 'ionic-angular';
-import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import {LoginPage} from '../login-page/login-page';
+
 
 
 @Page({
@@ -13,7 +14,7 @@ export class TutorialPage {
   }
 
   skip() {
-    this.nav.setRoot(HelloIonicPage);
+    this.nav.setRoot(LoginPage);
   }
 
 
