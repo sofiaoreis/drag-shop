@@ -53,12 +53,13 @@ stat-tabs.segment-button.segment-activated {
   border-radius: 13px;
   border: 1px solid grey;
   padding: 0px;
+  margin-top: 0px;
 }
 
 .progressbar2 > div {
   background-color: $app-blue;
   //width: 40%;
-  height: 20px;
+  height: 0.7em;
   border-radius: 10px;
 }
 
@@ -92,12 +93,14 @@ stat-tabs.segment-button.segment-activated {
 
 #textblue {
   color: $app-blue;
+  font-size: 3vw;
   text-align: right;
 }
 
 
-#text {
+#textdash {
   color: #000000;
+  font-size: 3vw;
 }
 
 .center{
@@ -228,8 +231,19 @@ stat-tabs.segment-button.segment-activated {
 .simplebox {
   border-color: $app-blue;
   border-style: solid;
+  border-width: 1px;
   font-size: 2vw;
   text-align: center;
   padding: 5px;
   margin-top: 7px;
+}
+
+#iconsmove {
+  font-size: 1em;
+  margin-right: 0.1em;
+}
+
+#lasticonmove {
+  margin-right: 30%;
+  font-size: 1em;
 }

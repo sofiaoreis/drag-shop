@@ -4,16 +4,16 @@
   </button>
   <ion-title>Drag&Shop</ion-title>
 
-  <ion-buttons end>
-  <button clear >
+  <ion-buttons clear end>
+  <button id="iconsmove" >
       <ion-icon name="notifications"></ion-icon>
   </button>
 
-  <button clear >
+  <button  id="iconsmove" >
         <ion-icon name="basket"></ion-icon>
   </button>
 
-  <button clear >
+  <button  id="lasticonmove">
       <ion-icon name="chatbubbles"></ion-icon>
   </button>
   </ion-buttons>
@@ -120,10 +120,10 @@
           <div *ngFor="#mostp of mostpurchased; #i = index">
         <ion-item>
           <ion-row >
-            <ion-col width-10 id="text">
+            <ion-col width-10 id="textdash">
               {{i+1}}
             </ion-col>
-            <ion-col width-20 id="text">
+            <ion-col width-33.3 id="textdash">
               {{mostp.name}}
             </ion-col>
             <ion-col>
@@ -148,10 +148,10 @@
           <div *ngFor="#mostp of mostpurchased; #i = index">
               <ion-item>
                   <ion-row>
-                      <ion-col width-10 id="text">
+                      <ion-col width-10 id="textdash">
                           {{i+1}}
                       </ion-col>
-                      <ion-col width-20 id="text">
+                      <ion-col width-33.3 id="textdash">
                           {{mostp.name}}
                       </ion-col>
                       <ion-col >
