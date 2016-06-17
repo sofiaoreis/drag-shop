@@ -49,13 +49,39 @@
 
 
 
-#status-icon {
+#status-icon-inTraffic{
   //padding-top: 8%;
   padding-bottom: 5%;
   padding-right: 3%;
   font-size: 1.5em;
   color: #FFD500;
 }
+
+#status-icon-shipped{
+  //padding-top: 8%;
+  padding-bottom: 5%;
+  padding-right: 3%;
+  font-size: 1.5em;
+  color: #36C560;
+}
+
+#status-icon-pending{
+  //padding-top: 8%;
+  padding-bottom: 5%;
+  padding-right: 3%;
+  font-size: 1.5em;
+  color: #5BBBBF;
+}
+
+#status-icon-canceled{
+  //padding-top: 8%;
+  padding-bottom: 5%;
+  padding-right: 3%;
+  font-size: 1.5em;
+  color: #FF0404;
+}
+
+
 
 /*
 #change-status {

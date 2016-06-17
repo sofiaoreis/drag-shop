@@ -15,7 +15,11 @@
 <ion-col></ion-col>
     <ion-col style="min-width:47%">
       <ion-col class="status-title" >
-        <ion-icon id="status-icon" name="md-radio-button-on"></ion-icon>
+
+        <ion-icon *ngIf="order.status==='Pending'" id="status-icon-pending" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status==='Shipped'" id="status-icon-shipped" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status==='In Traffic'" id="status-icon-inTraffic" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status==='Canceled'" id="status-icon-canceled" name="md-radio-button-on"></ion-icon>
         <b>Status: {{order.status}}</b>
       </ion-col>
       <ion-col>
