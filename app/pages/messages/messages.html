@@ -53,13 +53,15 @@
         <!-- <img src="/img/tutorial2.svg" alt=""> -->
       </div>
 
-      <div>
-        <textarea autosize class="send-input" #newMessage (keyup.enter)="sendMessage(newMessage.value); newMessage.value=''"></textarea>
+    </div>
+
+    <div class="send-input">
+      <textarea autosize  #newMessage ></textarea>
+      <!-- <img class="send-button" src="img/icon_mensagens_cinzento.svg" /> -->
+      <div class="send-button" (click)="sendMessage(newMessage)" style="background-image: url('img/icon_mensagens_cinzento.svg')">
       </div>
     </div>
 
-
-
   </div>
-  
+
 </ion-content>

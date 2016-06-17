@@ -4,6 +4,7 @@ $app-grey: #E9EAEB;
 $app-chat-blue: #8CD3D7;
 $app-grey-text: #939598;
 
+<<<<<<< HEAD
 // App Shared Imports
 // --------------------------------------------------
 // These are the imports which make up the design of this app.
@@ -17,6 +18,8 @@ $app-grey-text: #939598;
 
 
 
+=======
+>>>>>>> master
 @import "../pages/hello-ionic/hello-ionic";
 
 @import "../pages/store-list/store-list";
@@ -33,6 +36,8 @@ $app-grey-text: #939598;
 
 @import "../pages/account-recovery/account-recovery";
 
+@import "../pages/account-recover-num/account-recover-num";
+
 @import "../pages/order-details/order-details";
 
 @import "../pages/messages/messages";
@@ -47,7 +52,8 @@ $app-grey-text: #939598;
 
 @import "../pages/free-employee-list/free-employee-list";
 
-
 @import "../app.scss";
 
-@import "../pages/managment-list/managment-list"
+@import "../pages/managment-list/managment-list";
+
+@import "../pages/tutorial/tutorial"
