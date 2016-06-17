@@ -1,0 +1,218 @@
+
+[
+  {"client_id": 1,
+    "products":[{
+  "id": 1,
+  "name": "Pork",
+  "amount": "3,34",
+  "units": "kg",
+  "price": "3,62",
+  "processed": false
+}, {
+  "id": 2,
+  "name": "Lettuces",
+  "amount": "1,50",
+  "units": "kg",
+  "price": "1,60",
+  "processed": false
+}, {
+  "id": 3,
+  "name": "Carrots",
+  "amount": "2,50",
+  "units": "kg",
+  "price": "1,30",
+  "processed": false
+} ]},
+{"client_id": 2, "products":[ {
+  "id": 4,
+  "name": "Mineral Water",
+  "amount": "1,50",
+  "units": "L",
+  "price": "1,00",
+  "processed": false
+}, {
+  "id": 5,
+  "name": "Cow",
+  "amount": "10,50",
+  "units": "kg",
+  "price": "4,11",
+  "processed": false
+}, {
+  "id": 6,
+  "name": "Sausage",
+  "amount": "7,50",
+  "units": "kg",
+  "price": "6,88",
+  "processed": false
+}, {
+  "id": 7,
+  "name": "Melon",
+  "amount": "2,50",
+  "units": "kg",
+  "price": "3,15",
+  "processed": false
+}, {
+  "id": 8,
+  "name": "Cabbage",
+  "amount": "2,50",
+  "units": "kg",
+  "price": "7,10",
+  "processed": false
+}]},
+{"client_id": 3, "products":[{
+  "id": 9,
+  "name": "Parsley",
+  "amount": "5,50",
+  "units": "kg",
+  "price": "4,95",
+  "processed": false
+}, {
+  "id": 10,
+  "name": "Orange Juice",
+  "amount": "1,00",
+  "units": "L",
+  "price": "1,20",
+  "processed": false
+}, {
+  "id": 11,
+  "name": "Chicken",
+  "amount": "3,50",
+  "units": "kg",
+  "price": "6,29",
+  "processed": false
+}, {
+  "id": 12,
+  "name": "Cow",
+  "amount": "10,50",
+  "units": "kg",
+  "price": "4,11",
+  "processed": false
+}, {
+  "id": 13,
+  "name": "Onion",
+  "amount": "3,02",
+  "units": "kg",
+  "price": "2,50",
+  "processed": false
+}, {
+  "id": 14,
+  "name": "Turkey",
+  "amount": "3,50",
+  "units": "kg",
+  "price": "0,47",
+  "processed": false
+} ]},
+{"client_id": 4, "products":[{
+  "id": 15,
+  "name": "Coca-Cola",
+  "amount": "2,00",
+  "units": "L",
+  "price": "2,00",
+  "processed": false
+}, {
+  "id": 16,
+  "name": "Bean",
+  "amount": "1,50",
+  "units": "kg",
+  "price": "8,97",
+  "processed": false
+}, {
+  "id": 17,
+  "name": "Mince",
+  "amount": "1,50",
+  "units": "kg",
+  "price": "1,73",
+  "processed": false
+}, {
+  "id": 18,
+  "name": "Brussels sprout",
+  "amount": "3,79",
+  "units": "kg",
+  "price": "1,22",
+  "processed": false
+}, {
+  "id": 19,
+  "name": "Corn salad",
+  "amount": "2,90",
+  "units": "kg",
+  "price": "4,11",
+  "processed": false
+}, {
+  "id": 20,
+  "name": "Pepsi-Cola",
+  "amount": "1,50",
+  "units": "L",
+  "price": "3,00",
+  "processed": false
+}, {
+  "id": 21,
+  "name": "Wine",
+  "amount": "1,50",
+  "units": "L",
+  "price": "10,50",
+  "processed": false
+}, {
+  "id": 22,
+  "name": "Couliflower",
+  "amount": "3,89",
+  "units": "kg",
+  "price": "7,50",
+  "processed": false
+}, {
+  "id": 23,
+  "name": "Iced-Tea",
+  "amount": "2,00",
+  "units": "L",
+  "price": "1,75",
+  "processed": false
+}, {
+  "id": 24,
+  "name": "7UP",
+  "amount": "2,00",
+  "units": "L",
+  "price": "2,50",
+  "processed": false
+}, {
+  "id": 25,
+  "name": "Compal",
+  "amount": "0,75",
+  "units": "L",
+  "price": "0,95",
+  "processed": false
+}]},
+{ "client_id": 5, "products":[{
+  "id": 26,
+  "name": "Caper",
+  "amount": "1,50",
+  "units": "kg",
+  "price": "1,11",
+  "processed": false
+}, {
+  "id": 27,
+  "name": "Vodka",
+  "amount": "1,50",
+  "units": "L",
+  "price": "10,55",
+  "processed": false
+}, {
+  "id": 28,
+  "name": "Quinoa",
+  "amount": "3,50",
+  "units": "kg",
+  "price": "1,27",
+  "processed": false
+}, {
+  "id": 29,
+  "name": "Vegetable fern",
+  "amount": "1,50",
+  "units": "kg",
+  "price": "5,50",
+  "processed": false
+}, {
+  "id": 28,
+  "name": "Cow",
+  "amount": "10,50",
+  "units": "kg",
+  "price": "4,11",
+  "processed": false
+    }]}]

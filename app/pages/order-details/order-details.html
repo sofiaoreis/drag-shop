@@ -2,7 +2,7 @@
   <button menuToggle>
     <ion-icon name="arrow-round-back"></ion-icon>
   </button>
-  <ion-title>{{order.client}}</ion-title>
+  <ion-title>{{client.first_name}} {{client.last_name}}</ion-title>
 </ion-navbar>
 
 
@@ -10,22 +10,27 @@
 <div class="content">
   <ion-row id="row1" responsive-sm>
     <ion-col>
-      <ion-col class="status" ><ion-icon id="status-icon" name="md-radio-button-on"></ion-icon><b>Status:</b> {{order.status}}</ion-col>
-      <ion-col id="status">change status</ion-col>
+      <ion-col class="status-title" >
+        <ion-icon id="status-icon" name="md-radio-button-on"></ion-icon>
+        <b>Status:</b> {{order.status}}
+      </ion-col>
+      <ion-col id="change-status">
+         <button block light (click)="doRadio()">change status</button>
+      </ion-col>
     </ion-col>
   </ion-row>
 
   <ion-row responsive-sm id="row2">
    <ion-col id="col">
-     <ion-col class="icon-links" id="text"><ion-icon name="eye" class="icons"></ion-icon>client profile</ion-col>
-     <ion-col class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons"></ion-icon>send a message</ion-col>
-     <ion-col class="icon-links" id="text"><ion-icon name="heart-outline" class="icons"></ion-icon>client wishlist</ion-col>
+     <ion-col (click)="itemTapped(client)" class="icon-links" id="text"><ion-icon name="eye" class="icons-order"></ion-icon>client profile </ion-col>
+     <ion-col (click)="goToMessages(client)" class="icon-links" id="text"><ion-icon name="chatbubbles-outline" class="icons-order"></ion-icon>send a message</ion-col>
+     <ion-col (click)="goToWishList(client)" class="icon-links" id="text"><ion-icon name="heart-outline" class="icons-order"></ion-icon>client wishlist</ion-col>
 
    </ion-col>
 
    <ion-col >
      <ion-col id="col1">
-       <ion-col class="user-bold">{{order.client}}</ion-col>
+       <ion-col class="user-bold">{{client.first_name}} {{client.last_name}}</ion-col>
        <ion-col class="icon-links" id="text">{{order.city}}</ion-col>
      </ion-col>
      <ion-col>
@@ -45,36 +50,43 @@
  </ion-row>
 
  <div>
-   <ion-row>
-     <ion-col width-33></ion-col>
-     <ion-col width-67 id="cenas">
-   <ion-col class="order"><b>Order: </b></ion-col>
-   <ion-row responsive sm class="label">
-     <ion-col>Weight</ion-col>
-     <ion-col>Product</ion-col>
-     <ion-col>Price</ion-col>
-     <ion-col></ion-col>
-   </ion-row>
+   <div class="profile-segment">
+     <div class="segment-title">
+       ORDER
+     </div>
+     <div class="segment-content segment-border">
+       <ion-col responsive sm class="background-table" id="background-table">
 
-   <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
-     <ion-col>{{product.weight}}{{product.units}}</ion-col>
-     <ion-col>{{product.name}}</ion-col>
-     <ion-col>{{product.price}}€</ion-col>
-     <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
-   </ion-row>
 
-   <ion-row responsive-sm>
-     <ion-col class="label">Total: </ion-col>
-     <ion-col></ion-col>
-     <ion-col>€</ion-col>
-     <ion-col></ion-col>
-   </ion-row>
-   <br>
-   <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
-   <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+     <ion-col  id="background-table" class="background-table">
+       <ion-row responsive sm class="label">
+         <ion-col>Weight</ion-col>
+         <ion-col id="table-col1">Product</ion-col>
+         <ion-col id="table-col2">Price</ion-col>
+       </ion-row>
+
+       <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
+         <ion-col>{{product.amount}}{{product.units}}</ion-col>
+         <ion-col id="table-col1">{{product.name}}</ion-col>
+         <ion-col id="table-col2">{{product.price}}€</ion-col>
+         <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
+       </ion-row>
+       <ion-row responsive-sm>
+         <ion-col class="label">Total: </ion-col>
+         <ion-col></ion-col>
+         <ion-col>€</ion-col>
+         <ion-col></ion-col>
+       </ion-row>
+       <br>
+       <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
+       <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+     </ion-col>
+
+
  </ion-col>
-
- </ion-row>
  </div>
+ </div>
+ </div>
+
 </div>
 </ion-content>

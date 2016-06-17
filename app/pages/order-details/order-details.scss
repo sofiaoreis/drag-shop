@@ -1,12 +1,3 @@
-.getting-started {
-
-  p {
-    margin: 20px 0;
-    line-height: 22px;
-    font-size: 16px;
-
-  }
-}
 
 .content{
   width: 70%;
@@ -44,17 +35,19 @@
   font-size: 65px;
 }
 
-.status {
+.status-title {
   // text-align: center;
   color: #000000;
-  //font-weight: bold;
-  font-size: 110%;
-  height: 30px;
+//  font-weight: bold;
+  font-size: 130%;
+  height: 2em;
 //  padding-top: 8.25%;
 //  padding-bottom: 5%;
 //  padding-left: 32%;
 
 }
+
+
 
 #status-icon {
   //padding-top: 8%;
@@ -64,25 +57,27 @@
   color: #FFD500;
 }
 
-#status {
+#change-status {
   color: #5BBBBF;
   font-weight: bold;
-  font-size: 80%;
+  font-size: 105%;
   //padding-bottom: 7%;
   padding-left: 6.5%;
 }
 
 .icon-links {
   padding-bottom: 8%;
+  font-size: 110%;
 }
 
 #text {
   color: #000000;
 }
 
-.icons {
-  padding-right: 2%;
+.icons-order {
+  padding-right: 4%;
   color: #5BBBBF;
+  //font-size: 120%;
   font-size: 1.5em;
 
 }
@@ -98,12 +93,18 @@
   //background: green;
 }
 
-#cenas ion-row:nth-child(odd){
+.background-table ion-row:nth-child(even){
   background: #E9EAEB;
+}
+
+#background-table ion-row:nth-child(odd){
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .payment {
   padding-top: 4%;
+  font-size: 110%;
 }
 
 .label {

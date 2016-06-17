@@ -140,3 +140,20 @@ ion-segment-button.profile-menu-button {
   padding-left: 10px;
   padding-right: 3%;
 }
+
+.background-table ion-row:nth-child(even){
+  background: #E9EAEB;
+}
+
+#background-table ion-row:nth-child(odd){
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#table-col1{
+  text-align: center;
+}
+
+#table-col2 {
+  text-align: end;
+}
