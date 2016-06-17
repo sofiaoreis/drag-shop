@@ -17,12 +17,17 @@
   height: 60px;
 }
 
+.seperator {
+  border-bottom : 1px solid $app-grey !important;
+}
+
 .user-title {
   color: #000000;
   //font-weight: bold;
   font-size: 150%;
   padding-top: 5px;
   margin-left: 30px;
+  padding-bottom: 25px;
 }
 
 .user-bolds {
@@ -62,4 +67,10 @@ ion-item:hover {
 .button-fab {
   height: 36px;
   width: 36px;
+}
+
+.button-outline-secondary
+{
+  border-color:#5bbbbf;
+  color: #5bbbbf;
 }

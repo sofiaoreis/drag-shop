@@ -1,5 +1,6 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import {StoreList} from "../store-list/store-list";
 import {AccountRecoveryPage} from '../account-recovery/account-recovery';
 
 
@@ -12,7 +13,7 @@ export class LoginPage {
   }
 
   toDashboard() {
-    this.nav.setRoot(HelloIonicPage);
+    this.nav.setRoot(StoreList);
   }
 
   toRecovery() {

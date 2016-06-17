@@ -15,7 +15,8 @@ import {Statistics} from "./pages/statistics/statistics";
 import {LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
 import {AppSettings} from './pages/app-settings/app-settings';
-import {TutorialPage} from './pages/tutorial/tutorial'
+import {TutorialPage} from './pages/tutorial/tutorial';
+
 
 @App({
   templateUrl: 'build/app.html',
@@ -27,7 +28,7 @@ import {TutorialPage} from './pages/tutorial/tutorial'
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = TutorialPage;
+  rootPage: any = LoginPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
