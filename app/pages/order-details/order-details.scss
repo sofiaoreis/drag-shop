@@ -6,7 +6,7 @@
 
 #row1 {
   padding-top: 7%;
-  padding-left: 30%;
+  //padding-left: 30%;
 
 }
 
@@ -57,13 +57,14 @@
   color: #FFD500;
 }
 
+/*
 #change-status {
   color: #5BBBBF;
   font-weight: bold;
   font-size: 105%;
   //padding-bottom: 7%;
   padding-left: 6.5%;
-}
+}*/
 
 .icon-links {
   padding-bottom: 8%;
@@ -112,6 +113,16 @@
   font-weight: bold;
 }
 
+#allocate-button{
+  font-size: 110%;
+}
+
+#changeStatus-button{
+  font-size: 100%;
+}
+
+
+
 .edit-button {
     padding: 0 1%;
     height: 1.5em;
@@ -124,4 +135,42 @@
 
 .edit-button.activated{
   background-color: $app-blue;
+}
+
+.profile-segment1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.segment-content1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 70%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  * {
+    flex-grow: 1;
+  }
+}
+
+.segment-content2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  * {
+    flex-grow: 1;
+  }
 }
