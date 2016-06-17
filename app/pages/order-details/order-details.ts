@@ -159,28 +159,28 @@ shipped (verde)*/
      type: 'radio',
      label: 'Shipped',
      value: 'Shipped',
-     checked: false
+     checked: (this.order.status === 'Shipped' ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'In Traffic',
      value: 'In Traffic',
-     checked: false
+     checked: (this.order.status === 'In Traffic' ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Pending',
      value: 'Pending',
-     checked: true
+     checked: (this.order.status === 'Pending' ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Canceled',
      value: 'Canceled',
-     checked: false
+     checked: (this.order.status === 'Canceled' ? true : false)
    });
 
    alert.addButton('Cancel');
