@@ -8,17 +8,24 @@
 
 <ion-content padding class="getting-started">
 <div class="content">
-  <ion-row id="row1" responsive-sm>
-    <ion-col>
+
+  <div class="profile-segment1">
+    <div class="segment-content2">
+  <ion-row  responsive-sm style="width:110%">
+<ion-col></ion-col>
+    <ion-col style="min-width:47%">
       <ion-col class="status-title" >
         <ion-icon id="status-icon" name="md-radio-button-on"></ion-icon>
-        <b>Status:</b> {{order.status}}
+        <b>Status: {{order.status}}</b>
       </ion-col>
-      <ion-col id="change-status">
-         <button block light (click)="doRadio()">change status</button>
+      <ion-col>
+         <button block class="submit-button" id="changeStatus-button" style="width: 47.5%"  (click)="doRadio()">Change Status</button>
       </ion-col>
     </ion-col>
+  <ion-col></ion-col>
   </ion-row>
+</div>
+</div>
 
   <ion-row responsive-sm id="row2">
    <ion-col id="col">
@@ -31,11 +38,11 @@
    <ion-col >
      <ion-col id="col1">
        <ion-col class="user-bold">{{client.first_name}} {{client.last_name}}</ion-col>
-       <ion-col class="icon-links" id="text">{{order.city}}</ion-col>
+       <ion-col class="icon-links" id="text">{{client.address.city}}</ion-col>
      </ion-col>
      <ion-col>
        <ion-col class="user-bold">Address</ion-col>
-       <ion-col class="icon-links" id="text">{{order.address}}</ion-col>
+       <ion-col class="icon-links" id="text">{{client.address.address_line}}, {{client.address.address_line}}, {{client.address.city}}</ion-col>
      </ion-col>
      <ion-col>
        <ion-col class="user-bold">Scheduled delivery in</ion-col>
@@ -44,46 +51,65 @@
    </ion-col>
 
    <ion-col id="col">
-     <ion-col class="payment"><b>Total: </b>€16.90</ion-col>
+     <ion-col class="payment"><b>Total: </b>€16.21</ion-col>
      <ion-col class="payment"><b>Payment: </b> {{order.payment}}</ion-col>
    </ion-col>
  </ion-row>
 
+
+
  <div>
-   <div class="profile-segment">
-     <div class="segment-title">
-       ORDER
-     </div>
-     <div class="segment-content segment-border">
+  <div class="profile-segment1">
+
+     <div class="segment-content1 segment-border1">
+
+         <ion-row class="user-bold">
+          Order:
+        </ion-row>
+
        <ion-col responsive sm class="background-table" id="background-table">
 
 
      <ion-col  id="background-table" class="background-table">
        <ion-row responsive sm class="label">
-         <ion-col>Weight</ion-col>
-         <ion-col id="table-col1">Product</ion-col>
-         <ion-col id="table-col2">Price</ion-col>
+       <ion-col style="font-size:110%">Product</ion-col>
+         <ion-col id="table-col1" style="font-size:110%">Amount</ion-col>
+         <ion-col id="table-col2" style="font-size:110%">Price</ion-col>
        </ion-row>
 
        <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
-         <ion-col>{{product.amount}}{{product.units}}</ion-col>
-         <ion-col id="table-col1">{{product.name}}</ion-col>
-         <ion-col id="table-col2">{{product.price}}€</ion-col>
-         <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
+       <ion-col style="font-size:110%">{{product.name}}</ion-col>
+         <ion-col id="table-col1" style="font-size:110%">{{product.amount}}{{product.units}}</ion-col>
+         <ion-col id="table-col2" style="font-size:110%">{{product.price}}€ <ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
        </ion-row>
-       <ion-row responsive-sm>
-         <ion-col class="label">Total: </ion-col>
+
+       <ion-row>
+         <ion-col class="label" style="font-size:110%">Total: </ion-col>
          <ion-col></ion-col>
-         <ion-col>€</ion-col>
          <ion-col></ion-col>
+         <ion-col id="table-col2" style="font-size:110%">16.21€</ion-col>
        </ion-row>
        <br>
-       <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
-       <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+
+
      </ion-col>
 
 
  </ion-col>
+
+
+ <ion-row>
+   <ion-col>
+   </ion-col>
+   <ion-col>
+  <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" id="allocate-button"(click)="allocateEmploye()" block>Allocate employee</button>
+  <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="submit-button" id="allocate-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+  </ion-col>
+  <ion-col>
+  </ion-col>
+ </ion-row>
+
+
  </div>
  </div>
  </div>

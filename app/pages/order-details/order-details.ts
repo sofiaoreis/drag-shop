@@ -141,14 +141,12 @@ export class OrderDetails {
 
   }
 
-
-
-
   itemTapped(item) {
     this.nav.push(ClientProfilePage, {
       client: item
     });
   }
+
 
   doRadio() {
   let alert = Alert.create();
