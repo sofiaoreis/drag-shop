@@ -63,35 +63,6 @@
 
 
  <div>
-<<<<<<< HEAD
-   <ion-row>
-     <ion-col width-33></ion-col>
-     <ion-col width-67 id="cenas">
-   <ion-col class="order"><b>Order: </b></ion-col>
-   <ion-row responsive sm class="label">
-     <ion-col>Weight</ion-col>
-     <ion-col>Product</ion-col>
-     <ion-col>Price</ion-col>
-     <ion-col></ion-col>
-   </ion-row>
-
-   <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
-     <ion-col>{{product.weight}}{{product.units}}</ion-col>
-     <ion-col>{{product.name}}</ion-col>
-     <ion-col>{{product.price}}€</ion-col>
-     <ion-col><ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
-   </ion-row>
-
-   <ion-row responsive-sm>
-     <ion-col class="label">Total: </ion-col>
-     <ion-col></ion-col>
-     <ion-col>€</ion-col>
-     <ion-col></ion-col>
-   </ion-row>
-   <br>
-   <button *ngIf="!order.employee && order.status==3" class="submit-button" (click)="allocateEmploye()" block>Allocate employee</button>
-   <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
-=======
   <div class="profile-segment1">
 
      <div class="segment-content1 segment-border1">
@@ -126,10 +97,7 @@
 
 
      </ion-col>
-
-
->>>>>>> master
- </ion-col>
+   </ion-col>
 
 
 <!--<ion-row>
