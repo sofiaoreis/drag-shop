@@ -97,7 +97,7 @@
               <div class="segment-table">
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    USERNAME
+                    E-mail
                   </div>
                   <div class="segment-table-row-value">
                     {{client.email}}
@@ -106,7 +106,16 @@
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    FIRST NAME
+                    Username
+                  </div>
+                  <div class="segment-table-row-value">
+                    {{client.email}}
+                  </div>
+                </div>
+
+                <div class="segment-table-row">
+                  <div class="segment-table-row-key">
+                    First name
                   </div>
                   <div class="segment-table-row-value">
                     {{client.first_name}}
@@ -115,7 +124,7 @@
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    LAST NAME
+                    Last name
                   </div>
                   <div class="segment-table-row-value">
                     {{client.last_name}}
@@ -124,16 +133,7 @@
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    EMAIL
-                  </div>
-                  <div class="segment-table-row-value">
-                    {{client.email}}
-                  </div>
-                </div>
-
-                <div class="segment-table-row">
-                  <div class="segment-table-row-key">
-                    GENDER
+                    Gender
                   </div>
                   <div class="segment-table-row-value">
                     {{client.gender}}
@@ -142,7 +142,7 @@
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    DATE OF BIRTH
+                    Date of birth
                   </div>
                   <div class="segment-table-row-value">
                     {{client.birthday}}
@@ -152,42 +152,30 @@
               </div>
 
               <div class="table-seperator">
-                HOME ADDRESS
+                SHIPPING ADDRESS
               </div>
 
               <div class="segment-table">
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ADDRESS LINE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.address.address_line}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    CITY
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.address.city}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    STATE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.address.state}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ZIP CODE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.address.zip_code}}
                   </div>
                 </div>
@@ -201,36 +189,24 @@
               <div class="segment-table">
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ADDRESS LINE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.alternate_address.address_line}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    CITY
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.alternate_address.city}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    STATE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.alternate_address.state}}
                   </div>
                 </div>
 
                 <div class="segment-table-row">
                   <div class="segment-table-row-key">
-                    ZIP CODE
-                  </div>
-                  <div class="segment-table-row-value">
                     {{client.alternate_address.zip_code}}
                   </div>
                 </div>
@@ -275,7 +251,7 @@
           </div>
 
           <div class="segment-content segment-border">
-            Cenas aqui.
+            No payment information yet.
           </div>
         </div>
       </div>
@@ -287,7 +263,18 @@
           </div>
 
           <div class="segment-content segment-border">
-            No wishlist yet.
+            <ion-col responsive sm class="background-table" id="background-table">
+              <ion-row responsive sm class="label">
+                <ion-col>Product</ion-col>
+                <ion-col id="table-col1">Amount</ion-col>
+                <ion-col id="table-col2">Price</ion-col>
+              </ion-row>
+              <ion-row *ngFor="#product of products">
+                <ion-col>{{product.name}}</ion-col>
+                <ion-col id="table-col1">{{product.amount}}{{product.units}}</ion-col>
+                <ion-col id="table-col2">{{product.price}}€</ion-col>
+              </ion-row>
+          </ion-col>
           </div>
         </div>
       </div>

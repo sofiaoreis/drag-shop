@@ -1,5 +1,7 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
 import {HelloIonicPage} from '../hello-ionic/hello-ionic';
+import {StoreList} from "../store-list/store-list";
+import {AccountRecoveryPage} from '../account-recovery/account-recovery';
 
 
 @Page({
@@ -10,7 +12,11 @@ export class LoginPage {
 
   }
 
-  itemTapped() {
-    this.nav.setRoot(HelloIonicPage);
+  toDashboard() {
+    this.nav.setRoot(StoreList);
+  }
+
+  toRecovery() {
+    this.nav.setRoot(AccountRecoveryPage);
   }
 }
