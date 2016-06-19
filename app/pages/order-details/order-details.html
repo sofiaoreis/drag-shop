@@ -100,16 +100,16 @@
    </ion-col>
 
 
-<!--<ion-row>
+<ion-row>
    <ion-col>
    </ion-col>
    <ion-col>
-  <button *ngIf="!order.employee && order.status=='Pending'" class="submit-button" id="allocate-button"(click)="allocateEmploye()" block>Allocate employee</button>
+  <button *ngIf="!order.employee && order.status==3" class="submit-button" id="allocate-button"(click)="allocateEmploye()" block>Allocate employee</button>
   <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="submit-button" id="allocate-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
   </ion-col>
   <ion-col>
   </ion-col>
-</ion-row>-->
+</ion-row>
 
 
  </div>

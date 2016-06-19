@@ -28,33 +28,7 @@ export class OrderDetails {
 
   constructor(private nav: NavController, navParams: NavParams, private clientsService: ClientsService, private messagesService: MessagesService) {
     this.order = navParams.get('order');
-    this.client = new Client();
-    this.client.id = 2;
-    this.client.gender = "Male";
-    this.client.first_name = "Fred"
-    this.client.last_name = "Perry"
-    this.client.email = "fperry1@mashable.com"
-    this.client.birthday= "12/01/1978"
-    let address:any = {};
-    address.address_line = "6 Waywood Parkway";
-    address.city = "Macon";
-    address.state="Georgia";
-    address.zip_code="31296";
-    this.client.address = address;
-    let alternate_address:any = {};
-    alternate_address.address_line="4140 Chive Drive";
-    alternate_address.city="Austin";
-    alternate_address.state="Texas";
-    alternate_address.zip_code="78783";
-    this.client.alternate_address = alternate_address;
-  /*
-    this.client.address.address.city = "Macon"
-    this.client.address.state="Georgia"
-    this.client.address.zip_code="31296"
-    this.client.alternate_address.address_line="4140 Chive Drive"
-    this.client.alternate_address.city="Austin"
-    this.client.alternate_address.state="Texas";
-    this.client.alternate_address.zip_code="78783";*/
+
   }
 
   processProduct(product: Product){
@@ -73,7 +47,7 @@ export class OrderDetails {
     console.log(employee);
   }
 
-  /*onPageDidEnter() {
+  onPageDidEnter() {
     //get all clients
     this.clientsService.getAllClients().subscribe(
         data => {
@@ -83,7 +57,7 @@ export class OrderDetails {
         err => {console.log(err);},
         () => {console.log("Finished fetching clients");}
     );
-  }*/
+  }
   goToWishList(item) {
     this.nav.push(ClientProfilePage, {
       client: item,
@@ -151,36 +125,33 @@ export class OrderDetails {
   doRadio() {
   let alert = Alert.create();
    alert.setTitle('Order Status');
-/*pending (azul)
-canceled (vermelho)
-in traffic (amarelo)
-shipped (verde)*/
+
    alert.addInput({
      type: 'radio',
      label: 'Shipped',
      value: 'Shipped',
-     checked: (this.order.status === 'Shipped' ? true : false)
+     checked: (this.order.status === 1 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'In Traffic',
      value: 'In Traffic',
-     checked: (this.order.status === 'In Traffic' ? true : false)
+     checked: (this.order.status === 2 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Pending',
      value: 'Pending',
-     checked: (this.order.status === 'Pending' ? true : false)
+     checked: (this.order.status === 3 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Canceled',
      value: 'Canceled',
-     checked: (this.order.status === 'Canceled' ? true : false)
+     checked: (this.order.status === 4 ? true : false)
    });
 
    alert.addButton('Cancel');
@@ -190,7 +161,7 @@ shipped (verde)*/
        this.testRadioOpen = false;
        this.testRadioResult = data;
        this.order.status = this.testRadioResult;
-       //console.log(this.order.status);
+       console.log(this.order.status);
        //console.log(this.testRadioResult);
      }
    });
