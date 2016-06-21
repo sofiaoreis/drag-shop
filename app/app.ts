@@ -5,8 +5,6 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-import {OrderList} from './pages/order-list/order-list'
-import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
 import {OrdersTrackingPage} from "./pages/orders-tracking/orders-tracking";
@@ -47,7 +45,6 @@ class MyApp {
     // set our app's pages
     this.pages = [
 
-      { title: 'Order Details', component: OrderList, icon: 'home'},
       { title: 'My Stores', component: StoreList, icon: 'home'},
       { title: 'Employers Management', component: ManagmentList, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
