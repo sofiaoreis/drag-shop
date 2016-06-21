@@ -5,10 +5,9 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-import {OrderList} from './pages/order-list/order-list'
-import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {OrdersTrackingPage} from "./pages/orders-tracking/orders-tracking";
 import {ManagmentList} from './pages/managment-list/managment-list';
 import {ClientListPage} from "./pages/client-list/client-list";
 import {Statistics} from "./pages/statistics/statistics";
@@ -46,13 +45,12 @@ class MyApp {
     // set our app's pages
     this.pages = [
 
-      { title: 'Order Details', component: OrderList, icon: 'home'},
       { title: 'My Stores', component: StoreList, icon: 'home'},
       { title: 'Employers Management', component: ManagmentList, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
-      { title: 'Order Tracking', component: ListPage, icon: 'basket' },
+      { title: 'Order Tracking', component: OrdersTrackingPage, icon: 'basket' },
       { title: 'Products', component: ListPage, icon: 'barcode' },
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},

@@ -28,6 +28,8 @@ $app-grey-text: #939598;
 
 @import "../pages/message-list/message-list";
 
+@import "../pages/orders-tracking/orders-tracking";
+
 @import "../pages/client-list/client-list";
 
 @import "../pages/client-profile/client-profile";
@@ -36,8 +38,8 @@ $app-grey-text: #939598;
 
 @import "../pages/free-employee-list/free-employee-list";
 
-@import "../app.scss";
-
 @import "../pages/managment-list/managment-list";
 
-@import "../pages/tutorial/tutorial"
+@import "../pages/tutorial/tutorial";
+
+@import "../app.scss";

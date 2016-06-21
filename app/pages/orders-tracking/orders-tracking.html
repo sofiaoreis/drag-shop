@@ -1,0 +1,191 @@
+  <ion-navbar *navbar>
+      <button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+          <ion-title>order tracking</ion-title>
+  </ion-navbar>
+
+  <ion-content>
+
+      <div class="order-list">
+
+        <div class="tab-selector">
+          <ion-segment  [(ngModel)]="ordersTrigger" [attr.light]="isAndroid ? '' : null">
+            <ion-segment-button class="order-tabs" value="all">
+              All
+            </ion-segment-button>
+            <ion-segment-button class="order-tabs" value="shipped">
+              Shipped
+            </ion-segment-button>
+            <ion-segment-button class="order-tabs" value="intraffic">
+              In Traffic
+            </ion-segment-button>
+            <ion-segment-button class="order-tabs" value="pending">
+              Pending
+            </ion-segment-button>
+            <ion-segment-button class="order-tabs" value="canceled">
+              Canceled
+            </ion-segment-button>
+          </ion-segment>
+
+          <div class="spacer"></div>
+
+          <div class="tab-selector">
+              <ion-row>
+                  <ion-col>Status</ion-col>
+                  <ion-col>Client</ion-col>
+                  <ion-col>Order</ion-col>
+
+                </ion-row>
+
+              <div class="seperator"></div>
+        </div>
+
+
+
+            <div [ngSwitch]="ordersTrigger">
+              <div *ngSwitchWhen="'all'">
+              <ion-row class="message-item cena" *ngFor="#order of orders | seeAllOrdersPipe">
+
+                  <ion-col>
+                    <ion-icon name="md-radio-button-on" class="status-order-{{order.status}}"></ion-icon>
+                  </ion-col>
+                    <ion-col id="orderName">
+                      <strong>{{order.client}}</strong><br>
+                      {{order.city}}
+                    </ion-col>
+                    <ion-col>
+                        <ion-row *ngFor="#product of order.products; #i=index">
+                          <div *ngIf="i<3">
+                            {{product.amount}}
+                            {{product.units}}
+                            {{product.name}}
+                          </div>
+                        </ion-row>
+                        <a (click)="itemTapped(order)">see more...</a>
+                      </ion-col>
+                    <div class="seperator"></div>
+
+                </ion-row>
+              </div>
+              <div *ngSwitchWhen="'shipped'">
+              <ion-row class="message-item cena" *ngFor="#order of orders | seeShippedOrderPipe">
+
+                  <ion-col>
+                    <ion-icon name="md-radio-button-on" class="status-order-{{order.status}}"></ion-icon>
+                  </ion-col>
+                    <ion-col id="orderName">
+                      <strong>{{order.client}}</strong><br>
+                      {{order.city}}
+                    </ion-col>
+                    <ion-col>
+                        <ion-row *ngFor="#product of order.products; #i=index">
+                          <div *ngIf="i<3">
+                            {{product.amount}}
+                            {{product.units}}
+                            {{product.name}}
+                          </div>
+                        </ion-row>
+                        <a (click)="itemTapped(order)">see more...</a>
+                      </ion-col>
+                    <div class="seperator"></div>
+
+                </ion-row>
+
+
+
+              </div>
+
+              <div *ngSwitchWhen="'intraffic'">
+              <ion-row class="message-item cena" *ngFor="#order of orders | seeInTrafficOrderPipe">
+
+                  <ion-col>
+                    <ion-icon name="md-radio-button-on" class="status-order-{{order.status}}"></ion-icon>
+                  </ion-col>
+                    <ion-col id="orderName">
+                      <strong>{{order.client}}</strong><br>
+                      {{order.city}}
+                    </ion-col>
+                    <ion-col>
+                        <ion-row *ngFor="#product of order.products; #i=index">
+                          <div *ngIf="i<3">
+                            {{product.amount}}
+                            {{product.units}}
+                            {{product.name}}
+                          </div>
+                        </ion-row>
+                        <a (click)="itemTapped(order)">see more...</a>
+                      </ion-col>
+                    <div class="seperator"></div>
+
+                </ion-row>
+
+
+
+              </div>
+
+              <div *ngSwitchWhen="'pending'">
+              <ion-row class="message-item cena" *ngFor="#order of orders | seePendingOrderPipe">
+
+                  <ion-col>
+                    <ion-icon name="md-radio-button-on" class="status-order-{{order.status}}"></ion-icon>
+                  </ion-col>
+                    <ion-col id="orderName">
+                      <strong>{{order.client}}</strong><br>
+                      {{order.city}}
+                    </ion-col>
+                    <ion-col>
+                        <ion-row *ngFor="#product of order.products; #i=index">
+                          <div *ngIf="i<3">
+                            {{product.amount}}
+                            {{product.units}}
+                            {{product.name}}
+                          </div>
+                        </ion-row>
+                        <a (click)="itemTapped(order)">see more...</a>
+                      </ion-col>
+                    <div class="seperator"></div>
+
+                </ion-row>
+
+
+
+              </div>
+
+              <div *ngSwitchWhen="'canceled'">
+              <ion-row class="message-item cena" *ngFor="#order of orders | seeCanceledOrderPipe">
+
+                  <ion-col>
+                    <ion-icon name="md-radio-button-on" class="status-order-{{order.status}}"></ion-icon>
+                  </ion-col>
+                    <ion-col id="orderName">
+                      <strong>{{order.client}}</strong><br>
+                      {{order.city}}
+                    </ion-col>
+                    <ion-col>
+                        <ion-row *ngFor="#product of order.products; #i=index">
+                          <div *ngIf="i<3">
+                            {{product.amount}}
+                            {{product.units}}
+                            {{product.name}}
+                          </div>
+                        </ion-row>
+                        <a (click)="itemTapped(order)">see more...</a>
+                      </ion-col>
+                    <div class="seperator"></div>
+
+                </ion-row>
+
+
+
+              </div>
+
+
+            </div>
+        </div>
+      </div>
+
+
+
+
+  </ion-content>

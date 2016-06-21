@@ -6,7 +6,7 @@ export class Order {
   city: string;
   payment: string;
   address: string;
-  status: string;
+  status: number;
   products: Product[];
   employee: string;
 
