@@ -16,11 +16,14 @@
     <ion-col style="min-width:47%">
       <ion-col class="status-title" >
 
-        <ion-icon *ngIf="order.status===3" id="status-icon-pending" name="md-radio-button-on"></ion-icon>
-        <ion-icon *ngIf="order.status===1" id="status-icon-shipped" name="md-radio-button-on"></ion-icon>
-        <ion-icon *ngIf="order.status===2" id="status-icon-inTraffic" name="md-radio-button-on"></ion-icon>
-        <ion-icon *ngIf="order.status===4" id="status-icon-canceled" name="md-radio-button-on"></ion-icon>
-        <b>Status: {{order.status}}</b>
+        <ion-icon *ngIf="order.status===3" id="status-icon-3" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status===1" id="status-icon-1" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status===2" id="status-icon-2" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status===4" id="status-icon-4" name="md-radio-button-on"></ion-icon>
+        <b *ngIf="order.status===4" >Status: Canceled</b>
+        <b *ngIf="order.status===2" >Status: In Traffic</b>
+        <b *ngIf="order.status===1" >Status: Shipped</b>
+        <b *ngIf="order.status===3" >Status: Pending</b>
       </ion-col>
       <ion-col>
          <button block class="submit-button" id="changeStatus-button" style="width: 47.5%"  (click)="doRadio()">Change Status</button>
