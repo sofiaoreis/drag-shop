@@ -1,0 +1,1066 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'chart.js',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /Users/Fifaz/lgpr-drag-shop/package.json
+5 warn package.json drag_shop@ No repository field.
+6 warn package.json drag_shop@ No license field.
+7 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/angular-chart.js/package.json
+8 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/angular2/package.json
+9 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/package.json
+10 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/del/package.json
+11 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-promise/package.json
+12 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/es6-shim/package.json
+13 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/font-awesome/package.json
+14 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp/package.json
+15 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-sass/package.json
+16 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/gulp-watch/package.json
+17 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-angular/package.json
+18 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-browserify-typescript/package.json
+19 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-fonts-copy/package.json
+20 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-html-copy/package.json
+21 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-sass-build/package.json
+22 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-gulp-scripts-copy/package.json
+23 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionic-native/package.json
+24 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ionicons/package.json
+25 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/moment/package.json
+26 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/ng2-charts/package.json
+27 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/node-sass/package.json
+28 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/reflect-metadata/package.json
+29 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/rxjs/package.json
+30 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/update/package.json
+31 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/zone.js/package.json
+32 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/common/package.json
+33 verbose installManyTop reading scoped package data from /Users/Fifaz/lgpr-drag-shop/node_modules/@angular/core/package.json
+34 info package.json ionic-gulp-fonts-copy@1.0.0 No repository field.
+35 info package.json ionic-gulp-fonts-copy@1.0.0 No license field.
+36 info package.json @angular/common@2.0.0-rc.2 No description
+37 info package.json @angular/common@2.0.0-rc.2 No README data
+38 info package.json @angular/core@2.0.0-rc.2 No description
+39 info package.json @angular/core@2.0.0-rc.2 No README data
+40 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/package.json
+41 verbose install chart.js is installed as 2.1.6
+42 silly cache add args [ 'chart.js', null ]
+43 verbose cache add spec chart.js
+44 silly cache add parsed spec Result {
+44 silly cache add   raw: 'chart.js',
+44 silly cache add   scope: null,
+44 silly cache add   name: 'chart.js',
+44 silly cache add   rawSpec: '',
+44 silly cache add   spec: 'latest',
+44 silly cache add   type: 'tag' }
+45 silly addNamed chart.js@latest
+46 verbose addNamed "latest" is being treated as a dist-tag for chart.js
+47 info addNameTag [ 'chart.js', 'latest' ]
+48 silly mapToRegistry name chart.js
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry data Result {
+51 silly mapToRegistry   raw: 'chart.js',
+51 silly mapToRegistry   scope: null,
+51 silly mapToRegistry   name: 'chart.js',
+51 silly mapToRegistry   rawSpec: '',
+51 silly mapToRegistry   spec: 'latest',
+51 silly mapToRegistry   type: 'tag' }
+52 silly mapToRegistry uri https://registry.npmjs.org/chart.js
+53 verbose addNameTag registry:https://registry.npmjs.org/chart.js not in flight; fetching
+54 verbose request uri https://registry.npmjs.org/chart.js
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 23:55:39
+57 verbose request id 917943b3d328449a
+58 verbose etag "APJDJFI0QUX3VKE9W9QAH6V23"
+59 http request GET https://registry.npmjs.org/chart.js
+60 http 304 https://registry.npmjs.org/chart.js
+61 verbose headers { date: 'Tue, 21 Jun 2016 22:55:39 GMT',
+61 verbose headers   via: '1.1 varnish',
+61 verbose headers   'cache-control': 'max-age=300',
+61 verbose headers   etag: '"APJDJFI0QUX3VKE9W9QAH6V23"',
+61 verbose headers   age: '25',
+61 verbose headers   connection: 'keep-alive',
+61 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+61 verbose headers   'x-cache': 'HIT',
+61 verbose headers   'x-cache-hits': '1',
+61 verbose headers   'x-timer': 'S1466549739.936575,VS0,VE0',
+61 verbose headers   vary: 'Accept-Encoding' }
+62 silly get cb [ 304,
+62 silly get   { date: 'Tue, 21 Jun 2016 22:55:39 GMT',
+62 silly get     via: '1.1 varnish',
+62 silly get     'cache-control': 'max-age=300',
+62 silly get     etag: '"APJDJFI0QUX3VKE9W9QAH6V23"',
+62 silly get     age: '25',
+62 silly get     connection: 'keep-alive',
+62 silly get     'x-served-by': 'cache-lcy1133-LCY',
+62 silly get     'x-cache': 'HIT',
+62 silly get     'x-cache-hits': '1',
+62 silly get     'x-timer': 'S1466549739.936575,VS0,VE0',
+62 silly get     vary: 'Accept-Encoding' } ]
+63 verbose etag https://registry.npmjs.org/chart.js from cache
+64 verbose get saving chart.js to /Users/Fifaz/.npm/registry.npmjs.org/chart.js/.cache.json
+65 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+66 silly addNameTag next cb for chart.js with tag latest
+67 silly addNamed chart.js@2.1.6
+68 verbose addNamed "2.1.6" is a plain semver version for chart.js
+69 silly cache afterAdd chart.js@2.1.6
+70 verbose afterAdd /Users/Fifaz/.npm/chart.js/2.1.6/package/package.json not in flight; writing
+71 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+72 verbose afterAdd /Users/Fifaz/.npm/chart.js/2.1.6/package/package.json written
+73 silly install resolved [ { name: 'chart.js',
+73 silly install resolved     homepage: 'http://www.chartjs.org',
+73 silly install resolved     description: 'Simple HTML5 charts using the canvas element.',
+73 silly install resolved     version: '2.1.6',
+73 silly install resolved     license: 'MIT',
+73 silly install resolved     main: 'src/chart.js',
+73 silly install resolved     repository:
+73 silly install resolved      { type: 'git',
+73 silly install resolved        url: 'git+https://github.com/chartjs/Chart.js.git' },
+73 silly install resolved     devDependencies:
+73 silly install resolved      { browserify: '^13.0.0',
+73 silly install resolved        'browserify-istanbul': '^0.2.1',
+73 silly install resolved        'bundle-collapser': '^1.2.1',
+73 silly install resolved        coveralls: '^2.11.6',
+73 silly install resolved        gulp: '3.9.x',
+73 silly install resolved        'gulp-concat': '~2.1.x',
+73 silly install resolved        'gulp-connect': '~2.0.5',
+73 silly install resolved        'gulp-html-validator': '^0.0.2',
+73 silly install resolved        'gulp-insert': '~0.5.0',
+73 silly install resolved        'gulp-jshint': '~1.5.1',
+73 silly install resolved        'gulp-karma': '0.0.4',
+73 silly install resolved        'gulp-replace': '^0.4.0',
+73 silly install resolved        'gulp-size': '~0.4.0',
+73 silly install resolved        'gulp-streamify': '^1.0.2',
+73 silly install resolved        'gulp-uglify': '~0.2.x',
+73 silly install resolved        'gulp-umd': '~0.2.0',
+73 silly install resolved        'gulp-util': '~2.2.x',
+73 silly install resolved        inquirer: '^0.5.1',
+73 silly install resolved        jasmine: '^2.3.2',
+73 silly install resolved        'jasmine-core': '^2.3.4',
+73 silly install resolved        jquery: '^2.1.4',
+73 silly install resolved        'jshint-stylish': '~2.1.0',
+73 silly install resolved        karma: '^0.12.37',
+73 silly install resolved        'karma-browserify': '^5.0.1',
+73 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+73 silly install resolved        'karma-coverage': '^0.5.1',
+73 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+73 silly install resolved        'karma-jasmine': '^0.3.6',
+73 silly install resolved        'karma-jasmine-html-reporter': '^0.1.8',
+73 silly install resolved        'merge-stream': '^1.0.0',
+73 silly install resolved        semver: '^3.0.1',
+73 silly install resolved        'vinyl-source-stream': '^1.1.0',
+73 silly install resolved        watchify: '^3.7.0' },
+73 silly install resolved     spm: { main: 'Chart.js' },
+73 silly install resolved     dependencies: { 'chartjs-color': '^2.0.0', moment: '^2.10.6' },
+73 silly install resolved     gitHead: '07662b158d829f395b2c97d732e60599b8b5c4e4',
+73 silly install resolved     bugs: { url: 'https://github.com/chartjs/Chart.js/issues' },
+73 silly install resolved     _id: 'chart.js@2.1.6',
+73 silly install resolved     scripts: {},
+73 silly install resolved     _shasum: '9bf42d47bbb3cc702756ef0a496e7c443a1f6aa5',
+73 silly install resolved     _from: 'chart.js@latest',
+73 silly install resolved     _npmVersion: '3.6.0',
+73 silly install resolved     _nodeVersion: '5.6.0',
+73 silly install resolved     _npmUser: { name: 'etimberg', email: 'evert.timberg+npm@gmail.com' },
+73 silly install resolved     dist:
+73 silly install resolved      { shasum: '9bf42d47bbb3cc702756ef0a496e7c443a1f6aa5',
+73 silly install resolved        tarball: 'https://registry.npmjs.org/chart.js/-/chart.js-2.1.6.tgz' },
+73 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+73 silly install resolved     _npmOperationalInternal:
+73 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+73 silly install resolved        tmp: 'tmp/chart.js-2.1.6.tgz_1465947234982_0.11803890601731837' },
+73 silly install resolved     directories: {},
+73 silly install resolved     _resolved: 'https://registry.npmjs.org/chart.js/-/chart.js-2.1.6.tgz',
+73 silly install resolved     readme: 'ERROR: No README data found!' } ]
+74 info install chart.js@2.1.6 into /Users/Fifaz/lgpr-drag-shop
+75 info installOne chart.js@2.1.6
+76 verbose installOne of chart.js to /Users/Fifaz/lgpr-drag-shop not in flight; installing
+77 verbose correctMkdir /Users/Fifaz/.npm/_locks correctMkdir not in flight; initializing
+78 verbose lock using /Users/Fifaz/.npm/_locks/chart-js-91524b5f7d4c53db.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+79 silly install write writing chart.js 2.1.6 to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+80 verbose unbuild node_modules/chart.js
+81 info preuninstall chart.js@2.1.6
+82 info uninstall chart.js@2.1.6
+83 verbose unbuild rmStuff chart.js@2.1.6 from /Users/Fifaz/lgpr-drag-shop/node_modules
+84 info postuninstall chart.js@2.1.6
+85 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js is being purged from base /Users/Fifaz/lgpr-drag-shop
+86 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+87 silly vacuum-fs purging /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+88 silly vacuum-fs quitting because other entries in /Users/Fifaz/lgpr-drag-shop/node_modules
+89 verbose tar unpack /Users/Fifaz/.npm/chart.js/2.1.6/package.tgz
+90 verbose tar unpacking to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+91 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js is being purged
+92 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry package.json
+95 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+96 silly gunzTarPerm extractEntry .npmignore
+97 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+98 silly gunzTarPerm extractEntry README.md
+99 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+100 silly gunzTarPerm extractEntry gulpfile.js
+101 silly gunzTarPerm modified mode [ 'gulpfile.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry karma.conf.ci.js
+103 silly gunzTarPerm modified mode [ 'karma.conf.ci.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry karma.conf.js
+105 silly gunzTarPerm modified mode [ 'karma.conf.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry karma.coverage.conf.js
+107 silly gunzTarPerm modified mode [ 'karma.coverage.conf.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry config.jshintrc
+109 silly gunzTarPerm modified mode [ 'config.jshintrc', 438, 420 ]
+110 silly gunzTarPerm extractEntry CONTRIBUTING.md
+111 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 438, 420 ]
+112 silly gunzTarPerm extractEntry LICENSE.md
+113 silly gunzTarPerm modified mode [ 'LICENSE.md', 438, 420 ]
+114 silly gunzTarPerm extractEntry .eslintignore
+115 silly gunzTarPerm modified mode [ '.eslintignore', 438, 420 ]
+116 silly gunzTarPerm extractEntry bower.json
+117 silly gunzTarPerm modified mode [ 'bower.json', 438, 420 ]
+118 silly gunzTarPerm extractEntry composer.json
+119 silly gunzTarPerm modified mode [ 'composer.json', 438, 420 ]
+120 silly gunzTarPerm extractEntry .editorconfig
+121 silly gunzTarPerm modified mode [ '.editorconfig', 438, 420 ]
+122 silly gunzTarPerm extractEntry dist/Chart.bundle.js
+123 silly gunzTarPerm modified mode [ 'dist/Chart.bundle.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry dist/Chart.bundle.min.js
+125 silly gunzTarPerm modified mode [ 'dist/Chart.bundle.min.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry dist/Chart.js
+127 silly gunzTarPerm modified mode [ 'dist/Chart.js', 438, 420 ]
+128 silly gunzTarPerm extractEntry dist/Chart.min.js
+129 silly gunzTarPerm modified mode [ 'dist/Chart.min.js', 438, 420 ]
+130 silly gunzTarPerm extractEntry docs/05-Radar-Chart.md
+131 silly gunzTarPerm modified mode [ 'docs/05-Radar-Chart.md', 438, 420 ]
+132 silly gunzTarPerm extractEntry docs/00-Getting-Started.md
+133 silly gunzTarPerm modified mode [ 'docs/00-Getting-Started.md', 438, 420 ]
+134 silly gunzTarPerm extractEntry docs/02-Scales.md
+135 silly gunzTarPerm modified mode [ 'docs/02-Scales.md', 438, 420 ]
+136 silly gunzTarPerm extractEntry docs/03-Line-Chart.md
+137 silly gunzTarPerm modified mode [ 'docs/03-Line-Chart.md', 438, 420 ]
+138 silly gunzTarPerm extractEntry docs/04-Bar-Chart.md
+139 silly gunzTarPerm modified mode [ 'docs/04-Bar-Chart.md', 438, 420 ]
+140 silly gunzTarPerm extractEntry docs/01-Chart-Configuration.md
+141 silly gunzTarPerm modified mode [ 'docs/01-Chart-Configuration.md', 438, 420 ]
+142 silly gunzTarPerm extractEntry docs/06-Polar-Area-Chart.md
+143 silly gunzTarPerm modified mode [ 'docs/06-Polar-Area-Chart.md', 438, 420 ]
+144 silly gunzTarPerm extractEntry docs/07-Pie-Doughnut-Chart.md
+145 silly gunzTarPerm modified mode [ 'docs/07-Pie-Doughnut-Chart.md', 438, 420 ]
+146 silly gunzTarPerm extractEntry docs/08-Bubble-Chart.md
+147 silly gunzTarPerm modified mode [ 'docs/08-Bubble-Chart.md', 438, 420 ]
+148 silly gunzTarPerm extractEntry docs/09-Advanced.md
+149 silly gunzTarPerm modified mode [ 'docs/09-Advanced.md', 438, 420 ]
+150 silly gunzTarPerm extractEntry docs/10-Notes.md
+151 silly gunzTarPerm modified mode [ 'docs/10-Notes.md', 438, 420 ]
+152 silly gunzTarPerm extractEntry .eslintrc
+153 silly gunzTarPerm modified mode [ '.eslintrc', 438, 420 ]
+154 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+155 silly gunzTarPerm modified mode [ '.github/ISSUE_TEMPLATE.md', 438, 420 ]
+156 silly gunzTarPerm extractEntry .github/PULL_REQUEST_TEMPLATE.md
+157 silly gunzTarPerm modified mode [ '.github/PULL_REQUEST_TEMPLATE.md', 438, 420 ]
+158 silly gunzTarPerm extractEntry .codeclimate.yml
+159 silly gunzTarPerm modified mode [ '.codeclimate.yml', 438, 420 ]
+160 silly gunzTarPerm extractEntry src/chart.js
+161 silly gunzTarPerm modified mode [ 'src/chart.js', 438, 420 ]
+162 silly gunzTarPerm extractEntry src/charts/Chart.Bar.js
+163 silly gunzTarPerm modified mode [ 'src/charts/Chart.Bar.js', 438, 420 ]
+164 silly gunzTarPerm extractEntry src/charts/Chart.Bubble.js
+165 silly gunzTarPerm modified mode [ 'src/charts/Chart.Bubble.js', 438, 420 ]
+166 silly gunzTarPerm extractEntry src/charts/Chart.Doughnut.js
+167 silly gunzTarPerm modified mode [ 'src/charts/Chart.Doughnut.js', 438, 420 ]
+168 silly gunzTarPerm extractEntry src/charts/Chart.Line.js
+169 silly gunzTarPerm modified mode [ 'src/charts/Chart.Line.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry src/charts/Chart.PolarArea.js
+171 silly gunzTarPerm modified mode [ 'src/charts/Chart.PolarArea.js', 438, 420 ]
+172 silly gunzTarPerm extractEntry src/charts/Chart.Radar.js
+173 silly gunzTarPerm modified mode [ 'src/charts/Chart.Radar.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry src/charts/Chart.Scatter.js
+175 silly gunzTarPerm modified mode [ 'src/charts/Chart.Scatter.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry src/controllers/controller.bar.js
+177 silly gunzTarPerm modified mode [ 'src/controllers/controller.bar.js', 438, 420 ]
+178 silly gunzTarPerm extractEntry src/controllers/controller.bubble.js
+179 silly gunzTarPerm modified mode [ 'src/controllers/controller.bubble.js', 438, 420 ]
+180 silly gunzTarPerm extractEntry src/controllers/controller.doughnut.js
+181 silly gunzTarPerm modified mode [ 'src/controllers/controller.doughnut.js', 438, 420 ]
+182 silly gunzTarPerm extractEntry src/controllers/controller.line.js
+183 silly gunzTarPerm modified mode [ 'src/controllers/controller.line.js', 438, 420 ]
+184 silly gunzTarPerm extractEntry src/controllers/controller.polarArea.js
+185 silly gunzTarPerm modified mode [ 'src/controllers/controller.polarArea.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry src/controllers/controller.radar.js
+187 silly gunzTarPerm modified mode [ 'src/controllers/controller.radar.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry src/core/core.animation.js
+189 silly gunzTarPerm modified mode [ 'src/core/core.animation.js', 438, 420 ]
+190 silly gunzTarPerm extractEntry src/core/core.element.js
+191 silly gunzTarPerm modified mode [ 'src/core/core.element.js', 438, 420 ]
+192 silly gunzTarPerm extractEntry src/core/core.helpers.js
+193 silly gunzTarPerm modified mode [ 'src/core/core.helpers.js', 438, 420 ]
+194 silly gunzTarPerm extractEntry src/core/core.js
+195 silly gunzTarPerm modified mode [ 'src/core/core.js', 438, 420 ]
+196 silly gunzTarPerm extractEntry src/core/core.datasetController.js
+197 silly gunzTarPerm modified mode [ 'src/core/core.datasetController.js', 438, 420 ]
+198 silly gunzTarPerm extractEntry src/core/core.legend.js
+199 silly gunzTarPerm modified mode [ 'src/core/core.legend.js', 438, 420 ]
+200 silly gunzTarPerm extractEntry src/core/core.plugin.js
+201 silly gunzTarPerm modified mode [ 'src/core/core.plugin.js', 438, 420 ]
+202 silly gunzTarPerm extractEntry src/core/core.scale.js
+203 silly gunzTarPerm modified mode [ 'src/core/core.scale.js', 438, 420 ]
+204 silly gunzTarPerm extractEntry src/core/core.scaleService.js
+205 silly gunzTarPerm modified mode [ 'src/core/core.scaleService.js', 438, 420 ]
+206 silly gunzTarPerm extractEntry src/core/core.title.js
+207 silly gunzTarPerm modified mode [ 'src/core/core.title.js', 438, 420 ]
+208 silly gunzTarPerm extractEntry src/core/core.controller.js
+209 silly gunzTarPerm modified mode [ 'src/core/core.controller.js', 438, 420 ]
+210 silly gunzTarPerm extractEntry src/core/core.tooltip.js
+211 silly gunzTarPerm modified mode [ 'src/core/core.tooltip.js', 438, 420 ]
+212 silly gunzTarPerm extractEntry src/core/core.layoutService.js
+213 silly gunzTarPerm modified mode [ 'src/core/core.layoutService.js', 438, 420 ]
+214 silly gunzTarPerm extractEntry src/elements/element.arc.js
+215 silly gunzTarPerm modified mode [ 'src/elements/element.arc.js', 438, 420 ]
+216 silly gunzTarPerm extractEntry src/elements/element.line.js
+217 silly gunzTarPerm modified mode [ 'src/elements/element.line.js', 438, 420 ]
+218 silly gunzTarPerm extractEntry src/elements/element.point.js
+219 silly gunzTarPerm modified mode [ 'src/elements/element.point.js', 438, 420 ]
+220 silly gunzTarPerm extractEntry src/elements/element.rectangle.js
+221 silly gunzTarPerm modified mode [ 'src/elements/element.rectangle.js', 438, 420 ]
+222 silly gunzTarPerm extractEntry src/scales/scale.category.js
+223 silly gunzTarPerm modified mode [ 'src/scales/scale.category.js', 438, 420 ]
+224 silly gunzTarPerm extractEntry src/scales/scale.linear.js
+225 silly gunzTarPerm modified mode [ 'src/scales/scale.linear.js', 438, 420 ]
+226 silly gunzTarPerm extractEntry src/scales/scale.linearbase.js
+227 silly gunzTarPerm modified mode [ 'src/scales/scale.linearbase.js', 438, 420 ]
+228 silly gunzTarPerm extractEntry src/scales/scale.logarithmic.js
+229 silly gunzTarPerm modified mode [ 'src/scales/scale.logarithmic.js', 438, 420 ]
+230 silly gunzTarPerm extractEntry src/scales/scale.radialLinear.js
+231 silly gunzTarPerm modified mode [ 'src/scales/scale.radialLinear.js', 438, 420 ]
+232 silly gunzTarPerm extractEntry src/scales/scale.time.js
+233 silly gunzTarPerm modified mode [ 'src/scales/scale.time.js', 438, 420 ]
+234 silly gunzTarPerm extractEntry .travis.yml
+235 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+236 silly gunzTarPerm extractEntry samples/line-multiline-labels.html
+237 silly gunzTarPerm modified mode [ 'samples/line-multiline-labels.html', 438, 420 ]
+238 silly gunzTarPerm extractEntry samples/AnimationCallbacks/progress-bar.html
+239 silly gunzTarPerm modified mode [ 'samples/AnimationCallbacks/progress-bar.html', 438, 420 ]
+240 silly gunzTarPerm extractEntry samples/bar-multi-axis.html
+241 silly gunzTarPerm modified mode [ 'samples/bar-multi-axis.html', 438, 420 ]
+242 silly gunzTarPerm extractEntry samples/bar-stacked.html
+243 silly gunzTarPerm modified mode [ 'samples/bar-stacked.html', 438, 420 ]
+244 silly gunzTarPerm extractEntry samples/bar.html
+245 silly gunzTarPerm modified mode [ 'samples/bar.html', 438, 420 ]
+246 silly gunzTarPerm extractEntry samples/bubble.html
+247 silly gunzTarPerm modified mode [ 'samples/bubble.html', 438, 420 ]
+248 silly gunzTarPerm extractEntry samples/combo-bar-line.html
+249 silly gunzTarPerm modified mode [ 'samples/combo-bar-line.html', 438, 420 ]
+250 silly gunzTarPerm extractEntry samples/data_label_combo-bar-line.html
+251 silly gunzTarPerm modified mode [ 'samples/data_label_combo-bar-line.html', 438, 420 ]
+252 silly gunzTarPerm extractEntry samples/different-point-sizes.html
+253 silly gunzTarPerm modified mode [ 'samples/different-point-sizes.html', 438, 420 ]
+254 silly gunzTarPerm extractEntry samples/doughnut.html
+255 silly gunzTarPerm modified mode [ 'samples/doughnut.html', 438, 420 ]
+256 silly gunzTarPerm extractEntry samples/line-customTooltips.html
+257 silly gunzTarPerm modified mode [ 'samples/line-customTooltips.html', 438, 420 ]
+258 silly gunzTarPerm extractEntry samples/line-legend.html
+259 silly gunzTarPerm modified mode [ 'samples/line-legend.html', 438, 420 ]
+260 silly gunzTarPerm extractEntry samples/line-logarithmic.html
+261 silly gunzTarPerm modified mode [ 'samples/line-logarithmic.html', 438, 420 ]
+262 silly gunzTarPerm extractEntry samples/line-multi-axis.html
+263 silly gunzTarPerm modified mode [ 'samples/line-multi-axis.html', 438, 420 ]
+264 silly gunzTarPerm extractEntry samples/bar-horizontal.html
+265 silly gunzTarPerm modified mode [ 'samples/bar-horizontal.html', 438, 420 ]
+266 silly gunzTarPerm extractEntry samples/line-skip-points.html
+267 silly gunzTarPerm modified mode [ 'samples/line-skip-points.html', 438, 420 ]
+268 silly gunzTarPerm extractEntry samples/line-stacked-area.html
+269 silly gunzTarPerm modified mode [ 'samples/line-stacked-area.html', 438, 420 ]
+270 silly gunzTarPerm extractEntry samples/line-x-axis-filter.html
+271 silly gunzTarPerm modified mode [ 'samples/line-x-axis-filter.html', 438, 420 ]
+272 silly gunzTarPerm extractEntry samples/line.html
+273 silly gunzTarPerm modified mode [ 'samples/line.html', 438, 420 ]
+274 silly gunzTarPerm extractEntry samples/pie-customTooltips.html
+275 silly gunzTarPerm modified mode [ 'samples/pie-customTooltips.html', 438, 420 ]
+276 silly gunzTarPerm extractEntry samples/pie.html
+277 silly gunzTarPerm modified mode [ 'samples/pie.html', 438, 420 ]
+278 silly gunzTarPerm extractEntry samples/polar-area.html
+279 silly gunzTarPerm modified mode [ 'samples/polar-area.html', 438, 420 ]
+280 silly gunzTarPerm extractEntry samples/radar-skip-points.html
+281 silly gunzTarPerm modified mode [ 'samples/radar-skip-points.html', 438, 420 ]
+282 silly gunzTarPerm extractEntry samples/radar.html
+283 silly gunzTarPerm modified mode [ 'samples/radar.html', 438, 420 ]
+284 silly gunzTarPerm extractEntry samples/scatter-logX.html
+285 silly gunzTarPerm modified mode [ 'samples/scatter-logX.html', 438, 420 ]
+286 silly gunzTarPerm extractEntry samples/scatter-multi-axis.html
+287 silly gunzTarPerm modified mode [ 'samples/scatter-multi-axis.html', 438, 420 ]
+288 silly gunzTarPerm extractEntry samples/scatter.html
+289 silly gunzTarPerm modified mode [ 'samples/scatter.html', 438, 420 ]
+290 silly gunzTarPerm extractEntry samples/timeScale/combo-time-scale.html
+291 silly gunzTarPerm modified mode [ 'samples/timeScale/combo-time-scale.html', 438, 420 ]
+292 silly gunzTarPerm extractEntry samples/timeScale/line-time-point-data.html
+293 silly gunzTarPerm modified mode [ 'samples/timeScale/line-time-point-data.html', 438, 420 ]
+294 silly gunzTarPerm extractEntry samples/timeScale/line-time-scale.html
+295 silly gunzTarPerm modified mode [ 'samples/timeScale/line-time-scale.html', 438, 420 ]
+296 silly gunzTarPerm extractEntry samples/tooltip-hooks.html
+297 silly gunzTarPerm modified mode [ 'samples/tooltip-hooks.html', 438, 420 ]
+298 silly gunzTarPerm extractEntry test/controller.bar.tests.js
+299 silly gunzTarPerm modified mode [ 'test/controller.bar.tests.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry test/core.legend.tests.js
+301 silly gunzTarPerm modified mode [ 'test/core.legend.tests.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry test/core.plugin.tests.js
+303 silly gunzTarPerm modified mode [ 'test/core.plugin.tests.js', 438, 420 ]
+304 silly gunzTarPerm extractEntry test/core.scaleService.tests.js
+305 silly gunzTarPerm modified mode [ 'test/core.scaleService.tests.js', 438, 420 ]
+306 silly gunzTarPerm extractEntry test/core.layoutService.tests.js
+307 silly gunzTarPerm modified mode [ 'test/core.layoutService.tests.js', 438, 420 ]
+308 silly gunzTarPerm extractEntry test/core.tooltip.tests.js
+309 silly gunzTarPerm modified mode [ 'test/core.tooltip.tests.js', 438, 420 ]
+310 silly gunzTarPerm extractEntry test/defaultConfig.tests.js
+311 silly gunzTarPerm modified mode [ 'test/defaultConfig.tests.js', 438, 420 ]
+312 silly gunzTarPerm extractEntry test/element.arc.tests.js
+313 silly gunzTarPerm modified mode [ 'test/element.arc.tests.js', 438, 420 ]
+314 silly gunzTarPerm extractEntry test/element.line.tests.js
+315 silly gunzTarPerm modified mode [ 'test/element.line.tests.js', 438, 420 ]
+316 silly gunzTarPerm extractEntry test/element.point.tests.js
+317 silly gunzTarPerm modified mode [ 'test/element.point.tests.js', 438, 420 ]
+318 silly gunzTarPerm extractEntry test/core.helpers.tests.js
+319 silly gunzTarPerm modified mode [ 'test/core.helpers.tests.js', 438, 420 ]
+320 silly gunzTarPerm extractEntry test/element.rectangle.tests.js
+321 silly gunzTarPerm modified mode [ 'test/element.rectangle.tests.js', 438, 420 ]
+322 silly gunzTarPerm extractEntry test/core.element.tests.js
+323 silly gunzTarPerm modified mode [ 'test/core.element.tests.js', 438, 420 ]
+324 silly gunzTarPerm extractEntry test/mockContext.js
+325 silly gunzTarPerm modified mode [ 'test/mockContext.js', 438, 420 ]
+326 silly gunzTarPerm extractEntry test/controller.radar.tests.js
+327 silly gunzTarPerm modified mode [ 'test/controller.radar.tests.js', 438, 420 ]
+328 silly gunzTarPerm extractEntry test/scale.category.tests.js
+329 silly gunzTarPerm modified mode [ 'test/scale.category.tests.js', 438, 420 ]
+330 silly gunzTarPerm extractEntry test/controller.polarArea.tests.js
+331 silly gunzTarPerm modified mode [ 'test/controller.polarArea.tests.js', 438, 420 ]
+332 silly gunzTarPerm extractEntry test/scale.linear.tests.js
+333 silly gunzTarPerm modified mode [ 'test/scale.linear.tests.js', 438, 420 ]
+334 silly gunzTarPerm extractEntry test/controller.line.tests.js
+335 silly gunzTarPerm modified mode [ 'test/controller.line.tests.js', 438, 420 ]
+336 silly gunzTarPerm extractEntry test/scale.logarithmic.tests.js
+337 silly gunzTarPerm modified mode [ 'test/scale.logarithmic.tests.js', 438, 420 ]
+338 silly gunzTarPerm extractEntry test/controller.doughnut.tests.js
+339 silly gunzTarPerm modified mode [ 'test/controller.doughnut.tests.js', 438, 420 ]
+340 silly gunzTarPerm extractEntry test/scale.radialLinear.tests.js
+341 silly gunzTarPerm modified mode [ 'test/scale.radialLinear.tests.js', 438, 420 ]
+342 silly gunzTarPerm extractEntry test/controller.bubble.tests.js
+343 silly gunzTarPerm modified mode [ 'test/controller.bubble.tests.js', 438, 420 ]
+344 silly gunzTarPerm extractEntry test/scale.time.tests.js
+345 silly gunzTarPerm modified mode [ 'test/scale.time.tests.js', 438, 420 ]
+346 silly gunzTarPerm extractEntry test/core.title.tests.js
+347 silly gunzTarPerm modified mode [ 'test/core.title.tests.js', 438, 420 ]
+348 verbose write writing to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/package.json
+349 info preinstall chart.js@2.1.6
+350 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/package.json
+351 silly prepareForInstallMany adding chartjs-color@^2.0.0 from chart.js dependencies
+352 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/package.json
+353 silly cache add args [ 'chartjs-color@^2.0.0', null ]
+354 verbose cache add spec chartjs-color@^2.0.0
+355 silly cache add parsed spec Result {
+355 silly cache add   raw: 'chartjs-color@^2.0.0',
+355 silly cache add   scope: null,
+355 silly cache add   name: 'chartjs-color',
+355 silly cache add   rawSpec: '^2.0.0',
+355 silly cache add   spec: '>=2.0.0 <3.0.0',
+355 silly cache add   type: 'range' }
+356 silly addNamed chartjs-color@>=2.0.0 <3.0.0
+357 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for chartjs-color
+358 silly addNameRange { name: 'chartjs-color',
+358 silly addNameRange   range: '>=2.0.0 <3.0.0',
+358 silly addNameRange   hasData: false }
+359 silly mapToRegistry name chartjs-color
+360 silly mapToRegistry using default registry
+361 silly mapToRegistry registry https://registry.npmjs.org/
+362 silly mapToRegistry data Result {
+362 silly mapToRegistry   raw: 'chartjs-color',
+362 silly mapToRegistry   scope: null,
+362 silly mapToRegistry   name: 'chartjs-color',
+362 silly mapToRegistry   rawSpec: '',
+362 silly mapToRegistry   spec: 'latest',
+362 silly mapToRegistry   type: 'tag' }
+363 silly mapToRegistry uri https://registry.npmjs.org/chartjs-color
+364 verbose addNameRange registry:https://registry.npmjs.org/chartjs-color not in flight; fetching
+365 verbose request uri https://registry.npmjs.org/chartjs-color
+366 verbose request no auth needed
+367 info attempt registry request try #1 at 23:55:40
+368 verbose etag "DOBAZ2P3ZGHAJGHNULUOWLAPE"
+369 http request GET https://registry.npmjs.org/chartjs-color
+370 http 304 https://registry.npmjs.org/chartjs-color
+371 verbose headers { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+371 verbose headers   via: '1.1 varnish',
+371 verbose headers   'cache-control': 'max-age=300',
+371 verbose headers   etag: '"DOBAZ2P3ZGHAJGHNULUOWLAPE"',
+371 verbose headers   age: '25',
+371 verbose headers   connection: 'keep-alive',
+371 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+371 verbose headers   'x-cache': 'HIT',
+371 verbose headers   'x-cache-hits': '1',
+371 verbose headers   'x-timer': 'S1466549740.231640,VS0,VE0',
+371 verbose headers   vary: 'Accept-Encoding' }
+372 silly get cb [ 304,
+372 silly get   { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+372 silly get     via: '1.1 varnish',
+372 silly get     'cache-control': 'max-age=300',
+372 silly get     etag: '"DOBAZ2P3ZGHAJGHNULUOWLAPE"',
+372 silly get     age: '25',
+372 silly get     connection: 'keep-alive',
+372 silly get     'x-served-by': 'cache-lcy1133-LCY',
+372 silly get     'x-cache': 'HIT',
+372 silly get     'x-cache-hits': '1',
+372 silly get     'x-timer': 'S1466549740.231640,VS0,VE0',
+372 silly get     vary: 'Accept-Encoding' } ]
+373 verbose etag https://registry.npmjs.org/chartjs-color from cache
+374 verbose get saving chartjs-color to /Users/Fifaz/.npm/registry.npmjs.org/chartjs-color/.cache.json
+375 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+376 silly addNameRange number 2 { name: 'chartjs-color', range: '>=2.0.0 <3.0.0', hasData: true }
+377 silly addNameRange versions [ 'chartjs-color',
+377 silly addNameRange   [ '0.8.2', '1.0.2', '1.0.21', '1.0.22', '2.0.0' ] ]
+378 silly addNamed chartjs-color@2.0.0
+379 verbose addNamed "2.0.0" is a plain semver version for chartjs-color
+380 silly cache afterAdd chartjs-color@2.0.0
+381 verbose afterAdd /Users/Fifaz/.npm/chartjs-color/2.0.0/package/package.json not in flight; writing
+382 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+383 verbose afterAdd /Users/Fifaz/.npm/chartjs-color/2.0.0/package/package.json written
+384 silly install resolved [ { name: 'chartjs-color',
+384 silly install resolved     version: '2.0.0',
+384 silly install resolved     description: 'Color conversion and manipulation with CSS string support',
+384 silly install resolved     keywords: [ 'color', 'colour', 'css' ],
+384 silly install resolved     authors:
+384 silly install resolved      [ 'Heather Arthur <fayearthur@gmail.com>',
+384 silly install resolved        'Maxime Thirouin',
+384 silly install resolved        'Josh Junon' ],
+384 silly install resolved     license: 'MIT',
+384 silly install resolved     repository:
+384 silly install resolved      { type: 'git',
+384 silly install resolved        url: 'git+https://github.com/chartjs/chartjs-color.git' },
+384 silly install resolved     xo: { envs: [Object], rules: [Object] },
+384 silly install resolved     files: [ 'CHANGELOG.md', 'LICENSE', 'index.js' ],
+384 silly install resolved     scripts: { build: 'gulp build', pretest: 'xo', test: 'mocha' },
+384 silly install resolved     dependencies: { 'color-convert': '^0.5.3', 'chartjs-color-string': '^0.4.0' },
+384 silly install resolved     devDependencies:
+384 silly install resolved      { browserify: '^10.1.3',
+384 silly install resolved        gulp: '^3.8.11',
+384 silly install resolved        'gulp-rename': '^1.2.2',
+384 silly install resolved        'gulp-uglify': '^1.2.0',
+384 silly install resolved        'gulp-streamify': '^1.0.2',
+384 silly install resolved        mocha: '^2.2.5',
+384 silly install resolved        'vinyl-source-stream': '^1.1.0',
+384 silly install resolved        xo: '^0.12.1' },
+384 silly install resolved     gitHead: '0013b6fd8529ac366facb1b56a5189c7f5cf9ba9',
+384 silly install resolved     bugs: { url: 'https://github.com/chartjs/chartjs-color/issues' },
+384 silly install resolved     homepage: 'https://github.com/chartjs/chartjs-color#readme',
+384 silly install resolved     _id: 'chartjs-color@2.0.0',
+384 silly install resolved     _shasum: '7f60c7256589b24914814ece757659117381e35b',
+384 silly install resolved     _from: 'chartjs-color@>=2.0.0 <3.0.0',
+384 silly install resolved     _npmVersion: '3.6.0',
+384 silly install resolved     _nodeVersion: '5.6.0',
+384 silly install resolved     _npmUser: { name: 'etimberg', email: 'evert.timberg+npm@gmail.com' },
+384 silly install resolved     dist:
+384 silly install resolved      { shasum: '7f60c7256589b24914814ece757659117381e35b',
+384 silly install resolved        tarball: 'https://registry.npmjs.org/chartjs-color/-/chartjs-color-2.0.0.tgz' },
+384 silly install resolved     maintainers: [ [Object] ],
+384 silly install resolved     _npmOperationalInternal:
+384 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+384 silly install resolved        tmp: 'tmp/chartjs-color-2.0.0.tgz_1463229276629_0.5099742498714477' },
+384 silly install resolved     directories: {},
+384 silly install resolved     _resolved: 'https://registry.npmjs.org/chartjs-color/-/chartjs-color-2.0.0.tgz',
+384 silly install resolved     readme: 'ERROR: No README data found!' } ]
+385 info install chartjs-color@2.0.0 into /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+386 info installOne chartjs-color@2.0.0
+387 verbose installOne of chartjs-color to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js not in flight; installing
+388 verbose correctMkdir /Users/Fifaz/.npm/_locks correctMkdir not in flight; initializing
+389 verbose lock using /Users/Fifaz/.npm/_locks/chartjs-color-a208de9a9f3f7101.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+390 silly install write writing chartjs-color 2.0.0 to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+391 verbose unbuild node_modules/chart.js/node_modules/chartjs-color
+392 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color is being purged from base /Users/Fifaz/lgpr-drag-shop
+393 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+394 verbose tar unpack /Users/Fifaz/.npm/chartjs-color/2.0.0/package.tgz
+395 verbose tar unpacking to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+396 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color is being purged
+397 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+398 silly gunzTarPerm modes [ '755', '644' ]
+399 silly gunzTarPerm extractEntry package.json
+400 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+401 silly gunzTarPerm extractEntry README.md
+402 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+403 silly gunzTarPerm extractEntry LICENSE
+404 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+405 silly gunzTarPerm extractEntry index.js
+406 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+407 silly gunzTarPerm extractEntry CHANGELOG.md
+408 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+409 verbose write writing to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/package.json
+410 info preinstall chartjs-color@2.0.0
+411 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/package.json
+412 silly prepareForInstallMany adding color-convert@^0.5.3 from chartjs-color dependencies
+413 silly prepareForInstallMany adding chartjs-color-string@^0.4.0 from chartjs-color dependencies
+414 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/package.json
+415 silly cache add args [ 'color-convert@^0.5.3', null ]
+416 verbose cache add spec color-convert@^0.5.3
+417 silly cache add args [ 'chartjs-color-string@^0.4.0', null ]
+418 verbose cache add spec chartjs-color-string@^0.4.0
+419 silly cache add parsed spec Result {
+419 silly cache add   raw: 'color-convert@^0.5.3',
+419 silly cache add   scope: null,
+419 silly cache add   name: 'color-convert',
+419 silly cache add   rawSpec: '^0.5.3',
+419 silly cache add   spec: '>=0.5.3 <0.6.0',
+419 silly cache add   type: 'range' }
+420 silly addNamed color-convert@>=0.5.3 <0.6.0
+421 verbose addNamed ">=0.5.3 <0.6.0" is a valid semver range for color-convert
+422 silly addNameRange { name: 'color-convert',
+422 silly addNameRange   range: '>=0.5.3 <0.6.0',
+422 silly addNameRange   hasData: false }
+423 silly mapToRegistry name color-convert
+424 silly mapToRegistry using default registry
+425 silly mapToRegistry registry https://registry.npmjs.org/
+426 silly mapToRegistry data Result {
+426 silly mapToRegistry   raw: 'color-convert',
+426 silly mapToRegistry   scope: null,
+426 silly mapToRegistry   name: 'color-convert',
+426 silly mapToRegistry   rawSpec: '',
+426 silly mapToRegistry   spec: 'latest',
+426 silly mapToRegistry   type: 'tag' }
+427 silly mapToRegistry uri https://registry.npmjs.org/color-convert
+428 verbose addNameRange registry:https://registry.npmjs.org/color-convert not in flight; fetching
+429 silly cache add parsed spec Result {
+429 silly cache add   raw: 'chartjs-color-string@^0.4.0',
+429 silly cache add   scope: null,
+429 silly cache add   name: 'chartjs-color-string',
+429 silly cache add   rawSpec: '^0.4.0',
+429 silly cache add   spec: '>=0.4.0 <0.5.0',
+429 silly cache add   type: 'range' }
+430 silly addNamed chartjs-color-string@>=0.4.0 <0.5.0
+431 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for chartjs-color-string
+432 silly addNameRange { name: 'chartjs-color-string',
+432 silly addNameRange   range: '>=0.4.0 <0.5.0',
+432 silly addNameRange   hasData: false }
+433 silly mapToRegistry name chartjs-color-string
+434 silly mapToRegistry using default registry
+435 silly mapToRegistry registry https://registry.npmjs.org/
+436 silly mapToRegistry data Result {
+436 silly mapToRegistry   raw: 'chartjs-color-string',
+436 silly mapToRegistry   scope: null,
+436 silly mapToRegistry   name: 'chartjs-color-string',
+436 silly mapToRegistry   rawSpec: '',
+436 silly mapToRegistry   spec: 'latest',
+436 silly mapToRegistry   type: 'tag' }
+437 silly mapToRegistry uri https://registry.npmjs.org/chartjs-color-string
+438 verbose addNameRange registry:https://registry.npmjs.org/chartjs-color-string not in flight; fetching
+439 verbose request uri https://registry.npmjs.org/color-convert
+440 verbose request no auth needed
+441 info attempt registry request try #1 at 23:55:40
+442 verbose etag "93P4AUJLHETWWM2OHSIR6BDFK"
+443 http request GET https://registry.npmjs.org/color-convert
+444 verbose request uri https://registry.npmjs.org/chartjs-color-string
+445 verbose request no auth needed
+446 info attempt registry request try #1 at 23:55:40
+447 verbose etag "4Z2R1EDX411FVZW0QDF3M3ZZU"
+448 http request GET https://registry.npmjs.org/chartjs-color-string
+449 http 304 https://registry.npmjs.org/color-convert
+450 verbose headers { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+450 verbose headers   via: '1.1 varnish',
+450 verbose headers   'cache-control': 'max-age=300',
+450 verbose headers   etag: '"93P4AUJLHETWWM2OHSIR6BDFK"',
+450 verbose headers   age: '200',
+450 verbose headers   connection: 'keep-alive',
+450 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+450 verbose headers   'x-cache': 'HIT',
+450 verbose headers   'x-cache-hits': '1',
+450 verbose headers   'x-timer': 'S1466549740.322409,VS0,VE0',
+450 verbose headers   vary: 'Accept-Encoding' }
+451 silly get cb [ 304,
+451 silly get   { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+451 silly get     via: '1.1 varnish',
+451 silly get     'cache-control': 'max-age=300',
+451 silly get     etag: '"93P4AUJLHETWWM2OHSIR6BDFK"',
+451 silly get     age: '200',
+451 silly get     connection: 'keep-alive',
+451 silly get     'x-served-by': 'cache-lcy1133-LCY',
+451 silly get     'x-cache': 'HIT',
+451 silly get     'x-cache-hits': '1',
+451 silly get     'x-timer': 'S1466549740.322409,VS0,VE0',
+451 silly get     vary: 'Accept-Encoding' } ]
+452 verbose etag https://registry.npmjs.org/color-convert from cache
+453 verbose get saving color-convert to /Users/Fifaz/.npm/registry.npmjs.org/color-convert/.cache.json
+454 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+455 silly addNameRange number 2 { name: 'color-convert', range: '>=0.5.3 <0.6.0', hasData: true }
+456 silly addNameRange versions [ 'color-convert',
+456 silly addNameRange   [ '0.1.0',
+456 silly addNameRange     '0.2.0',
+456 silly addNameRange     '0.2.1',
+456 silly addNameRange     '0.3.0',
+456 silly addNameRange     '0.3.1',
+456 silly addNameRange     '0.3.4',
+456 silly addNameRange     '0.4.0',
+456 silly addNameRange     '0.5.0',
+456 silly addNameRange     '0.5.1',
+456 silly addNameRange     '0.5.2',
+456 silly addNameRange     '0.5.3',
+456 silly addNameRange     '0.6.0',
+456 silly addNameRange     '0.7.0',
+456 silly addNameRange     '1.0.0',
+456 silly addNameRange     '1.1.0',
+456 silly addNameRange     '1.1.1',
+456 silly addNameRange     '1.1.2',
+456 silly addNameRange     '1.2.0',
+456 silly addNameRange     '1.2.1',
+456 silly addNameRange     '1.2.2',
+456 silly addNameRange     '1.3.0',
+456 silly addNameRange     '1.3.1' ] ]
+457 silly addNamed color-convert@0.5.3
+458 verbose addNamed "0.5.3" is a plain semver version for color-convert
+459 silly cache afterAdd color-convert@0.5.3
+460 verbose afterAdd /Users/Fifaz/.npm/color-convert/0.5.3/package/package.json not in flight; writing
+461 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+462 verbose afterAdd /Users/Fifaz/.npm/color-convert/0.5.3/package/package.json written
+463 http 304 https://registry.npmjs.org/chartjs-color-string
+464 verbose headers { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+464 verbose headers   via: '1.1 varnish',
+464 verbose headers   'cache-control': 'max-age=300',
+464 verbose headers   etag: '"4Z2R1EDX411FVZW0QDF3M3ZZU"',
+464 verbose headers   age: '25',
+464 verbose headers   connection: 'keep-alive',
+464 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+464 verbose headers   'x-cache': 'HIT',
+464 verbose headers   'x-cache-hits': '1',
+464 verbose headers   'x-timer': 'S1466549740.447273,VS0,VE0',
+464 verbose headers   vary: 'Accept-Encoding' }
+465 silly get cb [ 304,
+465 silly get   { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+465 silly get     via: '1.1 varnish',
+465 silly get     'cache-control': 'max-age=300',
+465 silly get     etag: '"4Z2R1EDX411FVZW0QDF3M3ZZU"',
+465 silly get     age: '25',
+465 silly get     connection: 'keep-alive',
+465 silly get     'x-served-by': 'cache-lcy1132-LCY',
+465 silly get     'x-cache': 'HIT',
+465 silly get     'x-cache-hits': '1',
+465 silly get     'x-timer': 'S1466549740.447273,VS0,VE0',
+465 silly get     vary: 'Accept-Encoding' } ]
+466 verbose etag https://registry.npmjs.org/chartjs-color-string from cache
+467 verbose get saving chartjs-color-string to /Users/Fifaz/.npm/registry.npmjs.org/chartjs-color-string/.cache.json
+468 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+469 silly addNameRange number 2 { name: 'chartjs-color-string',
+469 silly addNameRange   range: '>=0.4.0 <0.5.0',
+469 silly addNameRange   hasData: true }
+470 silly addNameRange versions [ 'chartjs-color-string', [ '0.4.0' ] ]
+471 silly addNamed chartjs-color-string@0.4.0
+472 verbose addNamed "0.4.0" is a plain semver version for chartjs-color-string
+473 silly cache afterAdd chartjs-color-string@0.4.0
+474 verbose afterAdd /Users/Fifaz/.npm/chartjs-color-string/0.4.0/package/package.json not in flight; writing
+475 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+476 verbose afterAdd /Users/Fifaz/.npm/chartjs-color-string/0.4.0/package/package.json written
+477 silly install resolved [ { name: 'color-convert',
+477 silly install resolved     description: 'Plain color conversion functions',
+477 silly install resolved     version: '0.5.3',
+477 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+477 silly install resolved     repository:
+477 silly install resolved      { type: 'git',
+477 silly install resolved        url: 'git+ssh://git@github.com/harthur/color-convert.git' },
+477 silly install resolved     devDependencies: {},
+477 silly install resolved     scripts: { test: 'node test/basic.js' },
+477 silly install resolved     keywords: [ 'color', 'colour', 'rgb' ],
+477 silly install resolved     gitHead: 'c05e34eb75de749faf15f0e362147a6add373625',
+477 silly install resolved     bugs: { url: 'https://github.com/harthur/color-convert/issues' },
+477 silly install resolved     homepage: 'https://github.com/harthur/color-convert#readme',
+477 silly install resolved     _id: 'color-convert@0.5.3',
+477 silly install resolved     _shasum: 'bdb6c69ce660fadffe0b0007cc447e1b9f7282bd',
+477 silly install resolved     _from: 'color-convert@>=0.5.3 <0.6.0',
+477 silly install resolved     _npmVersion: '2.9.0',
+477 silly install resolved     _nodeVersion: '2.0.1',
+477 silly install resolved     _npmUser: { name: 'moox', email: 'm@moox.io' },
+477 silly install resolved     maintainers: [ [Object], [Object] ],
+477 silly install resolved     dist:
+477 silly install resolved      { shasum: 'bdb6c69ce660fadffe0b0007cc447e1b9f7282bd',
+477 silly install resolved        tarball: 'https://registry.npmjs.org/color-convert/-/color-convert-0.5.3.tgz' },
+477 silly install resolved     directories: {},
+477 silly install resolved     _resolved: 'https://registry.npmjs.org/color-convert/-/color-convert-0.5.3.tgz',
+477 silly install resolved     readme: 'ERROR: No README data found!' },
+477 silly install resolved   { name: 'chartjs-color-string',
+477 silly install resolved     description: 'Parser and generator for CSS color strings',
+477 silly install resolved     version: '0.4.0',
+477 silly install resolved     author: { name: 'Heather Arthur', email: 'fayearthur@gmail.com' },
+477 silly install resolved     contributors: [ [Object], [Object] ],
+477 silly install resolved     repository:
+477 silly install resolved      { type: 'git',
+477 silly install resolved        url: 'git+ssh://git@github.com/harthur/color-string.git' },
+477 silly install resolved     scripts: { test: 'node test/basic.js' },
+477 silly install resolved     license: 'MIT',
+477 silly install resolved     main: './color-string',
+477 silly install resolved     dependencies: { 'color-name': '^1.0.0' },
+477 silly install resolved     devDependencies: {},
+477 silly install resolved     keywords: [ 'color', 'colour', 'rgb', 'css' ],
+477 silly install resolved     gitHead: '6cde16dc58671722201e671d5deecb950f94cb63',
+477 silly install resolved     bugs: { url: 'https://github.com/harthur/color-string/issues' },
+477 silly install resolved     homepage: 'https://github.com/harthur/color-string#readme',
+477 silly install resolved     _id: 'chartjs-color-string@0.4.0',
+477 silly install resolved     _shasum: '57748d4530ae28d8db0a5492182ba06dfdf2f468',
+477 silly install resolved     _from: 'chartjs-color-string@>=0.4.0 <0.5.0',
+477 silly install resolved     _npmVersion: '3.6.0',
+477 silly install resolved     _nodeVersion: '5.6.0',
+477 silly install resolved     _npmUser: { name: 'etimberg', email: 'evert.timberg+npm@gmail.com' },
+477 silly install resolved     dist:
+477 silly install resolved      { shasum: '57748d4530ae28d8db0a5492182ba06dfdf2f468',
+477 silly install resolved        tarball: 'https://registry.npmjs.org/chartjs-color-string/-/chartjs-color-string-0.4.0.tgz' },
+477 silly install resolved     maintainers: [ [Object] ],
+477 silly install resolved     _npmOperationalInternal:
+477 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+477 silly install resolved        tmp: 'tmp/chartjs-color-string-0.4.0.tgz_1461969577496_0.03336976608261466' },
+477 silly install resolved     directories: {},
+477 silly install resolved     _resolved: 'https://registry.npmjs.org/chartjs-color-string/-/chartjs-color-string-0.4.0.tgz',
+477 silly install resolved     readme: 'ERROR: No README data found!' } ]
+478 info install color-convert@0.5.3 into /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+479 info install chartjs-color-string@0.4.0 into /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+480 info installOne color-convert@0.5.3
+481 verbose installOne of color-convert to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color not in flight; installing
+482 verbose correctMkdir /Users/Fifaz/.npm/_locks correctMkdir not in flight; initializing
+483 info installOne chartjs-color-string@0.4.0
+484 verbose installOne of chartjs-color-string to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color not in flight; installing
+485 verbose correctMkdir /Users/Fifaz/.npm/_locks correctMkdir not in flight; initializing
+486 verbose lock using /Users/Fifaz/.npm/_locks/color-convert-9e5e606ca0c40647.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+487 silly install write writing color-convert 0.5.3 to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+488 verbose lock using /Users/Fifaz/.npm/_locks/chartjs-color-string-563460b91dcaf1e6.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+489 silly install write writing chartjs-color-string 0.4.0 to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+490 verbose unbuild node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+491 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert is being purged from base /Users/Fifaz/lgpr-drag-shop
+492 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+493 verbose tar unpack /Users/Fifaz/.npm/color-convert/0.5.3/package.tgz
+494 verbose tar unpacking to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+495 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert is being purged
+496 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+497 verbose unbuild node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+498 silly gunzTarPerm modes [ '755', '644' ]
+499 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string is being purged from base /Users/Fifaz/lgpr-drag-shop
+500 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+501 verbose tar unpack /Users/Fifaz/.npm/chartjs-color-string/0.4.0/package.tgz
+502 verbose tar unpacking to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+503 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string is being purged
+504 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+505 silly gunzTarPerm modes [ '755', '644' ]
+506 silly gunzTarPerm extractEntry package.json
+507 silly gunzTarPerm extractEntry package.json
+508 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+509 silly gunzTarPerm extractEntry README.md
+510 silly gunzTarPerm extractEntry LICENSE
+511 silly gunzTarPerm extractEntry README.md
+512 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+513 silly gunzTarPerm extractEntry LICENSE
+514 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+515 silly gunzTarPerm extractEntry conversions.js
+516 silly gunzTarPerm extractEntry index.js
+517 silly gunzTarPerm extractEntry .travis.yml
+518 silly gunzTarPerm extractEntry CHANGELOG.md
+519 silly gunzTarPerm extractEntry component.json
+520 silly gunzTarPerm extractEntry test/basic.js
+521 silly gunzTarPerm extractEntry test/speed.js
+522 silly gunzTarPerm extractEntry color-string.js
+523 silly gunzTarPerm modified mode [ 'color-string.js', 438, 420 ]
+524 silly gunzTarPerm extractEntry .travis.yml
+525 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+526 silly gunzTarPerm extractEntry CHANGELOG.md
+527 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+528 silly gunzTarPerm extractEntry test/basic.js
+529 silly gunzTarPerm modified mode [ 'test/basic.js', 438, 420 ]
+530 verbose write writing to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/package.json
+531 info preinstall chartjs-color-string@0.4.0
+532 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/package.json
+533 silly prepareForInstallMany adding color-name@^1.0.0 from chartjs-color-string dependencies
+534 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/package.json
+535 verbose write writing to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert/package.json
+536 silly cache add args [ 'color-name@^1.0.0', null ]
+537 verbose cache add spec color-name@^1.0.0
+538 silly cache add parsed spec Result {
+538 silly cache add   raw: 'color-name@^1.0.0',
+538 silly cache add   scope: null,
+538 silly cache add   name: 'color-name',
+538 silly cache add   rawSpec: '^1.0.0',
+538 silly cache add   spec: '>=1.0.0 <2.0.0',
+538 silly cache add   type: 'range' }
+539 silly addNamed color-name@>=1.0.0 <2.0.0
+540 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for color-name
+541 silly addNameRange { name: 'color-name', range: '>=1.0.0 <2.0.0', hasData: false }
+542 silly mapToRegistry name color-name
+543 silly mapToRegistry using default registry
+544 silly mapToRegistry registry https://registry.npmjs.org/
+545 silly mapToRegistry data Result {
+545 silly mapToRegistry   raw: 'color-name',
+545 silly mapToRegistry   scope: null,
+545 silly mapToRegistry   name: 'color-name',
+545 silly mapToRegistry   rawSpec: '',
+545 silly mapToRegistry   spec: 'latest',
+545 silly mapToRegistry   type: 'tag' }
+546 silly mapToRegistry uri https://registry.npmjs.org/color-name
+547 verbose addNameRange registry:https://registry.npmjs.org/color-name not in flight; fetching
+548 verbose request uri https://registry.npmjs.org/color-name
+549 verbose request no auth needed
+550 info attempt registry request try #1 at 23:55:40
+551 verbose etag "9XAYPUAP978784IWZSSO4BOH6"
+552 http request GET https://registry.npmjs.org/color-name
+553 info preinstall color-convert@0.5.3
+554 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert/package.json
+555 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert/package.json
+556 silly install resolved []
+557 verbose about to build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+558 info build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+559 info linkStuff color-convert@0.5.3
+560 silly linkStuff color-convert@0.5.3 has /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules as its parent node_modules
+561 verbose linkBins color-convert@0.5.3
+562 verbose linkMans color-convert@0.5.3
+563 verbose rebuildBundles color-convert@0.5.3
+564 info install color-convert@0.5.3
+565 info postinstall color-convert@0.5.3
+566 verbose unlock done using /Users/Fifaz/.npm/_locks/color-convert-9e5e606ca0c40647.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/color-convert
+567 http 304 https://registry.npmjs.org/color-name
+568 verbose headers { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+568 verbose headers   via: '1.1 varnish',
+568 verbose headers   'cache-control': 'max-age=300',
+568 verbose headers   etag: '"9XAYPUAP978784IWZSSO4BOH6"',
+568 verbose headers   age: '199',
+568 verbose headers   connection: 'keep-alive',
+568 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+568 verbose headers   'x-cache': 'HIT',
+568 verbose headers   'x-cache-hits': '1',
+568 verbose headers   'x-timer': 'S1466549740.528451,VS0,VE0',
+568 verbose headers   vary: 'Accept-Encoding' }
+569 silly get cb [ 304,
+569 silly get   { date: 'Tue, 21 Jun 2016 22:55:40 GMT',
+569 silly get     via: '1.1 varnish',
+569 silly get     'cache-control': 'max-age=300',
+569 silly get     etag: '"9XAYPUAP978784IWZSSO4BOH6"',
+569 silly get     age: '199',
+569 silly get     connection: 'keep-alive',
+569 silly get     'x-served-by': 'cache-lcy1133-LCY',
+569 silly get     'x-cache': 'HIT',
+569 silly get     'x-cache-hits': '1',
+569 silly get     'x-timer': 'S1466549740.528451,VS0,VE0',
+569 silly get     vary: 'Accept-Encoding' } ]
+570 verbose etag https://registry.npmjs.org/color-name from cache
+571 verbose get saving color-name to /Users/Fifaz/.npm/registry.npmjs.org/color-name/.cache.json
+572 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+573 silly addNameRange number 2 { name: 'color-name', range: '>=1.0.0 <2.0.0', hasData: true }
+574 silly addNameRange versions [ 'color-name',
+574 silly addNameRange   [ '0.0.1', '0.0.2', '1.0.0', '1.0.1', '1.1.0', '1.1.1' ] ]
+575 silly addNamed color-name@1.1.1
+576 verbose addNamed "1.1.1" is a plain semver version for color-name
+577 silly cache afterAdd color-name@1.1.1
+578 verbose afterAdd /Users/Fifaz/.npm/color-name/1.1.1/package/package.json not in flight; writing
+579 verbose correctMkdir /Users/Fifaz/.npm correctMkdir not in flight; initializing
+580 verbose afterAdd /Users/Fifaz/.npm/color-name/1.1.1/package/package.json written
+581 silly install resolved [ { name: 'color-name',
+581 silly install resolved     version: '1.1.1',
+581 silly install resolved     description: 'A list of color names and it’s values',
+581 silly install resolved     main: 'index.js',
+581 silly install resolved     scripts: { test: 'node test.js' },
+581 silly install resolved     files: [ 'index.js' ],
+581 silly install resolved     repository:
+581 silly install resolved      { type: 'git',
+581 silly install resolved        url: 'git+ssh://git@github.com/dfcreative/color-name.git' },
+581 silly install resolved     keywords: [ 'color-name', 'color', 'color-keyword', 'keyword' ],
+581 silly install resolved     author: { name: 'DY', email: 'dfcreative@gmail.com' },
+581 silly install resolved     license: 'MIT',
+581 silly install resolved     bugs: { url: 'https://github.com/dfcreative/color-name/issues' },
+581 silly install resolved     homepage: 'https://github.com/dfcreative/color-name',
+581 silly install resolved     gitHead: 'b47de1bf75da523d6d6061a41f7f0c9bb7c213bf',
+581 silly install resolved     _id: 'color-name@1.1.1',
+581 silly install resolved     _shasum: '4b1415304cf50028ea81643643bd82ea05803689',
+581 silly install resolved     _from: 'color-name@>=1.0.0 <2.0.0',
+581 silly install resolved     _npmVersion: '3.3.12',
+581 silly install resolved     _nodeVersion: '5.3.0',
+581 silly install resolved     _npmUser: { name: 'dfcreative', email: 'df.creative@gmail.com' },
+581 silly install resolved     maintainers: [ [Object] ],
+581 silly install resolved     dist:
+581 silly install resolved      { shasum: '4b1415304cf50028ea81643643bd82ea05803689',
+581 silly install resolved        tarball: 'https://registry.npmjs.org/color-name/-/color-name-1.1.1.tgz' },
+581 silly install resolved     directories: {},
+581 silly install resolved     _resolved: 'https://registry.npmjs.org/color-name/-/color-name-1.1.1.tgz',
+581 silly install resolved     readme: 'ERROR: No README data found!' } ]
+582 info install color-name@1.1.1 into /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+583 info installOne color-name@1.1.1
+584 verbose installOne of color-name to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string not in flight; installing
+585 verbose correctMkdir /Users/Fifaz/.npm/_locks correctMkdir not in flight; initializing
+586 verbose lock using /Users/Fifaz/.npm/_locks/color-name-d37a4aa9fa51eaa2.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+587 silly install write writing color-name 1.1.1 to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+588 verbose unbuild node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+589 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name is being purged from base /Users/Fifaz/lgpr-drag-shop
+590 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+591 verbose tar unpack /Users/Fifaz/.npm/color-name/1.1.1/package.tgz
+592 verbose tar unpacking to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+593 silly gentlyRm /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name is being purged
+594 verbose gentlyRm don't care about contents; nuking /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+595 silly gunzTarPerm modes [ '755', '644' ]
+596 silly gunzTarPerm extractEntry package.json
+597 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+598 silly gunzTarPerm extractEntry README.md
+599 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+600 silly gunzTarPerm extractEntry LICENSE
+601 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+602 silly gunzTarPerm extractEntry index.js
+603 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+604 verbose write writing to /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name/package.json
+605 info preinstall color-name@1.1.1
+606 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name/package.json
+607 verbose readDependencies loading dependencies from /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name/package.json
+608 silly install resolved []
+609 verbose about to build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+610 info build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+611 info linkStuff color-name@1.1.1
+612 silly linkStuff color-name@1.1.1 has /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules as its parent node_modules
+613 verbose linkBins color-name@1.1.1
+614 verbose linkMans color-name@1.1.1
+615 verbose rebuildBundles color-name@1.1.1
+616 info install color-name@1.1.1
+617 info postinstall color-name@1.1.1
+618 verbose unlock done using /Users/Fifaz/.npm/_locks/color-name-d37a4aa9fa51eaa2.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string/node_modules/color-name
+619 verbose about to build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+620 info build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+621 info linkStuff chartjs-color-string@0.4.0
+622 silly linkStuff chartjs-color-string@0.4.0 has /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules as its parent node_modules
+623 verbose linkBins chartjs-color-string@0.4.0
+624 verbose linkMans chartjs-color-string@0.4.0
+625 verbose rebuildBundles chartjs-color-string@0.4.0
+626 verbose rebuildBundles [ 'color-name' ]
+627 info install chartjs-color-string@0.4.0
+628 info postinstall chartjs-color-string@0.4.0
+629 verbose unlock done using /Users/Fifaz/.npm/_locks/chartjs-color-string-563460b91dcaf1e6.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color/node_modules/chartjs-color-string
+630 verbose about to build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+631 info build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+632 info linkStuff chartjs-color@2.0.0
+633 silly linkStuff chartjs-color@2.0.0 has /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules as its parent node_modules
+634 verbose linkBins chartjs-color@2.0.0
+635 verbose linkMans chartjs-color@2.0.0
+636 verbose rebuildBundles chartjs-color@2.0.0
+637 verbose rebuildBundles [ 'chartjs-color-string', 'color-convert' ]
+638 info install chartjs-color@2.0.0
+639 info postinstall chartjs-color@2.0.0
+640 verbose unlock done using /Users/Fifaz/.npm/_locks/chartjs-color-a208de9a9f3f7101.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js/node_modules/chartjs-color
+641 verbose about to build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+642 info build /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+643 info linkStuff chart.js@2.1.6
+644 silly linkStuff chart.js@2.1.6 has /Users/Fifaz/lgpr-drag-shop/node_modules as its parent node_modules
+645 verbose linkBins chart.js@2.1.6
+646 verbose linkMans chart.js@2.1.6
+647 verbose rebuildBundles chart.js@2.1.6
+648 verbose rebuildBundles [ 'chartjs-color' ]
+649 info install chart.js@2.1.6
+650 info postinstall chart.js@2.1.6
+651 verbose unlock done using /Users/Fifaz/.npm/_locks/chart-js-91524b5f7d4c53db.lock for /Users/Fifaz/lgpr-drag-shop/node_modules/chart.js
+652 verbose validateInstall loading /Users/Fifaz/lgpr-drag-shop/package.json for validation
+653 verbose stack Error: The package rxjs@5.0.0-beta.6 does not satisfy its siblings' peerDependencies requirements!
+653 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+653 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+653 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+653 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+653 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+653 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+653 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+653 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+653 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+653 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+654 verbose cwd /Users/Fifaz/lgpr-drag-shop
+655 error Darwin 15.4.0
+656 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "chart.js" "--save"
+657 error node v4.4.3
+658 error npm  v2.15.1
+659 error code EPEERINVALID
+660 error peerinvalid The package rxjs@5.0.0-beta.6 does not satisfy its siblings' peerDependencies requirements!
+660 error peerinvalid Peer angular2@2.0.0-beta.15 wants rxjs@5.0.0-beta.2
+660 error peerinvalid Peer @angular/core@2.0.0-rc.2 wants rxjs@5.0.0-beta.6
+661 verbose exit [ 1, true ]
