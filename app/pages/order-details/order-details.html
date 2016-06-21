@@ -43,7 +43,7 @@
 
    </ion-col>
 
-   <ion-col >
+   <ion-col>
      <ion-col id="col1">
       <ion-col class="user-bold">{{client?.first_name}} {{client?.last_name}}</ion-col>
        <ion-col class="icon-links" id="text">{{client?.address?.city}}</ion-col>
@@ -54,12 +54,14 @@
      </ion-col>
      <ion-col>
        <ion-col class="user-bold">Scheduled delivery in</ion-col>
-       <ion-col class="icon-links" id="text">1 day</ion-col>
+       <ion-col *ngIf="order.days >1" class="icon-links" id="text">{{order.days}} days</ion-col>
+       <ion-col *ngIf="order.days === 1" class="icon-links" id="text">{{order.days}} day</ion-col>
+      <ion-col *ngIf="order.days === 0" class="icon-links" id="text">Today</ion-col>
     </ion-col>
    </ion-col>
 
    <ion-col id="col">
-     <ion-col class="payment"><b>Total: </b>€16.21</ion-col>
+     <ion-col class="payment"><b>Total: </b>{{orderPrice}} €</ion-col>
      <ion-col class="payment"><b>Payment: </b> {{order.payment}}</ion-col>
    </ion-col>
  </ion-row>

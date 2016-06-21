@@ -5,6 +5,7 @@
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
   "status": 3,
+  "days":4,
   "products": [{
     "id": 0,
     "name": "Apples",
@@ -49,20 +50,21 @@
   "payment": "Money",
   "address": "Vaz de Caminha Street, 15 Vila Nova de Gaia",
   "status": 1,
+  "days":0,
   "products": [{
     "id": 0,
     "name": "Rice",
     "amount": "4",
     "units": "Kg",
     "price": 0.50,
-    "processed": false
+    "processed": true
   }, {
     "id": 1,
     "name": "Chicken Steak",
     "amount": "2",
     "units": "Kg",
     "price": 7.40,
-    "processed": false
+    "processed": true
   }],
   "employee": ""
 },
@@ -73,6 +75,7 @@
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
   "status": 2,
+  "days":2,
   "products": [{
     "id": 0,
     "name": "Apples",
@@ -118,6 +121,7 @@
   "payment": "PayPal",
   "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
   "status": 4,
+  "days":1,
   "products": [{
     "id": 0,
     "name": "Apples",

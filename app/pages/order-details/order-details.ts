@@ -25,10 +25,14 @@ export class OrderDetails {
   clients: any;
   testRadioOpen: boolean;
   testRadioResult: any;
+  orderPrice: number;
 
   constructor(private nav: NavController, navParams: NavParams, private clientsService: ClientsService, private messagesService: MessagesService) {
     this.order = navParams.get('order');
-    console.log(this.order);
+    this.orderPrice = 0.0;
+    for (let entry of this.order.products) {
+        this.orderPrice = this.orderPrice + entry.price;
+    }
   }
 
   processProduct(product: Product){
@@ -135,28 +139,28 @@ export class OrderDetails {
    alert.addInput({
      type: 'radio',
      label: 'Shipped',
-     value: 'Shipped',
+     value: '1',
      checked: (this.order.status === 1 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'In Traffic',
-     value: 'In Traffic',
+     value: '2',
      checked: (this.order.status === 2 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Pending',
-     value: 'Pending',
+     value: '3',
      checked: (this.order.status === 3 ? true : false)
    });
 
    alert.addInput({
      type: 'radio',
      label: 'Canceled',
-     value: 'Canceled',
+     value: '4',
      checked: (this.order.status === 4 ? true : false)
    });
 
@@ -166,9 +170,8 @@ export class OrderDetails {
      handler: data => {
        this.testRadioOpen = false;
        this.testRadioResult = data;
-       this.order.status = this.testRadioResult;
-       console.log(this.order.status);
-       //console.log(this.testRadioResult);
+       this.order.status = parseInt(this.testRadioResult);
+
      }
    });
    this.nav.present(alert).then(() => {
