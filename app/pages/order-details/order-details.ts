@@ -28,7 +28,7 @@ export class OrderDetails {
 
   constructor(private nav: NavController, navParams: NavParams, private clientsService: ClientsService, private messagesService: MessagesService) {
     this.order = navParams.get('order');
-
+    console.log(this.order);
   }
 
   processProduct(product: Product){
@@ -49,14 +49,20 @@ export class OrderDetails {
 
   onPageDidEnter() {
     //get all clients
+    console.log("heyyyyy");
     this.clientsService.getAllClients().subscribe(
-        data => {
-          this.client = data[this.order.client_id - 1];
-          console.log("Cliente " + this.client);
-        },
-        err => {console.log(err);},
-        () => {console.log("Finished fetching clients");}
-    );
+          data => {
+            this.client = data[this.order.client_id - 1];
+            console.log(this.client);
+
+          },
+          err => {console.log(err);},
+          () => {console.log("Finished fetching clients");}
+      );
+
+      console.log(this.client);
+
+
   }
   goToWishList(item) {
     this.nav.push(ClientProfilePage, {

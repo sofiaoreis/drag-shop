@@ -32,8 +32,8 @@ ordersTrigger: string;
     );
   }
 
-  itemTapped(order){
-    this.nav.push(OrderDetails,{order: order});
+  itemTapped(item){
+    this.nav.push(OrderDetails,{order: item});
   }
 
 }

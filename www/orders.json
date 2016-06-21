@@ -67,7 +67,7 @@
   "employee": ""
 },
 {
-  "id": 1,
+  "id": 3,
   "client_id": 3,
   "city": "Vila Nova de Gaia",
   "payment": "PayPal",
@@ -112,7 +112,7 @@
   "employee": ""
 },
 {
-  "id": 1,
+  "id": 4,
   "client_id": 3,
   "city": "Vila Nova de Gaia",
   "payment": "PayPal",
