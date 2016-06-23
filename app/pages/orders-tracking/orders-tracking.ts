@@ -1,7 +1,7 @@
 import {Page, NavController, NavParams} from 'ionic-angular';
-import {CHART_DIRECTIVES} from 'ng2-charts/ng2-charts';
-import {Component} from '@angular/core';
-import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass} from '@angular/common';
+//import {CHART_DIRECTIVES} from 'ng2-charts/ng2-charts';
+//import {Component} from '@angular/core';
+//import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass} from '@angular/common';
 
 import {OrdersService} from '../../providers/orders-service/orders-service';
 import {Order} from '../../models/order';
@@ -18,7 +18,7 @@ import {OrderDetails} from '../order-details/order-details'
   templateUrl: 'build/pages/orders-tracking/orders-tracking.html',
   selector: 'doughnut-chart-demo',
   providers: [OrdersService],
-  directives: [CHART_DIRECTIVES, NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES],
+  //directives: [CHART_DIRECTIVES, NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES],
   pipes:[OrderSeeAllPipe, OrderShippedPipe, OrderInTrafficPipe, OrderPendingPipe, OrderCanceledPipe]
 })
 export class OrdersTrackingPage {
