@@ -19,6 +19,10 @@
   }
 }
 
+.spacerow2 {
+  height: 3vw;
+}
+
 ion-segment-button.stat-tabs {
   border:none !important;
   color: black !important;
@@ -35,76 +39,84 @@ ion-segment-button.stat-tabs {
 
 .circledown {
   position: relative;
-  margin: 4em auto;
-  width: 8em; height: 8em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-top: 90%;
   border-radius: 50%;
-  background: white;
-  border: 10px solid white;
-  border-left-color: darkblue;
-  border-top-color: darkblue;
-  border-right-color: darkblue;
+  border: 1vw solid darkred;
+
 }
 
 .circleleft {
   position: relative;
-  margin: 4em auto;
-  width: 8em; height: 8em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-top: 90%;
   border-radius: 50%;
-  background: white;
-  border: 10px solid white;
-  border-bottom-color: darkblue;
-  border-top-color: darkblue;
-  border-right-color: darkblue;
+  border: 1vw solid orange;
 }
 
 .circletop {
   position: relative;
-  margin: 4em auto;
-  width: 8em; height: 8em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-top: 90%;
   border-radius: 50%;
-  background: white;
-  border: 10px solid white;
-  border-left-color: darkblue;
-  border-bottom-color: darkblue;
-  border-right-color: darkblue;
+  border: 1vw solid royalblue;
 }
 
 .circleright {
   position: relative;
-  margin: 4em auto;
-  width: 8em; height: 8em;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-top: 90%;
   border-radius: 50%;
-  background: white;
-  border: 10px solid white;
-  border-left-color: darkblue;
-  border-top-color: darkblue;
-  border-bottom-color: darkblue;
+  border: 1vw solid rebeccapurple;
 }
 
 .circletext {
+  font-size: 2.7vw;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-}
-
-
-h1 {
   text-align: center;
 }
 
-.progressbar {
+#textdash2 {
+   text-align: center;
+   font-weight: bold;
+   color: #000000;
+   font-size: 3vw;
+ }
+
+#textdash3 {
+  text-align: center;
+  color: #000000;
+  font-size: 2.4vw;
+}
+
+.progressbar2 {
   background-color: white;
   border-radius: 13px;
   border: 1px solid grey;
   padding: 0px;
+  margin-top: 0px;
 }
 
-.progressbar > div {
+.progressbar2 > div {
   background-color: $app-blue;
-  width: 40%;
-  height: 20px;
+  //width: 40%;
+  height: 0.7em;
   border-radius: 10px;
 }
 
@@ -113,102 +125,4 @@ h1 {
   padding-top: 7%;
   padding-left: 30%;
 
-}
-
-#row3 {
-  //width: 30%;
-  //margin: 0 auto;
-}
-
-
-
-#col {
-  padding-top: 7.5%;
-}
-
-#col1 {
-  padding-top: 22%;
-}
-
-#title {
-  color: #5BBBBF;
-}
-
-
-#back-button {
-  color: #5BBBBF;
-  font-size: 65px;
-}
-
-.status {
-  // text-align: center;
-  color: #000000;
-  //font-weight: bold;
-  font-size: 110%;
-  height: 30px;
-  //  padding-top: 8.25%;
-  //  padding-bottom: 5%;
-  //  padding-left: 32%;
-
-}
-
-#status-icon {
-  //padding-top: 8%;
-  padding-bottom: 5%;
-  padding-right: 3%;
-  font-size: 1.5em;
-  color: #FFD500;
-}
-
-#status {
-  color: #5BBBBF;
-  font-weight: bold;
-  font-size: 80%;
-  //padding-bottom: 7%;
-  padding-left: 6.5%;
-}
-
-.icon-links {
-  padding-bottom: 8%;
-}
-
-#text {
-  color: #000000;
-}
-
-#text2 {
-  color: #000000;
-  text-align: right;
-}
-
-
-.icons {
-  padding-right: 2%;
-  color: #5BBBBF;
-  font-size: 1.5em;
-
-}
-
-.user-bold {
-  color: #000000;
-  font-weight: bold;
-  font-size: 110%;
-}
-
-.order {
-  color: #000000;
-  //background: green;
-}
-
-#cenas ion-row:nth-child(odd){
-  background: #E9EAEB;
-}
-
-.payment {
-  padding-top: 4%;
-}
-
-.label {
-  color: #5BBBBF;
-  font-weight: bold;
 }
