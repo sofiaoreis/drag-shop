@@ -27,7 +27,7 @@ import {TutorialPage} from './pages/tutorial/tutorial';
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = LoginPage;
+  rootPage: any = TutorialPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
