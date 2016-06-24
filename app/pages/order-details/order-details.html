@@ -11,9 +11,9 @@
 
   <div class="profile-segment1">
     <div class="segment-content2">
-  <ion-row  responsive-sm style="width:110%">
-<ion-col></ion-col>
-    <ion-col style="min-width:47%">
+  <ion-row  responsive-sm id="firstRow">
+    <ion-col></ion-col>
+    <ion-col id="firstCol">
       <ion-col class="status-title" >
 
         <ion-icon *ngIf="order.status===3" id="status-icon-3" name="md-radio-button-on"></ion-icon>
@@ -26,7 +26,7 @@
         <b *ngIf="order.status===3" >Status: Pending</b>
       </ion-col>
       <ion-col>
-         <button block class="submit-button" id="changeStatus-button" style="width: 47.5%"  (click)="doRadio()">Change Status</button>
+         <button block class="submit-button" id="changeStatus-button"  (click)="doRadio()">Change Status</button>
       </ion-col>
     </ion-col>
   <ion-col></ion-col>
@@ -79,22 +79,22 @@
 
      <ion-col  id="background-table" class="background-table">
        <ion-row responsive sm class="label">
-       <ion-col style="font-size:110%">Product</ion-col>
-         <ion-col id="table-col1" style="font-size:110%">Amount</ion-col>
-         <ion-col id="table-col2" style="font-size:110%">Price</ion-col>
+       <ion-col>Product</ion-col>
+         <ion-col id="table-col1">Amount</ion-col>
+         <ion-col id="table-col2">Price</ion-col>
        </ion-row>
 
-       <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products">
-       <ion-col style="font-size:110%">{{product.name}}</ion-col>
-         <ion-col id="table-col1" style="font-size:110%">{{product.amount}}{{product.units}}</ion-col>
-         <ion-col id="table-col2" style="font-size:110%">{{product.price}}€ <ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
+       <ion-row (click)="processProduct(product)" responsive sm *ngFor="#product of order.products" class="tableContent">
+         <ion-col>{{product.name}}</ion-col>
+         <ion-col id="table-col1">{{product.amount}}{{product.units}}</ion-col>
+         <ion-col id="table-col2">{{product.price}}€ <ion-icon *ngIf="product.processed" name="checkmark-circle"></ion-icon></ion-col>
        </ion-row>
 
        <ion-row>
-         <ion-col class="label" style="font-size:110%">Total: </ion-col>
+         <ion-col class="label">Total: </ion-col>
          <ion-col></ion-col>
          <ion-col></ion-col>
-         <ion-col id="table-col2" style="font-size:110%">16.21€</ion-col>
+         <ion-col id="table-col2" class="tableContent">{{orderPrice}} €</ion-col>
        </ion-row>
        <br>
 
@@ -103,18 +103,27 @@
    </ion-col>
 
 
+
+</div>
+
+
+
 <ion-row>
-   <ion-col>
-   </ion-col>
+  <ion-col>
+  </ion-col>
    <ion-col>
   <button *ngIf="!order.employee && order.status==3" class="submit-button" id="allocate-button"(click)="allocateEmploye()" block>Allocate employee</button>
-  <div *ngIf="order.employee" class="container user-bold">Allocated to {{order.employee}} <button class="submit-button" id="allocate-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
+  <div *ngIf="order.employee" class="user-bold"> <ion-col class="buttonEdit">Allocated to {{order.employee}}</ion-col><button class="submit-button" id="edit-button" (click)="editAllocateEmploye(order.employee)">Edit employee</button></div>
   </ion-col>
   <ion-col>
   </ion-col>
 </ion-row>
 
-</div>
+
+
+
+
+
 
  </div>
  </div>
