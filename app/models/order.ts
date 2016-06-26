@@ -6,13 +6,8 @@ export class Order {
   city: string;
   payment: string;
   address: string;
-<<<<<<< HEAD
-  status: string;
   products: OrderProduct[];
-=======
   status: number;
-  products: Product[];
->>>>>>> master
   employee: string;
 
   constructor() {

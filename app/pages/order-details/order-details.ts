@@ -35,13 +35,9 @@ export class OrderDetails {
     }
   }
 
-<<<<<<< HEAD
+
   processProduct(product: OrderProduct){
     if(this.order.products[product.id].processed == false)
-=======
-  processProduct(product: Product){
-   if(this.order.products[product.id].processed == false)
->>>>>>> master
       this.order.products[product.id].processed = true;
     else
       this.order.products[product.id].processed = false;
