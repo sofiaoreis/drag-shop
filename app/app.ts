@@ -5,17 +5,22 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {AccountRecoveryPage} from './pages/account-recovery/account-recovery';
 import {ListPage} from './pages/list/list';
 import {CustomPage} from './pages/custom-page/custom-page'
-import {OrderList} from './pages/order-list/order-list'
-import {OrderDetails} from './pages/order-details/order-details'
 import {HTTP_PROVIDERS} from 'angular2/http'
 import {MessageListPage} from "./pages/message-list/message-list";
+import {OrdersTrackingPage} from "./pages/orders-tracking/orders-tracking";
 import {ManagmentList} from './pages/managment-list/managment-list';
 import {ClientListPage} from "./pages/client-list/client-list";
 import {Statistics} from "./pages/statistics/statistics";
-import{LoginPage} from './pages/login-page/login-page';
+import {LoginPage} from './pages/login-page/login-page';
 import {StoreList} from "./pages/store-list/store-list";
+<<<<<<< HEAD
 import{AppSettings} from './pages/app-settings/app-settings';
 import {ProductsList} from './pages/products-list/products-list'
+=======
+import {AppSettings} from './pages/app-settings/app-settings';
+import {TutorialPage} from './pages/tutorial/tutorial';
+
+>>>>>>> master
 
 @App({
   templateUrl: 'build/app.html',
@@ -23,11 +28,11 @@ import {ProductsList} from './pages/products-list/products-list'
     backButtonText: '',
     menuType: 'overlay',
     backButtonIcon: 'md-arrow-round-back'
-  }, // http://ionicframework.com/docs/v2/api/config/Config/
+  },
   providers: [HTTP_PROVIDERS]
 })
 class MyApp {
-  rootPage: any = HelloIonicPage;
+  rootPage: any = LoginPage;
   pages: Array<{title: string, component: any, icon: string}>;
   user: Array<{path: string, firstname: string, lastname: string, role: string}>
 
@@ -45,14 +50,18 @@ class MyApp {
     // set our app's pages
     this.pages = [
 
-      { title: 'Order Details', component: OrderList, icon: 'home'},
       { title: 'My Stores', component: StoreList, icon: 'home'},
       { title: 'Employers Management', component: ManagmentList, icon: 'cog' },
       { title: 'Statistics', component: Statistics, icon: 'stats' },
       { title: 'Client Messages', component: MessageListPage, icon: 'chatbubbles' },
       { title: 'Clients', component: ClientListPage, icon: 'contacts' },
+<<<<<<< HEAD
       { title: 'Order Tracking', component: ListPage, icon: 'basket' },
       { title: 'Products', component: ProductsList, icon: 'barcode' },
+=======
+      { title: 'Order Tracking', component: OrdersTrackingPage, icon: 'basket' },
+      { title: 'Products', component: ListPage, icon: 'barcode' },
+>>>>>>> master
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},
       { title: 'Settings', component: ListPage, icon: 'settings' },
@@ -75,4 +84,14 @@ class MyApp {
     let nav = this.app.getComponent('nav');
     nav.setRoot(page.component);
   }
+/*
+  isInitialRun () {
+    let value = this.localStorage.get("initialRun") || "true";
+    return value == "true";
+  }
+
+  setInitialRun(state) {
+    this.localStorage.set("initialRun", (state ? "true" : "false"));
+  }
+  */
 }

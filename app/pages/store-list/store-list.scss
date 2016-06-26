@@ -17,22 +17,29 @@
   height: 60px;
 }
 
+.seperator {
+  border-bottom : 1px solid $app-grey !important;
+}
+
 .user-title {
   color: #000000;
   //font-weight: bold;
   font-size: 150%;
   padding-top: 5px;
   margin-left: 30px;
+  padding-bottom: 25px;
 }
 
 .user-bolds {
   color: #000000;
   font-weight: bold;
-  font-size: 110%;
+  font-size: 1em;
   padding-top: 10px;
 }
 
 #text {
+  overflow: hidden;
+  font-size: 1em;
   color: #000000;
   padding-top: 10px;
 }
@@ -43,8 +50,6 @@ ion-item:hover {
   border-color: lightgray;
 }
 
-
-
 .ion-row.stores {
   padding-top: 0px;
   padding-left: 0px;
@@ -52,7 +57,20 @@ ion-item:hover {
 
 }
 
-.button {
-  //text-decoration: underline;  <-- fica mal
-  font-size: 150%;
+#roundbutton {
+  margin-top: 10px;
+  border-radius: 50%;
+  font-size: 1.5em;
+
+}
+
+.button-fab {
+  height: 36px;
+  width: 36px;
+}
+
+.button-outline-secondary
+{
+  border-color:#5bbbbf;
+  color: #5bbbbf;
 }

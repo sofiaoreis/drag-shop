@@ -11,3 +11,14 @@ export class ClientNamePipe implements PipeTransform {
     return client.first_name + " " + client.last_name;
   }
 }
+
+@Pipe({
+  name: 'clientPicture'
+})
+export class ClientPicturePipe implements PipeTransform {
+  transform(clientId: number, allClients) : string {
+    if (!clientId || !allClients || !allClients.length) { return; }
+    let client = allClients[0].find(x => x.id == clientId);
+    return client.profile_pic;
+  }
+}

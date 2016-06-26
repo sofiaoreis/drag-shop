@@ -4,17 +4,6 @@ $app-grey: #E9EAEB;
 $app-chat-blue: #8CD3D7;
 $app-grey-text: #939598;
 
-// App Shared Imports
-// --------------------------------------------------
-// These are the imports which make up the design of this app.
-// By default each design mode includes these shared imports.
-// App Shared Sass variables belong in app.variables.scss.
-
-$app-blue: #5BBBBF;
-$app-grey: #E9EAEB;
-$app-chat-blue: #8CD3D7;
-$app-grey-text: #939598;
-
 @import "../pages/hello-ionic/hello-ionic";
 
 @import "../pages/store-list/store-list";
@@ -31,11 +20,15 @@ $app-grey-text: #939598;
 
 @import "../pages/account-recovery/account-recovery";
 
+@import "../pages/account-recover-num/account-recover-num";
+
 @import "../pages/order-details/order-details";
 
 @import "../pages/messages/messages";
 
 @import "../pages/message-list/message-list";
+
+@import "../pages/orders-tracking/orders-tracking";
 
 @import "../pages/client-list/client-list";
 
@@ -45,9 +38,13 @@ $app-grey-text: #939598;
 
 @import "../pages/free-employee-list/free-employee-list";
 
+<<<<<<< HEAD
 @import "../pages/products-list/products-list";
 
+=======
+@import "../pages/managment-list/managment-list";
+>>>>>>> master
+
+@import "../pages/tutorial/tutorial";
 
 @import "../app.scss";
-
-@import "../pages/managment-list/managment-list"

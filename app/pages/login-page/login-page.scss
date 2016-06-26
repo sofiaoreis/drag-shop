@@ -1,7 +1,6 @@
-$appblue: #8CD3D7;
+$appblue: #5EBABE;
 $appgrey: #939598;
 $applightgrey: #E9EAEB;
-
 
 .login{
 background-image: url(../../img/imagem2.png);
@@ -10,16 +9,54 @@ background-position: center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;
-
 }
 
 .logo{
-height: 50%;
+height: 40%;
 text-align: center;
 position: relative;
 }
 
-img{
+.logo img{
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.thumbnail-icon
+{
+  min-width: 0em;
+  min-height: 0em;
+}
+
+.form1 .text-input::-webkit-input-placeholder
+{
+  color: white;
+}
+
+.form1 .text-input{
+  width: 150%;
+}
+
+.item-content.activated{
+
+  color:white;
+}
+
+.login-hr
+{
+  width: 100%;
+  background-color:white;
+  margin-top: -10px;
+}
+
+.credentials
+{
+  padding-bottom: 20px;
+}
+
+
+
+.logo img{
 position: absolute;
 left: 50%;
 top: 65%;
@@ -29,10 +66,36 @@ border-radius: 80%;
 
 }
 
+.form1 .text-input
+{
+  //margin: 0px;
+  padding: none;
+
+}
+
+.icon
+{
+  width: 1em;
+    height: 1em;
+    left: 0%;
+    top: 0%;
+    position: relative;
+}
+
 .form1{
 padding-left: 0;
-border-top: 0;
-background-color: transparent;
+border: 1px;
+border-color: white;
+}
+
+.form1.input-has-focus, .form2.input-has-focus
+{
+  background-color: transparent;
+}
+
+.form1.activated, .form2.activated
+{
+  background-color: transparent;
 }
 
 .form2{
@@ -40,9 +103,13 @@ background-color: transparent;
 padding-left: 0;
 }
 
+.form1, .form2::input-has-focus
+{
+  background-color: white;
+}
+
 .form{
 height: 50%;
-
 }
 
 .button-full.button-outline{
@@ -52,25 +119,31 @@ border-right-width: 1px;
 
 .button1{
  background-color: $appblue;
+ font-size: 110%;
 }
 
 .button2{
+  margin-top: 0.5em;
 color: white;
 border-color: white;
+font-size: 110%;
 }
 
 .button3{
- color: $appgrey;
+ color: white;
+ font-size: 110%;
 }
 
 .button4{
- color: $appgrey;
+ color: white;
+ font-size: 110%;
 }
 
-.botoes1{
-	margin-top:20px;
+.button4.activated, .button3.activated, .button2.activated,{
+  background-color: transparent;;
 }
 
-.botoes2{
-	top:10px;
-}
+ .button1.activated
+ {
+   background-color: rgba(94,186,190,0.7);
+ }

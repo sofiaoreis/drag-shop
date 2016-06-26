@@ -4,10 +4,12 @@
   <div class="center">
     <h2>Account Recovery</h2>
   </div>
-  <br/><br/><br/>
-  <h3>Check your email or phone, we sent you a confirmation code.</h3>
-  <h3>Enter it bellow to reset your password</h3>
-  <br/>
+
+  <div class="text-recovery">
+  <p class="warning">Check your email or phone, we sent you a confirmation code.</p>
+  <p>Enter it bellow to reset your password</p>
+</div>
+
   <form class="enlarge" [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
         <ion-item class="input" [class.error]="!code.valid && code.touched">
             <ion-input type="text" value="" [ngFormControl]="code" placeholder=""></ion-input>

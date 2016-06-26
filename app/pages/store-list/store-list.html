@@ -10,31 +10,35 @@
 
         <div class="spacerow"></div>
 
-        <ion-row class="user-title">Choose your store</ion-row>
-        <p></p>
+        <ion-row class="user-title" responsive-sm>Choose your store</ion-row>
+
 
         <ion-list>
 
             <div *ngFor="#stor of stores">
-
+                <div class="seperator"></div>
             <ion-item>
 
                 <ion-row class="stores">
 
 
-                    <ion-col width-90>
+                    <ion-col width-80>
                         <ion-row class="user-bolds">{{stor.name}}</ion-row>
                         <ion-row id="text">{{stor.country}}{{stor.city}}</ion-row>
 
                     </ion-col>
 
-                    <ion-col width-10>
-                         <button secondary large outline  fab>
-                            <ion-icon clear item-right name="checkmark"></ion-icon>
-                          </button>
+
+                    <ion-col width-20>
+                        <button large fab fab-right secondary outline id="roundbutton">
+
+                            <ion-icon name="checkmark-circle" is-active="false"></ion-icon>
+
+                        </button>
                     </ion-col>
 
                 </ion-row>
+
 
             </ion-item>
 
