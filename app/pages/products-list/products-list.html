@@ -11,8 +11,8 @@
       <div class="category" *ngFor="#category of categories">
         {{category.name}}
         <ion-slides>
-          <ion-slide *ngFor="#product of products">
-            <h1 *ngIf="product.category==category.name">{{product.product_name}}</h1>
+          <ion-slide *ngFor="#product of products | productsCategory:category">
+            <h1>{{product.product_name}}</h1>
           </ion-slide>
         </ion-slides>
       </div>

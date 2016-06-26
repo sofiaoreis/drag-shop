@@ -3,10 +3,12 @@ import {ProductsService} from '../../providers/products-service/products-service
 import {CategoriesService} from '../../providers/categories-service/categories-service'
 import {Product} from '../../models/product'
 import {Category} from '../../models/category'
+import {ProductsCategoryPipe} from '../../pipes/products/products-category'
 
 @Page({
   templateUrl: 'build/pages/products-list/products-list.html',
-  providers: [ProductsService, CategoriesService]
+  providers: [ProductsService, CategoriesService],
+  pipes: [ProductsCategoryPipe]
 })
 export class ProductsList {
   categories: Category[];
