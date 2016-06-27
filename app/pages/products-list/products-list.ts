@@ -13,7 +13,6 @@ import {ProductsCategoryPipe} from '../../pipes/products/products-category'
 export class ProductsList {
   categories: Category[];
   products: Product[];
-  slideNum: number;
 
   constructor(private nav: NavController, navParams: NavParams, private productsService:ProductsService, private categoriesService:CategoriesService) {
     productsService.getProducts().subscribe(
@@ -27,10 +26,9 @@ export class ProductsList {
       err => {console.log(err);},
       () => {console.log("Finished fetching orders");}
     );
-    this.slideNum = 0;
   }
 
-  onSlideChanged(){
-    console.log("changed: " + this.slideNum);
+  productDetails(product){
+    //this.nav.push(....PAGINADOPRODUTO....,{product: product});
   }
 }
