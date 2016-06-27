@@ -11,13 +11,14 @@
       <div class="category" *ngFor="#category of categories">
         {{category.name}}
         <ion-slides on-slide-changed="onSlideChanged()">
-          <div *ngFor="#product of products | productsCategory:category; #i=index">
-            <ion-slide>
-            <img src="{{product.image}}">
-          <p>{{product.product_name}}</p>
-        </ion-slide>
-
+          <ion-slide *ngFor="#fiveproducts of products | productsCategory:category; #i=index">
+            <div *ngFor="#product of fiveproducts">
+              <ion-col>
+                <img src="{{product.image}}">
+                <p>{{product.product_name}}</p>
+              </ion-col>
             </div>
+          </ion-slide>
         </ion-slides>
       </div>
     </div>

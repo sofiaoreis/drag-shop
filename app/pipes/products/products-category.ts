@@ -5,8 +5,20 @@ import {Pipe, PipeTransform} from 'angular2/core'
   name: 'productsCategory'
 })
 export class ProductsCategoryPipe implements PipeTransform {
-  transform(allProducts, category) : Product[] {
+  transform(allProducts, category) : Product[][] {
     if (!category || !allProducts || !allProducts.length) { return; }
-    return allProducts.filter(product => product.category == category[0].name);
+
+    var filtProducts: Product[];
+    var resProducts = [[]];
+    var i = 0;
+
+    filtProducts = allProducts.filter(product => product.category == category[0].name);
+
+    while(filtProducts.length){
+      resProducts[i] = filtProducts.splice(0,5);
+      i++;
+    }
+
+    return resProducts;
   }
 }
