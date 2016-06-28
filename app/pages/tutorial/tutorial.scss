@@ -12,6 +12,10 @@
     min-height: 10px;
   }
 
+  div.swiper-pagination {
+    z-index: 0;
+  }
+
   .complete-button {
     position: absolute;
     bottom: 17px;
