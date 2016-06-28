@@ -7,6 +7,7 @@ import {CustomPage} from './pages/custom-page/custom-page';
 import {LoginPage} from './pages/login-page/login-page';
 import {AppSettings} from './pages/app-settings/app-settings';
 import {AccountPage} from './pages/account-page/account-page';
+import {ProductPage} from './pages/product-page/product-page';
 import {bootstrap}  from 'angular2/platform/browser';
 
 bootstrap(AccountPage);
@@ -35,7 +36,9 @@ class MyApp {
       { title: 'App Settings', component: AppSettings },
       { title: 'Account Page', component: AccountPage },
       { title: 'My First List', component: ListPage },
-      { title: 'Custom Page', component: CustomPage }
+      { title: 'Custom Page', component: CustomPage },
+      { title: 'Product Page', component: ProductPage }
+
     ];
   }
 
