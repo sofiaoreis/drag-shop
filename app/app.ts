@@ -56,7 +56,6 @@ class MyApp {
       { title: 'Settings', component: ListPage, icon: 'cog'},
       { title: 'App Settings', component: AppSettings, icon: 'cog'},
       { title: 'Settings', component: ListPage, icon: 'settings' },
-      { title: 'Account Recovery', component: AccountRecoveryPage, icon: 'power' },
       { title: 'Logout', component: LoginPage, icon: 'power' }
 
     ];
