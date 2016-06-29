@@ -6,13 +6,15 @@
 
 #row1 {
   padding-top: 7%;
-  //padding-left: 30%;
 
 }
 
-#row3 {
-  //width: 30%;
-  //margin: 0 auto;
+#firstCol {
+  min-width:47%;
+}
+
+#firstRow {
+  width:110%;
 }
 
 
@@ -36,21 +38,15 @@
 }
 
 .status-title {
-  // text-align: center;
   color: #000000;
-//  font-weight: bold;
   font-size: 130%;
   height: 2em;
-//  padding-top: 8.25%;
-//  padding-bottom: 5%;
-//  padding-left: 32%;
 
 }
 
 
 
 #status-icon-1{
-  //padding-top: 8%;
   padding-bottom: 5%;
   padding-right: 3%;
   font-size: 1.5em;
@@ -58,7 +54,6 @@
 }
 
 #status-icon-2{
-  //padding-top: 8%;
   padding-bottom: 5%;
   padding-right: 3%;
   font-size: 1.5em;
@@ -66,7 +61,6 @@
 }
 
 #status-icon-3{
-  //padding-top: 8%;
   padding-bottom: 5%;
   padding-right: 3%;
   font-size: 1.5em;
@@ -74,7 +68,6 @@
 }
 
 #status-icon-4{
-  //padding-top: 8%;
   padding-bottom: 5%;
   padding-right: 3%;
   font-size: 1.5em;
@@ -83,14 +76,6 @@
 
 
 
-/*
-#change-status {
-  color: #5BBBBF;
-  font-weight: bold;
-  font-size: 105%;
-  //padding-bottom: 7%;
-  padding-left: 6.5%;
-}*/
 
 .icon-links {
   padding-bottom: 8%;
@@ -104,7 +89,6 @@
 .icons-order {
   padding-right: 4%;
   color: #5BBBBF;
-  //font-size: 120%;
   font-size: 1.5em;
 
 }
@@ -117,7 +101,6 @@
 
 .order {
   color: #000000;
-  //background: green;
 }
 
 .background-table ion-row:nth-child(even){
@@ -137,6 +120,11 @@
 .label {
   color: #5BBBBF;
   font-weight: bold;
+  font-size: 110%;
+}
+
+.tableContent {
+  font-size: 110%;
 }
 
 #allocate-button{
@@ -145,8 +133,12 @@
 
 #changeStatus-button{
   font-size: 100%;
+    width: 47.5%;
 }
 
+.buttonEdit {
+  min-width: 240%;
+}
 
 
 .edit-button {

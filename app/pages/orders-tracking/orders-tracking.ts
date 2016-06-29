@@ -16,7 +16,7 @@ import {OrderDetails} from '../order-details/order-details'
 
 @Page({
   templateUrl: 'build/pages/orders-tracking/orders-tracking.html',
-  selector: 'doughnut-chart-demo',
+  //selector: 'doughnut-chart-demo',
   providers: [OrdersService],
   //directives: [CHART_DIRECTIVES, NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES],
   pipes:[OrderSeeAllPipe, OrderShippedPipe, OrderInTrafficPipe, OrderPendingPipe, OrderCanceledPipe]
