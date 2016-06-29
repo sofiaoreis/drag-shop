@@ -223,11 +223,14 @@
       <div *ngSwitchWhen="'pendingOrders'">
         <div class="profile-segment">
           <div class="segment-title">
-            PENDING ORDERS
+            UNFINISHED ORDERS
           </div>
 
           <div class="segment-content segment-border">
-            No pending orders.
+            <ion-row *ngFor= "#order of orders" (click)="goToOrders(order)" >
+            <ion-col>ORDER ID: {{order.id}}</ion-col>
+          </ion-row>
+
           </div>
         </div>
       </div>
