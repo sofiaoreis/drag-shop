@@ -119,12 +119,15 @@
 
         <div class="tab-selector">
             <ion-row>
-                <ion-col width-33>
+                <ion-col width-20>
                     <div class="simplebox">
                         Products (158)
                     </div>
                 </ion-col>
                 <ion-col>
+                    <p></p>
+                </ion-col>
+                <ion-col width-50>
                     <ion-segment [(ngModel)]="mostTrigger" [attr.light]="isAndroid ? '' : null">
                         <ion-segment-button class="stat-tabs" value="visited">
                             <h1 class="textsegbar">Most visited</h1>
