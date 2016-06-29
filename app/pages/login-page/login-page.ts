@@ -13,7 +13,7 @@ export class LoginPage {
   }
 
   toDashboard() {
-    this.nav.setRoot(StoreList);
+    this.nav.setRoot(HelloIonicPage);
   }
 
   toRecovery() {
