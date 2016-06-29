@@ -1,0 +1,30 @@
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>products</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <ion-list>
+    <div class="products-container">
+      <div class="category" *ngFor="#category of categories">
+        {{category.name}}
+        <ion-slides>
+          <ion-slide *ngFor="#fiveproducts of products | productsCategory:category; #i=index">
+            <ion-grid>
+              <ion-row>
+                <div class="product-element" *ngFor="#product of fiveproducts" (click)="productDetails(product)">
+                  <ion-col width-100>
+                    <img src="{{product.image}}">
+                    <p>{{product.product_name}}</p>
+                  </ion-col>
+                </div>
+              </ion-row>
+            </ion-grid>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

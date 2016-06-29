@@ -1,6 +1,6 @@
 import {Page, NavController, Alert, NavParams} from 'ionic-angular';
 import {Order} from '../../models/order'
-import {Product} from '../../models/product'
+import {OrderProduct} from '../../models/orderProduct'
 import {FreeEmployeeList} from '../free-employee-list/free-employee-list'
 import {ClientProfilePage} from "../client-profile/client-profile"
 import {ClientsService} from '../../providers/clients-service/clients-service'
@@ -35,8 +35,9 @@ export class OrderDetails {
     }
   }
 
-  processProduct(product: Product){
-   if(this.order.products[product.id].processed == false)
+
+  processProduct(product: OrderProduct){
+    if(this.order.products[product.id].processed == false)
       this.order.products[product.id].processed = true;
     else
       this.order.products[product.id].processed = false;
