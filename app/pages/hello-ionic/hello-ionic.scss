@@ -61,14 +61,14 @@ stat-tabs.segment-button.segment-activated {
 .progressbar2 > div {
   background-color: $app-blue;
   //width: 40%;
-  height: 0.7em;
+  height: 0.5em;
   border-radius: 10px;
 }
 
 .user-bolder {
   color: #000000;
   font-weight: bold;
-  font-size: 2.7vw;
+  font-size: 2.1vw;
   padding-top: 5%;
   margin-left: 0px;
   text-align: left;
@@ -90,19 +90,19 @@ stat-tabs.segment-button.segment-activated {
 .textsegbar {
   padding-top: 10px;
   color: #000000;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 #textblue {
   color: $app-blue;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   text-align: right;
 }
 
 
 #textdash {
   color: #000000;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
 }
 
 .center{
@@ -160,7 +160,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldred {
   color: red;
   font-weight: bold;
-  font-size: 3.5vw;
+  font-size: 3vw;
   padding-top: 5px;
 }
 
@@ -179,7 +179,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldorange {
   color: orange;
   font-weight: bold;
-  font-size:  3.5vw;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
@@ -199,7 +199,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldblue {
   color: midnightblue;
   font-weight: bold;
-  font-size:  3.5vw;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
@@ -218,7 +218,7 @@ stat-tabs.segment-button.segment-activated {
 #textboldpurple {
   color: purple;
   font-weight: bold;
-  font-size:  3.5vw;
+  font-size:  3vw;
   padding-top: 5px;
 }
 
@@ -241,11 +241,13 @@ stat-tabs.segment-button.segment-activated {
 }
 
 #iconsmove {
+  position: relative;
   font-size: 1em;
   margin-right: 0.1em;
 }
 
 #lasticonmove {
+
   margin-right: 30%;
   font-size: 1em;
 }
