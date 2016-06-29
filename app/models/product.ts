@@ -1,12 +1,12 @@
 export class Product {
   id: number;
-  name: string;
-  amount: number;
-  units: string;
+  category: string;
+  product_name: string;
   price: number;
-  processed: boolean;
+  discount: number;
+  image: string;
 
   constructor() {
-      //this.content = obj.content;
+
   }
 }

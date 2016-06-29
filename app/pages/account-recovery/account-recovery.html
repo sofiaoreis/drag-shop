@@ -1,16 +1,26 @@
 <ion-content padding class="login" >
 
-<div class="form">
-
+  <div>
   <ion-row>
+  <ion-col> </ion-col>
+  <ion-col width-45>
+<h1 class="title">Account recovery</h1>
+  </ion-col>
+  <ion-col> </ion-col>
+  </ion-row>
+  </div>
+
+<div >
+
+
+<ion-row>
 
   <ion-col> </ion-col>
+  <ion-col  width-45>
 
-  <ion-col width-45>
-<h1>Account Recovery</h1>
 
     <div class="form1">
-  
+
   <form  [ngFormModel]="recoverForm" (ngSubmit)="onSubmit(recoverForm.value)">
         <ion-item class=" form1 item-input" [class.error]="!username.valid && username.touched">
           <ion-thumbnail item-left class="thumbnail-icon">
@@ -22,7 +32,7 @@
         </ion-item>
         <div *ngIf="username.hasError('required') && username.touched"
         class="error-box">Email is required!</div>
-        <br/><br/>
+        <br>
         <button type="submit"  class="submit-button" [disabled]="!recoverForm.valid" block>DONE</button>
     </form>
       <button class="back" clear full (click)="goBack()">back</button>
