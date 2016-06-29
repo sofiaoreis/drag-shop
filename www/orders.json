@@ -159,4 +159,142 @@
     "processed": false
   }],
   "employee": ""
+},
+{
+  "id": 5,
+  "client_id": 1,
+  "city": "Vila Nova de Gaia",
+  "payment": "PayPal",
+  "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
+  "status": 5,
+  "days":1,
+  "products": [{
+    "id": 0,
+    "name": "Apples",
+    "amount": "2",
+    "units": "Kg",
+    "price": 1.58,
+    "processed": false
+  }, {
+    "id": 1,
+    "name": "Lettuce",
+    "amount": "250",
+    "units": "gr",
+    "price": 2.30,
+    "processed": false
+  }, {
+    "id": 2,
+    "name": "Tomato",
+    "amount": "1.5",
+    "units": "Kg",
+    "price": 4.38,
+    "processed": false
+  }, {
+    "id": 3,
+    "name": "Rice",
+    "amount": "4",
+    "units": "Kg",
+    "price": 0.55,
+    "processed": false
+  }, {
+    "id": 4,
+    "name": "Chicken Steak",
+    "amount": "2",
+    "units": "Kg",
+    "price": 7.40,
+    "processed": false
+  }],
+  "employee": ""
+},
+{
+  "id": 6,
+  "client_id": 3,
+  "city": "Vila Nova de Gaia",
+  "payment": "PayPal",
+  "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
+  "status": 5,
+  "days":1,
+  "products": [{
+    "id": 0,
+    "name": "Apples",
+    "amount": "2",
+    "units": "Kg",
+    "price": 1.58,
+    "processed": false
+  }, {
+    "id": 1,
+    "name": "Lettuce",
+    "amount": "250",
+    "units": "gr",
+    "price": 2.30,
+    "processed": false
+  }, {
+    "id": 2,
+    "name": "Tomato",
+    "amount": "1.5",
+    "units": "Kg",
+    "price": 4.38,
+    "processed": false
+  }, {
+    "id": 3,
+    "name": "Rice",
+    "amount": "4",
+    "units": "Kg",
+    "price": 0.55,
+    "processed": false
+  }, {
+    "id": 4,
+    "name": "Chicken Steak",
+    "amount": "2",
+    "units": "Kg",
+    "price": 7.40,
+    "processed": false
+  }],
+  "employee": ""
+},
+{
+  "id": 7,
+  "client_id": 2,
+  "city": "Vila Nova de Gaia",
+  "payment": "PayPal",
+  "address": "Vaz de Caminha Street, 98 Vila Nova de Gaia",
+  "status": 5,
+  "days":4,
+  "products": [{
+    "id": 0,
+    "name": "Apples",
+    "amount": "2",
+    "units": "Kg",
+    "price": 1.58,
+    "processed": false
+  }, {
+    "id": 1,
+    "name": "Lettuce",
+    "amount": "250",
+    "units": "gr",
+    "price": 2.30,
+    "processed": false
+  }, {
+    "id": 2,
+    "name": "Tomato",
+    "amount": "1.5",
+    "units": "Kg",
+    "price": 4.38,
+    "processed": false
+  }, {
+    "id": 3,
+    "name": "Rice",
+    "amount": "4",
+    "units": "Kg",
+    "price": 0.55,
+    "processed": false
+  }, {
+    "id": 4,
+    "name": "Chicken Steak",
+    "amount": "2",
+    "units": "Kg",
+    "price": 7.40,
+    "processed": false
+  }],
+  "employee": ""
 }]

@@ -22,6 +22,10 @@
           Pending orders
         </ion-segment-button>
 
+        <ion-segment-button class="profile-menu-button" value="unfinishedOrders">
+          Unfinished orders
+        </ion-segment-button>
+
         <ion-segment-button class="profile-menu-button" value="orderStatus">
           Order status and History
         </ion-segment-button>
@@ -223,12 +227,27 @@
       <div *ngSwitchWhen="'pendingOrders'">
         <div class="profile-segment">
           <div class="segment-title">
-            UNFINISHED ORDERS
+            PENDING ORDERS
           </div>
 
           <div class="segment-content segment-border">
             <ion-row *ngFor= "#order of orders" (click)="goToOrders(order)" >
             <ion-col>ORDER ID: {{order.id}}</ion-col>
+          </ion-row>
+
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchWhen="'unfinishedOrders'">
+        <div class="profile-segment">
+          <div class="segment-title">
+            UNFINISHED ORDERS
+          </div>
+
+          <div class="segment-content segment-border">
+            <ion-row *ngFor= "#unfinished of unfinishedOrders" (click)="goToOrders(unfinished)" >
+            <ion-col>ORDER ID: {{unfinished.id}}</ion-col>
           </ion-row>
 
           </div>

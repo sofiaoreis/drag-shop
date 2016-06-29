@@ -17,6 +17,7 @@ export class ClientProfilePage {
   profileTrigger: string;
   products: Product[];
   orders: Order[];
+  unfinishedOrders: Order[];
 
   constructor(private nav: NavController, navParams: NavParams, private wishListService: WishListService, private ordersService: OrdersService) {
     if(navParams.get('trigger')) {
@@ -45,11 +46,14 @@ export class ClientProfilePage {
   this.ordersService.getOrders().subscribe(
     data => {
       this.orders = data.filter(x=>(x.client_id== this.client.id && x.status==3));
-
+      this.unfinishedOrders = data.filter(x=>(x.client_id== this.client.id && x.status==5));
     },
     err => {console.log(err);},
     () => {console.log("Finished fetching client WishList");}
 );
+
+
+
 
 
   }

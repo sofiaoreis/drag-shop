@@ -164,6 +164,13 @@ export class OrderDetails {
      checked: (this.order.status === 4 ? true : false)
    });
 
+   alert.addInput({
+     type: 'radio',
+     label: 'Unfinished',
+     value: '5',
+     checked: (this.order.status === 5 ? true : false)
+   });
+
    alert.addButton('Cancel');
    alert.addButton({
      text: 'OK',
