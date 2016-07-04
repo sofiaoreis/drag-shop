@@ -20,10 +20,12 @@
         <ion-icon *ngIf="order.status===1" id="status-icon-1" name="md-radio-button-on"></ion-icon>
         <ion-icon *ngIf="order.status===2" id="status-icon-2" name="md-radio-button-on"></ion-icon>
         <ion-icon *ngIf="order.status===4" id="status-icon-4" name="md-radio-button-on"></ion-icon>
+        <ion-icon *ngIf="order.status===5" id="status-icon-5" name="md-radio-button-on"></ion-icon>
         <b *ngIf="order.status===4" >Status: Canceled</b>
         <b *ngIf="order.status===2" >Status: In Traffic</b>
         <b *ngIf="order.status===1" >Status: Shipped</b>
         <b *ngIf="order.status===3" >Status: Pending</b>
+        <b *ngIf="order.status===5" >Status: Unfinished</b>
       </ion-col>
       <ion-col>
          <button block class="submit-button" id="changeStatus-button"  (click)="doRadio()">Change Status</button>

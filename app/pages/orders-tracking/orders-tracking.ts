@@ -10,6 +10,7 @@ import {OrderShippedPipe} from '../../pipes/orders/order-status';
 import {OrderInTrafficPipe} from '../../pipes/orders/order-status';
 import {OrderPendingPipe} from '../../pipes/orders/order-status';
 import {OrderCanceledPipe} from '../../pipes/orders/order-status';
+import {OrderUnfinishedPipe} from '../../pipes/orders/order-status';
 import {OrderDetails} from '../order-details/order-details'
 
 
@@ -19,7 +20,7 @@ import {OrderDetails} from '../order-details/order-details'
   //selector: 'doughnut-chart-demo',
   providers: [OrdersService],
   //directives: [CHART_DIRECTIVES, NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES],
-  pipes:[OrderSeeAllPipe, OrderShippedPipe, OrderInTrafficPipe, OrderPendingPipe, OrderCanceledPipe]
+  pipes:[OrderSeeAllPipe, OrderShippedPipe, OrderInTrafficPipe, OrderPendingPipe, OrderCanceledPipe, OrderUnfinishedPipe]
 })
 export class OrdersTrackingPage {
 
