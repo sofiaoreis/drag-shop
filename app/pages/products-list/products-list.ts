@@ -4,6 +4,7 @@ import {CategoriesService} from '../../providers/categories-service/categories-s
 import {Product} from '../../models/product'
 import {Category} from '../../models/category'
 import {ProductsCategoryPipe} from '../../pipes/products/products-category'
+import {ProductPage} from '../product-page/product-page'
 
 @Page({
   templateUrl: 'build/pages/products-list/products-list.html',
@@ -28,7 +29,9 @@ export class ProductsList {
     );
   }
 
-  productDetails(product){
-    //this.nav.push(....PAGINADOPRODUTO....,{product: product});
-  }
+
+    itemTapped(item){
+      this.nav.push(ProductPage,{product: item});
+    }
+
 }

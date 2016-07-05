@@ -5,6 +5,8 @@ export class Product {
   price: number;
   discount: number;
   image: string;
+  origin: string;
+  net_weight: string;
 
   constructor() {
 

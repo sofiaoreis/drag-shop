@@ -4,208 +4,268 @@
   "product_name": "Pork",
   "price": "3,62",
   "discount": "0,34",
-  "image": "http://www.highlandsfamilyfarm.com/wp-content/uploads/2015/04/pork-chops.png"
+  "image": "http://www.highlandsfamilyfarm.com/wp-content/uploads/2015/04/pork-chops.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 2,
   "category": "Vegetables",
   "product_name": "Lettuces",
   "price": "9,30",
   "discount": "0,27",
-  "image": "http://www.papakelseysaz.com/images/icon_lettuce.png"
+  "image": "http://www.papakelseysaz.com/images/icon_lettuce.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 3,
   "category": "Vegetables",
   "product_name": "Carrots",
   "price": "2,00",
   "discount": "0,17",
-  "image": "http://www.pngall.com/wp-content/uploads/2016/04/Carrot-Free-Download-PNG.png"
+  "image": "http://www.pngall.com/wp-content/uploads/2016/04/Carrot-Free-Download-PNG.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 4,
   "category": "Vegetables",
   "product_name": "Pepper",
   "price": "7,53",
   "discount": "0,0",
-  "image": "http://icons.iconarchive.com/icons/bingxueling/fruit-vegetables/256/pepper-icon.png"
+  "image": "http://icons.iconarchive.com/icons/bingxueling/fruit-vegetables/256/pepper-icon.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 5,
   "category": "Drinks",
   "product_name": "Mineral Water",
   "price": "9,00",
   "discount": "0,12",
-  "image": "http://cdn1.bigcommerce.com/server3900/9b2d7/product_images/uploaded_images/plastic-water-bottle.jpg"
+  "image": "http://cdn1.bigcommerce.com/server3900/9b2d7/product_images/uploaded_images/plastic-water-bottle.jpg",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 6,
   "category": "Meat",
   "product_name": "Cow",
   "price": "4,11",
   "discount": "0,46",
-  "image": "http://www.tgifridays.cz/images/steak_1-ribeye-strip.png"
+  "image": "http://www.tgifridays.cz/images/steak_1-ribeye-strip.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 7,
   "category": "Meat",
   "product_name": "Sausage",
   "price": "6,88",
   "discount": "0,09",
-  "image": "http://pngimg.com/upload/sausage_PNG5179.png"
+  "image": "http://pngimg.com/upload/sausage_PNG5179.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 8,
   "category": "Drinks",
   "product_name": "Fanta",
   "price": "0,02",
   "discount": "0,33",
-  "image": "http://static.wixstatic.com/media/6c6e16_a8247d9b066dc711196c8c5e7a4bf38f.png_512"
+  "image": "http://static.wixstatic.com/media/6c6e16_a8247d9b066dc711196c8c5e7a4bf38f.png_512",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 9,
   "category": "Vegetables",
   "product_name": "Cabbage",
   "price": "7,10",
   "discount": "0,33",
-  "image": "http://pngimg.com/upload/cabbage_PNG8805.png"
+  "image": "http://pngimg.com/upload/cabbage_PNG8805.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 10,
   "category": "Vegetables",
   "product_name": "Parsley",
   "price": "4,95",
   "discount": "0,09",
-  "image": "http://www.fraiza.com/images/Herbs/Parsley/Parsley-Leaves.png"
+  "image": "http://www.fraiza.com/images/Herbs/Parsley/Parsley-Leaves.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 11,
   "category": "Drinks",
   "product_name": "Mountain Dew",
   "price": "7,49",
   "discount": "0,31",
-  "image": "http://vignette2.wikia.nocookie.net/mountaindew/images/0/03/Img-mountaindew.png/revision/latest?cb=20140914212459"
+  "image": "http://vignette2.wikia.nocookie.net/mountaindew/images/0/03/Img-mountaindew.png/revision/latest?cb=20140914212459",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 12,
   "category": "Meat",
   "product_name": "Chicken",
   "price": "6,29",
   "discount": "0,36",
-  "image": "http://www.denvillemeatshop.com/upload/products/whole_Chicken_uncooked.png"
+  "image": "http://www.denvillemeatshop.com/upload/products/whole_Chicken_uncooked.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 13,
   "category": "Vegetables",
   "product_name": "Mushrooms",
   "price": "8,91",
   "discount": "0,29",
-  "image": "http://myscienceacademy.org/wp-content/uploads/2015/03/mushrooms_foods_735_350.png"
+  "image": "http://myscienceacademy.org/wp-content/uploads/2015/03/mushrooms_foods_735_350.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 14,
   "category": "Vegetables",
   "product_name": "Onion",
   "price": "3,02",
   "discount": "0,39",
-  "image": "http://pngimg.com/upload/small/onion_PNG603.png"
+  "image": "http://pngimg.com/upload/small/onion_PNG603.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 15,
   "category": "Meat",
   "product_name": "Turkey",
   "price": "0,47",
   "discount": "0,11",
-  "image": "http://bbgrocerymeatdeli.com/wp-content/uploads/2011/03/Des-Moines-Chicken.png"
+  "image": "http://bbgrocerymeatdeli.com/wp-content/uploads/2011/03/Des-Moines-Chicken.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 16,
   "category": "Drinks",
   "product_name": "Coca-Cola",
   "price": "5,15",
   "discount": "0,28",
-  "image": "http://pngimg.com/upload/cocacola_PNG13.png"
+  "image": "http://pngimg.com/upload/cocacola_PNG13.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 17,
   "category": "Vegetables",
   "product_name": "Bean",
   "price": "8,97",
   "discount": "0,21",
-  "image": "http://michiganbean.org/wp-content/uploads/2013/09/MichiganBean_LargeRedKidney.png"
+  "image": "http://michiganbean.org/wp-content/uploads/2013/09/MichiganBean_LargeRedKidney.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 18,
   "category": "Meat",
   "product_name": "Mince",
   "price": "1,73",
   "discount": "0,42",
-  "image": "https://landywoods.co.uk/wp-content/uploads/2013/12/Minced-lamb.png"
+  "image": "https://landywoods.co.uk/wp-content/uploads/2013/12/Minced-lamb.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 19,
   "category": "Vegetables",
   "product_name": "Brussels sprout",
   "price": "1,22",
   "discount": "0,23",
-  "image": "http://www.specialtyproduce.com/sppics/1413.png"
+  "image": "http://www.specialtyproduce.com/sppics/1413.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 20,
   "category": "Vegetables",
   "product_name": "Corn salad",
   "price": "6,77",
   "discount": "0,02",
-  "image": "https://c1.staticflickr.com/1/370/19428696346_fb69279e12_o.png"
+  "image": "https://c1.staticflickr.com/1/370/19428696346_fb69279e12_o.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 21,
   "category": "Drinks",
   "product_name": "Pepsi-Cola",
   "price": "9,09",
   "discount": "0,09",
-  "image": "http://icons.iconarchive.com/icons/michael/coke-pepsi/512/Pepsi-Can-icon.png"
+  "image": "http://icons.iconarchive.com/icons/michael/coke-pepsi/512/Pepsi-Can-icon.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 22,
   "category": "Drinks",
   "product_name": "Wine",
   "price": "7,18",
   "discount": "0,11",
-  "image": "http://pngimg.com/upload/wine_PNG9479.png"
+  "image": "http://pngimg.com/upload/wine_PNG9479.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 23,
   "category": "Vegetables",
   "product_name": "Cauliflower",
   "price": "7,50",
   "discount": "0,07",
-  "image": "http://pngimg.com/upload/cauliflower_PNG12679.png"
+  "image": "http://pngimg.com/upload/cauliflower_PNG12679.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 24,
   "category": "Drinks",
   "product_name": "Iced Tea",
   "price": "6,58",
   "discount": "0,35",
-  "image": "http://s3.amazonaws.com/cdn2/SteaknShake/Menu/desktop/iced-tea.png"
+  "image": "http://s3.amazonaws.com/cdn2/SteaknShake/Menu/desktop/iced-tea.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 25,
   "category": "Drinks",
   "product_name": "7UP",
   "price": "4,48",
   "discount": "0,07",
-  "image": "http://www.999pizzatoppings.co.uk/image/cache/data/Drinks/330ml-7up-500x500.png"
+  "image": "http://www.999pizzatoppings.co.uk/image/cache/data/Drinks/330ml-7up-500x500.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 26,
   "category": "Drinks",
   "product_name": "Compal",
   "price": "0,26",
   "discount": "0,42",
-  "image": "http://www.fonteviva.com.pt/imagens/conveniencia/sumos-compal-classico.png"
+  "image": "http://www.fonteviva.com.pt/imagens/conveniencia/sumos-compal-classico.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 27,
   "category": "Vegetables",
   "product_name": "Caper",
   "price": "1,11",
   "discount": "0,49",
-  "image": "http://blossomfacts.com/wp-content/uploads/2015/03/Capers.png"
+  "image": "http://blossomfacts.com/wp-content/uploads/2015/03/Capers.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 28,
   "category": "Drinks",
   "product_name": "Vodka",
   "price": "1,73",
   "discount": "0,29",
-  "image": "https://sohowines.hk/wp-content/uploads/2015/04/absolut-vodka.png"
+  "image": "https://sohowines.hk/wp-content/uploads/2015/04/absolut-vodka.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 29,
   "category": "Vegetables",
   "product_name": "Quinoa",
   "price": "1,27",
   "discount": "0,37",
-  "image": "http://quib.com.my/wp-content/uploads/2014/07/quinoa.png"
+  "image": "http://quib.com.my/wp-content/uploads/2014/07/quinoa.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }, {
   "id": 30,
   "category": "Vegetables",
   "product_name": "Vegetable fern",
   "price": "5,50",
   "discount": "0,29",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fiddlehead_closeup.png/260px-Fiddlehead_closeup.png"
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Fiddlehead_closeup.png/260px-Fiddlehead_closeup.png",
+  "origin": "Portugal, Spain",
+  "net_weight": "250gr"
 }]

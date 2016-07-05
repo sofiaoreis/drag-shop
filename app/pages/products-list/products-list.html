@@ -5,7 +5,7 @@
   <ion-title>products</ion-title>
 </ion-navbar>
 
-<ion-content>
+<ion-content class="carrossel">
   <ion-list>
     <div class="products-container">
       <div class="category" *ngFor="#category of categories">
@@ -16,7 +16,7 @@
               <ion-row>
                 <div class="product-element" *ngFor="#product of fiveproducts" (click)="productDetails(product)">
                   <ion-col width-100>
-                    <img src="{{product.image}}">
+                    <img src="{{product.image}}" (click)="itemTapped(product)">
                     <p>{{product.product_name}}</p>
                   </ion-col>
                 </div>

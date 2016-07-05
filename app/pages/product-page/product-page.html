@@ -1,0 +1,56 @@
+<ion-navbar *navbar align-title="left">
+  <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+  <ion-title>{{product.product_name}}</ion-title>
+</ion-navbar>
+
+<ion-content padding class="product">
+
+
+<ion-row class="produto-row">
+	<ion-col width-50 class="produto-col">
+	<div class="produto-container">
+	<img src="{{product.image}}" class="produto"/>
+	</div>
+	</ion-col>
+
+	<ion-col class="coluna-conteudo">
+
+	<ion-row class="produto-categoria">
+
+		<h4 style="font-weight: bold;"> {{product.category}} </h4>
+
+	</ion-row>
+
+
+	<ion-row class="produto-caracteristicas">
+
+	<div class="produto-div">
+
+		<strong><p> {{product.product_name}} </p></strong>
+		<p> <strong>Origin: </strong>{{product.origin}} </p>
+		<p> <strong>Net-weight: </strong> {{product.net_weight}} </p>
+		<p> <strong>Price: </strong>{{product.price}} (aprox.)</p>
+
+	</div>
+
+	</ion-row>
+
+	<ion-row class="produto-promocao">
+
+		<strong>LAUNCH A PROMOTION</strong>
+
+    <ion-item>
+   <ion-input type="text" placeholder="€"></ion-input>
+ </ion-item>
+
+	</ion-row>
+
+
+	</ion-col>
+
+	<ion-col>
+
+	</ion-col>
+</ion-row>
