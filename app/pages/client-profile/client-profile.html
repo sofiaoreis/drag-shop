@@ -230,9 +230,13 @@
             PENDING ORDERS
           </div>
 
-          <div class="segment-content segment-border">
+          <div class="segment-content segment-border" *ngIf="orders.length === 0">
+              <ion-row>No pending orders</ion-row>
+          </div>
+
+          <div class="segment-content segment-border" *ngIf="orders.length > 0">
             <ion-row *ngFor= "#order of orders" (click)="goToOrders(order)" >
-            <ion-col>ORDER ID: {{order.id}}</ion-col>
+          <p><strong>ORDER ID:</strong>  {{order.id}}</p></ion-col>
           </ion-row>
 
           </div>
@@ -245,9 +249,14 @@
             UNFINISHED ORDERS
           </div>
 
-          <div class="segment-content segment-border">
+          <div class="segment-content segment-border" *ngIf="unfinishedOrders.length === 0">
+            <ion-row> No unfinished orders.  </ion-row>
+          </div>
+
+          <div class="segment-content segment-border" *ngIf="unfinishedOrders.length > 0">
             <ion-row *ngFor= "#unfinished of unfinishedOrders" (click)="goToOrders(unfinished)" >
-            <ion-col>ORDER ID: {{unfinished.id}}</ion-col>
+            <ion-col>
+              <p><strong>ORDER ID:</strong> {{unfinished.id}}</p></ion-col>
           </ion-row>
 
           </div>
@@ -284,7 +293,11 @@
             WISHLIST
           </div>
 
-          <div class="segment-content segment-border">
+          <div class="segment-content segment-border" *ngIf="products.length === 0">
+                <ion-row> No products added to the user Wishlist.  </ion-row>
+          </div>
+
+          <div class="segment-content segment-border" *ngIf="products.length > 0">
             <ion-col responsive sm class="background-table" id="background-table">
               <ion-row responsive sm class="label">
                 <ion-col>Product</ion-col>
