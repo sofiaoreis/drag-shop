@@ -14,5 +14,12 @@
 }
 
 .product-element{
-  padding-left: 10%;
+  padding-left: 5%;
+  min-width: 220px;
+  img {
+    max-width:120px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+  }
 }

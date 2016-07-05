@@ -15,7 +15,7 @@ export class ProductsCategoryPipe implements PipeTransform {
     filtProducts = allProducts.filter(product => product.category == category[0].name);
 
     while(filtProducts.length){
-      resProducts[i] = filtProducts.splice(0,5);
+      resProducts[i] = filtProducts.splice(0,4);
       i++;
     }
 
