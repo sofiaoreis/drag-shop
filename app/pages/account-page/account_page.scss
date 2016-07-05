@@ -1,0 +1,80 @@
+.account{
+
+	width: 100%;
+	height: 100%;
+}
+
+.foto-row{
+
+	height: 100%;
+	width: 100%;
+
+}
+
+.foto-col{
+	height: 50% !important;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	top: 10%;
+
+}
+
+.foto-container{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.foto{
+	max-width: 30%;
+	border-radius: 80%;
+}
+
+.select-col{
+	top: 15%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.foto-p1{
+	font-weight: bold;
+}
+
+.panel.panel-default {
+
+	border-bottom: 1px solid rgba(140,211,215,0.5);
+	padding: 5px;
+
+}
+
+.panel-title a{
+
+	text-decoration: none;
+}
+
+.panel-title span{
+
+	color:#000;
+	text-decoration: none;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.p-conteudo {
+
+	border-bottom: 1px solid rgba(140,211,215,0.2);
+	padding: 10px;
+	padding-left: 0;
+	margin: 0;
+}
+
+.p-conteudo-last {
+
+	padding: 10px;
+	margin: 0;
+	padding-left: 0;
+	padding-bottom: 5%;
+}

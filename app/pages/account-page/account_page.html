@@ -1,0 +1,34 @@
+<ion-navbar *navbar align-title="left">
+  <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+  <ion-title>Account Page</ion-title>
+</ion-navbar>
+
+<ion-content padding class="account">
+
+
+<ion-row class="foto-row">
+	<ion-col width-50 class="foto-col">
+	<div class="foto-container">
+	<img src="img/placeholder-user.png" class="foto"/>
+	<p class="foto-p1"> Maria Portela </p>
+	<p class="foto-p2">  Administador </p>
+	</div>
+	</ion-col>
+
+	<ion-col width-33 class="select-col">
+                <accordion>
+                  <accordion-group [heading]="group.heading" *ngFor="#group of groups">
+                    <p class="p-conteudo"> {{group.content.Name}} </p>
+                    <p class="p-conteudo"> {{group.content.Email}} </p>
+                    <p class="p-conteudo"> {{group.content.Phone}} </p>
+                    <p class="p-conteudo-last"> {{group.content.Role}} </p>
+                  </accordion-group>
+                </accordion>
+	</ion-col>
+
+	<ion-col>
+
+	</ion-col>
+</ion-row>
