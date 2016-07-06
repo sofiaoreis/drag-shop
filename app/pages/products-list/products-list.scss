@@ -1,6 +1,13 @@
 .products-container{
-  padding-left: 4%;
   padding-top: 2%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  ion-row {
+    justify-content: space-between !important;
+  }
+
 }
 
 .category{
@@ -14,11 +21,18 @@
 }
 
 .product-element{
-  padding-left: 5%;
   min-width: 20%;
   img {
-    max-width: 120px;
-    max-height: 80px;
+
+    @media only screen and (min-width: 650px) {
+      max-width: 120px;
+      max-height: 80px;
+    }
+    @media only screen and (max-width: 650px) {
+      max-width: 60px;
+      max-height: 40px;
+    }
+
     width: auto;
     height: auto;
   }
